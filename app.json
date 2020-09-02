@@ -1,0 +1,12 @@
+{
+  "name": "mobilecrypto",
+  "displayName": "mobilecrypto",
+  "expo": {
+    "name": "mobilecrypto",
+    "slug": "mobilecrypto",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
