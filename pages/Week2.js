@@ -1,56 +1,61 @@
 import React, { Component } from 'react'
-import { Text, View, TouchableOpacity, StyleSheet } from 'react-native'
+import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
+import { Actions } from 'react-native-router-flux';
    
 class List extends Component {
    state = {
       names: [
          {
             id: 0,
-            name: 'START HERE: How To Use & Resources',
+            name: 'Week 2 Intro',
          },
          {
             id: 1,
-            name: 'Week 1: Mind',
+            name: 'Book List',
          },
          {
             id: 2,
-            name: 'Week 2: Blockchain',
+            name: 'How Does The Internet Work?',
          },
          {
             id: 3,
-            name: 'Week 3: Security + Storage',
+            name: 'Bitcoin 101',
          },
          {
             id: 4,
-            name: 'Week 4: Marketing',
+            name: 'Bitcoin 102',
          },
          {
             id: 5,
-            name: 'Week 5: Leadership',
+            name: 'Ethereum 101',
          },
          {
             id: 6,
-            name: 'Week 6: Product',
+            name: 'Ethereum 102',
          },
          {
             id: 7,
-            name: 'Week 7: Industry',
+            name: 'Market Cycles IMPORTANT',
          },
          {
             id: 8,
-            name: 'Week 8: Technical Analysis',
+            name: 'Why Bitcoin Is The Best Form Of Money',
          },
          {
             id: 9,
-            name: 'Week 9: Ratios',
+            name: 'How much Money Should You Invest In Cryptocurrrency?',
          },
          {
             id: 10,
-            name: 'Week 10: Proven Ways to Make Money In Crypto',
+            name: 'Introduction To DAPPS',
          },
          {
             id: 11,
-            name: 'DeFi Trading',
+            name: 'Introduction To DEFI',
+         },
+         {
+            id: 12,
+            name: 'Assessment',
          },
       ]
    }
@@ -59,7 +64,7 @@ class List extends Component {
    }
    render() {
       return (
-         <View>
+         <ScrollView>
             {
                this.state.names.map((item, index) => (
                   <TouchableOpacity
@@ -71,16 +76,23 @@ class List extends Component {
                      </Text>
                   </TouchableOpacity>
                ))
-            }
-         </View>
+            }    
+         </ScrollView>
+         
       )
+   }
+   navigate(itemid) {
+      if(itemid == 0)
+         Actions.StartHere();
+      if(itemid == 1)
+         this.navigate2();
    }
 }
 export default List
 
 const styles = StyleSheet.create ({
    container: {
-      padding: 18,
+      padding: 17.5,
       marginTop: 3,
       backgroundColor: '#000000',
       alignItems: 'center',
