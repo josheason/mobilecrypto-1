@@ -120,7 +120,7 @@ const Routes = ()=> {
                 </Scene>
                 <Scene
                     key="WhatIsDeFi"
-                    //title="WhatIsDeFi"
+                    title="WhatIsDeFi"
                     component={WhatIsDeFi}>
                 </Scene>
            </Scene>
