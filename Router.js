@@ -2,8 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View, StatusBar, SafeAreaView } from 'react-native';
 import { Router, Scene } from 'react-native-router-flux'
 
-import ScreenOne from './pages/ScreenOne.js'
-import ScreenTwo from './pages/ScreenTwo.js'
+import Login from './pages/Login.js'
 
 import List from './pages/List.js'
 
@@ -45,18 +44,13 @@ const Routes = ()=> {
            <Scene key="root" >
                 <Scene
                     key="login"
-                    title="Login"
-                    component={ScreenOne}>
+                    // title="Login"
+                    component={Login}>
                 </Scene>
                 <Scene
                     key="list"
                     title="Fundamental Secrets"
                     component={List}>
-                </Scene>
-                <Scene
-                    key="home"
-                    title="Home"
-                    component={ScreenTwo}>
                 </Scene>
                 <Scene
                     key="StartHere"

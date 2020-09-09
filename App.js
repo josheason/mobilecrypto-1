@@ -10,27 +10,6 @@ import Routes from './Router'
 export default function App() {
   return (
     <Routes/>
-    // <NavigationContainer>
-    //   <Stack.Navigator>
-    //     <Stack.Screen
-    //       name="Home"
-    //       component={TableofContents}
-    //       options={{ 
-    //         title: 'Fundamental Secrets' ,
-    //         headerStyle: {
-    //           backgroundColor: '#000000',
-    //           height: 100,
-    //         },
-    //         headerTitleStyle: {
-    //           //alignSelf: 'center',
-    //           //justifyContent: 'center',
-    //           color: '#fff',
-    //           fontSize: 25,
-    //         }
-    //     }}
-    //     />
-    //   </Stack.Navigator>
-    // </NavigationContainer>
   );
 }
 
