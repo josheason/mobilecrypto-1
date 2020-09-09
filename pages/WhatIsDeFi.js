@@ -1,51 +1,78 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
-import Video from 'react-native-video';
 import { Actions } from 'react-native-router-flux';
+import { Video } from 'expo';
+import { MaterialIcons, Octicons } from '@expo/vector-icons';
 
+export default class App extends React.Component {
+	state = {
+		mute: false,
+		fullScreen: false,
+		shouldPlay: true,
+	}
 
-export default class WhatIsDeFi extends Component {
- render(){
-  return(
-    <View style={styles.container}>
-      <Video source={{uri: "Url"}}   // Can be a URL or a localfile.
-       ref={(ref) => {
-         this.player = ref
-       }}                                      // Store reference
-       onBuffer={this.onBuffer}                // Callback when remote video is buffering
-       onEnd={this.onEnd}                      // Callback when playback finishes
-       onError={this.videoError}               // Callback when video cannot be loaded
-       style={styles.backgroundVideo} />
-</View>
-);
-}
-}
+	handlePlayAndPause = () => {
+		this.setState(prevState => ({
+			shouldPlay: !prevState.shouldPlay
+		}));
+	}
 
+	handleVolume = () => {
+		this.setState(prevState => ({
+			mute: !prevState.mute,
+		}));
+	}
 
-// Within your render function, assuming you have a file called
-// "background.mp4" in your project. You can include multiple videos
-// on a single screen if you like.
-
-
-
-
-const styles = StyleSheet.create ({
-   container: {
-      padding: 17.5,
-      marginTop: 3,
-      backgroundColor: '#000000',
-      alignItems: 'center',
-      borderBottomWidth: 1,
-      borderColor: "#ffffff",
-   },
-   text: {
-      color: '#ffffff'
-   },
-   backgroundVideo: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    bottom: 0,
-    right: 0,
+  render() {
+		const { width } = Dimensions.get('window');
+		
+    return (
+      <View style={styles.container}>
+				<View>
+						<Text style={{ textAlign: 'center' }}> React Native Video </Text>
+						<Video
+							source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
+							shouldPlay={this.state.shouldPlay}
+							resizeMode="cover"
+							style={{ width, height: 300 }}
+							isMuted={this.state.mute}
+						/>
+						<View style={styles.controlBar}>
+							<MaterialIcons 
+								name={this.state.mute ? "volume-mute" : "volume-up"}
+								size={45} 
+								color="white" 
+								onPress={this.handleVolume} 
+							/>
+							<MaterialIcons 
+								name={this.state.shouldPlay ? "pause" : "play-arrow"} 
+								size={45} 
+								color="white" 
+								onPress={this.handlePlayAndPause} 
+							/>
+						</View>
+					</View>
+      </View>
+		);
   }
-})
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+	},
+	controlBar: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+		height: 45,
+		flexDirection: 'row',
+		alignItems: 'center',
+		justifyContent: 'center',
+		backgroundColor: "rgba(0, 0, 0, 0.5)",
+	}
+});
