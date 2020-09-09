@@ -126,7 +126,8 @@ class List extends Component {
                   <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
-                     onPress = {() => this.alertItemName(item)}>
+                     onPress={()=>this.navigate(item.id)}>
+                     //onPress = {() => this.alertItemName(item)}>
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
@@ -139,7 +140,7 @@ class List extends Component {
    }
    navigate(itemid) {
       if(itemid == 0)
-         Actions.StartHere();
+         Actions.WhatIsDefi();
       if(itemid == 1)
          this.navigate2();
    }
