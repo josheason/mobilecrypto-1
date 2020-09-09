@@ -118,7 +118,7 @@ const Routes = ()=> {
                     title="DeFi"
                     component={DeFi}>
                 </Scene>
-                <Scene>
+                <Scene
                     key="WhatIsDeFi"
                     title="WhatIsDeFi"
                     component={WhatIsDeFi}>
