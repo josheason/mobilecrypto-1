@@ -6,11 +6,15 @@ import Video from 'react-native-video';
 // Within your render function, assuming you have a file called
 // "background.mp4" in your project. You can include multiple videos
 // on a single screen if you like.
- 
 
-   alertItemName = (item) => {
+
+
+export default class DeFi extends React.Component {
+  state={
+  }
+  /*alertItemName = (item) => {
       alert(item.name)
-   }
+   }*/
    render() {
       return (
          <ScrollView>
@@ -27,14 +31,11 @@ import Video from 'react-native-video';
          
       )
    }
-   navigate(itemid) {
-      if(itemid == 0)
-         Actions.StartHere();
-      if(itemid == 1)
-         this.navigate2();
-   }
+ // navigate(){
+   //     Actions.list()
+    //}
 }
-export default List
+//export default List
 
 const styles = StyleSheet.create ({
    container: {
