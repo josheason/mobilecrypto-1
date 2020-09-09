@@ -5,7 +5,7 @@ import { Video } from 'expo';
 import { MaterialIcons, Octicons } from '@expo/vector-icons';
 
 //export default 
-class WhatIsDefi extends Component {
+class List extends Component {
 	state = {
 		mute: false,
 		fullScreen: false,
