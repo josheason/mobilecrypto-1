@@ -20,16 +20,7 @@ export default class WhatIsDeFi extends Component {
 );
 }
 }
-const styles = StyleSheet.create({
-  container:{ flex: 1, justifyContent: "center"},
-  backgroundVideo: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    bottom: 0,
-    right: 0,
-  },
-});
+
 
 // Within your render function, assuming you have a file called
 // "background.mp4" in your project. You can include multiple videos
