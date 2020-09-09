@@ -142,7 +142,57 @@ class List extends Component {
       if(itemid == 0)
          Actions.WhatIsDefi();
       if(itemid == 1)
-         this.navigate2();
+         Actions.Week2();
+      if(itemid == 2)
+         Actions.Week2();
+      if(itemid == 3)
+         Actions.Week3SS();
+      if(itemid == 4)
+         Actions.Week3RF();
+      if(itemid == 5)
+         Actions.Week4();
+      if(itemid == 6)
+         Actions.Week5();
+      if(itemid == 7)
+         Actions.Week6();
+      if(itemid == 8)
+         Actions.Week7();
+      if(itemid == 9)
+         Actions.Week8();
+      if(itemid == 10)
+         Actions.Week9();
+      if(itemid == 11)
+         Actions.Week10();
+      if(itemid == 12)
+         Actions.DeFi();
+      if(itemid == 13)
+         Actions.Week3SS();
+      if(itemid == 14)
+         Actions.Week3RF();
+      if(itemid == 15)
+         Actions.Week4();
+      if(itemid == 16)
+         Actions.Week5();
+      if(itemid == 17)
+         Actions.Week6();
+      if(itemid == 18)
+         Actions.Week7();
+      if(itemid == 19)
+         Actions.Week8();
+      if(itemid == 20)
+         Actions.Week9();
+      if(itemid == 21)
+         Actions.Week10();
+      if(itemid == 22)
+         Actions.DeFi();
+      if(itemid == 23)
+         Actions.DeFi();
+      if(itemid == 24)
+         Actions.DeFi();
+      if(itemid == 25)
+         Actions.DeFi();
+      if(itemid == 26)
+         Actions.DeFi();
    }
 }
 export default List
