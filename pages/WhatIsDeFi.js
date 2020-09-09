@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux';
-import { Video } from 'expo-av';
+import { Video } from 'expo';
 import { MaterialIcons, Octicons } from '@expo/vector-icons';
 
 //export default 
