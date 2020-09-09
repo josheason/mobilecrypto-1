@@ -1,14 +1,17 @@
 import React from 'react'
-import {Text, View, TextInput, Button, StyleSheet} from 'react-native'
+import {Text, View, TextInput, Button, StyleSheet, StatusBar} from 'react-native'
 import { Actions } from 'react-native-router-flux';
 
 export default class ScreenOne extends React.Component{
     render(){
         return(
-            <View style={styles.container}>
-                <TextInput style={styles.input}/>
-                <TextInput style={styles.input}/>
-                <Button onPress={()=>this.navigate()} title="Login"></Button>
+            <View>
+                <StatusBar barStyle="light-content" />
+                    <View style={styles.container}>
+                    <TextInput style={styles.input}/>
+                    <TextInput style={styles.input}/>
+                    <Button onPress={()=>this.navigate()} title="Login"></Button>
+                </View>
             </View>
         )
     }

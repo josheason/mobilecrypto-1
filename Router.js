@@ -1,4 +1,5 @@
 import React from 'react'
+import { StyleSheet, Text, View, StatusBar, SafeAreaView } from 'react-native';
 import { Router, Scene } from 'react-native-router-flux'
 
 import ScreenOne from './pages/ScreenOne.js'
@@ -20,10 +21,28 @@ import Week9 from './pages/Week9.js'
 import Week10 from './pages/Week10.js'
 import DeFi from './pages/DeFi.js'
 
-const Routes = ()=> {
+const styles = StyleSheet.create({
+    titlestyle: {
+        color: '#ffffff',
+        // height: 80,
+        textAlign: 'center',
+        flex: 1,
+        //right: 22,
+    },
+    titlebackground: {
+        backgroundColor: '#101010',
+        marginTop: -50,
+        //height: 10,
+    },
+    centertitle:{
+        left: 0,
+    }
+});
+
+const Routes = ()=> {    
     return (
-        <Router>
-           <Scene key="root">
+        <Router navigationBarStyle={styles.titlebackground} titleStyle={styles.titlestyle} tintColor='#ffffff' headerTitleContainerStyle={styles.centertitle}>
+           <Scene key="root" >
                 <Scene
                     key="login"
                     title="Login"

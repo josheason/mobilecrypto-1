@@ -5,7 +5,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
-import TableofContents from './pages/List.js'
 import Routes from './Router'
 
 export default function App() {
