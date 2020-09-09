@@ -4,7 +4,8 @@ import { Actions } from 'react-native-router-flux';
 import { Video } from 'expo';
 import { MaterialIcons, Octicons } from '@expo/vector-icons';
 
-export default class WhatIsDefi extends Component {
+//export default 
+class WhatIsDefi extends Component {
 	state = {
 		mute: false,
 		fullScreen: false,
