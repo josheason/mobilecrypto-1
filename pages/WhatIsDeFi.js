@@ -4,7 +4,7 @@ import Video from 'react-native-video';
 import { Actions } from 'react-native-router-flux';
 
 
-export default class Video extends Component {
+export default class WhatIsDeFi extends Component {
  render(){
   return(
     <View style={styles.container}>
