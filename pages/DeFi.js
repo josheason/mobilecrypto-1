@@ -140,7 +140,7 @@ class DeFi extends Component {
    //onPress = {() => this.alertItemName(item)}>
    navigate(itemid) {
       if(itemid == 0)
-         Actions.Week1();
+         Actions.WhatIsDeFi();
       /*if(itemid == 1)
          Actions.Week2();
       if(itemid == 2)
