@@ -20,6 +20,7 @@ import Week9 from './pages/Week9.js'
 import Week10 from './pages/Week10.js'
 import DeFi from './pages/DeFi.js'
 import WhatIsDeFi from './pages/WhatIsDeFi.js'
+import WalletDifferences from './pages/WalletDifferences.js'
 
 const styles = StyleSheet.create({
     titlestyle: {
@@ -122,6 +123,11 @@ const Routes = ()=> {
                     key="WhatIsDeFi"
                     title="WhatIsDeFi"
                     component={WhatIsDeFi}>
+                 <Scene
+                    key="WalletDifferences"
+                    title="WalletDifferences"
+                    component={WalletDifferences}>
+                </Scene>
                 </Scene>
            </Scene>
         </Router>
