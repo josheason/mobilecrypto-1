@@ -123,11 +123,11 @@ const Routes = ()=> {
                     key="WhatIsDeFi"
                     title="WhatIsDeFi"
                     component={WhatIsDeFi}>
+                </Scene>
                  <Scene
                     key="WalletDifferences"
                     title="WalletDifferences"
                     component={WalletDifferences}>
-                </Scene>
                 </Scene>
            </Scene>
         </Router>
