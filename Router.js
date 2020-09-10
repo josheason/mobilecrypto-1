@@ -131,6 +131,11 @@ const Routes = ()=> {
                     title="WalletDifferences"
                     component={WalletDifferences}>
                 </Scene>
+                <Scene
+                    key="DesktopMetaWalletInst"
+                    title="DesktopMetaWalletInst"
+                    component={DesktopMetaWalletInst}>
+                </Scene>
            </Scene>
         </Router>
     )
