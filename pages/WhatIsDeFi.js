@@ -9,7 +9,8 @@ export default function WhatIsDeFi(){
 	return(
 		<View style = {styles.container}>
 			<Video
-			source={require('./sample1.mp4')}
+			source={{ uri: 'https://youtu.be/vT2vIoAl4Sg' }}
+			//source={require('./sample1.mp4')}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
