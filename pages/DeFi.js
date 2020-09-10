@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux';
    
-class List extends Component {
+class DeFi extends Component {
    state = {
       names: [
          {
@@ -195,7 +195,7 @@ class List extends Component {
          Actions.DeFi();
    }
 }
-export default List
+export default DeFi
 
 const styles = StyleSheet.create ({
    container: {
