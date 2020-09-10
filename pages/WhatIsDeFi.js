@@ -9,7 +9,7 @@ export default function WhatIsDeFi(){
 	return(
 		<View style = {styles.container}>
 			<Video
-			source={{ uri: 'https://drive.google.com/file/d/1S4w-vMqb55m1iARGjl5j4CjBqR5foiAq/preview' }}
+			source={{ uri: 'https://drive.google.com/file/d/1S4w-vMqb55m1iARGjl5j4CjBqR5foiAq/view' }}
 			//source={require('./DeFi1.mp4')}
 			rate={1.0}
 			volume={1.0}
