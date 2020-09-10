@@ -141,7 +141,7 @@ class DeFi extends Component {
    navigate(itemid) {
       if(itemid == 0)
          Actions.WhatIsDeFi();
-      if(itemid == 1)
+      /*if(itemid == 1)
          Actions.Week2();
       if(itemid == 2)
          Actions.Week2();
@@ -192,7 +192,7 @@ class DeFi extends Component {
       if(itemid == 25)
          Actions.DeFi();
       if(itemid == 26)
-         Actions.DeFi();
+         Actions.DeFi();*/
    }
 }
 export default DeFi
