@@ -21,6 +21,8 @@ import Week10 from './pages/Week10.js'
 import DeFi from './pages/DeFi.js'
 import WhatIsDeFi from './pages/WhatIsDeFi.js'
 import WalletDifferences from './pages/WalletDifferences.js'
+import DesktopMetaWalletInst from './pages/DesktopMetaWalletInst.js'
+
 
 const styles = StyleSheet.create({
     titlestyle: {
