@@ -11,7 +11,7 @@ class DeFi extends Component {
          },
          {
             id: 1,
-            name: 'Wallet Diffrences',
+            name: 'Wallet Differences',
          },
          {
             id: 2,
