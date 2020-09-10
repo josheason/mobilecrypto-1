@@ -126,8 +126,8 @@ class DeFi extends Component {
                   <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
-                     //onPress = {() => this.alertItemName(item)}>
+                     //onPress={()=>this.navigate(item.id)}>
+                     onPress = {() => this.alertItemName(item)}>
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
