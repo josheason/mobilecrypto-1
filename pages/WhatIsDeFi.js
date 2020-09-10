@@ -30,7 +30,7 @@ export default class WhatIsDeFi extends Component{
 				<View>
 						<Text style={{ textAlign: 'center' }}> React Native Video </Text>
 						<Video
-							source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
+							source={{ require('./sample.mp4') }}
 							shouldPlay={this.state.shouldPlay}
 							resizeMode="cover"
 							style={{ width, height: 300 }}
