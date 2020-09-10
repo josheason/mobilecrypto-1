@@ -24,7 +24,7 @@ class WhatIsDeFi extends Component {
 	}
 }
 
-export default WhatIsDefi
+export default WhatIsDeFi
 
 const styles = StyleSheet.create ({
    container: {
