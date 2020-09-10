@@ -126,8 +126,7 @@ class DeFi extends Component {
                   <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
-                     //onPress={()=>this.navigate(item.id)}>
-                     onPress = {() => this.alertItemName(item)}>
+                     onPress={()=>this.navigate(item.id)}>
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
@@ -138,9 +137,10 @@ class DeFi extends Component {
          
       )
    }
+   //onPress = {() => this.alertItemName(item)}>
    navigate(itemid) {
       if(itemid == 0)
-         Actions.WhatIsDeFi();
+         Actions.StartHere();
       /*if(itemid == 1)
          Actions.Week2();
       if(itemid == 2)
