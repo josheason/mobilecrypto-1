@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ Component } from 'react';
 import {
   View,
   Text,
@@ -14,7 +14,7 @@ import Orientation from 'react-native-orientation';
 const { width } = Dimensions.get('window');
 const samplevideo = require('./sample.mp4');
 
-export default class WhatIsDeFi extends React.Component {
+export default class WhatIsDeFi extends Component {
   constructor(p) {
     super(p);
     this.state = {
