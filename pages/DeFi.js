@@ -140,7 +140,7 @@ class DeFi extends Component {
    }
    navigate(itemid) {
       if(itemid == 0)
-         Actions.WhatIsDefi();
+         Actions.WhatIsDeFi();
       if(itemid == 1)
          Actions.Week2();
       if(itemid == 2)
