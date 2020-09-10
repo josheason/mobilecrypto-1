@@ -8,7 +8,7 @@ class WhatIsDeFi extends Component {
 	}
 	render(){ 
 	return(
-		<View>
+		<View style ={styles.container}>
 		<Video
   		source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
   		rate={1.0}
