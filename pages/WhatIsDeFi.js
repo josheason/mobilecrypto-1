@@ -2,11 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Video } from 'expo-av';
 
-class WhatIsDeFi extends Component {
-	state = {
-		test: " "
-	}
-	render(){ 
+export default function WhatIsDeFi() {
 	return(
 		<View style ={styles.container}>
 		<Video
@@ -21,10 +17,8 @@ class WhatIsDeFi extends Component {
 		/>
 		</View>
 		)
-	}
 }
 
-export default WhatIsDeFi
 
 const styles = StyleSheet.create ({
    container: {
