@@ -151,7 +151,7 @@ const Routes = ()=> {
                 </Scene>
                 <Scene
                     key="WhatIsDeFi1"
-                    title="WhatIsDeFi"
+                    title="WhatIsDeFi1"
                     component={WhatIsDeFi1}>
                 </Scene>
                  <Scene
