@@ -27,6 +27,7 @@ import DeskMetConnDapp from './pages/DeskMetConnDapp.js'
 import NavDeskExt from './pages/NavDeskExt.js'
 import GWEIExp from './pages/GWEIExp.js'
 import TradeUniswap from './pages/TradeUniswap.js'
+import etherscan from './pages/etherscan.js'
 
 
 const styles = StyleSheet.create({
@@ -165,6 +166,11 @@ const Routes = ()=> {
                     key="TradeUniswap"
                     title="TradeUniswap"
                     component={TradeUniswap}>
+                   </Scene>
+                   <Scene
+                    key="etherscan"
+                    title="etherscan"
+                    component={etherscan}>
                    </Scene>
            </Scene>
         </Router>
