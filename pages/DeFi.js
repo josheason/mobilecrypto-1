@@ -157,9 +157,9 @@ class DeFi extends Component {
          Actions.TradeUniswap();
       if(itemid == 8)
          Actions.etherscan();
-      /*
       if(itemid == 9)
-         Actions.Week8();
+         Actions.speedmeta();
+      /*
       if(itemid == 10)
          Actions.Week9();
       if(itemid == 11)
