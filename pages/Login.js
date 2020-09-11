@@ -10,18 +10,22 @@ class Login extends Component {
          {
             id: 0,
             name: 'Continue To Course',
+            src: './images/continue.png',
          },
          {
             id: 1,
             name: 'FaceBook Group',
+            src: './images/facebook.png'
          },
          {
             id: 2,
             name: 'Live Q&A',
+            src: './images/live.png'
          },
          {
             id: 3,
             name: 'Alex&spos;s Youtube',
+            src: './images/youtube.png'
          },
       ]
    }
@@ -41,48 +45,12 @@ class Login extends Component {
                      style = {styles.container}
                      onPress={()=>this.navigate(item.id)}>
                        <Image 
-                        src(item.id)
+                        source = {require(item.src)}
                         />
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
                   </TouchableOpacity>
-                 /*if(item.id == 1)
-                   <TouchableOpacity
-                     key = {item.id}
-                     style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
-                       <Image 
-                    source={require('./images/facebook.png')}  
-                        />
-                     <Text style = {styles.text}>
-                        {item.name}
-                     </Text>
-                  </TouchableOpacity>
-                 if(item.id == 2)
-                   <TouchableOpacity
-                     key = {item.id}
-                     style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
-                       <Image 
-                    source={require('./images/live.png')}  
-                        />
-                     <Text style = {styles.text}>
-                        {item.name}
-                     </Text>
-                  </TouchableOpacity>
-                 if(item.id == 3)
-                   <TouchableOpacity
-                     key = {item.id}
-                     style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
-                       <Image 
-                    source={require('./images/youtube.png')}  
-                        />
-                     <Text style = {styles.text}>
-                        {item.name}
-                     </Text>
-                  </TouchableOpacity>*/
                ))
             }    
          </ScrollView >
@@ -98,16 +66,6 @@ class Login extends Component {
          Actions.Week2();
       if(itemid == 3)
          Actions.Week3SS();
-   }
-   src(itemid) {
-      if(itemid == 0)
-         ImageSource = ('./images/continue.png')
-      /*if(itemid == 1)
-         Actions.Week1();
-      if(itemid == 2)
-         Actions.Week2();
-      if(itemid == 3)
-         Actions.Week3SS();*/
    }
 }
 export default Login
