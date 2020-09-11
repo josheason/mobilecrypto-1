@@ -208,6 +208,7 @@ const styles = StyleSheet.create ({
       borderBottomWidth: 0.5,
       borderTopWidth: 0.5,
       borderColor: "#121212",
+      borderRadius: 10,
    },
    text: {
       color: '#ffffff'
