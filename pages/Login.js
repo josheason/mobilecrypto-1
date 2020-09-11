@@ -41,7 +41,7 @@ class Login extends Component {
          >
             {     
                   <TouchableOpacity
-                  style = (styles.container}
+                  style = {styles.container}
                   >
                      <Text
                      style = {styles.header}
