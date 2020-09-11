@@ -37,7 +37,7 @@ class Login extends Component {
             {
                this.state.names.map((item, index) => (
                   if(item.id == 0)
-                  <TouchableOpacity
+                  return(<TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
                      onPress={()=>this.navigate(item.id)}>
@@ -47,9 +47,9 @@ class Login extends Component {
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
-                  </TouchableOpacity>
-                 if(item.id == 1)
-                   return(<TouchableOpacity
+                  </TouchableOpacity>);
+                 /*if(item.id == 1)
+                   <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
                      onPress={()=>this.navigate(item.id)}>
@@ -59,8 +59,8 @@ class Login extends Component {
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
-                  </TouchableOpacity>);
-                 /*if(item.id == 2)
+                  </TouchableOpacity>
+                 if(item.id == 2)
                    <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
