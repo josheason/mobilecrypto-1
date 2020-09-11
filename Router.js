@@ -44,6 +44,8 @@ import BalDex from './pages/BalDex.js'
 import BalPool from './pages/BalPool.js'
 import debank from './pages/debank.js'
 import zerion from './pages/zerion.js'
+import compound from './pages/compound.js'
+import lend from './pages/lend.js'
 
 
 const styles = StyleSheet.create({
@@ -267,6 +269,16 @@ const Routes = ()=> {
                     key="zerion"
                     title="zerion"
                     component={zerion}>
+                   </Scene>
+                   <Scene
+                    key="compound"
+                    title="compound"
+                    component={compound}>
+                   </Scene>
+                   <Scene
+                    key="lend"
+                    title="lend"
+                    component={lend}>
                    </Scene>
            </Scene>
         </Router>
