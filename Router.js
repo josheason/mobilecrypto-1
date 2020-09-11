@@ -42,6 +42,7 @@ import cream from './pages/cream.js'
 import aave from './pages/aave.js'
 import BalDex from. './pages/BalDex.js'
 import BalPool from './pages/BalPool.js'
+import debank from './pages/debank.js'
 
 
 const styles = StyleSheet.create({
@@ -255,6 +256,11 @@ const Routes = ()=> {
                     key="BalPool"
                     title="BalPool"
                     component={BalPool}>
+                   </Scene>
+                   <Scene
+                    key="debank"
+                    title="debank"
+                    component={debank}>
                    </Scene>
            </Scene>
         </Router>
