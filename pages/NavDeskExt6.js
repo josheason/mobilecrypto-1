@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function NavDeskExt(){
+export default function NavDeskExt6(){
 
 	return(
 		<View style = {styles.container}>
