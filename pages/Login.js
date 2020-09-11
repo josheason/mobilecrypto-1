@@ -4,7 +4,7 @@ import { Actions } from 'react-native-router-flux';
 
 
 
-class List extends Component {
+class Login extends Component {
    state = {
       names: [
          {
@@ -101,7 +101,7 @@ class List extends Component {
          Actions.Week3SS();
    }
 }
-export default List
+export default Login
 
 
 const styles = StyleSheet.create ({
