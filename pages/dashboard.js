@@ -49,7 +49,8 @@ class dashboard extends Component {
                   <TouchableOpacity
                      key = {0}
                      style = {styles.container}
-                     onPress={()=>this.navigate(0)}>
+                     //onPress={()=>this.navigate(0)}>
+                   onPress={()=>navigate(0)}>
                        <Image 
                         source = {require('./images/arrow.png')}
                         style = {styles.img}
