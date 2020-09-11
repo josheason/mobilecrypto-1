@@ -39,12 +39,16 @@ class Login extends Component {
          <ScrollView
           style = {{ backgroundColor: '#595959' }}
          >
-            {
-                  <Text
-                  style = {styles.header}
+            {     
+                  <TouchableOpacity
+                  style = (styles.container}
                   >
-                  {'DASHBOARD'}
-                  </Text>
+                     <Text
+                     style = {styles.header}
+                       >
+                        {'DASHBOARD'}
+                     </Text>
+                  </TouchableOpacity>
                   <TouchableOpacity
                      key = {0}
                      style = {styles.container}
