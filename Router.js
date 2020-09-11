@@ -43,6 +43,7 @@ import aave from './pages/aave.js'
 import BalDex from './pages/BalDex.js'
 import BalPool from './pages/BalPool.js'
 import debank from './pages/debank.js'
+import zerion from './pages/zerion.js'
 
 
 const styles = StyleSheet.create({
@@ -261,6 +262,11 @@ const Routes = ()=> {
                     key="debank"
                     title="debank"
                     component={debank}>
+                   </Scene>
+                   <Scene
+                    key="zerion"
+                    title="zerion"
+                    component={zerion}>
                    </Scene>
            </Scene>
         </Router>
