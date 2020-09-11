@@ -24,6 +24,7 @@ import WalletDifferences from './pages/WalletDifferences.js'
 import DesktopMetaWalletInst from './pages/DesktopMetaWalletInst.js'
 import DeFiEco from './pages/DeFiEco.js'
 import DeskMetConnDapp from './pages/DeskMetConnDapp.js'
+import NavDeskExt from './pages/NavDeskExt.js'
 
 
 const styles = StyleSheet.create({
@@ -147,6 +148,11 @@ const Routes = ()=> {
                     key="DeskMetConnDapp"
                     title="DeskMetConnDapp"
                     component={DeskMetConnDapp}>
+                   </Scene>
+                    <Scene
+                    key="NavDeskExt"
+                    title="NavDeskExt"
+                    component={NavDeskExt}>
                    </Scene>
            </Scene>
         </Router>
