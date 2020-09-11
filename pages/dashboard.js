@@ -35,10 +35,10 @@ class dashboard extends Component {
    
    render() {
       return (
-         <View
+         <ScrollView
           style = {{ backgroundColor: '#595959' }}
          >
-            {     
+                 
                   <TouchableOpacity
                   key = {1}
                   style = {styles.container}
@@ -119,8 +119,8 @@ class dashboard extends Component {
                      </Text>
                   </TouchableOpacity>
                ))*/
-            }    
-         </View >
+                
+         </ScrollView >
          
       )
    }
