@@ -179,9 +179,9 @@ class DeFi extends Component {
          Actions.dao();
       if(itemid == 19)
          Actions.cream();
-      /*
       if(itemid == 20)
-         Actions.Week9();
+         Actions.aave();
+      /*
       if(itemid == 21)
          Actions.Week10();
       if(itemid == 22)
