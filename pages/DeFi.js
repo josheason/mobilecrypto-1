@@ -203,6 +203,8 @@ const styles = StyleSheet.create ({
    container: {
       padding: 25,
       marginTop: 3,
+      marginLeft: 5,
+      marginRight: 5,
       backgroundColor: '#000000',
       alignItems: 'center',
       borderBottomWidth: 0.5,
