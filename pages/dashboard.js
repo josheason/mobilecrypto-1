@@ -39,7 +39,7 @@ class dashboard extends Component {
           style = {{ backgroundColor: '#595959' }}
          >
             {     
-                  /*<TouchableOpacity
+                  <TouchableOpacity
                   key = {1}
                   style = {styles.container}
                   >
@@ -48,7 +48,7 @@ class dashboard extends Component {
                        >
                         {'DASHBOARD'}
                      </Text>
-                  </TouchableOpacity>*/
+                  </TouchableOpacity>
                   <TouchableOpacity
                      key = {0}
                      style = {styles.container}
