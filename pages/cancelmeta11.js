@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function cancelmeta(){
+export default function cancelmeta11(){
 
 	return(
 		<View style = {styles.container}>
