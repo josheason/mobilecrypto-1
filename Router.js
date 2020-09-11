@@ -28,6 +28,7 @@ import NavDeskExt from './pages/NavDeskExt.js'
 import GWEIExp from './pages/GWEIExp.js'
 import TradeUniswap from './pages/TradeUniswap.js'
 import etherscan from './pages/etherscan.js'
+import speedmeta from './pages/speedmeta.js'
 
 
 const styles = StyleSheet.create({
@@ -171,6 +172,11 @@ const Routes = ()=> {
                     key="etherscan"
                     title="etherscan"
                     component={etherscan}>
+                   </Scene>
+                    <Scene
+                    key="speedmeta"
+                    title="speedmeta"
+                    component={speedmeta}>
                    </Scene>
            </Scene>
         </Router>
