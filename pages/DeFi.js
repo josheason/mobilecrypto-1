@@ -203,8 +203,9 @@ const styles = StyleSheet.create ({
       marginTop: 3,
       backgroundColor: '#000000',
       alignItems: 'center',
-      borderBottomWidth: 1,
-      borderColor: "#ffffff",
+      borderBottomWidth: 0.5,
+      borderTopWidth: 0.5,
+      borderColor: "#121212",
    },
    text: {
       color: '#ffffff'
