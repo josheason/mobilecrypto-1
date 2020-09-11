@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function DesktopMetaWalletInst(){
+export default function DesktopMetaWalletInst3(){
 
 	return(
 		<View style = {styles.container}>
