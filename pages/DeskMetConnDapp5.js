@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function DeskMetConnDapp(){
+export default function DeskMetConnDapp5(){
 
 	return(
 		<View style = {styles.container}>
