@@ -144,57 +144,57 @@ class DeFi extends Component {
       if(itemid == 0)
          Actions.WhatIsDeFi1();
       if(itemid == 1)
-         Actions.WalletDifferences();
+         Actions.WalletDifferences2();
       if(itemid == 2)
-         Actions.DesktopMetaWalletInst();
+         Actions.DesktopMetaWalletInst3();
       if(itemid == 3)
-         Actions.DeFiEco();
+         Actions.DeFiEco4();
       if(itemid == 4)
-         Actions.DeskMetConnDapp();
+         Actions.DeskMetConnDapp45);
       if(itemid == 5)
-         Actions.NavDeskExt();
+         Actions.NavDeskExt6();
       if(itemid == 6)
-         Actions.GWEIExp();
+         Actions.GWEIExp7();
       if(itemid == 7)
-         Actions.TradeUniswap();
+         Actions.TradeUniswap8();
       if(itemid == 8)
-         Actions.etherscan();
+         Actions.etherscan9();
       if(itemid == 9)
-         Actions.speedmeta();
+         Actions.speedmeta10();
       if(itemid == 10)
-         Actions.cancelmeta();
+         Actions.cancelmeta11();
       if(itemid == 11)
-         Actions.trademoon();
+         Actions.trademoon12();
       if(itemid == 12)
-         Actions.removeliquid();
+         Actions.removeliquid13();
       if(itemid == 13)
-         Actions.oneinch();
+         Actions.oneinch14();
       if(itemid == 14)
-         Actions.matcha();
+         Actions.matcha15();
       if(itemid == 15)
-         Actions.addliquid();
+         Actions.addliquid16();
       if(itemid == 16)
-         Actions.loopring();
+         Actions.loopring17();
       if(itemid == 17)
-         Actions.zapper();
+         Actions.zapper18();
       if(itemid == 18)
-         Actions.dao();
+         Actions.dao19();
       if(itemid == 19)
-         Actions.cream();
+         Actions.cream20();
       if(itemid == 20)
-         Actions.aave();
+         Actions.aave21();
       if(itemid == 21)
-         Actions.BalDex();
+         Actions.BalDex22();
       if(itemid == 22)
-         Actions.BalPool();
+         Actions.BalPool23();
       if(itemid == 23)
-         Actions.debank();
+         Actions.debank24();
       if(itemid == 24)
-         Actions.zerion();
+         Actions.zerion25();
       if(itemid == 25)
-         Actions.compund();
+         Actions.compund26();
       if(itemid == 26)
-         Actions.lend();
+         Actions.lend27();
    }
 }
 export default DeFi
