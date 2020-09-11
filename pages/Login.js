@@ -39,7 +39,28 @@ class Login extends Component {
           style = {{ backgroundColor: '#595959' }}
          >
             {
-               this.state.names.map((item, index) => (
+                  <TouchableOpacity
+                     key = {0}
+                     style = {styles.container}
+                     onPress={()=>this.navigate(0)}>
+                       <Image 
+                        source = {require('./images/continue.png')}
+                        />
+                     <Text style = {styles.text}>
+                        {Continue}
+                     </Text>
+                  </TouchableOpacity>
+                  /*<TouchableOpacity
+                     key = {item.id}
+                     style = {styles.container}
+                     onPress={()=>this.navigate(item.id)}>
+                       <Image 
+                        source = {item.src}
+                        />
+                     <Text style = {styles.text}>
+                        {item.name}
+                     </Text>
+                  </TouchableOpacity>
                   <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
@@ -51,7 +72,30 @@ class Login extends Component {
                         {item.name}
                      </Text>
                   </TouchableOpacity>
-               ))
+                  <TouchableOpacity
+                     key = {item.id}
+                     style = {styles.container}
+                     onPress={()=>this.navigate(item.id)}>
+                       <Image 
+                        source = {item.src}
+                        />
+                     <Text style = {styles.text}>
+                        {item.name}
+                     </Text>
+                  </TouchableOpacity>*/
+               /*this.state.names.map((item, index) => (
+                  <TouchableOpacity
+                     key = {item.id}
+                     style = {styles.container}
+                     onPress={()=>this.navigate(item.id)}>
+                       <Image 
+                        source = {item.src}
+                        />
+                     <Text style = {styles.text}>
+                        {item.name}
+                     </Text>
+                  </TouchableOpacity>
+               ))*/
             }    
          </ScrollView >
          
