@@ -40,7 +40,7 @@ import zapper from './pages/zapper.js'
 import dao from './pages/dao.js'
 import cream from './pages/cream.js'
 import aave from './pages/aave.js'
-import BalDex from. './pages/BalDex.js'
+import BalDex from './pages/BalDex.js'
 import BalPool from './pages/BalPool.js'
 import debank from './pages/debank.js'
 
