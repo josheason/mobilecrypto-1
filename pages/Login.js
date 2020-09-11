@@ -36,18 +36,17 @@ class Login extends Component {
          >
             {
                this.state.names.map((item, index) => (
-                  if(item.id == 0)
-                  return(<TouchableOpacity
+                  <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
                      onPress={()=>this.navigate(item.id)}>
                        <Image 
-                    source={require('./images/continue.png')}  
+                    source={require(this.image(item.id)}  
                         />
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
-                  </TouchableOpacity>);
+                  </TouchableOpacity>
                  /*if(item.id == 1)
                    <TouchableOpacity
                      key = {item.id}
@@ -99,6 +98,16 @@ class Login extends Component {
          Actions.Week2();
       if(itemid == 3)
          Actions.Week3SS();
+   }
+   src(itemid) {
+      if(itemid == 0)
+         return './images/continue.png';
+      /*if(itemid == 1)
+         Actions.Week1();
+      if(itemid == 2)
+         Actions.Week2();
+      if(itemid == 3)
+         Actions.Week3SS();*/
    }
 }
 export default Login
