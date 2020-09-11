@@ -36,10 +36,14 @@ static void InitializeFlipper(UIApplication *application) {
 
 @end
 
+@import UIKit;
+@import Firebase;
+  
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [FIRApp congifure];
 #if DEBUG
   InitializeFlipper(application);
 #endif
