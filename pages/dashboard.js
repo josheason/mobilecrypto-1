@@ -38,7 +38,7 @@ class dashboard extends Component {
          {  
          <>
                   <TouchableOpacity
-                  key = {1}
+                  key = {0}
                   style = {styles.container}
                   >
                      <Text
@@ -48,7 +48,7 @@ class dashboard extends Component {
                      </Text>
                   </TouchableOpacity>
                   <TouchableOpacity
-                     key = {0}
+                     key = {1}
                      style = {styles.container}
                      onPress={()=>this.navigate(0)}>
                        <Image 
@@ -62,7 +62,7 @@ class dashboard extends Component {
                   <>
                   </>
                   <TouchableOpacity
-                     key = {1}
+                     key = {2}
                      style = {styles.container}
                      onPress={()=>this.navigate(1)}>
                        <Image 
@@ -73,18 +73,8 @@ class dashboard extends Component {
                         {'Facebook Group'}
                      </Text>
                   </TouchableOpacity>
+                  <>
                   </>
-                  /*<TouchableOpacity
-                     key = {item.id}
-                     style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
-                       <Image 
-                        source = {item.src}
-                        />
-                     <Text style = {styles.text}>
-                        {item.name}
-                     </Text>
-                  </TouchableOpacity>
                   <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
@@ -96,6 +86,8 @@ class dashboard extends Component {
                         {item.name}
                      </Text>
                   </TouchableOpacity>
+                  <>
+                  </>
                   <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
@@ -106,8 +98,24 @@ class dashboard extends Component {
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
-                  </TouchableOpacity>*/
-               /*this.state.names.map((item, index) => (
+                  </TouchableOpacity>
+                  <>
+                  </>
+                  <TouchableOpacity
+                     key = {item.id}
+                     style = {styles.container}
+                     onPress={()=>this.navigate(item.id)}>
+                       <Image 
+                        source = {item.src}
+                        />
+                     <Text style = {styles.text}>
+                        {item.name}
+                     </Text>
+                  </TouchableOpacity>
+                  </>
+            }
+         </ScrollView >
+          /*this.state.names.map((item, index) => (
                   <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
@@ -120,9 +128,6 @@ class dashboard extends Component {
                      </Text>
                   </TouchableOpacity>
                ))*/
-            }
-         </ScrollView >
-         
       )
    }
    navigate(itemid) {
