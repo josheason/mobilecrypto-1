@@ -31,6 +31,7 @@ import etherscan from './pages/etherscan.js'
 import speedmeta from './pages/speedmeta.js'
 import cancelmeta from './pages/cancelmeta.js'
 import trademoon from './pages/trademoon.js'
+import removeliquid from './pages/removeliquid.js'
 
 
 const styles = StyleSheet.create({
@@ -189,6 +190,11 @@ const Routes = ()=> {
                     key="trademoon"
                     title="trademoon"
                     component={trademoon}>
+                   </Scene>
+                   <Scene
+                    key="removeliquid"
+                    title="removeliquid"
+                    component={removeliquid}>
                    </Scene>
            </Scene>
         </Router>
