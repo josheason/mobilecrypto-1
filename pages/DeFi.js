@@ -159,9 +159,9 @@ class DeFi extends Component {
          Actions.etherscan();
       if(itemid == 9)
          Actions.speedmeta();
-      /*
       if(itemid == 10)
-         Actions.Week9();
+         Actions.cancelmeta();
+      /*
       if(itemid == 11)
          Actions.Week10();
       if(itemid == 12)
