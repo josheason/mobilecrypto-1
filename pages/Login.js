@@ -137,6 +137,7 @@ const styles = StyleSheet.create ({
    img: {
       width: 50,
       height: 50,
+      position: 'absolute',
       left: 0,
    }
 })
