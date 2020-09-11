@@ -61,7 +61,7 @@ class dashboard extends Component {
                         {'Continue'}
                      </Text>
                   </TouchableOpacity>
-                  <TouchableOpacity
+                  /*<TouchableOpacity
                      key = {1}
                      style = {styles.container}
                      onPress={()=>this.navigate(1)}>
@@ -72,7 +72,7 @@ class dashboard extends Component {
                      <Text style = {styles.text}>
                         {'Facebook Group'}
                      </Text>
-                  </TouchableOpacity>
+                  </TouchableOpacity>*/
                   /*<TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
