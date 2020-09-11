@@ -34,13 +34,13 @@ class Login extends Component {
    }
    
    render() {
-      const win = Dimensions.get('window');
       return (
          <ScrollView
           style = {{ backgroundColor: '#595959' }}
          >
             {     
                   <TouchableOpacity
+                  key = {1}
                   style = {styles.container}
                   >
                      <Text
