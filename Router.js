@@ -155,134 +155,134 @@ const Routes = ()=> {
                     component={WhatIsDeFi1}>
                 </Scene>
                  <Scene
-                    key="WalletDifferences"
-                    title="WalletDifferences"
-                    component={WalletDifferences}>
+                    key="WalletDifferences2"
+                    title="WalletDifferences2"
+                    component={WalletDifferences2}>
                 </Scene>
                 <Scene
-                    key="DesktopMetaWalletInst"
-                    title="DesktopMetaWalletInst"
-                    component={DesktopMetaWalletInst}>
+                    key="DesktopMetaWalletInst3"
+                    title="DesktopMetaWalletInst3"
+                    component={DesktopMetaWalletInst3}>
                 </Scene>
                 <Scene
-                    key="DeFiEco"
-                    title="DeFiEco"
-                    component={DeFiEco}>
+                    key="DeFiEco4"
+                    title="DeFiEco4"
+                    component={DeFiEco4}>
                 </Scene>
                  <Scene
-                    key="DeskMetConnDapp"
-                    title="DeskMetConnDapp"
-                    component={DeskMetConnDapp}>
+                    key="DeskMetConnDapp5"
+                    title="DeskMetConnDapp5"
+                    component={DeskMetConnDapp5}>
                    </Scene>
                     <Scene
-                    key="NavDeskExt"
-                    title="NavDeskExt"
-                    component={NavDeskExt}>
+                    key="NavDeskExt6"
+                    title="NavDeskExt6"
+                    component={NavDeskExt6}>
                    </Scene>
                     <Scene
-                    key="GWEIExp"
-                    title="GWEIExp"
-                    component={GWEIExp}>
+                    key="GWEIExp7"
+                    title="GWEIExp7"
+                    component={GWEIExp7}>
                    </Scene>
                     <Scene
-                    key="TradeUniswap"
-                    title="TradeUniswap"
-                    component={TradeUniswap}>
+                    key="TradeUniswap8"
+                    title="TradeUniswap8"
+                    component={TradeUniswap8}>
                    </Scene>
                    <Scene
-                    key="etherscan"
-                    title="etherscan"
-                    component={etherscan}>
+                    key="etherscan9"
+                    title="etherscan9"
+                    component={etherscan9}>
                    </Scene>
                     <Scene
-                    key="speedmeta"
-                    title="speedmeta"
-                    component={speedmeta}>
+                    key="speedmeta10"
+                    title="speedmeta10"
+                    component={speedmeta10}>
                    </Scene>
                    <Scene
-                    key="cancelmeta"
-                    title="cancelmeta"
-                    component={cancelmeta}>
+                    key="cancelmeta11"
+                    title="cancelmeta11"
+                    component={cancelmeta11}>
                    </Scene>
                    <Scene
-                    key="trademoon"
-                    title="trademoon"
-                    component={trademoon}>
+                    key="trademoon12"
+                    title="trademoon12"
+                    component={trademoon12}>
                    </Scene>
                    <Scene
-                    key="removeliquid"
-                    title="removeliquid"
-                    component={removeliquid}>
+                    key="removeliquid13"
+                    title="removeliquid13"
+                    component={removeliquid13}>
                    </Scene>
                    <Scene
-                    key="oneinch"
-                    title="oneinch"
-                    component={oneinch}>
+                    key="oneinch14"
+                    title="oneinch14"
+                    component={oneinch14}>
                    </Scene>
                    <Scene
-                    key="matcha"
-                    title="matcha"
-                    component={matcha}>
+                    key="matcha15"
+                    title="matcha15"
+                    component={matcha15}>
                    </Scene>
                    <Scene
-                    key="addliquid"
-                    title="addliquid"
-                    component={addliquid}>
+                    key="addliquid16"
+                    title="addliquid16"
+                    component={addliquid16}>
                    </Scene>
                    <Scene
-                    key="loopring"
-                    title="loopring"
-                    component={loopring}>
+                    key="loopring17"
+                    title="loopring17"
+                    component={loopring17}>
                    </Scene>
                    <Scene
-                    key="zapper"
-                    title="zapper"
-                    component={zapper}>
+                    key="zapper18"
+                    title="zapper18"
+                    component={zapper18}>
                    </Scene>
                    <Scene
-                    key="dao"
-                    title="dao"
-                    component={dao}>
+                    key="dao19"
+                    title="dao19"
+                    component={dao19}>
                    </Scene>
                    <Scene
-                    key="cream"
-                    title="cream"
-                    component={cream}>
+                    key="cream20"
+                    title="cream20"
+                    component={cream20}>
                    </Scene>
                    <Scene
-                    key="aave"
-                    title="aave"
-                    component={aave}>
+                    key="aave21"
+                    title="aave21"
+                    component={aave21}>
                    </Scene>
                    <Scene
-                    key="BalDex"
-                    title="BalDex"
-                    component={BalDex}>
+                    key="BalDex22"
+                    title="BalDex22"
+                    component={BalDex22}>
                    </Scene>
                    <Scene
-                    key="BalPool"
-                    title="BalPool"
-                    component={BalPool}>
+                    key="BalPool23"
+                    title="BalPool23"
+                    component={BalPool23}>
                    </Scene>
                    <Scene
-                    key="debank"
-                    title="debank"
-                    component={debank}>
+                    key="debank24"
+                    title="debank24"
+                    component={debank24}>
                    </Scene>
                    <Scene
-                    key="zerion"
-                    title="zerion"
-                    component={zerion}>
+                    key="zerion25"
+                    title="zerion25"
+                    component={zerion25}>
                    </Scene>
                    <Scene
-                    key="compound"
-                    title="compound"
-                    component={compound}>
+                    key="compound26"
+                    title="compound26"
+                    component={compound26}>
                    </Scene>
                    <Scene
-                    key="lend"
-                    title="lend"
-                    component={lend}>
+                    key="lend27"
+                    title="lend27"
+                    component={lend27}>
                    </Scene>
                    <Scene
                     key="dashboard"
