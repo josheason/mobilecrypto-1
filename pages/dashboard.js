@@ -36,7 +36,7 @@ class dashboard extends Component {
           style = {{ backgroundColor: '#595959' }}
          >
          {  
-                 <>//b12
+                 <>
                   <TouchableOpacity
                   key = {0}
                   style = {styles.container}
@@ -47,7 +47,9 @@ class dashboard extends Component {
                         {'DASHBOARD'}
                      </Text>
                   </TouchableOpacity>
-                 <>//b23
+         
+         
+                 
                   <TouchableOpacity
                      key = {1}
                      style = {styles.container}
@@ -60,7 +62,10 @@ class dashboard extends Component {
                         {'Continue'}
                      </Text>
                   </TouchableOpacity>
-                  </> //e12
+                  <>
+                  </>
+
+                 
                   <TouchableOpacity
                      key = {2}
                      style = {styles.container}
@@ -73,8 +78,10 @@ class dashboard extends Component {
                         {'Facebook Group'}
                      </Text>
                   </TouchableOpacity>
-                  </>//e23
-                  <>//b34
+                  <>
+                  </>
+
+
                   <TouchableOpacity
                      key = {3}
                      style = {styles.container}
@@ -86,7 +93,9 @@ class dashboard extends Component {
                         {item.name}
                      </Text>
                   </TouchableOpacity>
-                  <>//b45
+                  <>
+                  </>
+
                   
                   <TouchableOpacity
                      key = {4}
@@ -99,8 +108,9 @@ class dashboard extends Component {
                         {item.name}
                      </Text>
                   </TouchableOpacity>
-                  
-                  </>//e34
+                  <>
+                  </>
+
                   <TouchableOpacity
                      key = {5}
                      style = {styles.container}
@@ -112,7 +122,8 @@ class dashboard extends Component {
                         {item.name}
                      </Text>
                   </TouchableOpacity>
-                  </>//e45
+                  </>
+
             }
          </ScrollView >
           /*this.state.names.map((item, index) => (
