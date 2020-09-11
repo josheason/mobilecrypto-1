@@ -35,7 +35,7 @@ class dashboard extends Component {
    
    render() {
       return (
-         <ScrollView
+         <View
           style = {{ backgroundColor: '#595959' }}
          >
             {     
@@ -120,7 +120,7 @@ class dashboard extends Component {
                   </TouchableOpacity>
                ))*/
             }    
-         </ScrollView >
+         </View >
          
       )
    }
