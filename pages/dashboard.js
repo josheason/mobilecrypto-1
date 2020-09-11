@@ -107,7 +107,7 @@ class dashboard extends Component {
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
-                        {'Alex&spos;s Youtube'}
+                        {"Alex's Youtube"}
                      </Text>
                   </TouchableOpacity>
                   </>
