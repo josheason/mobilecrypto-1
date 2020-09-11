@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function DeFiEco(){
+export default function DeFiEco4(){
 
 	return(
 		<View style = {styles.container}>
