@@ -120,7 +120,9 @@ class DeFi extends Component {
    }
    render() {
       return (
-         <ScrollView>
+         <ScrollView
+         style = {{ backgroundColor: '#121212' }}
+         >
             {
                this.state.names.map((item, index) => (
                   <TouchableOpacity
@@ -145,67 +147,71 @@ class DeFi extends Component {
          Actions.WalletDifferences();
       if(itemid == 2)
          Actions.DesktopMetaWalletInst();
-      /*
       if(itemid == 3)
-         Actions.Week3SS();
+         Actions.DeFiEco();
       if(itemid == 4)
-         Actions.Week3RF();
+         Actions.DeskMetConnDapp();
       if(itemid == 5)
-         Actions.Week4();
+         Actions.NavDeskExt();
       if(itemid == 6)
-         Actions.Week5();
+         Actions.GWEIExp();
       if(itemid == 7)
-         Actions.Week6();
+         Actions.TradeUniswap();
       if(itemid == 8)
-         Actions.Week7();
+         Actions.etherscan();
       if(itemid == 9)
-         Actions.Week8();
+         Actions.speedmeta();
       if(itemid == 10)
-         Actions.Week9();
+         Actions.cancelmeta();
       if(itemid == 11)
-         Actions.Week10();
+         Actions.trademoon();
       if(itemid == 12)
-         Actions.DeFi();
+         Actions.removeliquid();
       if(itemid == 13)
-         Actions.Week3SS();
+         Actions.oneinch();
       if(itemid == 14)
-         Actions.Week3RF();
+         Actions.matcha();
       if(itemid == 15)
-         Actions.Week4();
+         Actions.addliquid();
       if(itemid == 16)
-         Actions.Week5();
+         Actions.loopring();
       if(itemid == 17)
-         Actions.Week6();
+         Actions.zapper();
       if(itemid == 18)
-         Actions.Week7();
+         Actions.dao();
       if(itemid == 19)
-         Actions.Week8();
+         Actions.cream();
       if(itemid == 20)
-         Actions.Week9();
+         Actions.aave();
       if(itemid == 21)
-         Actions.Week10();
+         Actions.BalDex();
       if(itemid == 22)
-         Actions.DeFi();
+         Actions.BalPool();
       if(itemid == 23)
-         Actions.DeFi();
+         Actions.debank();
       if(itemid == 24)
-         Actions.DeFi();
+         Actions.zerion();
       if(itemid == 25)
-         Actions.DeFi();
+         Actions.compund();
       if(itemid == 26)
-         Actions.DeFi();*/
+         Actions.lend();
    }
 }
 export default DeFi
 
 const styles = StyleSheet.create ({
    container: {
-      padding: 17.5,
-      marginTop: 3,
+      padding: 25,
+      marginTop: 5,
+      marginBottom: 5,
+      marginLeft: 5,
+      marginRight: 5,
       backgroundColor: '#000000',
       alignItems: 'center',
-      borderBottomWidth: 1,
-      borderColor: "#ffffff",
+      borderBottomWidth: 0.5,
+      borderTopWidth: 0.5,
+      borderColor: "#121212",
+      borderRadius: 15,
    },
    text: {
       color: '#ffffff'

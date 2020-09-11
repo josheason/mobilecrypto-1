@@ -4,12 +4,12 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function DesktopMetaWalletInst(){
+export default function cancelmeta(){
 
 	return(
 		<View style = {styles.container}>
 			<Video
-			source={{ uri: 'https://allthevideostherecanpossiblybeintheworld.s3.amazonaws.com/5Desktop+Metamask+Wallet+Install.mp4' }}
+			source={{ uri: 'https://allthevideostherecanpossiblybeintheworld.s3.amazonaws.com/12How+to+Cancel+a+TX+in+Metamask.mp4' }}
 			//source={require('./DeFi1.mp4')}
 			rate={1.0}
 			volume={1.0}

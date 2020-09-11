@@ -22,6 +22,30 @@ import DeFi from './pages/DeFi.js'
 import WhatIsDeFi from './pages/WhatIsDeFi.js'
 import WalletDifferences from './pages/WalletDifferences.js'
 import DesktopMetaWalletInst from './pages/DesktopMetaWalletInst.js'
+import DeFiEco from './pages/DeFiEco.js'
+import DeskMetConnDapp from './pages/DeskMetConnDapp.js'
+import NavDeskExt from './pages/NavDeskExt.js'
+import GWEIExp from './pages/GWEIExp.js'
+import TradeUniswap from './pages/TradeUniswap.js'
+import etherscan from './pages/etherscan.js'
+import speedmeta from './pages/speedmeta.js'
+import cancelmeta from './pages/cancelmeta.js'
+import trademoon from './pages/trademoon.js'
+import removeliquid from './pages/removeliquid.js'
+import oneinch from './pages/oneinch.js'
+import matcha from './pages/matcha.js'
+import addliquid from './pages/addliquid.js'
+import loopring from './pages/loopring.js'
+import zapper from './pages/zapper.js'
+import dao from './pages/dao.js'
+import cream from './pages/cream.js'
+import aave from './pages/aave.js'
+import BalDex from './pages/BalDex.js'
+import BalPool from './pages/BalPool.js'
+import debank from './pages/debank.js'
+import zerion from './pages/zerion.js'
+import compound from './pages/compound.js'
+import lend from './pages/lend.js'
 
 
 const styles = StyleSheet.create({
@@ -136,6 +160,126 @@ const Routes = ()=> {
                     title="DesktopMetaWalletInst"
                     component={DesktopMetaWalletInst}>
                 </Scene>
+                <Scene
+                    key="DeFiEco"
+                    title="DeFiEco"
+                    component={DeFiEco}>
+                </Scene>
+                 <Scene
+                    key="DeskMetConnDapp"
+                    title="DeskMetConnDapp"
+                    component={DeskMetConnDapp}>
+                   </Scene>
+                    <Scene
+                    key="NavDeskExt"
+                    title="NavDeskExt"
+                    component={NavDeskExt}>
+                   </Scene>
+                    <Scene
+                    key="GWEIExp"
+                    title="GWEIExp"
+                    component={GWEIExp}>
+                   </Scene>
+                    <Scene
+                    key="TradeUniswap"
+                    title="TradeUniswap"
+                    component={TradeUniswap}>
+                   </Scene>
+                   <Scene
+                    key="etherscan"
+                    title="etherscan"
+                    component={etherscan}>
+                   </Scene>
+                    <Scene
+                    key="speedmeta"
+                    title="speedmeta"
+                    component={speedmeta}>
+                   </Scene>
+                   <Scene
+                    key="cancelmeta"
+                    title="cancelmeta"
+                    component={cancelmeta}>
+                   </Scene>
+                   <Scene
+                    key="trademoon"
+                    title="trademoon"
+                    component={trademoon}>
+                   </Scene>
+                   <Scene
+                    key="removeliquid"
+                    title="removeliquid"
+                    component={removeliquid}>
+                   </Scene>
+                   <Scene
+                    key="oneinch"
+                    title="oneinch"
+                    component={oneinch}>
+                   </Scene>
+                   <Scene
+                    key="matcha"
+                    title="matcha"
+                    component={matcha}>
+                   </Scene>
+                   <Scene
+                    key="addliquid"
+                    title="addliquid"
+                    component={addliquid}>
+                   </Scene>
+                   <Scene
+                    key="loopring"
+                    title="loopring"
+                    component={loopring}>
+                   </Scene>
+                   <Scene
+                    key="zapper"
+                    title="zapper"
+                    component={zapper}>
+                   </Scene>
+                   <Scene
+                    key="dao"
+                    title="dao"
+                    component={dao}>
+                   </Scene>
+                   <Scene
+                    key="cream"
+                    title="cream"
+                    component={cream}>
+                   </Scene>
+                   <Scene
+                    key="aave"
+                    title="aave"
+                    component={aave}>
+                   </Scene>
+                   <Scene
+                    key="BalDex"
+                    title="BalDex"
+                    component={BalDex}>
+                   </Scene>
+                   <Scene
+                    key="BalPool"
+                    title="BalPool"
+                    component={BalPool}>
+                   </Scene>
+                   <Scene
+                    key="debank"
+                    title="debank"
+                    component={debank}>
+                   </Scene>
+                   <Scene
+                    key="zerion"
+                    title="zerion"
+                    component={zerion}>
+                   </Scene>
+                   <Scene
+                    key="compound"
+                    title="compound"
+                    component={compound}>
+                   </Scene>
+                   <Scene
+                    key="lend"
+                    title="lend"
+                    component={lend}>
+                   </Scene>
            </Scene>
         </Router>
     )

@@ -44,7 +44,9 @@ class List extends Component {
    }
    render() {
       return (
-         <ScrollView>
+         <ScrollView
+          style = {{ backgroundColor: '#121212' }}
+         >
             {
                this.state.names.map((item, index) => (
                   <TouchableOpacity
@@ -71,13 +73,18 @@ class List extends Component {
 export default List
 
 const styles = StyleSheet.create ({
-   container: {
-      padding: 17.5,
-      marginTop: 3,
+    container: {
+      padding: 25,
+      marginTop: 5,
+      marginBottom: 5,
+      marginLeft: 5,
+      marginRight: 5,
       backgroundColor: '#000000',
       alignItems: 'center',
-      borderBottomWidth: 1,
-      borderColor: "#ffffff",
+      borderBottomWidth: 0.5,
+      borderTopWidth: 0.5,
+      borderColor: "#121212",
+      borderRadius: 15,
    },
    text: {
       color: '#ffffff'
