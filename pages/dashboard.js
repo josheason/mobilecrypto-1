@@ -59,6 +59,7 @@ class dashboard extends Component {
                         {'Continue'}
                      </Text>
                   </TouchableOpacity>
+                  <>
                   </>
                   <TouchableOpacity
                      key = {1}
@@ -72,6 +73,7 @@ class dashboard extends Component {
                         {'Facebook Group'}
                      </Text>
                   </TouchableOpacity>
+                  </>
                   /*<TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
