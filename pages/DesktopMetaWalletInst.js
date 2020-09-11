@@ -9,7 +9,7 @@ export default function DesktopMetaWalletInst(){
 	return(
 		<View style = {styles.container}>
 			<Video
-			source={{ uri: 'https://allthevideostherecanpossiblybeintheworld.s3.amazonaws.com/Desktop+Metamask+-+connecting+to+dapp+(dex).mp4' }}
+			source={{ uri: 'https://allthevideostherecanpossiblybeintheworld.s3.amazonaws.com/5Desktop+Metamask+Wallet+Install.mp4' }}
 			//source={require('./DeFi1.mp4')}
 			rate={1.0}
 			volume={1.0}
