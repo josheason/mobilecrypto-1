@@ -147,9 +147,9 @@ class DeFi extends Component {
          Actions.DesktopMetaWalletInst();
       if(itemid == 3)
          Actions.DeFiEco();
-      /*
       if(itemid == 4)
-         Actions.Week3RF();
+         Actions.DeskMetConnDapp();
+      /*
       if(itemid == 5)
          Actions.Week4();
       if(itemid == 6)
