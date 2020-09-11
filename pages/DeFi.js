@@ -187,9 +187,9 @@ class DeFi extends Component {
          Actions.BalPool();
       if(itemid == 23)
          Actions.debank();
-      /*
       if(itemid == 24)
-         Actions.DeFi();
+         Actions.zerion();
+      /*
       if(itemid == 25)
          Actions.DeFi();
       if(itemid == 26)
