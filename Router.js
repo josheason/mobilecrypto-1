@@ -22,6 +22,7 @@ import DeFi from './pages/DeFi.js'
 import WhatIsDeFi from './pages/WhatIsDeFi.js'
 import WalletDifferences from './pages/WalletDifferences.js'
 import DesktopMetaWalletInst from './pages/DesktopMetaWalletInst.js'
+import DeFiEco from './pages/DeFiEco.js'
 
 
 const styles = StyleSheet.create({
