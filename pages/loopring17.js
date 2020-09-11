@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function loopring(){
+export default function loopring17(){
 
 	return(
 		<View style = {styles.container}>
