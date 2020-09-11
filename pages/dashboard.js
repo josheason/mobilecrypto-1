@@ -76,7 +76,7 @@ class dashboard extends Component {
                   <>
                   </>
                   <TouchableOpacity
-                     key = {item.id}
+                     key = {3}
                      style = {styles.container}
                      onPress={()=>this.navigate(item.id)}>
                        <Image 
@@ -89,7 +89,7 @@ class dashboard extends Component {
                   <>
                   </>
                   <TouchableOpacity
-                     key = {item.id}
+                     key = {4}
                      style = {styles.container}
                      onPress={()=>this.navigate(item.id)}>
                        <Image 
@@ -102,7 +102,7 @@ class dashboard extends Component {
                   <>
                   </>
                   <TouchableOpacity
-                     key = {item.id}
+                     key = {5}
                      style = {styles.container}
                      onPress={()=>this.navigate(item.id)}>
                        <Image 
