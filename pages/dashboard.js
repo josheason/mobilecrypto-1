@@ -69,7 +69,23 @@ class dashboard extends Component {
                   <TouchableOpacity
                      key = {2}
                      style = {styles.container}
-                     onPress={()=>this.navigate(0)}>
+                      onPress={ ()=>{ Linking.openURL('https://www.facebook.com/groups/fundamentalsecrets')}}>
+                       <Image 
+                        source = {require('./images/facebook.png')}
+                        style = {styles.img}
+                        />
+                     <Text style = {styles.text}>
+                        {'Facebook Group'}
+                     </Text>
+                  </TouchableOpacity>
+                  <>
+                  </>
+
+
+                  <TouchableOpacity
+                     key = {3}
+                     style = {styles.container}
+                     onPress={ ()=>{ Linking.openURL('https://www.thefundamentalsecrets.com/calendly-setup')}}>
                        <Image 
                         source = {require('./images/live.png')}
                         style = {styles.img}
@@ -81,42 +97,11 @@ class dashboard extends Component {
                   <>
                   </>
 
-
-                  <TouchableOpacity
-                     key = {3}
-                     style = {styles.container}
-                     onPress={()=>this.navigate(1)}>
-                       <Image 
-                        source = {require('./images/facebook.png')}
-                        style = {styles.img}
-                        />
-                     <Text style = {styles.text}>
-                        {'FaceBook Group'}
-                     </Text>
-                  </TouchableOpacity>
-                  <>
-                  </>
-
                   
                   <TouchableOpacity
                      key = {4}
                      style = {styles.container}
-                     onPress={()=>this.navigate(2)}>
-                       <Image 
-                        source = {require('./images/live.png')}
-                        style = {styles.img}
-                        />
-                     <Text style = {styles.text}>
-                        {'FaceBook Group'}
-                     </Text>
-                  </TouchableOpacity>
-                  <>
-                  </>
-
-                  <TouchableOpacity
-                     key = {5}
-                     style = {styles.container}
-                     onPress={ ()=>{ Linking.openURL('https://www.youtube.com/channel/UCHQv-nQ2caXVvtTFa8WOJRA?view_as=subscriber')}}>
+                      onPress={ ()=>{ Linking.openURL('https://www.youtube.com/channel/UCHQv-nQ2caXVvtTFa8WOJRA?view_as=subscriber')}}>
                        <Image 
                         source = {require('./images/youtube.png')}
                         style = {styles.img}
