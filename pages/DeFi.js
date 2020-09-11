@@ -120,7 +120,9 @@ class DeFi extends Component {
    }
    render() {
       return (
-         <ScrollView>
+         <ScrollView
+         style = {backgroundColor: '#121212',}
+         >
             {
                this.state.names.map((item, index) => (
                   <TouchableOpacity
