@@ -34,6 +34,7 @@ import trademoon from './pages/trademoon.js'
 import removeliquid from './pages/removeliquid.js'
 import oneinch from './pages/oneinch.js'
 import matcha from './pages/matcha.js'
+import addliquid from './pages/addliquid.js'
 
 
 const styles = StyleSheet.create({
@@ -207,6 +208,11 @@ const Routes = ()=> {
                     key="matcha"
                     title="matcha"
                     component={matcha}>
+                   </Scene>
+                   <Scene
+                    key="addliquid"
+                    title="addliquid"
+                    component={addliquid}>
                    </Scene>
            </Scene>
         </Router>
