@@ -35,7 +35,8 @@ class dashboard extends Component {
          <ScrollView
           style = {{ backgroundColor: '#595959' }}
          >
-                 
+         {  
+         <>
                   <TouchableOpacity
                   key = {1}
                   style = {styles.container}
@@ -46,11 +47,11 @@ class dashboard extends Component {
                         {'DASHBOARD'}
                      </Text>
                   </TouchableOpacity>
+         </>
                   <TouchableOpacity
                      key = {0}
                      style = {styles.container}
-                     //onPress={()=>this.navigate(0)}>
-                   onPress={()=>navigate(0)}>
+                     onPress={()=>this.navigate(0)}>
                        <Image 
                         source = {require('./images/arrow.png')}
                         style = {styles.img}
@@ -117,7 +118,7 @@ class dashboard extends Component {
                      </Text>
                   </TouchableOpacity>
                ))*/
-                
+            }
          </ScrollView >
          
       )
