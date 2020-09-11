@@ -192,7 +192,7 @@ class DeFi extends Component {
       if(itemid == 25)
          Actions.compund();
       if(itemid == 26)
-         Actions.lend();*/
+         Actions.lend();
    }
 }
 export default DeFi
