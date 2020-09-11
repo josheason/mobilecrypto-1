@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions  } from 'react-native'
 import { Actions } from 'react-native-router-flux';
 
 
 
-class Login extends Component {
+class dashboard extends Component {
    state = {
       names: [
          {
@@ -39,8 +38,8 @@ class Login extends Component {
          <ScrollView
           style = {{ backgroundColor: '#595959' }}
          >
-            {     
-                  /*<TouchableOpacity
+             
+                  <TouchableOpacity
                   key = {1}
                   style = {styles.container}
                   >
@@ -49,31 +48,31 @@ class Login extends Component {
                        >
                         {'DASHBOARD'}
                      </Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                     key = {0}
+                     style = {styles.container}
+                     onPress={()=>this.navigate(0)}>
+                       <Image 
+                        source = {require('./images/arrow.png')}
+                        style = {styles.img}
+                        />
+                     <Text style = {styles.text}>
+                        {'Continue'}
+                     </Text>
+                  </TouchableOpacity>
+                  /*<TouchableOpacity
+                     key = {1}
+                     style = {styles.container}
+                     onPress={()=>this.navigate(1)}>
+                       <Image 
+                        source = {require('./images/facebook.png')}
+                        style = {styles.img}
+                        />
+                     <Text style = {styles.text}>
+                        {'Facebook Group'}
+                     </Text>
                   </TouchableOpacity>*/
-                  // <TouchableOpacity
-                  //    key = {0}
-                  //    style = {styles.container}
-                  //    onPress={()=>this.navigate(0)}>
-                  //      <Image 
-                  //       source = {require('./images/arrow.png')}
-                  //       style = {styles.img}
-                  //       />
-                  //    <Text style = {styles.text}>
-                  //       {'Continue'}
-                  //    </Text>
-                  // </TouchableOpacity>
-                  // <TouchableOpacity
-                  //    key = {1}
-                  //    style = {styles.container}
-                  //    onPress={()=>this.navigate(1)}>
-                  //      <Image 
-                  //       source = {require('./images/facebook.png')}
-                  //       style = {styles.img}
-                  //       />
-                  //    <Text style = {styles.text}>
-                  //       {'Facebook Group'}
-                  //    </Text>
-                  // </TouchableOpacity>
                   /*<TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
@@ -120,7 +119,7 @@ class Login extends Component {
                      </Text>
                   </TouchableOpacity>
                ))*/
-            }    
+            
          </ScrollView >
          
       )
@@ -136,7 +135,7 @@ class Login extends Component {
          Actions.Week3SS();
    }
 }
-export default Login
+export default dashboard
 
 
 const styles = StyleSheet.create ({
@@ -176,8 +175,6 @@ const styles = StyleSheet.create ({
 
 
 /*WORKS, UNDO
-=======
->>>>>>> 3c34cbeee1f18fd8cf4317360651901054acf2fd
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
 import { Actions } from 'react-native-router-flux';
@@ -195,39 +192,34 @@ export default class ScreenOne extends React.Component {
         <View style={styles.inputView} >
           <TextInput  
             style={styles.inputText}
-            placeholder="Email" 
-            placeholderTextColor="#ffffff"
+            placeholder="Email..." 
+            placeholderTextColor="#003f5c"
             onChangeText={text => this.setState({email:text})}/>
-            
         </View>
         <View style={styles.inputView} >
           <TextInput  
             secureTextEntry
             style={styles.inputText}
-            placeholder="Password" 
-            placeholderTextColor="#ffffff"
+            placeholder="Password..." 
+            placeholderTextColor="#003f5c"
             onChangeText={text => this.setState({password:text})}/>
         </View>
+        <TouchableOpacity>
+          <Text style={styles.forgot}>Forgot Password?</Text>
+        </TouchableOpacity>
         <TouchableOpacity style={styles.loginBtn} onPress={()=>this.navigate()}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
-<<<<<<< HEAD
         <TouchableOpacity onPress={()=>this.navigate()}>
-          <Text style={styles.forgetPass}>Forgot Password?</Text>
-=======
-        <TouchableOpacity onPress={()=>this.navigate2()}>
           <Text style={styles.loginText}>Signup</Text>
->>>>>>> 3c34cbeee1f18fd8cf4317360651901054acf2fd
         </TouchableOpacity>
+
   
       </View>
     )
   }
   navigate(){
         Actions.list()
-    }
-  navigate2(){
-        Actions.dashboard()
     }
 }
 
@@ -252,11 +244,11 @@ const styles = StyleSheet.create({
     height:50,
     marginBottom:20,
     justifyContent:"center",
-    padding:20,
+    padding:20
   },
   inputText:{
     height:50,
-    color:"white",
+    color:"white"
   },
   forgot:{
     color:"white",
@@ -269,15 +261,14 @@ const styles = StyleSheet.create({
     height:50,
     alignItems:"center",
     justifyContent:"center",
-    //marginTop:20,
-    marginBottom:20
+    marginTop:40,
+    marginBottom:10
   },
   loginText:{
     color:"white"
-<<<<<<< HEAD
-=======
   }
 });
+*/
 
 
 
@@ -343,10 +334,24 @@ const styles = StyleSheet.create({
   inputText:{
     height:50,
     color:"white"
->>>>>>> 3c34cbeee1f18fd8cf4317360651901054acf2fd
   },
-  forgetPass:{
+  forgot:{
     color:"white",
-    textDecorationLine: 'underline',
+    fontSize:11
+  },
+  loginBtn:{
+    width:"80%",
+    backgroundColor:"#fb5b5a",
+    borderRadius:25,
+    height:50,
+    alignItems:"center",
+    justifyContent:"center",
+    marginTop:40,
+    marginBottom:10
+  },
+  loginText:{
+    color:"white"
   }
 });
+
+*/

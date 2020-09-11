@@ -46,6 +46,8 @@ import debank from './pages/debank.js'
 import zerion from './pages/zerion.js'
 import compound from './pages/compound.js'
 import lend from './pages/lend.js'
+import dashboard from './pages/dashboard.js'
+
 
 
 const styles = StyleSheet.create({
@@ -279,6 +281,11 @@ const Routes = ()=> {
                     key="lend"
                     title="lend"
                     component={lend}>
+                   </Scene>
+                   <Scene
+                    key="dashboard"
+                    title="dashboard"
+                    component={dashboard}>
                    </Scene>
            </Scene>
         </Router>
