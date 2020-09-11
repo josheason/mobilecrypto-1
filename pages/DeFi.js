@@ -173,9 +173,9 @@ class DeFi extends Component {
          Actions.addliquid();
       if(itemid == 16)
          Actions.loopring();
-      /*
       if(itemid == 17)
-         Actions.Week6();
+         Actions.zapper();
+      /*
       if(itemid == 18)
          Actions.Week7();
       if(itemid == 19)
