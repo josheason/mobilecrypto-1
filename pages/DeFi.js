@@ -181,9 +181,9 @@ class DeFi extends Component {
          Actions.cream();
       if(itemid == 20)
          Actions.aave();
-      /*
       if(itemid == 21)
-         Actions.Week10();
+         Actions.BalDex();
+      /*
       if(itemid == 22)
          Actions.DeFi();
       if(itemid == 23)
