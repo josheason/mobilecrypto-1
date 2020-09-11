@@ -183,9 +183,9 @@ class DeFi extends Component {
          Actions.aave();
       if(itemid == 21)
          Actions.BalDex();
-      /*
       if(itemid == 22)
-         Actions.DeFi();
+         Actions.BalPool();
+      /*
       if(itemid == 23)
          Actions.DeFi();
       if(itemid == 24)
