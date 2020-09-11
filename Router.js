@@ -40,6 +40,7 @@ import zapper from './pages/zapper.js'
 import dao from './pages/dao.js'
 import cream from './pages/cream.js'
 import aave from './pages/aave.js'
+import BalDex from. './pages/BalDex.js'
 
 
 const styles = StyleSheet.create({
@@ -243,6 +244,11 @@ const Routes = ()=> {
                     key="aave"
                     title="aave"
                     component={aave}>
+                   </Scene>
+                   <Scene
+                    key="BalDex"
+                    title="BalDex"
+                    component={BalDex}>
                    </Scene>
            </Scene>
         </Router>
