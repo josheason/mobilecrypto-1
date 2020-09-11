@@ -47,7 +47,7 @@ class Login extends Component {
                         source = {require('./images/continue.png')}
                         />
                      <Text style = {styles.text}>
-                        {Continue}
+                        {'Continue'}
                      </Text>
                   </TouchableOpacity>
                   /*<TouchableOpacity
