@@ -33,6 +33,7 @@ import cancelmeta from './pages/cancelmeta.js'
 import trademoon from './pages/trademoon.js'
 import removeliquid from './pages/removeliquid.js'
 import oneinch from './pages/oneinch.js'
+import matcha from './pages/matcha.js'
 
 
 const styles = StyleSheet.create({
@@ -201,6 +202,11 @@ const Routes = ()=> {
                     key="oneinch"
                     title="oneinch"
                     component={oneinch}>
+                   </Scene>
+                   <Scene
+                    key="matcha"
+                    title="matcha"
+                    component={matcha}>
                    </Scene>
            </Scene>
         </Router>
