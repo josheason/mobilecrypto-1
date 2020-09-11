@@ -19,7 +19,9 @@ import Week8 from './pages/Week8.js'
 import Week9 from './pages/Week9.js'
 import Week10 from './pages/Week10.js'
 import DeFi from './pages/DeFi.js'
-import WhatIsDeFi from './pages/WhatIsDeFi.js'
+
+
+import 1WhatIsDeFi from './pages/1WhatIsDeFi.js'
 import WalletDifferences from './pages/WalletDifferences.js'
 import DesktopMetaWalletInst from './pages/DesktopMetaWalletInst.js'
 import DeFiEco from './pages/DeFiEco.js'
@@ -148,9 +150,9 @@ const Routes = ()=> {
                     component={DeFi}>
                 </Scene>
                 <Scene
-                    key="WhatIsDeFi"
-                    title="WhatIsDeFi"
-                    component={WhatIsDeFi}>
+                    key="1WhatIsDeFi"
+                    title="1WhatIsDeFi"
+                    component={1WhatIsDeFi}>
                 </Scene>
                  <Scene
                     key="WalletDifferences"
