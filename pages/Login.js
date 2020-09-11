@@ -39,7 +39,7 @@ class Login extends Component {
           style = {{ backgroundColor: '#595959' }}
          >
             {     
-                  <TouchableOpacity
+                  /*<TouchableOpacity
                   key = {1}
                   style = {styles.container}
                   >
@@ -48,7 +48,7 @@ class Login extends Component {
                        >
                         {'DASHBOARD'}
                      </Text>
-                  </TouchableOpacity>
+                  </TouchableOpacity>*/
                   <TouchableOpacity
                      key = {0}
                      style = {styles.container}
@@ -59,6 +59,18 @@ class Login extends Component {
                         />
                      <Text style = {styles.text}>
                         {'Continue'}
+                     </Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                     key = {1}
+                     style = {styles.container}
+                     onPress={()=>this.navigate(1)}>
+                       <Image 
+                        source = {require('./images/facebook.png')}
+                        style = {styles.img}
+                        />
+                     <Text style = {styles.text}>
+                        {'Facebook Group'}
                      </Text>
                   </TouchableOpacity>
                   /*<TouchableOpacity
