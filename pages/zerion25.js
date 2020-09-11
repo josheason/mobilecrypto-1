@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function zerion(){
+export default function zerion25(){
 
 	return(
 		<View style = {styles.container}>
