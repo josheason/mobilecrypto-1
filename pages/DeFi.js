@@ -155,9 +155,9 @@ class DeFi extends Component {
          Actions.GWEIExp();
       if(itemid == 7)
          Actions.TradeUniswap();
-      /*
       if(itemid == 8)
-         Actions.Week7();
+         Actions.etherscan();
+      /*
       if(itemid == 9)
          Actions.Week8();
       if(itemid == 10)
