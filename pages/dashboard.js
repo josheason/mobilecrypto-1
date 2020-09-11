@@ -180,6 +180,7 @@ const styles = StyleSheet.create ({
       height: 50,
       position: 'absolute',
       left: 10,
+      top: 10,
       padding: 20,
    },
    header: {
