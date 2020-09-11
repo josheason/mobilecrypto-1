@@ -32,6 +32,7 @@ import speedmeta from './pages/speedmeta.js'
 import cancelmeta from './pages/cancelmeta.js'
 import trademoon from './pages/trademoon.js'
 import removeliquid from './pages/removeliquid.js'
+import oneinch from './pages/oneinch.js'
 
 
 const styles = StyleSheet.create({
@@ -195,6 +196,11 @@ const Routes = ()=> {
                     key="removeliquid"
                     title="removeliquid"
                     component={removeliquid}>
+                   </Scene>
+                   <Scene
+                    key="oneinch"
+                    title="oneinch"
+                    component={oneinch}>
                    </Scene>
            </Scene>
         </Router>
