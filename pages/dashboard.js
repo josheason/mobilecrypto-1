@@ -29,9 +29,6 @@ class dashboard extends Component {
          },
       ]
    }
-   alertItemName = (item) => {
-      alert(item.name)
-   }
    
    render() {
       return (
