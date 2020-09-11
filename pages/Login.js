@@ -40,6 +40,11 @@ class Login extends Component {
           style = {{ backgroundColor: '#595959' }}
          >
             {
+                  <Text
+                  style = {styles.header}
+                  >
+                  {'DASHBOARD'}
+                  </Text>
                   <TouchableOpacity
                      key = {0}
                      style = {styles.container}
@@ -139,7 +144,12 @@ const styles = StyleSheet.create ({
       height: 50,
       position: 'absolute',
       left: 0,
-   }
+   },
+   header: {
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: '#000000',
+   },
 })
 
 
