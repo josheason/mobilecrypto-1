@@ -150,7 +150,7 @@ class DeFi extends Component {
       if(itemid == 3)
          Actions.DeFiEco4();
       if(itemid == 4)
-         Actions.DeskMetConnDapp45);
+         Actions.DeskMetConnDapp5();
       if(itemid == 5)
          Actions.NavDeskExt6();
       if(itemid == 6)
