@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function debank(){
+export default function debank24(){
 
 	return(
 		<View style = {styles.container}>
