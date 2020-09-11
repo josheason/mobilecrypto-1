@@ -169,9 +169,9 @@ class DeFi extends Component {
          Actions.oneinch();
       if(itemid == 14)
          Actions.matcha();
-      /*
       if(itemid == 15)
-         Actions.Week4();
+         Actions.addliquid();
+      /*
       if(itemid == 16)
          Actions.Week5();
       if(itemid == 17)
