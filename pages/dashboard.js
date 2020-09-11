@@ -179,7 +179,7 @@ const styles = StyleSheet.create ({
       width: 50,
       height: 50,
       position: 'absolute',
-      left: 0,
+      left: 0.5,
    },
    header: {
       fontSize: 20,
