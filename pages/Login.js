@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image  } from 'react-native'
+import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions  } from 'react-native'
 import { Actions } from 'react-native-router-flux';
 
 
@@ -34,6 +34,7 @@ class Login extends Component {
    }
    
    render() {
+      const win = Dimensions.get('window');
       return (
          <ScrollView
           style = {{ backgroundColor: '#595959' }}
@@ -45,6 +46,7 @@ class Login extends Component {
                      onPress={()=>this.navigate(0)}>
                        <Image 
                         source = {require('./images/arrow.png')}
+                        style = {styles.img}
                         />
                      <Text style = {styles.text}>
                         {'Continue'}
@@ -131,6 +133,10 @@ const styles = StyleSheet.create ({
    },
    text: {
       color: '#000000'
+   },
+   img: {
+      width: 50,
+      height: 50,
    }
 })
 
