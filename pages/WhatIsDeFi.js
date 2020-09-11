@@ -26,7 +26,7 @@ export default function WhatIsDeFi(){
 
 const styles = StyleSheet.create({
 	video: {
-		width: width,
+		width: width*.75,
 		height: height/ 3,
 	},
 	container: {
