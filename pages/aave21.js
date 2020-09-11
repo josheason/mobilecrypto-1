@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function aave(){
+export default function aave21(){
 
 	return(
 		<View style = {styles.container}>
