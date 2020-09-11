@@ -29,6 +29,7 @@ import GWEIExp from './pages/GWEIExp.js'
 import TradeUniswap from './pages/TradeUniswap.js'
 import etherscan from './pages/etherscan.js'
 import speedmeta from './pages/speedmeta.js'
+import cancelmeta from './pages/cancelmeta.js'
 
 
 const styles = StyleSheet.create({
@@ -177,6 +178,11 @@ const Routes = ()=> {
                     key="speedmeta"
                     title="speedmeta"
                     component={speedmeta}>
+                   </Scene>
+                   <Scene
+                    key="cancelmeta"
+                    title="cancelmeta"
+                    component={cancelmeta}>
                    </Scene>
            </Scene>
         </Router>
