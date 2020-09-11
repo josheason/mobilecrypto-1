@@ -202,7 +202,7 @@ export default DeFi
 const styles = StyleSheet.create ({
    container: {
       padding: 25,
-      marginTop: 3,
+      marginTop: 5,
       marginLeft: 5,
       marginRight: 5,
       backgroundColor: '#000000',
