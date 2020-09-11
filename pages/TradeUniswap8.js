@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function TradeUniswap(){
+export default function TradeUniswap8(){
 
 	return(
 		<View style = {styles.container}>
