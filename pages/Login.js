@@ -36,7 +36,7 @@ class Login extends Component {
    render() {
       return (
          <ScrollView
-          style = {{ backgroundColor: '#595959' }}
+          style = {{ backgroundColor: '#fff' }}
          >
             {
                   <TouchableOpacity
