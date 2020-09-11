@@ -45,6 +45,7 @@ class Login extends Component {
                      onPress={()=>this.navigate(0)}>
                        <Image 
                         source = {require('./images/continue.png')}
+                        style = {styles.transp}
                         />
                      <Text style = {styles.text}>
                         {'Continue'}
@@ -131,7 +132,11 @@ const styles = StyleSheet.create ({
    },
    text: {
       color: '#000000'
-   }
+   },
+   transp: {
+      alignSelf: 'center',
+      backgroundColor: 'transparent'
+   },
 })
 
 
