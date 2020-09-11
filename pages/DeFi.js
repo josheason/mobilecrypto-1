@@ -201,14 +201,14 @@ export default DeFi
 
 const styles = StyleSheet.create ({
    container: {
-      padding: 17.5,
+      padding: 25,
       marginTop: 3,
       backgroundColor: '#000000',
       alignItems: 'center',
       borderBottomWidth: 0.5,
       borderTopWidth: 0.5,
       borderColor: "#121212",
-      borderRadius: 10,
+      borderRadius: 15,
    },
    text: {
       color: '#ffffff'
