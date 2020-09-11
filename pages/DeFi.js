@@ -151,9 +151,9 @@ class DeFi extends Component {
          Actions.DeskMetConnDapp();
       if(itemid == 5)
          Actions.NavDeskExt();
-      /*
       if(itemid == 6)
-         Actions.Week5();
+         Actions.GWEIExp();
+      /*
       if(itemid == 7)
          Actions.Week6();
       if(itemid == 8)
