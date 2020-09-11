@@ -136,6 +136,11 @@ const Routes = ()=> {
                     title="DesktopMetaWalletInst"
                     component={DesktopMetaWalletInst}>
                 </Scene>
+                <Scene
+                    key="DeFiEco"
+                    title="DeFiEco"
+                    component={DeFiEco}>
+                </Scene>
            </Scene>
         </Router>
     )
