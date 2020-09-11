@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions  } from 'react-native'
+import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions, Linking  } from 'react-native'
 import { Actions } from 'react-native-router-flux';
 
 
@@ -59,7 +59,7 @@ class dashboard extends Component {
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
-                        {'Continue'}
+                        {'Continue To Course'}
                      </Text>
                   </TouchableOpacity>
                   <>
@@ -75,7 +75,7 @@ class dashboard extends Component {
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
-                        {'Live'}
+                        {'Live Q&A'}
                      </Text>
                   </TouchableOpacity>
                   <>
@@ -91,7 +91,7 @@ class dashboard extends Component {
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
-                        {'Facebook Group'}
+                        {'FaceBook Group'}
                      </Text>
                   </TouchableOpacity>
                   <>
@@ -107,7 +107,7 @@ class dashboard extends Component {
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
-                        {'Live'}
+                        {'FaceBook Group'}
                      </Text>
                   </TouchableOpacity>
                   <>
@@ -116,13 +116,13 @@ class dashboard extends Component {
                   <TouchableOpacity
                      key = {5}
                      style = {styles.container}
-                     onPress={()=>this.navigate(3)}>
+                     onPress={ ()=>{ Linking.openURL('https://www.youtube.com/channel/UCHQv-nQ2caXVvtTFa8WOJRA?view_as=subscriber')}}>
                        <Image 
                         source = {require('./images/youtube.png')}
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
-                        {'YouTube'}
+                        {'Alex&spos;s Youtube'}
                      </Text>
                   </TouchableOpacity>
                   </>
