@@ -35,6 +35,7 @@ import removeliquid from './pages/removeliquid.js'
 import oneinch from './pages/oneinch.js'
 import matcha from './pages/matcha.js'
 import addliquid from './pages/addliquid.js'
+import loopring from './pages/loopring.js'
 
 
 const styles = StyleSheet.create({
@@ -213,6 +214,11 @@ const Routes = ()=> {
                     key="addliquid"
                     title="addliquid"
                     component={addliquid}>
+                   </Scene>
+                   <Scene
+                    key="loopring"
+                    title="loopring"
+                    component={loopring}>
                    </Scene>
            </Scene>
         </Router>
