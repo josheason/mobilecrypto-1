@@ -189,11 +189,10 @@ class DeFi extends Component {
          Actions.debank();
       if(itemid == 24)
          Actions.zerion();
-      /*
       if(itemid == 25)
-         Actions.DeFi();
+         Actions.compund();
       if(itemid == 26)
-         Actions.DeFi();*/
+         Actions.lend();*/
    }
 }
 export default DeFi
