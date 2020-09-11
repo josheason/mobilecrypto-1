@@ -45,7 +45,7 @@ class Login extends Component {
                      style = {styles.container}
                      onPress={()=>this.navigate(item.id)}>
                        <Image 
-                        source = {require(item.src)}
+                        source = {item.src}
                         />
                      <Text style = {styles.text}>
                         {item.name}
