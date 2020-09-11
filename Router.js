@@ -39,6 +39,7 @@ import loopring from './pages/loopring.js'
 import zapper from './pages/zapper.js'
 import dao from './pages/dao.js'
 import cream from './pages/cream.js'
+import aave from './pages/aave.js'
 
 
 const styles = StyleSheet.create({
@@ -237,6 +238,11 @@ const Routes = ()=> {
                     key="cream"
                     title="cream"
                     component={cream}>
+                   </Scene>
+                   <Scene
+                    key="aave"
+                    title="aave"
+                    component={aave}>
                    </Scene>
            </Scene>
         </Router>
