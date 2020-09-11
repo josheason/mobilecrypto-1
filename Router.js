@@ -23,6 +23,7 @@ import WhatIsDeFi from './pages/WhatIsDeFi.js'
 import WalletDifferences from './pages/WalletDifferences.js'
 import DesktopMetaWalletInst from './pages/DesktopMetaWalletInst.js'
 import DeFiEco from './pages/DeFiEco.js'
+import DeskMetConnDapp from './pages/DeskMetConnDapp.js'
 
 
 const styles = StyleSheet.create({
@@ -142,6 +143,11 @@ const Routes = ()=> {
                     title="DeFiEco"
                     component={DeFiEco}>
                 </Scene>
+                 <Scene
+                    key="DeskMetConnDapp"
+                    title="DeskMetConnDapp"
+                    component={DeskMetConnDapp}>
+                   </Scene>
            </Scene>
         </Router>
     )
