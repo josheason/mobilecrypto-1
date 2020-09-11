@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function BalDex(){
+export default function BalDex22(){
 
 	return(
 		<View style = {styles.container}>
