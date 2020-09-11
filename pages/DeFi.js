@@ -175,9 +175,9 @@ class DeFi extends Component {
          Actions.loopring();
       if(itemid == 17)
          Actions.zapper();
-      /*
       if(itemid == 18)
-         Actions.Week7();
+         Actions.dao();
+      /*
       if(itemid == 19)
          Actions.Week8();
       if(itemid == 20)
