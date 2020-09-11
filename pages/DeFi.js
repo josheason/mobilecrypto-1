@@ -161,9 +161,9 @@ class DeFi extends Component {
          Actions.speedmeta();
       if(itemid == 10)
          Actions.cancelmeta();
-      /*
       if(itemid == 11)
-         Actions.Week10();
+         Actions.trademoon();
+      /*
       if(itemid == 12)
          Actions.DeFi();
       if(itemid == 13)
