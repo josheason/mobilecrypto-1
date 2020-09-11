@@ -153,9 +153,9 @@ class DeFi extends Component {
          Actions.NavDeskExt();
       if(itemid == 6)
          Actions.GWEIExp();
-      /*
       if(itemid == 7)
-         Actions.Week6();
+         Actions.TradeUniswap();
+      /*
       if(itemid == 8)
          Actions.Week7();
       if(itemid == 9)
