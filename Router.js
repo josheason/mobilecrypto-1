@@ -41,6 +41,7 @@ import dao from './pages/dao.js'
 import cream from './pages/cream.js'
 import aave from './pages/aave.js'
 import BalDex from. './pages/BalDex.js'
+import BalPool from './pages/BalPool.js'
 
 
 const styles = StyleSheet.create({
@@ -249,6 +250,11 @@ const Routes = ()=> {
                     key="BalDex"
                     title="BalDex"
                     component={BalDex}>
+                   </Scene>
+                   <Scene
+                    key="BalPool"
+                    title="BalPool"
+                    component={BalPool}>
                    </Scene>
            </Scene>
         </Router>
