@@ -49,7 +49,7 @@ class Login extends Component {
                      </Text>
                   </TouchableOpacity>
                  if(item.id == 1)
-                   <TouchableOpacity
+                   return(<TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
                      onPress={()=>this.navigate(item.id)}>
@@ -59,8 +59,8 @@ class Login extends Component {
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
-                  </TouchableOpacity>
-                 if(item.id == 2)
+                  </TouchableOpacity>);
+                 /*if(item.id == 2)
                    <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
@@ -83,7 +83,7 @@ class Login extends Component {
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
-                  </TouchableOpacity>
+                  </TouchableOpacity>*/
                ))
             }    
          </ScrollView >
