@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function oneinch(){
+export default function oneinch14(){
 
 	return(
 		<View style = {styles.container}>
