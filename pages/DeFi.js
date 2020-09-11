@@ -171,9 +171,9 @@ class DeFi extends Component {
          Actions.matcha();
       if(itemid == 15)
          Actions.addliquid();
-      /*
       if(itemid == 16)
-         Actions.Week5();
+         Actions.loopring();
+      /*
       if(itemid == 17)
          Actions.Week6();
       if(itemid == 18)
