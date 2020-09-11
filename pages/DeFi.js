@@ -142,7 +142,7 @@ class DeFi extends Component {
    //onPress = {() => this.alertItemName(item)}>
    navigate(itemid) {
       if(itemid == 0)
-         Actions.WhatIsDeFi();
+         Actions.WhatIsDeFi1();
       if(itemid == 1)
          Actions.WalletDifferences();
       if(itemid == 2)
