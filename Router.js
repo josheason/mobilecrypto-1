@@ -26,6 +26,7 @@ import DeFiEco from './pages/DeFiEco.js'
 import DeskMetConnDapp from './pages/DeskMetConnDapp.js'
 import NavDeskExt from './pages/NavDeskExt.js'
 import GWEIExp from './pages/GWEIExp.js'
+import TradeUniswap from './pages/TradeUniswap.js'
 
 
 const styles = StyleSheet.create({
@@ -159,6 +160,11 @@ const Routes = ()=> {
                     key="GWEIExp"
                     title="GWEIExp"
                     component={GWEIExp}>
+                   </Scene>
+                    <Scene
+                    key="TradeUniswap"
+                    title="TradeUniswap"
+                    component={TradeUniswap}>
                    </Scene>
            </Scene>
         </Router>
