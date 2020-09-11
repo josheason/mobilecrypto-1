@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function trademoon(){
+export default function trademoon12(){
 
 	return(
 		<View style = {styles.container}>
