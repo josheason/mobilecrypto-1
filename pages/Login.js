@@ -41,7 +41,7 @@ class Login extends Component {
                      style = {styles.container}
                      onPress={()=>this.navigate(item.id)}>
                        <Image 
-                    source={require(this.image(item.id))}  
+                        {this.src(item.id)}  
                         />
                      <Text style = {styles.text}>
                         {item.name}
@@ -101,7 +101,7 @@ class Login extends Component {
    }
    src(itemid) {
       if(itemid == 0)
-         return './images/continue.png';
+         Image.source = {require('./images/continue.png')}
       /*if(itemid == 1)
          Actions.Week1();
       if(itemid == 2)
