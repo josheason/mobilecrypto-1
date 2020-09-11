@@ -21,7 +21,7 @@ import Week10 from './pages/Week10.js'
 import DeFi from './pages/DeFi.js'
 
 
-import WhatIsDeFi1 from './pages/1WhatIsDeFi1.js'
+import WhatIsDeFi1 from './pages/WhatIsDeFi1.js'
 import WalletDifferences from './pages/WalletDifferences.js'
 import DesktopMetaWalletInst from './pages/DesktopMetaWalletInst.js'
 import DeFiEco from './pages/DeFiEco.js'
