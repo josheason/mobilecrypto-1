@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function removeliquid(){
+export default function removeliquid13(){
 
 	return(
 		<View style = {styles.container}>
