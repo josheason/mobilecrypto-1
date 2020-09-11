@@ -38,6 +38,7 @@ import addliquid from './pages/addliquid.js'
 import loopring from './pages/loopring.js'
 import zapper from './pages/zapper.js'
 import dao from './pages/dao.js'
+import cream from './pages/cream.js'
 
 
 const styles = StyleSheet.create({
@@ -231,6 +232,11 @@ const Routes = ()=> {
                     key="dao"
                     title="dao"
                     component={dao}>
+                   </Scene>
+                   <Scene
+                    key="cream"
+                    title="cream"
+                    component={cream}>
                    </Scene>
            </Scene>
         </Router>
