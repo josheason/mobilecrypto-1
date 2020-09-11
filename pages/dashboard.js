@@ -69,13 +69,13 @@ class dashboard extends Component {
                   <TouchableOpacity
                      key = {2}
                      style = {styles.container}
-                     onPress={()=>this.navigate(1)}>
+                     onPress={()=>this.navigate(0)}>
                        <Image 
-                        source = {require('./images/facebook.png')}
+                        source = {require('./images/live.png')}
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
-                        {'Facebook Group'}
+                        {'Live'}
                      </Text>
                   </TouchableOpacity>
                   <>
@@ -85,12 +85,12 @@ class dashboard extends Component {
                   <TouchableOpacity
                      key = {3}
                      style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
+                     onPress={()=>this.navigate(1)}>
                        <Image 
-                        source = {item.src}
+                        source = {require('./images/facebook.png')}
                         />
                      <Text style = {styles.text}>
-                        {item.name}
+                        {'Facebook Group'}
                      </Text>
                   </TouchableOpacity>
                   <>
@@ -100,12 +100,12 @@ class dashboard extends Component {
                   <TouchableOpacity
                      key = {4}
                      style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
+                     onPress={()=>this.navigate(2)}>
                        <Image 
-                        source = {item.src}
+                        source = {require('./images/live.png')}
                         />
                      <Text style = {styles.text}>
-                        {item.name}
+                        {'Live'}
                      </Text>
                   </TouchableOpacity>
                   <>
@@ -114,12 +114,12 @@ class dashboard extends Component {
                   <TouchableOpacity
                      key = {5}
                      style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
+                     onPress={()=>this.navigate(3)}>
                        <Image 
-                        source = {item.src}
+                        source = {require('./images/youtube.png')}
                         />
                      <Text style = {styles.text}>
-                        {item.name}
+                        {'YouTube'}
                      </Text>
                   </TouchableOpacity>
                   </>
