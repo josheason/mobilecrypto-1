@@ -165,9 +165,9 @@ class DeFi extends Component {
          Actions.trademoon();
       if(itemid == 12)
          Actions.removeliquid();
-      /*
       if(itemid == 13)
-         Actions.Week3SS();
+         Actions.oneinch();
+      /*
       if(itemid == 14)
          Actions.Week3RF();
       if(itemid == 15)
