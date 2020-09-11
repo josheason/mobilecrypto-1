@@ -29,16 +29,14 @@ class dashboard extends Component {
          },
       ]
    }
-   alertItemName = (item) => {
-      alert(item.name)
-   }
    
    render() {
       return (
          <ScrollView
           style = {{ backgroundColor: '#595959' }}
          >
-             
+         {  
+         <>
                   <TouchableOpacity
                   key = {1}
                   style = {styles.container}
@@ -49,6 +47,7 @@ class dashboard extends Component {
                         {'DASHBOARD'}
                      </Text>
                   </TouchableOpacity>
+         </>
                   <TouchableOpacity
                      key = {0}
                      style = {styles.container}
@@ -119,7 +118,11 @@ class dashboard extends Component {
                      </Text>
                   </TouchableOpacity>
                ))*/
+<<<<<<< HEAD
             
+=======
+            }
+>>>>>>> 52ddeacfcc74fbacdac4ef2f6648f91e3cccff9a
          </ScrollView >
          
       )
