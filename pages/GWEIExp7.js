@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function GWEIExp(){
+export default function GWEIExp7(){
 
 	return(
 		<View style = {styles.container}>
