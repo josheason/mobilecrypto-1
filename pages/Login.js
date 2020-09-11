@@ -101,7 +101,7 @@ class Login extends Component {
    }
    src(itemid) {
       if(itemid == 0)
-         Image.source = {require("./images/continue.png")}
+         ImageSource = {require("./images/continue.png")}
       /*if(itemid == 1)
          Actions.Week1();
       if(itemid == 2)
