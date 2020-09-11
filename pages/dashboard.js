@@ -88,6 +88,7 @@ class dashboard extends Component {
                      onPress={()=>this.navigate(1)}>
                        <Image 
                         source = {require('./images/facebook.png')}
+                        style = {styles.img}
                         />
                      <Text style = {styles.text}>
                         {'Facebook Group'}
@@ -103,6 +104,7 @@ class dashboard extends Component {
                      onPress={()=>this.navigate(2)}>
                        <Image 
                         source = {require('./images/live.png')}
+                        style = {styles.img}
                         />
                      <Text style = {styles.text}>
                         {'Live'}
@@ -117,6 +119,7 @@ class dashboard extends Component {
                      onPress={()=>this.navigate(3)}>
                        <Image 
                         source = {require('./images/youtube.png')}
+                        style = {styles.img}
                         />
                      <Text style = {styles.text}>
                         {'YouTube'}
