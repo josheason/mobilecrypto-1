@@ -25,6 +25,7 @@ import DesktopMetaWalletInst from './pages/DesktopMetaWalletInst.js'
 import DeFiEco from './pages/DeFiEco.js'
 import DeskMetConnDapp from './pages/DeskMetConnDapp.js'
 import NavDeskExt from './pages/NavDeskExt.js'
+import GWEIExp from './pages/GWEIExp.js'
 
 
 const styles = StyleSheet.create({
@@ -153,6 +154,11 @@ const Routes = ()=> {
                     key="NavDeskExt"
                     title="NavDeskExt"
                     component={NavDeskExt}>
+                   </Scene>
+                    <Scene
+                    key="GWEIExp"
+                    title="GWEIExp"
+                    component={GWEIExp}>
                    </Scene>
            </Scene>
         </Router>
