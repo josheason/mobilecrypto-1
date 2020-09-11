@@ -37,6 +37,7 @@ import matcha from './pages/matcha.js'
 import addliquid from './pages/addliquid.js'
 import loopring from './pages/loopring.js'
 import zapper from './pages/zapper.js'
+import dao from './pages/dao.js'
 
 
 const styles = StyleSheet.create({
@@ -225,6 +226,11 @@ const Routes = ()=> {
                     key="zapper"
                     title="zapper"
                     component={zapper}>
+                   </Scene>
+                   <Scene
+                    key="dao"
+                    title="dao"
+                    component={dao}>
                    </Scene>
            </Scene>
         </Router>
