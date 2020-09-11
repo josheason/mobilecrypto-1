@@ -36,7 +36,7 @@ class Login extends Component {
    render() {
       return (
          <ScrollView
-          style = {{ backgroundColor: '#fff' }}
+          style = {{ backgroundColor: '#595959' }}
          >
             {
                   <TouchableOpacity
@@ -122,7 +122,7 @@ const styles = StyleSheet.create ({
       marginBottom: 5,
       marginLeft: 5,
       marginRight: 5,
-      backgroundColor: '#000000',
+      backgroundColor: '#fff',
       alignItems: 'center',
       borderBottomWidth: 0.5,
       borderTopWidth: 0.5,
@@ -130,7 +130,7 @@ const styles = StyleSheet.create ({
       borderRadius: 15,
    },
    text: {
-      color: '#ffffff'
+      color: '#000000'
    }
 })
 
