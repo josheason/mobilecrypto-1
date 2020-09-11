@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function WhatIsDeFi(){
+export default function 1WhatIsDeFi(){
 
 	return(
 		<View style = {styles.container}>
@@ -26,7 +26,7 @@ export default function WhatIsDeFi(){
 
 const styles = StyleSheet.create({
 	video: {
-		width: width*.99,
+		width: width,
 		height: height/ 3,
 	},
 	container: {
