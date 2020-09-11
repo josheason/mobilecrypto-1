@@ -33,7 +33,7 @@ export default class ScreenOne extends React.Component {
         <TouchableOpacity style={styles.loginBtn} onPress={()=>this.navigate()}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={()=>this.navigate()}>
+        <TouchableOpacity onPress={()=>this.navigate2()}>
           <Text style={styles.loginText}>Signup</Text>
         </TouchableOpacity>
 
@@ -43,6 +43,9 @@ export default class ScreenOne extends React.Component {
   }
   navigate(){
         Actions.list()
+    }
+  navigate2(){
+        Actions.dashboard()
     }
 }
 
