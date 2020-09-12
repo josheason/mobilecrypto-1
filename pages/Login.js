@@ -1,4 +1,70 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
+import { Actions } from 'react-native-router-flux';
+import auth from '@react-native-firebase/auth';
+
+function Login() {
+  // Set an initializing state whilst Firebase connects
+  const [initializing, setInitializing] = useState(true);
+  const [user, setUser] = useState();
+
+  // Handle user state changes
+  function onAuthStateChanged(user) {
+    setUser(user);
+    if (initializing) setInitializing(false);
+  }
+
+  useEffect(() => {
+    const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
+    return subscriber; // unsubscribe on unmount
+  }, []);
+
+  if (initializing) return null;
+
+  if (!user) {
+    return (
+      <View>
+        <Text>Login</Text>
+      </View>
+    );
+  }
+
+  return (
+    <View>
+      <Text>Welcome {user.email}</Text>
+    </View>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
@@ -93,90 +159,4 @@ const styles = StyleSheet.create({
   loginText:{
     color:"white"
   }
-});
-
-
-
-/*Old:
-
-
-import React from 'react'
-import {Text, View, TextInput, Button, StyleSheet, StatusBar} from 'react-native'
-import { Actions } from 'react-native-router-flux';
-
-export default class ScreenOne extends React.Component{
-    render(){
-        return(
-            <View>
-                <StatusBar barStyle="light-content" />
-                    <View style={styles.container}>
-                    <TextInput style={styles.input}/>
-                    <TextInput style={styles.input}/>
-                    <Button onPress={()=>this.navigate()} title="Login"></Button>
-                </View>
-            </View>
-        )
-    }
-
-    navigate(){
-        Actions.list()
-    }
-}
-const styles = StyleSheet.create({
-    container: {
-        padding: 10
-    },
-    input: {
-      marginTop: '25%',
-        margin: 5
-    }
-  })
-
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#003f5c',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  logo:{
-    fontWeight:"bold",
-    fontSize:50,
-    color:"#fb5b5a",
-    marginBottom:40
-  },
-  inputView:{
-    width:"80%",
-    backgroundColor:"#465881",
-    borderRadius:25,
-    height:50,
-    marginBottom:20,
-    justifyContent:"center",
-    padding:20
-  },
-  inputText:{
-    height:50,
-    color:"white"
-  },
-  forgot:{
-    color:"white",
-    fontSize:11
-  },
-  loginBtn:{
-    width:"80%",
-    backgroundColor:"#fb5b5a",
-    borderRadius:25,
-    height:50,
-    alignItems:"center",
-    justifyContent:"center",
-    marginTop:40,
-    marginBottom:10
-  },
-  loginText:{
-    color:"white"
-  }
-});
-
-*/
+});*/
