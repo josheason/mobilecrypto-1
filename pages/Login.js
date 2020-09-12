@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+/*import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import auth from '@react-native-firebase/auth';
@@ -35,6 +35,7 @@ function Login() {
     </View>
   );
 }
+*/
 
 
 
@@ -63,8 +64,7 @@ function Login() {
 
 
 
-
-/*import React from 'react';
+import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
@@ -159,4 +159,4 @@ const styles = StyleSheet.create({
   loginText:{
     color:"white"
   }
-});*/
+});
