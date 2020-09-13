@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions  } from 'react-native'
+import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions, Linking  } from 'react-native'
 import { Actions } from 'react-native-router-flux';
 
 
@@ -36,9 +36,9 @@ class dashboard extends Component {
           style = {{ backgroundColor: '#595959' }}
          >
          {  
-         <>
+                 <>
                   <TouchableOpacity
-                  key = {1}
+                  key = {0}
                   style = {styles.container}
                   >
                      <Text
@@ -47,8 +47,11 @@ class dashboard extends Component {
                         {'DASHBOARD'}
                      </Text>
                   </TouchableOpacity>
+         
+         
+                 
                   <TouchableOpacity
-                     key = {0}
+                     key = {1}
                      style = {styles.container}
                      onPress={()=>this.navigate(0)}>
                        <Image 
@@ -56,14 +59,17 @@ class dashboard extends Component {
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
-                        {'Continue'}
+                        {'Continue To Course'}
                      </Text>
                   </TouchableOpacity>
+                  <>
                   </>
-                  /*<TouchableOpacity
-                     key = {1}
+
+                 
+                  <TouchableOpacity
+                     key = {2}
                      style = {styles.container}
-                     onPress={()=>this.navigate(1)}>
+                      onPress={ ()=>{ Linking.openURL('https://www.facebook.com/groups/fundamentalsecrets')}}>
                        <Image 
                         source = {require('./images/facebook.png')}
                         style = {styles.img}
@@ -71,41 +77,44 @@ class dashboard extends Component {
                      <Text style = {styles.text}>
                         {'Facebook Group'}
                      </Text>
-                  </TouchableOpacity>*/
-                  /*<TouchableOpacity
-                     key = {item.id}
+                  </TouchableOpacity>
+                  <>
+                  </>
+
+
+                  <TouchableOpacity
+                     key = {3}
                      style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
+                     onPress={ ()=>{ Linking.openURL('https://www.thefundamentalsecrets.com/calendly-setup')}}>
                        <Image 
-                        source = {item.src}
+                        source = {require('./images/live.png')}
+                        style = {styles.img}
                         />
                      <Text style = {styles.text}>
-                        {item.name}
+                        {'Live Q&A'}
                      </Text>
                   </TouchableOpacity>
+                  <>
+                  </>
+
+                  
                   <TouchableOpacity
-                     key = {item.id}
+                     key = {4}
                      style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
+                      onPress={ ()=>{ Linking.openURL('https://www.youtube.com/channel/UCHQv-nQ2caXVvtTFa8WOJRA?view_as=subscriber')}}>
                        <Image 
-                        source = {item.src}
+                        source = {require('./images/youtube.png')}
+                        style = {styles.img}
                         />
                      <Text style = {styles.text}>
-                        {item.name}
+                        {"Alex's Youtube"}
                      </Text>
                   </TouchableOpacity>
-                  <TouchableOpacity
-                     key = {item.id}
-                     style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
-                       <Image 
-                        source = {item.src}
-                        />
-                     <Text style = {styles.text}>
-                        {item.name}
-                     </Text>
-                  </TouchableOpacity>*/
-               /*this.state.names.map((item, index) => (
+                  </>
+
+            }
+         </ScrollView >
+          /*this.state.names.map((item, index) => (
                   <TouchableOpacity
                      key = {item.id}
                      style = {styles.container}
@@ -118,9 +127,6 @@ class dashboard extends Component {
                      </Text>
                   </TouchableOpacity>
                ))*/
-            }
-         </ScrollView >
-         
       )
    }
    navigate(itemid) {
@@ -158,7 +164,9 @@ const styles = StyleSheet.create ({
       width: 50,
       height: 50,
       position: 'absolute',
-      left: 0,
+      left: 10,
+      top: 10,
+      padding: 20,
    },
    header: {
       fontSize: 20,
