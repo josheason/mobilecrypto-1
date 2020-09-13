@@ -33,7 +33,8 @@ class dashboard extends Component {
    render() {
       return (
          <ScrollView
-          style = {{ backgroundColor: '#595959' }}
+          //style = {{ backgroundColor: '#595959' }}#121212
+         style = {{ backgroundColor: '#121212' }}
          >
          {  
                  <>
@@ -131,7 +132,7 @@ class dashboard extends Component {
    }
    navigate(itemid) {
       if(itemid == 0)
-         Actions.StartHere();
+         Actions.list();
       if(itemid == 1)
          Actions.Week1();
       if(itemid == 2)
