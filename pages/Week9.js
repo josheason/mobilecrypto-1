@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux';
+var s = require('./styles');
    
 class List extends Component {
    state = {
@@ -32,12 +33,13 @@ class List extends Component {
    }
    render() {
       return (
-         <ScrollView>
+         <ScrollView
+         style = {{ backgroundColor: '#121212' }}>
             {
                this.state.names.map((item, index) => (
                   <TouchableOpacity
                      key = {item.id}
-                     style = {styles.container}
+                     style = {s.listcontainer}
                      onPress = {() => this.alertItemName(item)}>
                      <Text style = {styles.text}>
                         {item.name}
@@ -59,14 +61,6 @@ class List extends Component {
 export default List
 
 const styles = StyleSheet.create ({
-   container: {
-      padding: 17.5,
-      marginTop: 3,
-      backgroundColor: '#000000',
-      alignItems: 'center',
-      borderBottomWidth: 1,
-      borderColor: "#ffffff",
-   },
    text: {
       color: '#ffffff'
    }

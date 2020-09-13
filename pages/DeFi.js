@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux';
+var s = require('./styles');
    
 class DeFi extends Component {
    state = {
@@ -127,7 +128,7 @@ class DeFi extends Component {
                this.state.names.map((item, index) => (
                   <TouchableOpacity
                      key = {item.id}
-                     style = {styles.container}
+                     style = {s.listcontainer}
                      onPress={()=>this.navigate(item.id)}>
                      <Text style = {styles.text}>
                         {item.name}
@@ -200,19 +201,6 @@ class DeFi extends Component {
 export default DeFi
 
 const styles = StyleSheet.create ({
-   container: {
-      padding: 25,
-      marginTop: 5,
-      marginBottom: 5,
-      marginLeft: 5,
-      marginRight: 5,
-      backgroundColor: '#000000',
-      alignItems: 'center',
-      borderBottomWidth: 0.5,
-      borderTopWidth: 0.5,
-      borderColor: "#121212",
-      borderRadius: 15,
-   },
    text: {
       color: '#ffffff'
    }

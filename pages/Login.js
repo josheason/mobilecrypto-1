@@ -70,9 +70,9 @@ export default class ScreenOne extends React.Component {
       firebase
           .auth()
           .signInWithEmailAndPassword(email, password)
-          .then(
+          .then(user => {
                   this.navigate2()
-            );
+              });
           } catch (error) {
                 console.log(error.toString(error));
               }
@@ -105,7 +105,7 @@ export default class ScreenOne extends React.Component {
         {/* <TouchableOpacity style={styles.loginBtn} onPress={() => this.SignUp(this.state.email, this.state.password)}>
           <Text style={styles.loginText}>Sign Up (TEMP)</Text>
         </TouchableOpacity> */}
-        <TouchableOpacity onPress={()=>this.navigate2()}>
+        <TouchableOpacity onPress={()=>this.navigate()}>
           <Text style={styles.forgetPass}>Forgot Password?</Text>
         </TouchableOpacity>
   
