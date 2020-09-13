@@ -4,8 +4,6 @@ import { Actions } from 'react-native-router-flux';
 
 import firebase from 'firebase';
 
-
-
 export default class ScreenOne extends React.Component {
   // state = {
   //   isLogin: false,
@@ -57,8 +55,8 @@ export default class ScreenOne extends React.Component {
           .auth()
           .createUserWithEmailAndPassword(email, password)
           .then(user => { 
-                 console.log(user);
-                 //console.log("Created User")
+                 //console.log(user);
+                 this.navigate()
                 });
         } catch (error) {
                 console.log(error.toString(error));
@@ -76,7 +74,16 @@ export default class ScreenOne extends React.Component {
           } catch (error) {
                 console.log(error.toString(error));
               }
-            };
+  };
+
+  forgotPassword = (Email) => {
+    firebase.auth().sendPasswordResetEmail(Email)
+      .then(function (user) {
+        alert('Please check your email...')
+      }).catch(function (e) {
+        console.log(e)
+      })
+  }
 
   render(){
     return (
@@ -102,10 +109,14 @@ export default class ScreenOne extends React.Component {
         <TouchableOpacity style={styles.loginBtn} onPress={() => this.LogIn(this.state.email, this.state.password)}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
-        {/* <TouchableOpacity style={styles.loginBtn} onPress={() => this.SignUp(this.state.email, this.state.password)}>
+
+         {/* <TouchableOpacity style={styles.loginBtn} onPress={() => this.SignUp(this.state.email, this.state.password)}> */}
+        <TouchableOpacity style={styles.loginBtn} onPress={() => this.navigate()}> 
           <Text style={styles.loginText}>Sign Up (TEMP)</Text>
-        </TouchableOpacity> */}
-        <TouchableOpacity onPress={()=>this.navigate()}>
+        </TouchableOpacity>
+
+        {/* <TouchableOpacity onPress={()=>this.navigate()}> */}
+        <TouchableOpacity onPress={() => this.forgotPassword(this.state.email)}> 
           <Text style={styles.forgetPass}>Forgot Password?</Text>
         </TouchableOpacity>
   

@@ -1,30 +1,58 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux';
-var s = require('./styles');
+var s = require('../styles');
    
 class List extends Component {
    state = {
       names: [
          {
             id: 0,
-            name: 'Logarithmic Regression Of Total Cryptocurrency Marketcap',
+            name: 'Trading View Tutorial',
          },
          {
             id: 1,
-            name: 'Stock To Flow Model',
+            name: 'Mass Psychology',
          },
          {
             id: 2,
-            name: 'Stock To Flow X S2FX',
+            name: 'Bulls and The Bears',
          },
          {
             id: 3,
-            name: 'Willy Woo Coin Chart',
+            name: 'Short vs Long Term Tech Analysis',
          },
          {
             id: 4,
-            name: 'Bitcoin Logarithmic Regression',
+            name: 'Criteria and Misconceptions of Technical Analysis and Indicators',
+         },
+         {
+            id: 5,
+            name: 'Order Book + More',
+         },
+         {
+            id: 6,
+            name: 'Candlestick Function Variation and Analysis',
+         },
+         {
+            id: 7,
+            name: 'Support And Resistance',
+         },
+         {
+            id: 8,
+            name: 'Trendlines And Patterns',
+         },
+         {
+            id: 9,
+            name: 'Moving Averages',
+         },
+         {
+            id: 10,
+            name: 'MACD RSI',
+         },
+         {
+            id: 11,
+            name: 'Bollinger Bands and Fibonacci Retracement',
          },
       ]
    }
@@ -34,7 +62,8 @@ class List extends Component {
    render() {
       return (
          <ScrollView
-         style = {{ backgroundColor: '#121212' }}>
+          style = {{ backgroundColor: '#121212' }}
+         >
             {
                this.state.names.map((item, index) => (
                   <TouchableOpacity

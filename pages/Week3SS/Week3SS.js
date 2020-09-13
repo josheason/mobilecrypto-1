@@ -1,62 +1,70 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux';
-var s = require('./styles');
+var s = require('../styles');
    
 class List extends Component {
    state = {
       names: [
          {
             id: 0,
-            name: 'Week 2 Intro',
+            name: 'Week 3 Intro',
          },
          {
             id: 1,
-            name: 'Book List',
+            name: 'How To Send And Receive Crypto',
          },
          {
             id: 2,
-            name: 'How Does The Internet Work?',
+            name: 'Coinbase',
          },
          {
             id: 3,
-            name: 'Bitcoin 101',
+            name: 'Details You Must Know',
          },
          {
             id: 4,
-            name: 'Bitcoin 102',
+            name: 'Coinbase Pro',
          },
          {
             id: 5,
-            name: 'Ethereum 101',
+            name: 'Binance Tutorial',
          },
          {
             id: 6,
-            name: 'Ethereum 102',
+            name: 'Hit BTC Exchange Tutorial',
          },
          {
             id: 7,
-            name: 'Market Cycles IMPORTANT',
+            name: 'Desktop Wallets',
          },
          {
             id: 8,
-            name: 'Why Bitcoin Is The Best Form Of Money',
+            name: 'Chrome Extention Wallets',
          },
          {
             id: 9,
-            name: 'How much Money Should You Invest In Cryptocurrrency?',
+            name: 'DEX DAPPS DEFI Tutorial',
          },
          {
             id: 10,
-            name: 'Introduction To DAPPS',
+            name: 'VPN To Bypass Authority',
          },
          {
             id: 11,
-            name: 'Introduction To DEFI',
+            name: 'Google Authenticator',
          },
          {
             id: 12,
-            name: 'Assessment',
+            name: 'KeePass',
+         },
+         {
+            id: 13,
+            name: 'What Exchanges Do I Use?',
+         },
+         {
+            id: 14,
+            name: 'KeeUltimate SecurityPass',
          },
       ]
    }

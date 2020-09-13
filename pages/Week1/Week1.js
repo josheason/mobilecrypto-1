@@ -1,29 +1,45 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux';
-var s = require('./styles');
+var s = require('../styles');
    
 class List extends Component {
    state = {
       names: [
          {
             id: 0,
-            name: 'How To Use',
+            name: 'Intro Week 1',
          },
          {
             id: 1,
-            name: 'Scam Submitter',
+            name: 'Book List',
          },
          {
             id: 2,
-            name: 'Essential Reading List',
+            name: 'What It TRULY Takes To Win',
          },
          {
             id: 3,
-            name: 'Bookmarks',
+            name: 'Body',
          },
          {
             id: 4,
+            name: 'Time',
+         },
+         {
+            id: 5,
+            name: 'Focus',
+         },
+         {
+            id: 6,
+            name: 'The 6 Rules Of Decision Making',
+         },
+         {
+            id: 7,
+            name: '3 Ways Rewire Your Brain',
+         },
+         {
+            id: 8,
             name: 'Assessment',
          },
       ]
@@ -42,15 +58,11 @@ class List extends Component {
                      key = {item.id}
                      style = {s.listcontainer}
                      onPress = {() => this.alertItemName(item)}>
-                     {/* onPress={()=> this.navigate() }> */}
-                    {/* onPress={()=>this.navigate(item.id)}> */}
-
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
                   </TouchableOpacity>
-               ))                
-               
+               ))
             }    
          </ScrollView>
          
@@ -58,7 +70,7 @@ class List extends Component {
    }
    navigate(itemid) {
       if(itemid == 0)
-         Actions.home();
+         Actions.StartHere();
       if(itemid == 1)
          this.navigate2();
    }

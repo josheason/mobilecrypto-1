@@ -1,58 +1,42 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux';
-var s = require('./styles');
+var s = require('../styles');
    
 class List extends Component {
    state = {
       names: [
          {
             id: 0,
-            name: 'Trading View Tutorial',
+            name: 'Book List',
          },
          {
             id: 1,
-            name: 'Mass Psychology',
+            name: 'Top Down Fundamental Analysis',
          },
          {
             id: 2,
-            name: 'Bulls and The Bears',
+            name: 'Key Measures Of Economy&apos;s Health',
          },
          {
             id: 3,
-            name: 'Short vs Long Term Tech Analysis',
+            name: 'Industry Fundamentals',
          },
          {
             id: 4,
-            name: 'Criteria and Misconceptions of Technical Analysis and Indicators',
+            name: 'Ecosystem Predictions',
          },
          {
             id: 5,
-            name: 'Order Book + More',
+            name: 'CUtility',
          },
          {
             id: 6,
-            name: 'Candlestick Function Variation and Analysis',
+            name: 'Metcalfe s Law Network Effects',
          },
          {
             id: 7,
-            name: 'Support And Resistance',
-         },
-         {
-            id: 8,
-            name: 'Trendlines And Patterns',
-         },
-         {
-            id: 9,
-            name: 'Moving Averages',
-         },
-         {
-            id: 10,
-            name: 'MACD RSI',
-         },
-         {
-            id: 11,
-            name: 'Bollinger Bands and Fibonacci Retracement',
+            name: 'Assessment',
          },
       ]
    }

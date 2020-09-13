@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux';
-var s = require('./styles');
+var s = require('../styles');
    
 class List extends Component {
    state = {
       names: [
          {
             id: 0,
-            name: 'Intro Week 1',
+            name: 'Week 5 intro',
          },
          {
             id: 1,
@@ -16,30 +16,26 @@ class List extends Component {
          },
          {
             id: 2,
-            name: 'What It TRULY Takes To Win',
+            name: 'Main Leaders',
          },
          {
             id: 3,
-            name: 'Body',
+            name: 'Reputation',
          },
          {
             id: 4,
-            name: 'Time',
+            name: 'Litigations',
          },
          {
             id: 5,
-            name: 'Focus',
+            name: 'Partnerships',
          },
          {
             id: 6,
-            name: 'The 6 Rules Of Decision Making',
+            name: 'Corporate Governance',
          },
          {
             id: 7,
-            name: '3 Ways Rewire Your Brain',
-         },
-         {
-            id: 8,
             name: 'Assessment',
          },
       ]

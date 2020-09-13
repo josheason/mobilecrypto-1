@@ -1,41 +1,45 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux';
-var s = require('./styles');
+var s = require('../styles');
    
 class List extends Component {
    state = {
       names: [
          {
             id: 0,
-            name: 'Book List',
+            name: 'Week 6 intro',
          },
          {
             id: 1,
-            name: 'Top Down Fundamental Analysis',
+            name: 'Book List',
          },
          {
             id: 2,
-            name: 'Key Measures Of Economy&apos;s Health',
+            name: 'Roadmap Research',
          },
          {
             id: 3,
-            name: 'Industry Fundamentals',
+            name: 'Product Research',
          },
          {
             id: 4,
-            name: 'Ecosystem Predictions',
+            name: 'Decentalization',
          },
          {
             id: 5,
-            name: 'CUtility',
+            name: 'Consensus Mechanism',
          },
          {
             id: 6,
-            name: 'Metcalfe s Law Network Effects',
+            name: 'Value Proposition Of a Project',
          },
          {
             id: 7,
+            name: 'More Product Questions',
+         },
+         {
+            id: 8,
             name: 'Assessment',
          },
       ]
@@ -46,7 +50,7 @@ class List extends Component {
    render() {
       return (
          <ScrollView
-          style = {{ backgroundColor: '#121212' }}
+         style = {{ backgroundColor: '#121212' }}
          >
             {
                this.state.names.map((item, index) => (

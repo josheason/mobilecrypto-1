@@ -1,42 +1,38 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux';
-var s = require('./styles');
+var s = require('../styles');
    
 class List extends Component {
    state = {
       names: [
          {
             id: 0,
-            name: 'Week 5 intro',
+            name: 'Front End Back End Money',
          },
          {
             id: 1,
-            name: 'Book List',
+            name: 'Zoom Tutorial For Sales',
          },
          {
             id: 2,
-            name: 'Main Leaders',
+            name: 'Canva For Professional Graphics',
          },
          {
             id: 3,
-            name: 'Reputation',
+            name: 'EventBrite For Lead Generation',
          },
          {
             id: 4,
-            name: 'Litigations',
+            name: 'Craigslist For Generating Leads',
          },
          {
             id: 5,
-            name: 'Partnerships',
+            name: 'The BIG Promise',
          },
          {
             id: 6,
-            name: 'Corporate Governance',
-         },
-         {
-            id: 7,
-            name: 'Assessment',
+            name: 'Calendly Tutorial For Sales',
          },
       ]
    }
