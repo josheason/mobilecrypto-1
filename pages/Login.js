@@ -1,192 +1,87 @@
-<<<<<<< HEAD
-import React, { Component } from 'react'
-import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions  } from 'react-native'
-import { Actions } from 'react-native-router-flux';
-
-
-
-class Login extends Component {
-   state = {
-      names: [
-         {
-            id: 0,
-            name: 'Continue To Course',
-            src: './images/continue.png',
-         },
-         {
-            id: 1,
-            name: 'FaceBook Group',
-            src: './images/facebook.png'
-         },
-         {
-            id: 2,
-            name: 'Live Q&A',
-            src: './images/live.png'
-         },
-         {
-            id: 3,
-            name: 'Alex&spos;s Youtube',
-            src: './images/youtube.png'
-         },
-      ]
-   }
-   alertItemName = (item) => {
-      alert(item.name)
-   }
-   
-   render() {
-      return (
-         <ScrollView
-          style = {{ backgroundColor: '#595959' }}
-         >
-            {     
-                  /*<TouchableOpacity
-                  key = {1}
-                  style = {styles.container}
-                  >
-                     <Text
-                     style = {styles.header}
-                       >
-                        {'DASHBOARD'}
-                     </Text>
-                  </TouchableOpacity>*/
-                  // <TouchableOpacity
-                  //    key = {0}
-                  //    style = {styles.container}
-                  //    onPress={()=>this.navigate(0)}>
-                  //      <Image 
-                  //       source = {require('./images/arrow.png')}
-                  //       style = {styles.img}
-                  //       />
-                  //    <Text style = {styles.text}>
-                  //       {'Continue'}
-                  //    </Text>
-                  // </TouchableOpacity>
-                  // <TouchableOpacity
-                  //    key = {1}
-                  //    style = {styles.container}
-                  //    onPress={()=>this.navigate(1)}>
-                  //      <Image 
-                  //       source = {require('./images/facebook.png')}
-                  //       style = {styles.img}
-                  //       />
-                  //    <Text style = {styles.text}>
-                  //       {'Facebook Group'}
-                  //    </Text>
-                  // </TouchableOpacity>
-                  /*<TouchableOpacity
-                     key = {item.id}
-                     style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
-                       <Image 
-                        source = {item.src}
-                        />
-                     <Text style = {styles.text}>
-                        {item.name}
-                     </Text>
-                  </TouchableOpacity>
-                  <TouchableOpacity
-                     key = {item.id}
-                     style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
-                       <Image 
-                        source = {item.src}
-                        />
-                     <Text style = {styles.text}>
-                        {item.name}
-                     </Text>
-                  </TouchableOpacity>
-                  <TouchableOpacity
-                     key = {item.id}
-                     style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
-                       <Image 
-                        source = {item.src}
-                        />
-                     <Text style = {styles.text}>
-                        {item.name}
-                     </Text>
-                  </TouchableOpacity>*/
-               /*this.state.names.map((item, index) => (
-                  <TouchableOpacity
-                     key = {item.id}
-                     style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
-                       <Image 
-                        source = {item.src}
-                        />
-                     <Text style = {styles.text}>
-                        {item.name}
-                     </Text>
-                  </TouchableOpacity>
-               ))*/
-            }    
-         </ScrollView >
-         
-      )
-   }
-   navigate(itemid) {
-      if(itemid == 0)
-         Actions.StartHere();
-      if(itemid == 1)
-         Actions.Week1();
-      if(itemid == 2)
-         Actions.Week2();
-      if(itemid == 3)
-         Actions.Week3SS();
-   }
-}
-export default Login
-
-
-const styles = StyleSheet.create ({
-   container: {
-      padding: 25,
-      marginTop: 5,
-      marginBottom: 5,
-      marginLeft: 5,
-      marginRight: 5,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      borderBottomWidth: 0.5,
-      borderTopWidth: 0.5,
-      borderColor: "#121212",
-      borderRadius: 15,
-   },
-   text: {
-      color: '#000000'
-   },
-   img: {
-      width: 50,
-      height: 50,
-      position: 'absolute',
-      left: 0,
-   },
-   header: {
-      fontSize: 20,
-      fontWeight: 'bold',
-      color: '#000000',
-   },
-})
-
-
-
-
-
-
-
-/*WORKS, UNDO
-=======
->>>>>>> 3c34cbeee1f18fd8cf4317360651901054acf2fd
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
+import firebase from 'firebase';
+
+
+
 export default class ScreenOne extends React.Component {
-  state={
-    email:"",
-    password:""
+  // state = {
+  //   isLogin: false,
+  //   authenticated: false
+  // };
+  // componentDidMount() {
+  //   //  this.register("said1292@gmail.com", "123456");
+  //   this.__isTheUserAuthenticated();
+  // }
+
+  // __isTheUserAuthenticated = () => {
+  //   let user = firebase.auth().currentUser;
+  //   if (user) {
+  //     console.log(tag, user);
+
+  //     this.setState({ authenticated: true });
+  //   } else {
+  //     this.setState({ authenticated: false });
+  //   }
+  // };
+
+  // componentDidMount(){
+  //   this.checkIfLoggedIn();
+  // }
+
+  checkIfLoggedIn = () => {
+    firebase.auth().onAuthStateChanged(user => {
+      if(user){
+        //this.props.navigation.navigate('');
+        ()=>this.navigate2();
+        console.log("123")
+      } else {
+        //this.props.navigation.navigate('');
+        ()=>this.navigate();
+        console.log("123")
+      }
+    });
+  };
+  
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: "",
+      password: ""
+    };
   }
+
+  SignUp = (email, password) => {
+    try {
+      firebase
+          .auth()
+          .createUserWithEmailAndPassword(email, password)
+          .then(user => { 
+                //  console.log(user);
+                console.log("Created User")
+           });
+          } catch (error) {
+                console.log(error.toString(error));
+              }
+            };
+
+  LogIn = (email, password) => {
+    try {
+      firebase
+          .auth()
+          .signInWithEmailAndPassword(email, password)
+          .then(
+                  // this.navigate()
+                  console.log("Sucessful login")
+            );
+          } catch (error) {
+                console.log(error.toString(error));
+              }
+            };
+
   render(){
     return (
       <View style={styles.container}>
@@ -208,16 +103,15 @@ export default class ScreenOne extends React.Component {
             placeholderTextColor="#ffffff"
             onChangeText={text => this.setState({password:text})}/>
         </View>
-        <TouchableOpacity style={styles.loginBtn} onPress={()=>this.navigate()}>
+        {/* <TouchableOpacity style={styles.loginBtn} onPress={()=>this.navigate()}> */}
+        <TouchableOpacity style={styles.loginBtn} onPress={() => this.LogIn(this.state.email, this.state.password)}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
-<<<<<<< HEAD
-        <TouchableOpacity onPress={()=>this.navigate()}>
-          <Text style={styles.forgetPass}>Forgot Password?</Text>
-=======
+        <TouchableOpacity style={styles.loginBtn} onPress={() => this.SignUp(this.state.email, this.state.password)}>
+          <Text style={styles.loginText}>Sign Up (TEMP)</Text>
+        </TouchableOpacity>
         <TouchableOpacity onPress={()=>this.navigate2()}>
-          <Text style={styles.loginText}>Signup</Text>
->>>>>>> 3c34cbeee1f18fd8cf4317360651901054acf2fd
+          <Text style={styles.forgetPass}>Forgot Password?</Text>
         </TouchableOpacity>
   
       </View>
@@ -226,7 +120,7 @@ export default class ScreenOne extends React.Component {
   navigate(){
         Actions.list()
     }
-  navigate2(){
+	navigate2(){
         Actions.dashboard()
     }
 }
@@ -274,76 +168,6 @@ const styles = StyleSheet.create({
   },
   loginText:{
     color:"white"
-<<<<<<< HEAD
-=======
-  }
-});
-
-
-
-/*Old:
-
-
-import React from 'react'
-import {Text, View, TextInput, Button, StyleSheet, StatusBar} from 'react-native'
-import { Actions } from 'react-native-router-flux';
-
-export default class ScreenOne extends React.Component{
-    render(){
-        return(
-            <View>
-                <StatusBar barStyle="light-content" />
-                    <View style={styles.container}>
-                    <TextInput style={styles.input}/>
-                    <TextInput style={styles.input}/>
-                    <Button onPress={()=>this.navigate()} title="Login"></Button>
-                </View>
-            </View>
-        )
-    }
-
-    navigate(){
-        Actions.list()
-    }
-}
-const styles = StyleSheet.create({
-    container: {
-        padding: 10
-    },
-    input: {
-      marginTop: '25%',
-        margin: 5
-    }
-  })
-
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#003f5c',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  logo:{
-    fontWeight:"bold",
-    fontSize:50,
-    color:"#fb5b5a",
-    marginBottom:40
-  },
-  inputView:{
-    width:"80%",
-    backgroundColor:"#465881",
-    borderRadius:25,
-    height:50,
-    marginBottom:20,
-    justifyContent:"center",
-    padding:20
-  },
-  inputText:{
-    height:50,
-    color:"white"
->>>>>>> 3c34cbeee1f18fd8cf4317360651901054acf2fd
   },
   forgetPass:{
     color:"white",

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "969112304636",
+    "firebase_url": "https://mobilecrypto-b1543.firebaseio.com",
+    "project_id": "mobilecrypto-b1543",
+    "storage_bucket": "mobilecrypto-b1543.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969112304636:android:33b494121ae54894e31079",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969112304636-oljvl3ofgf25s12c4gcustsdafrsi70j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaZt1NRTOeeJertAoysF7cjeVnGSTLztw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969112304636-oljvl3ofgf25s12c4gcustsdafrsi70j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "969112304636-bgjh8hogcsakbc6bbh0l4hfvriojfcqa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.name.mobilecrypto"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
