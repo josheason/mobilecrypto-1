@@ -132,7 +132,7 @@ class dashboard extends Component {
    }
    navigate(itemid) {
       if(itemid == 0)
-         Actions.List();
+         Actions.list();
       if(itemid == 1)
          Actions.Week1();
       if(itemid == 2)
