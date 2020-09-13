@@ -31,28 +31,25 @@ export default class ScreenOne extends React.Component {
   //   this.checkIfLoggedIn();
   // }
 
-  checkIfLoggedIn = () => {
-    firebase.auth().onAuthStateChanged(user => {
-      if(user){
-        //this.props.navigation.navigate('');
-        ()=>this.navigate2();
-        console.log("123")
-      } else {
-        //this.props.navigation.navigate('');
-        ()=>this.navigate();
-        console.log("123")
-      }
-    });
+  // checkIfLoggedIn = () => {
+  //   firebase.auth().onAuthStateChanged(user => {
+  //     if(user){
+  //       //this.props.navigation.navigate('');
+  //       ()=>this.navigate2();
+  //       console.log("loggedin")
+  //     } else {
+  //       //this.props.navigation.navigate('');
+  //       ()=>this.navigate();
+  //       console.log("NOT LOGGED IN")
+  //     }
+  //   });
+  // };
+  
+  
+  state = {
+    email: "",
+    password: ""
   };
-  
-  
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: "",
-      password: ""
-    };
-  }
 
   SignUp = (email, password) => {
     try {
@@ -60,13 +57,13 @@ export default class ScreenOne extends React.Component {
           .auth()
           .createUserWithEmailAndPassword(email, password)
           .then(user => { 
-                //  console.log(user);
-                console.log("Created User")
-           });
-          } catch (error) {
+                 console.log(user);
+                 //console.log("Created User")
+                });
+        } catch (error) {
                 console.log(error.toString(error));
-              }
-            };
+        }
+  };
 
   LogIn = (email, password) => {
     try {
@@ -74,8 +71,7 @@ export default class ScreenOne extends React.Component {
           .auth()
           .signInWithEmailAndPassword(email, password)
           .then(
-                  // this.navigate()
-                  console.log("Sucessful login")
+                  this.navigate2()
             );
           } catch (error) {
                 console.log(error.toString(error));
@@ -103,13 +99,12 @@ export default class ScreenOne extends React.Component {
             placeholderTextColor="#ffffff"
             onChangeText={text => this.setState({password:text})}/>
         </View>
-        {/* <TouchableOpacity style={styles.loginBtn} onPress={()=>this.navigate()}> */}
         <TouchableOpacity style={styles.loginBtn} onPress={() => this.LogIn(this.state.email, this.state.password)}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.loginBtn} onPress={() => this.SignUp(this.state.email, this.state.password)}>
+        {/* <TouchableOpacity style={styles.loginBtn} onPress={() => this.SignUp(this.state.email, this.state.password)}>
           <Text style={styles.loginText}>Sign Up (TEMP)</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <TouchableOpacity onPress={()=>this.navigate2()}>
           <Text style={styles.forgetPass}>Forgot Password?</Text>
         </TouchableOpacity>
