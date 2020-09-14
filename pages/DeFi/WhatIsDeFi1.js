@@ -17,8 +17,8 @@ export default function WhatIsDeFi1(){
 			resizeMode="cover"
 			shouldPlay={false}
 			isLooping={false}
-			posterSource={require('./thumbnail.png')}
-                        usePoster={true}
+			//posterSource={require('./thumbnail.png')}
+                        //usePoster={true}
 			useNativeControls
 			style={styles.video}
 			/>
