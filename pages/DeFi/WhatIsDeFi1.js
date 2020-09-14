@@ -20,7 +20,6 @@ const { width, height } = Dimensions.get('window');
 
 
 export default function WhatIsDeFi1(){
-
 	return(
 		<View style = {styles.container}>
 			<Video
@@ -32,10 +31,10 @@ export default function WhatIsDeFi1(){
 			resizeMode="cover"
 			shouldPlay={false}
 			isLooping={false}
-			//posterSource={require('./thumbnail.png')}
-			//posterStyle= {styles.video}
+			posterSource={require('./thumbnail.png')}
+			posterStyle= {styles.video}
                         //usePoster={true}
-			//posterResizeMode={'cover'}
+			posterResizeMode={'cover'}
 			useNativeControls
 			style={styles.video}
 			/>
