@@ -82,7 +82,7 @@ class List extends Component {
                      key = {item.id}
                      style = {s.listcontainer}
                      onPress = {() => this.alertItemName(item)}>
-                     <Text style = {styles.text}>
+                     <Text style = {s.listtext}>
                         {item.name}
                      </Text>
                   </TouchableOpacity>
@@ -100,9 +100,3 @@ class List extends Component {
    }
 }
 export default List
-
-const styles = StyleSheet.create ({
-   text: {
-      color: '#ffffff'
-   }
-})

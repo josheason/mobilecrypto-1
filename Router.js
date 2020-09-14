@@ -86,67 +86,67 @@ const Routes = ()=> {
                 </Scene>
                 <Scene
                     key="StartHere"
-                    title="StartHere"
+                    title="How To Use & Resources"
                     component={StartHere}>
                 </Scene>
                 <Scene
                     key="Week1"
-                    title="Week1"
+                    title="Week 1: Mind"
                     component={Week1}>
                 </Scene>
                 <Scene
                     key="Week2"
-                    title="Week2"
+                    title="Week 2: Blockchain"
                     component={Week2}>
                 </Scene>
                 <Scene
                     key="Week3SS"
-                    title="Week3SS"
+                    title="Week 3: Security + Storage"
                     component={Week3SS}>
                 </Scene>
                 <Scene
                     key="Week3RF"
-                    title="Week3RF"
+                    title="Week 3: Research Fundamentals"
                     component={Week3RF}>
                 </Scene>
                 <Scene
                     key="Week4"
-                    title="Week4"
+                    title="Week 4: Marketing"
                     component={Week4}>
                 </Scene>
                 <Scene
                     key="Week5"
-                    title="Week5"
+                    title="Week 5: Leadership"
                     component={Week5}>
                 </Scene>
                 <Scene
                     key="Week6"
-                    title="Week6"
+                    title="Week 6: Product"
                     component={Week6}>
                 </Scene>
                 <Scene
                     key="Week7"
-                    title="Week7"
+                    title="Week 7: Industry"
                     component={Week7}>
                 </Scene>
                 <Scene
                     key="Week8"
-                    title="Week8"
+                    title="Week 8: Technical Analysis"
                     component={Week8}>
                 </Scene>
                 <Scene
                     key="Week9"
-                    title="Week9"
+                    title="Week 9: Ratios"
                     component={Week9}>
                 </Scene>
                 <Scene
                     key="Week10"
-                    title="Week10"
+                    title="Week 10: Proven Ways to Make Money In Crypto"
                     component={Week10}>
                 </Scene>
                 <Scene
                     key="DeFi"
-                    title="DeFi"
+                    title="DeFi Trading"
                     component={DeFi}>
                 </Scene>
                 <Scene

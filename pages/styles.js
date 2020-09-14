@@ -21,4 +21,9 @@ listcontainer: {
     borderWidth: 1,
 },
 
+listtext:{
+  color: '#ffffff',
+  textAlign: 'center',
+},
+
 });
