@@ -4,6 +4,21 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
+/*renderPoster() {
+    if (this.state.isPlaying && this.elapsedTime === 0) {
+      return (
+        <Image
+          style={styles.video}
+          source={require('./thumbnail.png')}
+          resizeMode="cover"
+        />
+      );
+    } else {
+      return (null);
+    }
+  }*/
+
+
 export default function WhatIsDeFi1(){
 
 	return(
