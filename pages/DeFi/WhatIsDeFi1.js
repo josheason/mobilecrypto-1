@@ -35,6 +35,7 @@ export default function WhatIsDeFi1(){
 			posterStyle= {styles.poster}
                         usePoster={true}
 			posterResizeMode={'contain'}
+			showControlsOnLoad={true}
 			useNativeControls
 			style={styles.video}
 			/>
