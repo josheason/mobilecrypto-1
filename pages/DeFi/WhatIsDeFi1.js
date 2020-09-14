@@ -33,7 +33,7 @@ export default function WhatIsDeFi1(){
 			isLooping={false}
 			posterSource={require('./thumbnail.png')}
 			posterStyle= {styles.video}
-                        //usePoster={true}
+                        usePoster={true}
 			posterResizeMode={'contain'}
 			useNativeControls
 			style={styles.video}
