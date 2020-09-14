@@ -20,7 +20,7 @@ export default function WhatIsDeFi1(){
 			posterSource={require('./thumbnail.png')}
 			posterStyle= {styles.video}
                         usePoster={true}
-			//posterResizeMode={'cover'}
+			posterResizeMode={'cover'}
 			useNativeControls
 			style={styles.video}
 			/>
