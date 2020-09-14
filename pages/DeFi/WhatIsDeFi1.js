@@ -31,12 +31,12 @@ export default function WhatIsDeFi1(){
 			resizeMode="cover"
 			shouldPlay={false}
 			isLooping={false}
+			showControlsOnLoad={true}
+			useNativeControls
 			posterSource={require('./thumbnail.png')}
 			posterStyle= {styles.poster}
                         usePoster={true}
 			posterResizeMode={'contain'}
-			showControlsOnLoad={true}
-			useNativeControls
 			style={styles.video}
 			/>
 		</View>
