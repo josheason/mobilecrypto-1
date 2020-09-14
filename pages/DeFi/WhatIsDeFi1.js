@@ -32,7 +32,7 @@ export default function WhatIsDeFi1(){
 			shouldPlay={false}
 			isLooping={false}
 			posterSource={require('./thumbnail.png')}
-			posterStyle= {styles.video}
+			posterStyle= {styles.poster}
                         usePoster={true}
 			posterResizeMode={'contain'}
 			useNativeControls
@@ -46,6 +46,11 @@ const styles = StyleSheet.create({
 	video: {
 		width: width,
 		height: height/ 3,
+	},
+	poster: {
+		width: width,
+		height: height/ 3,
+		opacity: 0.5,
 	},
 	container: {
 		flex :1,
