@@ -9,7 +9,7 @@ import firebase from 'firebase';
 const { width, height } = Dimensions.get('window');
 
 function componentDidMount(){
-	
+	firebase.analytics().setUserProperties({ ["num_watched"]: "test" })
 }
 
 export default function WalletDifferences2(){
