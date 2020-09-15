@@ -8,6 +8,10 @@ import firebase from 'firebase';
 
 const { width, height } = Dimensions.get('window');
 
+function componentDidMount(){
+	
+}
+
 export default function WalletDifferences2(){
 
 	return(
