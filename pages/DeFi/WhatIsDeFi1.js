@@ -23,8 +23,7 @@ export default function WhatIsDeFi1(){
 	return(
 		<View style = {styles.container}>
 			<Video
-			source={{ uri: 'https://allthevideostherecanpossiblybeintheworld.s3.amazonaws.com/1What+is+DeFi+take+2.mp4' }}
-			//source={require('./DeFi1.mp4')}
+			source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4')}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
@@ -33,10 +32,10 @@ export default function WhatIsDeFi1(){
 			isLooping={false}
 			showControlsOnLoad={true}
 			useNativeControls
-			posterSource={require('./thumbnail.png')}
-			posterStyle= {styles.poster}
-                        usePoster={true}
-			posterResizeMode={'contain'}
+	//		posterSource={require('./thumbnail.png')}
+	//		posterStyle= {styles.poster}
+        //              usePoster={true}
+	//		posterResizeMode={'contain'}
 			style={styles.video}
 			/>
 		</View>
