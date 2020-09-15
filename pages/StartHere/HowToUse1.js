@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 
 const { width, height } = Dimensions.get('window');
 
-export default function WalletDifferences2(){
+export default function HowToUse1(){
 
 	return(
 		<View style = {styles.container}>
