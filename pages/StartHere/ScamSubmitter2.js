@@ -9,7 +9,7 @@ export default function ScamSubmitter2(){
 	return(
 		<View style = {styles.container}>
 			<Video
-			source={{ uri: 'https://allthevideostherecanpossiblybeintheworld.s3.amazonaws.com/2Wallet+Diffrences.mp4' }}
+			source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/scamsubmitter.mp4' }}
 			//source={require('./DeFi1.mp4')}
 			rate={1.0}
 			volume={1.0}
