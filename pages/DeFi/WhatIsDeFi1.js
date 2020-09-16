@@ -44,7 +44,7 @@ export default class WhatIsDeFi1 extends Component{
     		})
 	}
 	
-	
+	render(){
 	return(
 		<View style = {styles.container}>
 			<Video
@@ -67,7 +67,8 @@ export default class WhatIsDeFi1 extends Component{
 		</View>
 		);
 }
-
+}
+	
 const styles = StyleSheet.create({
 	video: {
 		width: width,
