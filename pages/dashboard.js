@@ -30,7 +30,7 @@ class dashboard extends Component {
          },
       ]
    }
-componentDidMount(){
+counter(){
    const db = firebase.firestore();
    const ud = firebase.auth().currentUser;
    const increment = firebase.firestore.FieldValue.increment(1);
