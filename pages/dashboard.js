@@ -40,7 +40,7 @@ counter(){
         let batch = db.batch()
         response.docs.forEach((doc) => {
             const docRef = watchedRef.doc(doc.id)
-            batch.update(docRef, {watched: increment dash: true})
+            batch.update(docRef, {watched: increment , dash: true})
         })
         batch.commit().then(() => {
             console.log(`updated all documents inside Users`)
