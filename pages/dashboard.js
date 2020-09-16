@@ -39,7 +39,8 @@ counter(){
    storyRef
    .where('id', '==', '1')
    .where('dash', '==', false)
-   .set({watched: increment,
+   .get()
+   .update({watched: increment,
            dash : true})
    .then(() => {
     console.log('User updated!');
