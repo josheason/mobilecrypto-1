@@ -1,4 +1,5 @@
-import React from 'react';
+//import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import { Video } from 'expo-av';
 import * as firebase from 'firebase';
@@ -20,8 +21,8 @@ const { width, height } = Dimensions.get('window');
     }
   }*/
  
-
-export default function WhatIsDeFi1(){
+//export default function WhatIsDeFi1(){
+export default class WhatIsDeFi1() extends Component{
 	
 	componentDidMount(){
    		const db = firebase.firestore();
