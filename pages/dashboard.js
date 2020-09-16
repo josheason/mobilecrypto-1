@@ -53,7 +53,7 @@ counter(){
                   <TouchableOpacity
                   key = {0}
                   style = {styles.container}
-                  >
+                  onPress={()=>this.counter()}>
                      <Text
                      style = {styles.header}
                        >
