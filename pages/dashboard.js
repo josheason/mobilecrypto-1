@@ -52,7 +52,7 @@ counter(){
       .get()
     .then(snapshots => {
       if (snapshots.size == 0) {
-         watchedRef.doc(ud).set({
+         watchedRef.doc(ud.uid).set({
          dash: false,
          id: ud,
          watched: 0,
