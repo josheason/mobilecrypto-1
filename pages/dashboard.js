@@ -48,7 +48,7 @@ counter(){
         })
     })
    
-   watchedRef.where('id', '!=', ud)
+   watchedRef.where('id', '==', ud)
       .get()
     .then(snapshots => {
       if (snapshots.size == 0) {
