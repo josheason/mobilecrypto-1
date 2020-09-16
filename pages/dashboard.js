@@ -33,6 +33,7 @@ class dashboard extends Component {
 counter(){
    const db = firebase.firestore();
    const ud = firebase.auth().currentUser;
+   const tid = ud.id;
    const increment = firebase.firestore.FieldValue.increment(1);
    const watchedRef = db.collection('users');
    watchedRef.where('id', '==', '1')
@@ -48,7 +49,7 @@ counter(){
         })
     })
    
-   watchedRef.where('id', '==', ud.uid)
+   watchedRef.where('id', '==', tid)
       .get()
     .then(snapshots => {
       if (snapshots.size == 0) {
@@ -61,7 +62,8 @@ counter(){
             console.log('User added!');
           });
       }
-    })
+    }).catch(error => {
+    console.log(error)};
    
    /*snapshot.forEach(doc => {
       const docRef = watchedRef.doc(doc.id)
