@@ -48,7 +48,7 @@ counter(){
         })
     })
    
-   watchedRef.where('id', '==', int(ud.id) == ud.id)
+   watchedRef.where('id', '==', ud.uid)
       .get()
     .then(snapshots => {
       if (snapshots.size == 0) {
