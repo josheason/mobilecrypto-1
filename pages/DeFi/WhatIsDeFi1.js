@@ -23,7 +23,8 @@ export default function WhatIsDeFi1(){
 	return(
 		<View style = {styles.container}>
 			<Video
-			source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
+			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
+			source={{ uri: 'gs://mobilecrypto-b1543.appspot.com/howtouse.mp4'}}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
