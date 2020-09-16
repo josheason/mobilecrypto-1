@@ -51,7 +51,7 @@ counter(){
    
    watchedRef.where('id', '==', user.uid)
       .get()
-    .then(snapshots => {
+    /*.then(snapshots => {
       if (snapshots.size == 0) {
          watchedRef.doc(user.uid).set({
          dash: false,
@@ -64,7 +64,7 @@ counter(){
       }
     }).catch(error => {
     console.log(error);
-   });
+   });*/
    
    /*snapshot.forEach(doc => {
       const docRef = watchedRef.doc(doc.id)
