@@ -2,7 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
-import firebase from 'firebase';
+//import firebase from 'firebase';
+import * as firebase from 'firebase';
+import 'firebase/firestore';
 
 export default class ScreenOne extends React.Component {
   // state = {
@@ -63,7 +65,45 @@ export default class ScreenOne extends React.Component {
         }
   };
 
-  LogIn = (email, password) => {
+
+
+
+LogIn = (email, password) => {
+    try {
+      firebase
+          .auth()
+          .signInWithEmailAndPassword(email, password)
+          .then(user => {
+	      	const db = firebase.firestore();
+   		var user = firebase.auth().currentUser;
+   		const increment = firebase.firestore.FieldValue.increment(1);
+   		const watchedRef = db.collection('users');
+   		watchedRef.where('id', '==', user.uid)
+      		.get()
+      		.then(snapshots => {
+      		if (snapshots.size == 0) {
+         		watchedRef.doc(user.uid).set({
+         		dash: false,
+         		id: user.uid,
+         		watched: 0,
+         		})
+         		.then(() => {
+            		console.log('User added!');
+          		});
+      		}
+   		 }).catch(error => {
+    			console.log(error);
+   		});
+                  this.navigate2()
+              });
+         	 } catch (error) {
+                	console.log(error.toString(error));
+		      }
+  		};
+
+
+
+  /*LogIn = (email, password) => {
     try {
       firebase
           .auth()
@@ -74,7 +114,7 @@ export default class ScreenOne extends React.Component {
           } catch (error) {
                 console.log(error.toString(error));
               }
-  };
+  };*/
 
   forgotPassword = (Email) => {
     firebase.auth().sendPasswordResetEmail(Email)
