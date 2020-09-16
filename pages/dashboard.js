@@ -40,7 +40,7 @@ counter(){
    .update({watched: increment,
            dash : true})
    .then(() => {
-    console.log('User updated!'
+    console.log('User updated!');
    });
    //storyRef.update({ watched: increment}).catch(error => {
     //console.log(error);
