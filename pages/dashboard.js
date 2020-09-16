@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions, Linking  } from 'react-native'
 import { Actions } from 'react-native-router-flux';
 import * as firebase from 'firebase';
-//import 'firebase/firestore';
+import 'firebase/firestore';
 
 
 class dashboard extends Component {
