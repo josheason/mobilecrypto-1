@@ -63,7 +63,8 @@ counter(){
           });
       }
     }).catch(error => {
-    console.log(error)};
+    console.log(error);
+   });
    
    /*snapshot.forEach(doc => {
       const docRef = watchedRef.doc(doc.id)
