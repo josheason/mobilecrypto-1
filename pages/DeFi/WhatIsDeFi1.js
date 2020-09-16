@@ -24,7 +24,7 @@ export default function WhatIsDeFi1(){
 		<View style = {styles.container}>
 			<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
-			source={{ uri: 'gs://mobilecrypto-b1543.appspot.com/howtouse.mp4'}}
+			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/howtouse.mp4?alt=media&token=f701d6f1-d3b4-4edf-b6ee-274f6fe1677a'}}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
