@@ -20,7 +20,7 @@ const { width, height } = Dimensions.get('window');
     }
   }*/
 
-function didMountComponent(){
+function componentDidMount(){
    const db = firebase.firestore();
    const ud = firebase.auth().currentUser;
    var user = firebase.auth().currentUser;
