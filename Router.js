@@ -50,6 +50,8 @@ import compound26 from './pages/DeFi/compound26.js'
 import lend27 from './pages/DeFi/lend27.js'
 import dashboard from './pages/dashboard.js'
 
+import introweek1 from './pages/Week1/introweek1.js'
+
 
 
 const styles = StyleSheet.create({
@@ -288,6 +290,11 @@ const Routes = ()=> {
                     key="dashboard"
                     title="dashboard"
                     component={dashboard}>
+                   </Scene>
+                    <Scene
+                    key="introweek1"
+                    title="introweek1"
+                    component={introweek1}>
                    </Scene>
            </Scene>
         </Router>
