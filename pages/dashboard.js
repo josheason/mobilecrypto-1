@@ -34,7 +34,7 @@ counter(){
    const db = firebase.firestore();
    const increment = firebase.firestore.FieldValue.increment(1);
    const watchedRef = db.collection('users');
-   const snapshot = await watchedRef.where('id', '==', '1').where('dash', '==', true).get();
+   const snapshot = watchedRef.where('id', '==', '1').where('dash', '==', true).get();
    if (snapshot.empty) {
       console.log('No matching documents.');
       return;
