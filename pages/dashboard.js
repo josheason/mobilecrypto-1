@@ -33,7 +33,7 @@ class dashboard extends Component {
 counter(){
    const db = firebase.firestore();
    const ud = firebase.auth().currentUser;
-   const tid = ud.id;
+   var tid = ud.id;
    const increment = firebase.firestore.FieldValue.increment(1);
    const watchedRef = db.collection('users');
    watchedRef.where('id', '==', '1')
