@@ -32,6 +32,7 @@ class dashboard extends Component {
    }
 counter(){
    const db = firebase.firestore();
+   const ud = firebase.auth().currentUser;
    const increment = firebase.firestore.FieldValue.increment(1);
    const watchedRef = db.collection('users');
    watchedRef.where('id', '==', '1')
@@ -46,7 +47,22 @@ counter(){
             console.log(`updated all documents inside Users`)
         })
     })
-
+   
+   watchedRef.where('id', '!=', ud)
+      .get()
+    .then(snapshots => {
+      if (snapshots.size == 0) {
+         watchedRef.doc(ud).set({
+         dash: false,
+         id: ud,
+         watched: 0,
+         })
+         .then(() => {
+            console.log('User added!');
+          });
+      }
+    })
+   
    /*snapshot.forEach(doc => {
       const docRef = watchedRef.doc(doc.id)
       batch.update(docRef, {watched: increment, dash: true})
