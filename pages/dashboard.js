@@ -37,8 +37,9 @@ counter(){
    const storyRef = db.collection('users').doc('user1');
    //storyRef.update({ watched: increment}).catch(error => {
     //console.log(error);
-   storyRef.update({ watched: increment}).catch(error => {
-    console.log(error);
+   storyRef.update({ watched: increment}).then(() => {
+    console.log('User updated!');
+  });
   })
 }
    
