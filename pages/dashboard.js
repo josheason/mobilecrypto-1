@@ -34,9 +34,8 @@ counter(){
    const db = firebase.firestore();
    const increment = firebase.firestore.FieldValue.increment(1);
    const watchedRef = db.collection('users');
-   //const snapshot = await watchedRef.where('id', '==', '1').where('dash', '==', true).get();
    watchedRef.where('id', '==', '1')
-     // .where('dash', '==', true)
+      .where('dash', '==', false)
       .get().then(response => {
         let batch = db.batch()
         response.docs.forEach((doc) => {
