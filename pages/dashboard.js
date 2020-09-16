@@ -28,7 +28,7 @@ class dashboard extends Component {
             name: 'Alex&spos;s Youtube',
             src: './images/youtube.png'
          },
-      ]
+      ],
    }
 counter(){
    const db = firebase.firestore();
@@ -48,7 +48,7 @@ counter(){
         })
     })
    
-   watchedRef.where('id', '==', ud.uid)
+   watchedRef.where('id', '==', this.ud.uid)
       .get()
     .then(snapshots => {
       if (snapshots.size == 0) {
