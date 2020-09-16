@@ -1,33 +1,71 @@
-import React from 'react';
+//import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import { Video } from 'expo-av';
+import * as firebase from 'firebase';
+import 'firebase/firestore';
 
 const { width, height } = Dimensions.get('window');
 
-export default function introweek1(){
 
+ 
+//export default function WhatIsDeFi1(){
+export default class introweek1 extends Component{
+	
+	componentDidMount(){
+   		const db = firebase.firestore();
+   		const ud = firebase.auth().currentUser;
+   		var user = firebase.auth().currentUser;
+   		const increment = firebase.firestore.FieldValue.increment(1);
+   		const watchedRef = db.collection('users');
+   		watchedRef.where('id', '==', user.uid)
+     		 .where('introweek1', '==', false)
+     		 .get().then(response => {
+        		let batch = db.batch()
+        		response.docs.forEach((doc) => {
+            		const docRef = watchedRef.doc(doc.id)
+            		batch.update(docRef, {watched: increment , introweek1: true})
+        		})
+        		batch.commit().then(() => {
+            		console.log(`updated all documents inside this vid`)
+        		})
+    		})
+	}
+	
+	render(){
 	return(
 		<View style = {styles.container}>
 			<Video
-			source={{ uri: 'https://allthevideostherecanpossiblybeintheworld.s3.amazonaws.com/Add+Liquidity+to+Balancer+Pools.mp4' }}
-			//source={require('./DeFi1.mp4')}
+			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
+			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/howtouse.mp4?alt=media&token=f701d6f1-d3b4-4edf-b6ee-274f6fe1677a'}}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
 			resizeMode="cover"
 			shouldPlay={false}
 			isLooping={false}
+			showControlsOnLoad={true}
 			useNativeControls
+	//		posterSource={require('./thumbnail.png')}
+	//		posterStyle= {styles.poster}
+        //              usePoster={true}
+	//		posterResizeMode={'contain'}
 			style={styles.video}
 			/>
 		</View>
 		);
 }
-
+}
+	
 const styles = StyleSheet.create({
 	video: {
 		width: width,
 		height: height/ 3,
+	},
+	poster: {
+		width: width,
+		height: height/ 3,
+		opacity: 0.5,
 	},
 	container: {
 		flex :1,
