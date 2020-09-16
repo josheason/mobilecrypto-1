@@ -36,7 +36,7 @@ counter(){
    const increment = firebase.firestore.FieldValue.increment(1);
    const storyRef = db.collection('users').doc('user1');
    storyRef
-   .where('dash', '==', false)
+   .where('dash', '=', false)
    .update({watched: increment,
            dash : true})
    .then(() => {
