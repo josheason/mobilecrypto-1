@@ -34,19 +34,26 @@ counter(){
    const db = firebase.firestore();
    const increment = firebase.firestore.FieldValue.increment(1);
    const watchedRef = db.collection('users');
-   const snapshot = watchedRef.where('id', '==', '1').where('dash', '==', true).get();
-   if (snapshot.empty) {
-      console.log('No matching documents.');
-      return;
-   }  
-   snapshot.forEach(doc => {
+   //const snapshot = await watchedRef.where('id', '==', '1').where('dash', '==', true).get();
+   watchedRef.where('id', '==', '1').where('dash', '==', true).get().then(response => {
+        let batch = db.batch()
+        response.docs.forEach((doc) => {
+            const docRef = watchedRef.doc(doc.id)
+            batch.update(docRef, {watched: increment})
+        })
+        batch.commit().then(() => {
+            console.log(`updated all documents inside Users`)
+        })
+    })
+
+   /*snapshot.forEach(doc => {
       const docRef = watchedRef.doc(doc.id)
       batch.update(docRef, {watched: increment, dash: true})
       console.log(doc.id, '=>', doc.data());
     })
     batch.commit().then(() => {
             console.log('updated all documents inside Users')
-    })
+    })*/
 
    /*const db = firebase.firestore();
    const ud = firebase.auth().currentUser;
