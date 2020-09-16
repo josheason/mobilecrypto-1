@@ -39,7 +39,7 @@ export default class WhatIsDeFi1 extends Component{
             		batch.update(docRef, {watched: increment , dash: true})
         		})
         		batch.commit().then(() => {
-            		console.log(`updated all documents inside Users`)
+            		console.log(`updated all documents inside this vid`)
         		})
     		})
 	}
