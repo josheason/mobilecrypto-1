@@ -37,7 +37,7 @@ export default class introweek1 extends Component{
 		<View style = {styles.container}>
 			<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
-			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/howtouse.mp4?alt=media&token=f701d6f1-d3b4-4edf-b6ee-274f6fe1677a'}}
+			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%201%2Fintroweek1.mp4?alt=media&token=c79c359c-bb98-4111-8f8e-68b4b7e44646'}}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
