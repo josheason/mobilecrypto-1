@@ -35,11 +35,18 @@ counter(){
    const ud = firebase.auth().currentUser;
    const increment = firebase.firestore.FieldValue.increment(1);
    const storyRef = db.collection('users').doc('user1');
+   storyRef
+   .where('dash', '==', false)
+   .update({watched: increment,
+           dash = true})
+   .then(() => {
+    console.log('User updated!'
+   });
    //storyRef.update({ watched: increment}).catch(error => {
     //console.log(error);
-   storyRef.update({ watched: increment}).then(() => {
+   /*storyRef.update({ watched: increment}).then(() => {
     console.log('User updated!');
-  });
+  });*/
 }
    
    render() {
