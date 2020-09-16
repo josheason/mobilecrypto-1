@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions, Linking  } from 'react-native'
 import { Actions } from 'react-native-router-flux';
-
+import firebase from 'firebase';
 
 
 class dashboard extends Component {
@@ -29,6 +29,13 @@ class dashboard extends Component {
          },
       ]
    }
+componentDidMount(){
+   const db = firebase.firestore();
+   const ud = firebase.auth().currentUser;
+   const increment = firebase.firestore.FieldValue.increment(1);
+   const storyRef = db.collection(‘users’).doc(ud);
+   storyref.update({ watched: increment});
+}
    
    render() {
       return (
