@@ -2,15 +2,15 @@ import React from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import { Video } from 'expo-av';
 
-import firebase from 'firebase';
+//import firebase from 'firebase';
 //import analytics from 'firebase/analytics';
 
 
 const { width, height } = Dimensions.get('window');
 
-function componentDidMount(){
-	firebase.analytics().setUserProperties({ ["num_watched"]: "test" })
-}
+//function componentDidMount(){
+	//firebase.analytics().setUserProperties({ ["num_watched"]: "test" })
+//}
 
 export default function WalletDifferences2(){
 
