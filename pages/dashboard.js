@@ -40,7 +40,6 @@ counter(){
    storyRef.update({ watched: increment}).then(() => {
     console.log('User updated!');
   });
-  })
 }
    
    render() {
