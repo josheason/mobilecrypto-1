@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import { Video } from 'expo-av';
+import * as firebase from 'firebase';
+import 'firebase/firestore';
 
 const { width, height } = Dimensions.get('window');
 
@@ -18,6 +20,25 @@ const { width, height } = Dimensions.get('window');
     }
   }*/
 
+function didMountComponent(){
+   const db = firebase.firestore();
+   const ud = firebase.auth().currentUser;
+   var user = firebase.auth().currentUser;
+   const increment = firebase.firestore.FieldValue.increment(1);
+   const watchedRef = db.collection('users');
+   watchedRef.where('id', '==', user.uid)
+      .where('dash', '==', false)
+      .get().then(response => {
+        let batch = db.batch()
+        response.docs.forEach((doc) => {
+            const docRef = watchedRef.doc(doc.id)
+            batch.update(docRef, {watched: increment , dash: true})
+        })
+        batch.commit().then(() => {
+            console.log(`updated all documents inside Users`)
+        })
+    })
+}
 
 export default function WhatIsDeFi1(){
 	return(
