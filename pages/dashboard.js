@@ -33,7 +33,7 @@ componentDidMount(){
    const db = firebase.firestore();
    const ud = firebase.auth().currentUser;
    const increment = firebase.firestore.FieldValue.increment(1);
-   const storyRef = db.collection('users').doc('test');
+   const storyRef = db.collection('users').doc('user1');
    storyref.update({ watched: increment});
 }
    
