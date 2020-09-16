@@ -19,28 +19,31 @@ const { width, height } = Dimensions.get('window');
       return (null);
     }
   }*/
-
-function componentDidMount(){
-   const db = firebase.firestore();
-   const ud = firebase.auth().currentUser;
-   var user = firebase.auth().currentUser;
-   const increment = firebase.firestore.FieldValue.increment(1);
-   const watchedRef = db.collection('users');
-   watchedRef.where('id', '==', user.uid)
-      .where('dash', '==', false)
-      .get().then(response => {
-        let batch = db.batch()
-        response.docs.forEach((doc) => {
-            const docRef = watchedRef.doc(doc.id)
-            batch.update(docRef, {watched: increment , dash: true})
-        })
-        batch.commit().then(() => {
-            console.log(`updated all documents inside Users`)
-        })
-    })
-}
+ 
 
 export default function WhatIsDeFi1(){
+	
+	componentDidMount(){
+   		const db = firebase.firestore();
+   		const ud = firebase.auth().currentUser;
+   		var user = firebase.auth().currentUser;
+   		const increment = firebase.firestore.FieldValue.increment(1);
+   		const watchedRef = db.collection('users');
+   		watchedRef.where('id', '==', user.uid)
+     		 .where('dash', '==', false)
+     		 .get().then(response => {
+        		let batch = db.batch()
+        		response.docs.forEach((doc) => {
+            		const docRef = watchedRef.doc(doc.id)
+            		batch.update(docRef, {watched: increment , dash: true})
+        		})
+        		batch.commit().then(() => {
+            		console.log(`updated all documents inside Users`)
+        		})
+    		})
+	}
+	
+	
 	return(
 		<View style = {styles.container}>
 			<Video
