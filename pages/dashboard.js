@@ -32,6 +32,23 @@ class dashboard extends Component {
    }
 counter(){
    const db = firebase.firestore();
+   const increment = firebase.firestore.FieldValue.increment(1);
+   const watchedRef = db.collection('users');
+   const snapshot = await watchedRef.where('id', '==', '1').where('dash', '==', true).get();
+   if (snapshot.empty) {
+      console.log('No matching documents.');
+      return;
+   }  
+   snapshot.forEach(doc => {
+      const docRef = watchedRef.doc(doc.id)
+      batch.update(docRef, {watched: increment, dash: true})
+      console.log(doc.id, '=>', doc.data());
+    })
+    batch.commit().then(() => {
+            console.log('updated all documents inside Users')
+    })
+
+   /*const db = firebase.firestore();
    const ud = firebase.auth().currentUser;
    const increment = firebase.firestore.FieldValue.increment(1);
    //const storyRef = db.collection('users').doc('user1');
@@ -44,7 +61,9 @@ counter(){
            dash : true})
    .then(() => {
     console.log('User updated!');
-   });
+   });*/
+   
+   
    //storyRef.update({ watched: increment}).catch(error => {
     //console.log(error);
    /*storyRef.update({ watched: increment}).then(() => {
