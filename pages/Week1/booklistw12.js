@@ -40,7 +40,7 @@ export default function booklistw12(){
 						<Text style={styles.buttonText}>{`Previous`}</Text>
 					</View>
 				</TouchableOpacity>
-				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.nexticon}>
 						<Text style={styles.buttonText}>{`Next`}</Text>
 						<Icon name="arrow-right" size={20} style={styles.icon}/>
