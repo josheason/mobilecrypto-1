@@ -63,6 +63,26 @@ export default class introweek1 extends Component{
 	//		posterResizeMode={'contain'}
 			style={styles.video}
 			/><></>
+		
+		
+		 <View style={styles.buttonRow}>
+				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+					<View style={styles.previcon}>
+						<Icon name="arrow-left" size={20} style={styles.icon}/><></>
+						<Text style={styles.buttonText}>Previous</Text><></>
+					</View><></>
+				</TouchableHighlight><></>
+
+				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+					<View style={styles.nexticon}>
+						<Text style={styles.buttonText}>Next</Text><></>
+						<Icon name="arrow-right" size={20} style={styles.icon}/><></>
+					</View><></>
+				</TouchableHighlight><></>
+			</View><></>
+		
+		
+		
 			<Text style={styles.resour}>
 			{'Resources'}
 			</Text><></>
@@ -290,5 +310,37 @@ const styles = StyleSheet.create({
 		paddingLeft: 5,
 		paddingBottom: 50,
 		//fontWeight: 'bold',
+	},
+	prevbutton: {
+		flex: 1,
+    	justifyContent: "center",
+    	padding: 16
+	},
+	buttonText:{
+		fontSize: 21,
+		color: '#fff'
+	},
+	previcon: {
+		color:"#fff",
+		backgroundColor: '#6200ee',
+		padding: 5,
+		flexDirection: 'row',
+		justifyContent: 'center',
+		width: width/2,
+	},
+	nexticon: {
+		color:"#fff",
+		backgroundColor: '#3700b3',
+		padding: 5,
+		flexDirection: 'row',
+		width: width/2,
+		justifyContent: 'center',
+	},
+	icon: {
+		color:"#fff",
+		padding: 5,
+	},
+	buttonRow:{
+		flexDirection: 'row',
 	},
 });
