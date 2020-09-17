@@ -63,7 +63,7 @@ export default class rewire8 extends Component{
 			style={styles.video}
 			/><></>
 				<View style={styles.buttonRow}>
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.time5()}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.sixrules7()}>
 					<View style={styles.previcon}>
 						<Icon name="arrow-left" size={20} style={styles.icon}/><></>
 						<Text style={styles.buttonText}>Previous</Text><></>
