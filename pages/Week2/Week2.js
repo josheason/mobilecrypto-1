@@ -91,6 +91,8 @@ class List extends Component {
          Actions.booklistw2();
       if(itemid == 2)
          Actions.internetwork3();
+      if(itemid == 3)
+         Actions.bitcoin1014();
    }
 }
 export default List
