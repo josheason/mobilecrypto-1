@@ -88,7 +88,8 @@ const styles = StyleSheet.create({
 		flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
-		justifyContent: 'center',
+		//justifyContent: 'center',
+		justifyContent: 'space-between'
 	},
 	containerURL: {
 		flex :1,
@@ -113,7 +114,7 @@ const styles = StyleSheet.create({
 		//justifyContent: 'center',
 		color: '#fff',
 		fontSize: 15,
-		margin: 20,
+		//margin: 20,
 	},
 });
 
