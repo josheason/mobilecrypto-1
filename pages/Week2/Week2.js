@@ -89,7 +89,7 @@ class List extends Component {
          Actions.week2intro1();
       if(itemid == 1)
          Actions.booklistw2();
-      if(itemid == 1)
+      if(itemid == 2)
          Actions.internetwork3();
    }
 }
