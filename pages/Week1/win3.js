@@ -120,42 +120,28 @@ export default class win3 extends Component{
 			<Text style={styles.para}>
 			{`It takes sacrifice, stepping out of your comfort zone, and having full control over your emotions.`}
 			</Text><></>
-			/*<Text style={styles.para}>
-			<Text style ={styles.bol}>{`Mistake #1:`}</Text><></>{` Not taking full advantage of Facebook. `}
-			</Text><></>*/
 			<Text style={styles.para}>
 			{`To provide an example of why having emotional control is so important, I can reference from my own experience.`}
 			</Text><></>
-			<Text style={styles.para}>
-			{`A couple of months ago, there was a crash in the market. As a result, I lost a large amount of my net worth in cryptocurrency `}
-			</Text><></>
-			<Text style = {styles.ital}>
-			{'  in a matter of days.'}
-			</Text><></> 
-			/*<Text style={styles.italPara}>
-			{`Engage and be involved in the community, if you are not a member: join now.`}
-			</Text><></>*/
-			/*<Text style={styles.para}>
-			<Text style ={styles.bol}>{`Mistake #2:`}</Text><></>{`Skipping segments of the course. `}
-			</Text><></>*/
+				
+			<Text style={styles.italPara}>
+			<Text style = {styles.reg}>
+			{`A couple of months ago, there was a crash in the market. As a result, I lost a large amount of my net worth in cryptocurrency `}</Text><></> {'  in a matter of days.'}
+			</Text><></>	
+				
+				
 			<Text style={styles.para}>
 			{`If I did not have control over my emotions, during that time, I would have given up and never have been able to gain my money back.  `}
 			</Text><></>
 			<Text style={styles.italPara}>
 			{`Acting out of your current state of mind is not going to produce wise decisions. `}
 			</Text><></>
-			/*<Text style={styles.para}>
-			<Text style ={styles.bol}>{`Mistake #3:`}</Text><></>{`Holding on to your ego `}
-			</Text><></>*/
 			<Text style={styles.para}>
 			{`If you move towards the truth, you will unlock happiness. `}
 			</Text><></>
 			<Text style={styles.para}>
 			{`Avoiding the truth can lead to: doing things you dislike, losing money, missing out on your life’s purpose and not having the opportunity to invest money into something that will present more value. `}
 			</Text><></>
-			/*<Text style={styles.para}>
-			<Text style ={styles.bol}>{`Mistake #4:`}</Text><></>{`Procrastination `}
-			</Text><></>*/
 			<Text style={styles.para}>
 			{`The solutions I provide you will involve putting an end to bad habits and decisions.  `}
 			</Text><></>
