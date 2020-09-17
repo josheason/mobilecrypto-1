@@ -115,6 +115,8 @@ const styles = StyleSheet.create({
 		color: '#fff',
 		fontSize: 15,
 		//margin: 20,
+		paddingTop: 20,
+		paddingBottom: 15,
 	},
 });
 
