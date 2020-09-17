@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
 		//fontWeight: 'bold',
 		fontStyle: 'italic',
 	},
-	/*bol: {
+	bol: {
 		//flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
@@ -258,7 +258,7 @@ const styles = StyleSheet.create({
 		fontWeight: 'bold',
 		//fontStyle: 'italic',
 	},
-	italPara: {
+	/*italPara: {
 		//flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
