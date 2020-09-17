@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
 		//fontWeight: 'bold',
 		//fontStyle: 'italic',
 	},
-  regURL: {
+  	regURL: {
 		//flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
@@ -204,6 +204,7 @@ const styles = StyleSheet.create({
 		color: '#03dac5',
 		fontSize: 18,
 	  	marginTop: 15,
+		padding:20,
 		//fontWeight: 'bold',
 		//fontStyle: 'italic',
 	},
