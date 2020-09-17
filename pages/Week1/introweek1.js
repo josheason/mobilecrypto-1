@@ -35,12 +35,12 @@ export default class introweek1 extends Component{
 	render(){
 	return(
 		<ScrollView style = {styles.container}>
-			<Text style={styles.text}>
+			/*<Text style={styles.text}>
 			{'Intro Week 1'}
 			</Text>
 			<Text style={styles.space}>
 			{'         '}
-			</Text>
+			</Text>*/
 			<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
 			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%201%2Fintroweek1.mp4?alt=media&token=c79c359c-bb98-4111-8f8e-68b4b7e44646'}}
