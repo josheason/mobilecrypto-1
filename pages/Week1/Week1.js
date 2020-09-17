@@ -77,6 +77,8 @@ class List extends Component {
           Actions.win3();
       if(itemid == 3)
           Actions.body4();
+      if(itemid == 4)
+          Actions.time5();
    }
 }
 export default List
