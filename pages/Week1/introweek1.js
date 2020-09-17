@@ -63,7 +63,7 @@ export default class introweek1 extends Component{
 	//		posterResizeMode={'contain'}
 			style={styles.video}
 			/><></>
-			<Text style={styles.buttonRow}>{''}</Text><></></>
+			<Text style={styles.buttonRow}>{'        '}</Text><></></>
 			}</ScrollView><></>
 				<View
 				style = {{ backgroundColor: '#121212' }}>
