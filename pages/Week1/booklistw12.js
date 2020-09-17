@@ -49,7 +49,7 @@ export default function booklistw12(){
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
  			     <Text style={styles.regURL} onPress={() => Linking.openURL('https://amzn.to/2wJgBmd')}>{`Can't Hurt Me`}</Text>
 			    </Text>
-			    <Text style = {styles.para}>
+			    <Text style = {styles.lastPara}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
 			      <Text style={styles.regURL} onPress={() => Linking.openURL('https://amzn.to/3eomaax')}>{'Mastery'}</Text>
   			  </Text>
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
 		color: '#fff',
 		fontSize: 15,
 		//margin: 20,
-		paddingTop: 30,
+		paddingTop: 20,
 		paddingLeft: 5,
 		fontWeight: 'bold',
 	},
