@@ -85,6 +85,7 @@ const styles = StyleSheet.create({
 	space: {
 		width: width,
 		height: height/ 7,
+		alignItems: 'center'
 	},
 	poster: {
 		width: width,
