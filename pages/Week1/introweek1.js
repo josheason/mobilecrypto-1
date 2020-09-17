@@ -103,7 +103,7 @@ export default class introweek1 extends Component{
 						<Icon name="arrow-right" size={20} style={styles.icon}/><></>
 					</View><></>
 				</TouchableOpacity><></>
-			</View><></>
+			</View><></></>
 			</View><></>
 		<><ScrollView 
 		//style = {{styles.container}}
