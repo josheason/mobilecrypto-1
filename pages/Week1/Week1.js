@@ -83,6 +83,8 @@ class List extends Component {
           Actions.focus6();
       if(itemid == 6)
           Actions.sixrules7();
+      if(itemid == 7)
+          Actions.rewire8();
    }
 }
 export default List
