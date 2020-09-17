@@ -87,7 +87,6 @@ LogIn = (email, password) => {
          		id: user.uid,
          		watched: 0,
 			w1_1: false,
-			w1_2: false,
 			w1_3: false,
 			w1_4: false,
 			w1_5: false,
