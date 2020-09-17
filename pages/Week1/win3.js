@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Dimensions, Linking, ScrollView, Button, TouchableHighlight, TouchableOpacity } from 'react-native';
 import { Video } from 'expo-av';
+import { Actions } from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import * as firebase from 'firebase';
@@ -69,7 +70,7 @@ export default class win3 extends Component{
 					</View><></>
 				</TouchableOpacity><></>
 
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.body4()}>
 					<View style={styles.nexticon}>
 						<Text style={styles.buttonText}>Next</Text><></>
 						<Icon name="arrow-right" size={20} style={styles.icon}/><></>
