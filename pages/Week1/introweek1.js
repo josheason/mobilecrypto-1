@@ -104,6 +104,7 @@ const styles = StyleSheet.create({
 		backgroundColor: '#121212',
 		color: '#03dac5',
 		alignItems: 'center',
+		paddingLeft: 5,
 	},
 	text: {
 		///flex :1,
@@ -114,6 +115,7 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		position: 'absolute',
 		top: 15,
+		paddingLeft: 5,
 	},
 	resour: {
 		//flex :1,
@@ -125,6 +127,7 @@ const styles = StyleSheet.create({
 		//margin: 20,
 		paddingTop: 20,
 		paddingBottom: 15,
+		paddingLeft: 5,
 	},
 	firstpara: {
 		//flex :1,
@@ -135,6 +138,7 @@ const styles = StyleSheet.create({
 		fontSize: 15,
 		//margin: 20,
 		paddingTop: 30,
+		paddingLeft: 5,
 	},
 	para: {
 		//flex :1,
@@ -145,6 +149,7 @@ const styles = StyleSheet.create({
 		fontSize: 15,
 		//margin: 20,
 		paddingTop: 20,
+		paddingLeft: 5,
 	},
 });
 
