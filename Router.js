@@ -59,6 +59,8 @@ import focus6 from './pages/Week1/focus6.js'
 import sixrules7 from './pages/Week1/sixrules7.js'
 import rewire8 from './pages/Week1/rewire8.js'
 
+import week2intro1 from './pages/Week2/week2intro1.js'
+
 
 
 const styles = StyleSheet.create({
@@ -337,6 +339,11 @@ const Routes = ()=> {
                     key="rewire8"
                     title="rewire8"
                     component={rewire8}>
+                   </Scene>
+                   <Scene
+                    key="week2intro1"
+                    title="week2intro1"
+                    component={week2intro1}>
                    </Scene>
            </Scene>
         </Router>
