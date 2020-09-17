@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
 		paddingLeft: 5,
 		//fontWeight: 'bold',
 	},
-	/*ital: {
+	ital: {
 		//flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
@@ -272,7 +272,20 @@ const styles = StyleSheet.create({
 		paddingTop: 20,
 		paddingLeft: 5,
 		fontWeight: 'italic',
-	},*/
+	},
+	lastPara: {
+		//flex :1,
+		backgroundColor: '#121212',
+		alignItems: 'center',
+		//justifyContent: 'center',
+		color: '#fff',
+		fontSize: 15,
+		//margin: 20,
+		paddingTop: 20,
+		paddingLeft: 5,
+		paddingBottom: 50,
+		//fontWeight: 'bold',
+	},
 });
 
 
