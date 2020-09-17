@@ -13,27 +13,27 @@ const { width, height } = Dimensions.get('window');
 
  
 export default function booklistw12(){
+	
+	componentDidMount(){
+   		const db = firebase.firestore();
+   		const ud = firebase.auth().currentUser;
+   		var user = firebase.auth().currentUser;
+   		const increment = firebase.firestore.FieldValue.increment(1);
+   		const watchedRef = db.collection('users');
+   		watchedRef.where('id', '==', user.uid)
+     		 .where('w1_1', '==', false)
+     		 .get().then(response => {
+        		let batch = db.batch()
+        		response.docs.forEach((doc) => {
+            		const docRef = watchedRef.doc(doc.id)
+            		batch.update(docRef, {watched: increment , w1_2: true})
+        		})
+        		batch.commit().then(() => {
+            		console.log(`updated all documents inside this vid`)
+        		})
+    		})
+	}
 
-	//return(
-	//	<View style = {styles.container}>
-			/*<Text style = {styles.text}>{`Book List`}</Text>
-      <Text style = {styles.resour}>{`Resources`}</Text>
-      <Text style={styles.paraURL} onPress={() => Linking.openURL('https://kajabi-storefronts-production.s3.amazonaws.com/posts/8700599/downloads/6aaUvbORWiiXiibKCdxO_Week_1_Weekly_Tracker.pdf?response-content-disposition=attachment%3B%20filename%3DWeek_1_Weekly_Tracker.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200917%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200917T154007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e607570dc34237bfb5e588672fad0990ab5bd550e3c8028d83bb7816c7eefe85')}>
-	{'Week_1_Weekly_Tracker.pdf'}
-	</Text>
-    <Text style = {styles.para}>{`Week 1 Books`}</Text>
-    <Text style = {styles.para}>
-      <Text style = {styles.reg}>{`\u2022  `}</Text>
-      <Text style={styles.regURL} onPress={() => Linking.openURL('https://amzn.to/3a5kM9t')}>{'PsychoCybernetics'}</Text>
-    </Text>
-    <Text style = {styles.para}>
-      <Text style = {styles.reg}>{`\u2022  `}</Text>
-      <Text style={styles.regURL} onPress={() => Linking.openURL('https://amzn.to/2wJgBmd')}>{`Can't Hurt Me`}</Text>
-    </Text>
-    <Text style = {styles.para}>
-      <Text style = {styles.reg}>{`\u2022  `}</Text>
-      <Text style={styles.regURL} onPress={() => Linking.openURL('https://amzn.to/3eomaax')}>{'Mastery'}</Text>
-    </Text>*/
 	return(
 		<View style = {styles.container}>
 			<Text style = {styles.resour1}>{`Book List`}</Text>
