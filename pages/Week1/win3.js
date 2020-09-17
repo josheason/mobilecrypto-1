@@ -15,14 +15,14 @@ const { width, height } = Dimensions.get('window');
 //export default function WhatIsDeFi1(){
 export default class win3 extends Component{
 	
-	/*componentDidMount(){
+	componentDidMount(){
    		const db = firebase.firestore();
    		const ud = firebase.auth().currentUser;
    		var user = firebase.auth().currentUser;
    		const increment = firebase.firestore.FieldValue.increment(1);
    		const watchedRef = db.collection('users');
    		watchedRef.where('id', '==', user.uid)
-     		 .where('introweek1', '==', false)
+     		 .where('w1_3', '==', false)
      		 .get().then(response => {
         		let batch = db.batch()
         		response.docs.forEach((doc) => {
@@ -33,7 +33,7 @@ export default class win3 extends Component{
             		console.log(`updated all documents inside this vid`)
         		})
     		})
-	}*/
+	}
 	
 	render(){
 	return(
