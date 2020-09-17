@@ -89,6 +89,8 @@ class List extends Component {
          Actions.week2intro1();
       if(itemid == 1)
          Actions.booklistw2();
+      if(itemid == 1)
+         Actions.internetwork3();
    }
 }
 export default List
