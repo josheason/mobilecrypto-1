@@ -57,6 +57,7 @@ import body4 from './pages/Week1/body4.js'
 import time5 from './pages/Week1/time5.js'
 import focus6 from './pages/Week1/focus6.js'
 import sixrules7 from './pages/Week1/sixrules7.js'
+import rewire8 from './pages/Week1/rewire8.js'
 
 
 
@@ -331,6 +332,11 @@ const Routes = ()=> {
                     key="sixrules7"
                     title="sixrules7"
                     component={sixrules7}>
+                   </Scene>
+                    <Scene
+                    key="rewire8"
+                    title="rewire8"
+                    component={rewire8}>
                    </Scene>
            </Scene>
         </Router>
