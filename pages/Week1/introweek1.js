@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
 	},
 	space: {
 		width: width,
-		height: height/ 6,
+		height: height/ 7,
 	},
 	poster: {
 		width: width,
