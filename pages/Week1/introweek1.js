@@ -36,7 +36,7 @@ export default class introweek1 extends Component{
 	
 	render(){
 	return(
-		<ScrollView 
+		<><ScrollView 
 		//style = {{styles.container}}
 		style = {{ backgroundColor: '#121212' }}
 		>{
@@ -63,7 +63,7 @@ export default class introweek1 extends Component{
 	//		posterResizeMode={'contain'}
 			style={styles.video}
 			/><></>
-			}<></></ScrollView><></>
+			}</ScrollView><></>
 				<View style={styles.buttonRow}>
 				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.previcon}>
