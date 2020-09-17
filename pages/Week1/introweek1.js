@@ -34,7 +34,7 @@ export default class introweek1 extends Component{
 	
 	render(){
 	return(
-		<ScrollView style = {styles.container}>
+		<ScrollView {{style = styles.container}}>{
 			/*<Text style={styles.text}>
 			{'Intro Week 1'}
 			</Text>
@@ -150,7 +150,7 @@ export default class introweek1 extends Component{
 			<Text style={styles.para}>
 			{`That is all for this video, thanks for watching.`}
 			</Text>*/
-		</ScrollView>
+		}</ScrollView>
 		);
 }
 }
