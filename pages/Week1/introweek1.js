@@ -45,8 +45,28 @@ export default class introweek1 extends Component{
 			</Text>
 			<Text style={styles.space}>
 			{'         '}
-			</Text><></>
-			<Video
+			</Text><></></>
+			/*<Video
+			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
+			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%201%2Fintroweek1.mp4?alt=media&token=c79c359c-bb98-4111-8f8e-68b4b7e44646'}}
+			rate={1.0}
+			volume={1.0}
+			isMuted={false}
+			resizeMode="cover"
+			shouldPlay={false}
+			isLooping={false}
+			showControlsOnLoad={true}
+			useNativeControls
+	//		posterSource={require('./thumbnail.png')}
+	//		posterStyle= {styles.poster}
+        //              usePoster={true}
+	//		posterResizeMode={'contain'}
+			style={styles.video}
+			/><></>*/
+			}</ScrollView><></>
+				<View
+				style = {{ backgroundColor: '#121212' }}>
+				<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
 			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%201%2Fintroweek1.mp4?alt=media&token=c79c359c-bb98-4111-8f8e-68b4b7e44646'}}
 			rate={1.0}
@@ -63,10 +83,6 @@ export default class introweek1 extends Component{
 	//		posterResizeMode={'contain'}
 			style={styles.video}
 			/><></>
-			<Text>'      '</Text><></></>
-			}</ScrollView><></>
-				<View
-				style = {{ backgroundColor: '#121212' }}>
 				<View style={styles.buttonRow}>
 				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.previcon}>
