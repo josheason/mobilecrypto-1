@@ -27,7 +27,7 @@ export default class body4 extends Component{
         		let batch = db.batch()
         		response.docs.forEach((doc) => {
             		const docRef = watchedRef.doc(doc.id)
-            		batch.update(docRef, {watched: increment , introweek1: true})
+            		batch.update(docRef, {watched: increment , w1_4: true})
         		})
         		batch.commit().then(() => {
             		console.log(`updated all documents inside this vid`)
