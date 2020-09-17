@@ -49,10 +49,11 @@ export default function booklistw12(){
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
  			     <Text style={styles.regURL} onPress={() => Linking.openURL('https://amzn.to/2wJgBmd')}>{`Can't Hurt Me`}</Text>
 			    </Text>
-			    <Text style = {styles.lastPara}>
+			    <Text style = {styles.para}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
 			      <Text style={styles.regURL} onPress={() => Linking.openURL('https://amzn.to/3eomaax')}>{'Mastery'}</Text>
   			  </Text>
+				<Text style= {styles.lastPara}>{`   `}</Text>
 					<View style={styles.buttonRow}>
 				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.previcon}>
