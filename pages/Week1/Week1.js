@@ -71,6 +71,8 @@ class List extends Component {
    navigate(itemid) {
       if(itemid == 0)
          Actions.introweek1();
+      if(itemid == 2)
+          Actions.win3();
    }
 }
 export default List
