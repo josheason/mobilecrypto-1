@@ -111,6 +111,7 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		position: 'absolute',
 		top: 15,
+		paddingBottom: 50,
 	},
 	resour: {
 		//flex :1,
