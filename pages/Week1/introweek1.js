@@ -79,7 +79,7 @@ export default class introweek1 extends Component{
 					</View><></>
 				</TouchableHighlight><></>
 			</View><></>
-		<ScrollView 
+		<><ScrollView 
 		//style = {{styles.container}}
 		style = {{ backgroundColor: '#121212' }}
 		>{
