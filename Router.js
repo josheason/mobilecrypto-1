@@ -53,6 +53,7 @@ import dashboard from './pages/dashboard.js'
 import introweek1 from './pages/Week1/introweek1.js'
 
 import win3 from './pages/Week1/win3.js'
+import body4 from './pages/Week1/body4.js'
 
 
 
@@ -302,6 +303,11 @@ const Routes = ()=> {
                     key="win3"
                     title="win3"
                     component={win3}>
+                   </Scene>
+                   <Scene
+                    key="body4"
+                    title="body4"
+                    component={body4}>
                    </Scene>
            </Scene>
         </Router>
