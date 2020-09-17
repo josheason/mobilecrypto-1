@@ -27,7 +27,7 @@ export default class win3 extends Component{
         		let batch = db.batch()
         		response.docs.forEach((doc) => {
             		const docRef = watchedRef.doc(doc.id)
-            		batch.update(docRef, {watched: increment , introweek1: true})
+            		batch.update(docRef, {watched: increment , w1_3: true})
         		})
         		batch.commit().then(() => {
             		console.log(`updated all documents inside this vid`)
