@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Dimensions, Linking, ScrollView, Button, TouchableHighlight, TouchableOpacity } from 'react-native';
 import { Video } from 'expo-av';
+import { Actions } from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import * as firebase from 'firebase';
@@ -62,7 +63,7 @@ export default class body4 extends Component{
 			style={styles.video}
 			/><></>
 				<View style={styles.buttonRow}>
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.win3()}>
 					<View style={styles.previcon}>
 						<Icon name="arrow-left" size={20} style={styles.icon}/><></>
 						<Text style={styles.buttonText}>Previous</Text><></>
