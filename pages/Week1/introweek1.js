@@ -66,10 +66,10 @@ export default class introweek1 extends Component{
 			{'Science_and_Human_Behavior.pdf'}
 			</Text>
 			<Text style={styles.para}>
-			{'Congratulations; you're finally in the course! You took the next step to change your life for the better by learning internet 3.0, blockchain technology, cryptocurrencies and how to seriously make money in this industry.'}
+			{'Congratulations; youre finally in the course! You took the next step to change your life for the better by learning internet 3.0, blockchain technology, cryptocurrencies and how to seriously make money in this industry.'}
 			</Text>
 			 <Text style={styles.para}>
-			{'At the start of each week, I will provide an introductory video, allowing an overview of what the week's lessons will entail.'}
+			{'At the start of each week, I will provide an introductory video, allowing an overview of what the weeks lessons will entail.'}
 			</Text>
 		</ScrollView>
 		);
