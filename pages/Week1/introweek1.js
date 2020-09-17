@@ -348,8 +348,8 @@ const styles = StyleSheet.create({
 	},
 	buttonRow:{
 		flexDirection: 'row',
-		paddingTop: 5,
-		paddingBottom: 20,
+		marginTop: 5,
+		marginBottom: 20,
 	},
 });
 
