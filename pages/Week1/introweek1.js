@@ -153,6 +153,9 @@ export default class introweek1 extends Component{
 			<Text style={styles.para}>
 			{`That is all for this video, thanks for watching.`}
 			</Text></>
+			<Text style={styles.lastPara}>
+			{``}
+			</Text></>
 		}</ScrollView>
 		);
 }
@@ -261,7 +264,7 @@ const styles = StyleSheet.create({
 		fontWeight: 'bold',
 		//fontStyle: 'italic',
 	},
-	italpara: {
+	italPara: {
 		//flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
