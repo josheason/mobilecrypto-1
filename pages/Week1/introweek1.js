@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
 	video: {
 		width: width,
 		height: height/ 3,
+		alignItems: 'center'
 	},
 	space: {
 		width: width,
