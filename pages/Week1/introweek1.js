@@ -1,6 +1,6 @@
 //import React from 'react';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Dimensions, Linking, ScrollView, Button, TouchableHighlight } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, Linking, ScrollView, Button, TouchableHighlight, TouchableOpacity } from 'react-native';
 import { Video } from 'expo-av';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -64,15 +64,15 @@ export default class introweek1 extends Component{
 			style={styles.video}
 			/><></>
 		
-				<TouchableHighlight style={styles.buttonRow} activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+				<TouchableOpacity style={styles.buttonRow} activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 						<Icon name="arrow-left" size={20} style={styles.previcon}/><></>
 						<Text style={styles.buttonText}>Previous</Text><></>
-				</TouchableHighlight><></>
+				</TouchableOpacity><></>
 
-				<TouchableHighlight style={styles.buttonRow} activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+				<TouchableOpacity style={styles.buttonRow} activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 						<Text style={styles.buttonText}>Next</Text><></>
 						<Icon name="arrow-right" size={20} style={styles.nexticon}/><></>
-				</TouchableHighlight><></>
+				</TouchableOpacity><></>
 		
 		
 		
