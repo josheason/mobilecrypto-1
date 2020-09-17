@@ -73,12 +73,12 @@ export default class introweek1 extends Component{
 			</Text><></>
 			 <Text style={styles.para}>
 			{'At the start of each week, I will provide an introductory video, allowing an overview of what the week&spos;ss lessons will entail.'}
+			</Text><></>
+			<Text style={styles.para}>
+			<Text style = {styles.ital}>
+			{'This is the most important video in the whole entire course.'}</Text><></> {'The information given in this video will guarantee your success; I recommend following my advice strictly.'}
 			</Text></>
 			/*<Text style={styles.para}>
-			<Text style = {styles.ital}>
-			{'This is the most important video in the whole entire course.'}</Text> {'The information given in this video will guarantee your success; I recommend following my advice strictly.'}
-			</Text>
-			<Text style={styles.para}>
 			{'The most important way to get results is not doing “dumb things”. I constructed a list of “dumb things” to avoid throughout this course, that I will be providing you with shortly.'}
 			</Text>
 			<Text style={styles.para}>
