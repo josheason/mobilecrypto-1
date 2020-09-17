@@ -179,10 +179,10 @@ export default class introweek1 extends Component{
 			<Text style={styles.lastPara}>
 			{``}
 			</Text></>
-		}</ScrollView>
+		}</ScrollView></></>
 		);
 }
-} }
+}
 
 			/*<Text style={styles.para}>
 			{``}
