@@ -71,6 +71,8 @@ class List extends Component {
    navigate(itemid) {
       if(itemid == 0)
          Actions.introweek1();
+      if(itemid == 1)
+          Actions.booklistw12();
       if(itemid == 2)
           Actions.win3();
       if(itemid == 3)
