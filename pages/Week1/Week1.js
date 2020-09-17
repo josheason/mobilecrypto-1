@@ -81,6 +81,8 @@ class List extends Component {
           Actions.time5();
       if(itemid == 5)
           Actions.focus6();
+      if(itemid == 6)
+          Actions.sixrules7();
    }
 }
 export default List
