@@ -35,8 +35,8 @@ export default class ScreenOne extends React.Component {
   //   firebase.auth().onAuthStateChanged(user => {
   //     if(user){
   //       //this.props.navigation.navigate('');
-  //       ()=>this.navigate2();
-  //       console.log("loggedin")
+  //       ()=>this.navigate2();       //onPress={() => this.LogIn(this.state.email, this.state.password)}>
+  //       console.log("loggedin").   //onPress={() => this.LogIn(this.state.email, this.state.password)}>
   //     } else {	//onPress={() => this.navigate2()}>
   //       //this.props.navigation.navigate('');
   //       ()=>this.navigate();
@@ -155,7 +155,6 @@ LogIn = (email, password) => {
         </View>
         <TouchableOpacity style={styles.loginBtn}
 	onPress={() => this.navigate2()}>
-	//onPress={() => this.LogIn(this.state.email, this.state.password)}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
 
