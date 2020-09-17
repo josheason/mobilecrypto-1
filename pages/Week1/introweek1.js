@@ -1,6 +1,6 @@
 //import React from 'react';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Dimensions, Linking } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, Linking, ScrollView } from 'react-native';
 import { Video } from 'expo-av';
 import * as firebase from 'firebase';
 import 'firebase/firestore';
@@ -34,7 +34,7 @@ export default class introweek1 extends Component{
 	
 	render(){
 	return(
-		<View style = {styles.container}>
+		<ScrollView style = {styles.container}>
 			<Text style={styles.text}>
 			{'Intro Week 1'}
 			</Text>
@@ -65,7 +65,7 @@ export default class introweek1 extends Component{
 			onPress={() => Linking.openURL('https://kajabi-storefronts-production.s3.amazonaws.com/posts/8572719/downloads/TxmtN4QGS5iRzzyhoyXS_Science_and_Human_Behavior.pdf?response-content-disposition=attachment%3B%20filename%3DScience_and_Human_Behavior.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200916%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200916T212257Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f4c33b29df1e354fda3ad9552186fb9a575c84d0223b4d0f00e94c8f5c3c53f5')}>
 			{'Science_and_Human_Behavior.pdf'}
 			</Text>
-		</View>
+		</ScrollView>
 		);
 }
 }
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
 	container: {
 		//flex :1,
 		backgroundColor: '#121212',
-		alignItems: 'center',
+		//alignItems: 'center',
 		//justifyContent: 'center',
 		//justifyContent: 'space-between'
 	},
