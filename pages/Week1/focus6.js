@@ -47,7 +47,7 @@ export default class focus6 extends Component{
 				</Text><></>
 				<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
-			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%201%2Fbody.mp4?alt=media&token=9bb03a73-0773-4a82-b5ff-90305a044ad5'}}
+			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%201%2Ffocus.mp4?alt=media&token=ff490d00-7d8d-4807-8acc-a45897a4e15e'}}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
