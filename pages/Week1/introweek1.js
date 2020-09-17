@@ -67,19 +67,19 @@ export default class introweek1 extends Component{
 				<View
 				style = {{ backgroundColor: '#121212' }}>
 				<View style={styles.buttonRow}>
-				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.previcon}>
 						<Icon name="arrow-left" size={20} style={styles.icon}/><></>
 						<Text style={styles.buttonText}>Previous</Text><></>
 					</View><></>
-				</TouchableHighlight><></>
+				</TouchableOpacity><></>
 
-				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.nexticon}>
 						<Text style={styles.buttonText}>Next</Text><></>
 						<Icon name="arrow-right" size={20} style={styles.icon}/><></>
 					</View><></>
-				</TouchableHighlight><></>
+				</TouchableOpacity><></>
 			</View><></>
 			</View><></>
 		<><ScrollView 
