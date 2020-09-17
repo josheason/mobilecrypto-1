@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, Button, TouchableHighlight } from 'react-native';
 import { Video } from 'expo-av';
-
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 const { width, height } = Dimensions.get('window');
@@ -23,6 +23,21 @@ export default function WalletDifferences2(){
 			useNativeControls
 			style={styles.video}
 			/>
+			<View style={styles.buttonRow}>
+				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+					<View style={styles.previcon}>
+						<Icon name="arrow-left" size={20} style={styles.icon}/>
+						<Text style={styles.buttonText}>Previous</Text>
+					</View>
+				</TouchableHighlight>
+
+				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+					<View style={styles.nexticon}>
+						<Text style={styles.buttonText}>Next</Text>
+						<Icon name="arrow-right" size={20} style={styles.icon}/>
+					</View>
+				</TouchableHighlight>
+			</View>
 		</View>
 		);
 }
@@ -37,6 +52,38 @@ const styles = StyleSheet.create({
 		backgroundColor: '#121212',
 		alignItems: 'center',
 		justifyContent: 'center',
+	},
+	prevbutton: {
+		flex: 1,
+    	justifyContent: "center",
+    	padding: 16
+	},
+	buttonText:{
+		fontSize: 21,
+		color: '#fff'
+	},
+	previcon: {
+		color:"#fff",
+		backgroundColor: '#6200ee',
+		padding: 5,
+		flexDirection: 'row',
+		justifyContent: 'center',
+		width: width/2,
+	},
+	nexticon: {
+		color:"#fff",
+		backgroundColor: '#3700b3',
+		padding: 5,
+		flexDirection: 'row',
+		width: width/2,
+		justifyContent: 'center',
+	},
+	icon: {
+		color:"#fff",
+		padding: 5,
+	},
+	buttonRow:{
+		flexDirection: 'row',
 	},
 });
 
