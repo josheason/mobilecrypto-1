@@ -298,6 +298,11 @@ const Routes = ()=> {
                     title="introweek1"
                     component={introweek1}>
                    </Scene>
+                    <Scene
+                    key="win3"
+                    title="win3"
+                    component={win3}>
+                   </Scene>
            </Scene>
         </Router>
     )
