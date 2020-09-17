@@ -52,6 +52,8 @@ import dashboard from './pages/dashboard.js'
 
 import introweek1 from './pages/Week1/introweek1.js'
 
+import win3 from './pages/Week1/win3.js'
+
 
 
 const styles = StyleSheet.create({
