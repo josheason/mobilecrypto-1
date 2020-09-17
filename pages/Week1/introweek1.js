@@ -85,11 +85,11 @@ const styles = StyleSheet.create({
 		opacity: 0.5,
 	},
 	container: {
-		flex :1,
+		//flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
 		//justifyContent: 'center',
-		justifyContent: 'space-between'
+		//justifyContent: 'space-between'
 	},
 	containerURL: {
 		flex :1,
