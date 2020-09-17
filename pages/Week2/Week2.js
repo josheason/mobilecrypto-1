@@ -88,7 +88,7 @@ class List extends Component {
       if(itemid == 0)
          Actions.week2intro1();
       if(itemid == 1)
-         this.booklistw2();
+         Actions.booklistw2();
    }
 }
 export default List
