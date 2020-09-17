@@ -35,7 +35,7 @@ export default function booklistw12(){
     </Text>*/
 	return(
 		<View style = {styles.container}>
-			<Text style = {styles.resour}>{`Book List`}</Text>
+			<Text style = {styles.resour1}>{`Book List`}</Text>
       			<Text style = {styles.resour}>{`Resources`}</Text>
       			<Text style={styles.paraURL} onPress={() => Linking.openURL('https://kajabi-storefronts-production.s3.amazonaws.com/posts/8700599/downloads/6aaUvbORWiiXiibKCdxO_Week_1_Weekly_Tracker.pdf?response-content-disposition=attachment%3B%20filename%3DWeek_1_Weekly_Tracker.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200917%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200917T154007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e607570dc34237bfb5e588672fad0990ab5bd550e3c8028d83bb7816c7eefe85')}>
 			{'Week_1_Weekly_Tracker.pdf'}
@@ -137,6 +137,19 @@ const styles = StyleSheet.create({
 		//margin: 20,
 		//paddingTop: 20,
 		paddingBottom: 15,
+		paddingLeft: 5,
+	},
+	resour1: {
+		//flex :1,
+		backgroundColor: '#121212',
+		alignItems: 'center',
+		//justifyContent: 'center',
+		color: '#fff',
+		fontSize: 25,
+		fontWeight: 'bold',
+		//margin: 20,
+		//paddingTop: 20,
+		paddingBottom: 30,
 		paddingLeft: 5,
 	},
 	firstpara: {
