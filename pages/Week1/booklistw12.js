@@ -14,25 +14,6 @@ const { width, height } = Dimensions.get('window');
  
 export default class booklistw12 extends Component{
 	
-	componentDidMount(){
-   		const db = firebase.firestore();
-   		const ud = firebase.auth().currentUser;
-   		var user = firebase.auth().currentUser;
-   		const increment = firebase.firestore.FieldValue.increment(1);
-   		const watchedRef = db.collection('users');
-   		watchedRef.where('id', '==', user.uid)
-     		 .where('w1_1', '==', false)
-     		 .get().then(response => {
-        		let batch = db.batch()
-        		response.docs.forEach((doc) => {
-            		const docRef = watchedRef.doc(doc.id)
-            		batch.update(docRef, {watched: increment , w1_2: true})
-        		})
-        		batch.commit().then(() => {
-            		console.log(`updated all documents inside this vid`)
-        		})
-    		})
-	}
 	
 	render(){
 	return(
