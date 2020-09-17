@@ -91,7 +91,7 @@ export default class introweek1 extends Component{
 			{`However, I am going to tell you how to avoid this pain.`}
 			</Text>
 			<Text style={styles.para}>
-			<Text style ={styles.bold}>{`Mistake #1:`}</Text>{` Not taking full advantage of Facebook. `}
+			<Text style ={styles.bol}>{`Mistake #1:`}</Text>{` Not taking full advantage of Facebook. `}
 			</Text>
 			<Text style={styles.para}>
 			{`Facebook is 95% of this course. Joining the Facebook group is beneficial because it is full of experienced and insightful individuals that you will have the opportunity to connect with and learn from. In addition, I will be holding live Q and A sessions, which will be a great window to ask me questions.`}
@@ -100,7 +100,7 @@ export default class introweek1 extends Component{
 			{`Engage and be involved in the community, if you are not a member: join now.`}
 			</Text>
 			<Text style={styles.para}>
-			<Text style ={styles.bold}>{`Mistake #2:`}</Text>{`Skipping segments of the course. `}
+			<Text style ={styles.bol}>{`Mistake #2:`}</Text>{`Skipping segments of the course. `}
 			</Text>
 			<Text style={styles.para}>
 			{`I intentionally formatted this course in such a way that each section prepares for the next. Skipping will not allow you to see the big picture. It is important to actively listen, watch with intent, and take notes during each video. `}
@@ -109,7 +109,7 @@ export default class introweek1 extends Component{
 			{`Complete the course in its entirety.`}
 			</Text>
 			<Text style={styles.para}>
-			<Text style ={styles.bold}>{`Mistake #3:`}</Text>{`Holding on to your ego `}
+			<Text style ={styles.bol}>{`Mistake #3:`}</Text>{`Holding on to your ego `}
 			</Text>
 			<Text style={styles.para}>
 			{`Leave your ego behind. Regardless of any prior knowledge you may have, this course will still provide new, valuable information to you. Holding on to ego and pride will block you from learning anything new. `}
@@ -118,7 +118,7 @@ export default class introweek1 extends Component{
 			{`Be open to new information; it is okay if you do not know everything yet. `}
 			</Text>
 			<Text style={styles.para}>
-			<Text style ={styles.bold}>{`Mistake #4:`}</Text>{`Procrastination `}
+			<Text style ={styles.bol}>{`Mistake #4:`}</Text>{`Procrastination `}
 			</Text>
 			<Text style={styles.para}>
 			{`Be realistic with your time management during this course. You should not speed through it; however, you must not take too long to complete it. Apply the concepts you learn immediately, do not wait. Pace yourself through the course wisely, it should take a maximum of 10 weeks. `}
@@ -127,7 +127,7 @@ export default class introweek1 extends Component{
 			{`Procrastination never yields successful results. `}
 			</Text>
 			<Text style={styles.para}>
-			<Text style ={styles.bold}>{`Mistake #5:`}</Text>{`Declining constructive criticism `}
+			<Text style ={styles.bol}>{`Mistake #5:`}</Text>{`Declining constructive criticism `}
 			</Text>
 			<Text style={styles.para}>
 			{`You are in this course for a reason: to learn new information or to solve a problem. In order for me to help you, I have to be 100% honest with you, even if it may seem brutal.`}
@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
 		//fontWeight: 'bold',
 		fontStyle: 'italic',
 	},
-	bold: {
+	bol: {
 		//flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
