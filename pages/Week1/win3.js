@@ -100,9 +100,10 @@ export default class win3 extends Component{
 			</Text><></>
 			<Text style={styles.para}>
 			{`In the first week of this course you're going to acquire knowledge that will be beneficial in all areas of your life. I can not stress this enough: `}
+			</Text><></>
 			<Text style = {styles.ital}>
 			{' do not skip any of it.'}</Text><></> 
-			</Text><></>
+			//</Text><></>
 			<Text style={styles.para}>
 			{'The dividing line between poor unsustainable results has nothing to do with tactics.'}
 			</Text><></>
@@ -126,9 +127,10 @@ export default class win3 extends Component{
 			</Text><></>
 			<Text style={styles.para}>
 			{`A couple of months ago, there was a crash in the market. As a result, I lost a large amount of my net worth in cryptocurrency `}
+			</Text><></>
 			<Text style = {styles.ital}>
 			{'  in a matter of days.'}</Text><></> 
-			</Text><></>
+			//</Text><></>
 			/*<Text style={styles.italPara}>
 			{`Engage and be involved in the community, if you are not a member: join now.`}
 			</Text><></>*/
