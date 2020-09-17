@@ -66,7 +66,6 @@ export default class introweek1 extends Component{
 			}</ScrollView><></>
 				<View
 				style = {{ backgroundColor: '#121212' }}>
-				<Text style={styles.buttonRow}>{'        '}</Text><></>
 				<View style={styles.buttonRow}>
 				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.previcon}>
