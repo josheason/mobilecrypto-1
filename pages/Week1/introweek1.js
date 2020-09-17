@@ -126,6 +126,16 @@ const styles = StyleSheet.create({
 		paddingTop: 20,
 		paddingBottom: 15,
 	},
+	firstpara: {
+		//flex :1,
+		backgroundColor: '#121212',
+		alignItems: 'center',
+		//justifyContent: 'center',
+		color: '#fff',
+		fontSize: 15,
+		//margin: 20,
+		paddingTop: 30,
+	},
 	para: {
 		//flex :1,
 		backgroundColor: '#121212',
@@ -134,8 +144,7 @@ const styles = StyleSheet.create({
 		color: '#fff',
 		fontSize: 15,
 		//margin: 20,
-		paddingTop: 15,
-		paddingBottom: 15,
+		paddingTop: 20,
 	},
 });
 
