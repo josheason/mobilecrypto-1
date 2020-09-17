@@ -41,17 +41,17 @@ export default function booklistw12(){
 			{'Week_1_Weekly_Tracker.pdf'}
 			</Text>
 			    <Text style = {styles.para}>{`Week 1 Books`}</Text>
- 			   <Text style = {styles.para}>
+ 			   <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/3a5kM9t')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
-  			    <Text style={styles.regURL} onPress={() => Linking.openURL('https://amzn.to/3a5kM9t')}>{'PsychoCybernetics'}</Text>
+  			    <Text style={styles.regURL} >{'PsychoCybernetics'}</Text>
  			   </Text>
-			    <Text style = {styles.para}>
+			    <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/2wJgBmd')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
- 			     <Text style={styles.regURL} onPress={() => Linking.openURL('https://amzn.to/2wJgBmd')}>{`Can't Hurt Me`}</Text>
+ 			     <Text style={styles.regURL} >{`Can't Hurt Me`}</Text>
 			    </Text>
-			    <Text style = {styles.para}>
+			    <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/3eomaax')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL} onPress={() => Linking.openURL('https://amzn.to/3eomaax')}>{'Mastery'}</Text>
+			      <Text style={styles.regURL}>{'Mastery'}</Text>
   			  </Text>
 				<Text style= {styles.lastPara}>{`   `}</Text>
 					<View style={styles.buttonRow}>
