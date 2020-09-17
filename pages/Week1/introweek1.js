@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
 		backgroundColor: '#121212',
 		color: '#03dac5',
 		alignItems: 'center',
-		margin: 15,
+		margin: 5,
 	},
 	text: {
 		flex :1,
