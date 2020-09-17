@@ -63,7 +63,7 @@ export default class win3 extends Component{
 			style={styles.video}
 			/><></>
 				<View style={styles.buttonRow}>
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.booklistw12()}>
 					<View style={styles.previcon}>
 						<Icon name="arrow-left" size={20} style={styles.icon}/><></>
 						<Text style={styles.buttonText}>Previous</Text><></>
