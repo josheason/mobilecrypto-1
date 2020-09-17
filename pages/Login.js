@@ -37,7 +37,7 @@ export default class ScreenOne extends React.Component {
   //       //this.props.navigation.navigate('');
   //       ()=>this.navigate2();
   //       console.log("loggedin")
-  //     } else {
+  //     } else {	//onPress={() => this.navigate2()}>
   //       //this.props.navigation.navigate('');
   //       ()=>this.navigate();
   //       console.log("NOT LOGGED IN")
@@ -156,7 +156,6 @@ LogIn = (email, password) => {
         </View>
         <TouchableOpacity style={styles.loginBtn} 
 	onPress={() => this.LogIn(this.state.email, this.state.password)}>
-	//onPress={() => this.navigate2()}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
 
