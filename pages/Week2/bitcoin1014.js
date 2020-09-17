@@ -89,6 +89,9 @@ export default class bitcoin1014 extends Component{
 			onPress={() => Linking.openURL('https://kajabi-storefronts-production.s3.amazonaws.com/posts/8593533/downloads/hVxAOR30TSmzSRZPRDQe_Week_2_Workbook_final_.pdf?response-content-disposition=attachment%3B%20filename%3DWeek_2_Workbook_final_.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200917%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200917T191340Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=13df46057a2e81ddd693a3f6b16eb98780933f78ce6548082009e50487eda27a')}>
 			{'Week_2_Workbook_final_.pdf'}
 			</Text><></>
+			<Text style={styles.para}>
+			{` `}
+			</Text><></>
 			<Text style={styles.containerURL}
 			onPress={() => Linking.openURL('https://kajabi-storefronts-production.s3.amazonaws.com/posts/8593537/downloads/JlczeWQS4MaXgPl4Jh9A_bitcoin.pdf?response-content-disposition=attachment%3B%20filename%3Dbitcoin.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200917%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200917T194409Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=17fdd899d0b936658c0d0d60ade487eef2f85fe16ee7bbbf5dd3a82218065c76')}>
 			{'bicoin.pdf'}
