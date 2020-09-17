@@ -34,27 +34,23 @@ export default function booklistw12(){
       <Text style={styles.regURL} onPress={() => Linking.openURL('https://amzn.to/3eomaax')}>{'Mastery'}</Text>
     </Text>*/
 			<View style={styles.buttonRow}>
-				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.previcon}>
 						<Icon name="arrow-left" size={20} style={styles.icon}/>
 						<Text style={styles.buttonText}>{`Previous`}</Text>
 					</View>
-				</TouchableHighlight>
-
+				</TouchableOpacity>
 				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.nexticon}>
 						<Text style={styles.buttonText}>{`Next`}</Text>
 						<Icon name="arrow-right" size={20} style={styles.icon}/>
 					</View>
-				</TouchableHighlight>
+				</TouchableOpacity>
 			</View>
 		</View>
 		);
 }
 
-			/*<Text style={styles.para}>
-			{``}
-			</Text>*/
 	
 const styles = StyleSheet.create({
 	video: {
