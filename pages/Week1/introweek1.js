@@ -64,6 +64,8 @@ export default class introweek1 extends Component{
 			style={styles.video}
 			/><></></>
 			}</ScrollView><></>
+				<View
+				style = {{ backgroundColor: '#121212' }}>
 				<View style={styles.buttonRow}>
 				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.previcon}>
@@ -78,6 +80,7 @@ export default class introweek1 extends Component{
 						<Icon name="arrow-right" size={20} style={styles.icon}/><></>
 					</View><></>
 				</TouchableHighlight><></>
+			</View><></>
 			</View><></>
 		<><ScrollView 
 		//style = {{styles.container}}
