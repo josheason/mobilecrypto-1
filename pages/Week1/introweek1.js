@@ -92,13 +92,13 @@ const styles = StyleSheet.create({
 		//justifyContent: 'space-between'
 	},
 	containerURL: {
-		flex :1,
+		//flex :1,
 		backgroundColor: '#121212',
 		color: '#03dac5',
 		alignItems: 'center',
 	},
 	text: {
-		flex :1,
+		///flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
 		//justifyContent: 'center',
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
 		top: 15,
 	},
 	resour: {
-		flex :1,
+		//flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
 		//justifyContent: 'center',
