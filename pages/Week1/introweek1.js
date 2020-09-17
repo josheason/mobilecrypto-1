@@ -88,6 +88,8 @@ const styles = StyleSheet.create({
 		color: '#03dac5',
 		alignItems: 'center',
 		justifyContent: 'center',
+		position: 'absolute',
+		top: 65,
 	},
 	text: {
 		flex :1,
