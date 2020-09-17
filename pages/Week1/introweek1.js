@@ -35,7 +35,7 @@ export default class introweek1 extends Component{
 	render(){
 	return(
 		<View style = {styles.container}>
-			<Text style={styles.container}>
+			<Text style={styles.text}>
 			{'Intro Week 1'}
 			</Text>
 			<Video
@@ -86,6 +86,13 @@ const styles = StyleSheet.create({
 		color: '#03dac5',
 		alignItems: 'center',
 		justifyContent: 'center',
+	},
+	container: {
+		flex :1,
+		backgroundColor: '#121212',
+		alignItems: 'center',
+		justifyContent: 'center',
+		color: '#fff',
 	},
 });
 
