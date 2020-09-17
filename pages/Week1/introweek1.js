@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
 		width: width,
 		height: height/ 3,
 		position: 'absolute',
-		top: 35,
+		top: 100,
 	},
 	poster: {
 		width: width,
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'center',
 		position: 'absolute',
-		top: 65,
+		top: 150,
 	},
 	text: {
 		flex :1,
