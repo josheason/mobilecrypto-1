@@ -1,7 +1,9 @@
 //import React from 'react';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Dimensions, Linking, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, Linking, ScrollView, Button, TouchableHighlight } from 'react-native';
 import { Video } from 'expo-av';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 import * as firebase from 'firebase';
 import 'firebase/firestore';
 
@@ -152,7 +154,7 @@ export default class introweek1 extends Component{
 			</Text><></>
 			<Text style={styles.para}>
 			{`That is all for this video, thanks for watching.`}
-			</Text></>
+			</Text><></>
 			<Text style={styles.lastPara}>
 			{``}
 			</Text></>
