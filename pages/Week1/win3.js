@@ -98,12 +98,13 @@ export default class win3 extends Component{
 			<Text style={styles.para}>
 			{'Whether it is short term or long term, the goal is to succeed in cryptocurrency, business or life in general. '}
 			</Text><></>
-			<Text style={styles.para}>
-			{`In the first week of this course you're going to acquire knowledge that will be beneficial in all areas of your life. I can not stress this enough: `}
+				
+			<Text style={styles.italPara}>
+			<Text style = {styles.reg}>
+			{`In the first week of this course you're going to acquire knowledge that will be beneficial in all areas of your life. I can not stress this enough: `}</Text><></> {' do not skip any of it.'}
 			</Text><></>
-			<Text style = {styles.ital}>
-			{' do not skip any of it.'}
-			</Text><></> 
+
+
 			<Text style={styles.para}>
 			{'The dividing line between poor unsustainable results has nothing to do with tactics.'}
 			</Text><></>
@@ -288,6 +289,16 @@ const styles = StyleSheet.create({
 		fontSize: 15,
 		//fontWeight: 'bold',
 		fontStyle: 'italic',
+	},
+	reg: {
+		//flex :1,
+		backgroundColor: '#121212',
+		alignItems: 'center',
+		//justifyContent: 'center',
+		color: '#fff',
+		fontSize: 15,
+		//fontWeight: 'bold',
+		//fontStyle: 'italic',
 	},
 	bol: {
 		//flex :1,
