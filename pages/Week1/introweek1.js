@@ -63,22 +63,22 @@ export default class introweek1 extends Component{
 	//		posterResizeMode={'contain'}
 			style={styles.video}
 			/><></>
-			}</ScrollView>
+			}</ScrollView><></>
 				<View style={styles.buttonRow}>
 				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.previcon}>
-						<Icon name="arrow-left" size={20} style={styles.icon}/>
-						<Text style={styles.buttonText}>Previous</Text>
-					</View>
-				</TouchableHighlight>
+						<Icon name="arrow-left" size={20} style={styles.icon}/><></>
+						<Text style={styles.buttonText}>Previous</Text><></>
+					</View><></>
+				</TouchableHighlight><></>
 
 				<TouchableHighlight activeOpacity={0.3} underlayColor="#6200ee" onPress={() => alert('Pressed!')}>
 					<View style={styles.nexticon}>
-						<Text style={styles.buttonText}>Next</Text>
-						<Icon name="arrow-right" size={20} style={styles.icon}/>
-					</View>
-				</TouchableHighlight>
-			</View>
+						<Text style={styles.buttonText}>Next</Text><></>
+						<Icon name="arrow-right" size={20} style={styles.icon}/><></>
+					</View><></>
+				</TouchableHighlight><></>
+			</View><></>
 		<ScrollView 
 		//style = {{styles.container}}
 		style = {{ backgroundColor: '#121212' }}
