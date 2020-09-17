@@ -136,7 +136,7 @@ export default class focus6 extends Component{
 			{`This is why it is key to eliminate all distractions from your work area. `}
 			</Text><></>
 			<Text style={styles.para}>
-			<Text style = {styles.reg}>{`Prioritize your time of work; politics, drama, music, reading the charts, conversation, and social media can'}</Text><></> <Text style = {styles.ital}>{'wait.  `}</Text><></>
+			<Text style = {styles.reg}>{`Prioritize your time of work; politics, drama, music, reading the charts, conversation, and social media can`}</Text><></> <Text style = {styles.ital}>{`wait.  `}</Text><></>
 			</Text><></>
 			<Text style={styles.para}>
 			{`Do not jeopardize your most productive hours to fulfill your desires. `}
