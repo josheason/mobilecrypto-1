@@ -79,6 +79,8 @@ const styles = StyleSheet.create({
 		backgroundColor: '#121212',
 		alignItems: 'center',
 		justifyContent: 'center',
+		position: 'absolute',
+		top: 35,
 	},
 	containerURL: {
 		flex :1,
