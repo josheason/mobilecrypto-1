@@ -182,7 +182,7 @@ export default class introweek1 extends Component{
 		}</ScrollView>
 		);
 }
-}
+} }
 
 			/*<Text style={styles.para}>
 			{``}
