@@ -37,13 +37,13 @@ export default class introweek1 extends Component{
 		<ScrollView 
 		//style = {{styles.container}}
 		style = {{ backgroundColor: '#121212' }}
-		>
-			<Text style={styles.text}>
+		>{
+			<><Text style={styles.text}>
 			{'Intro Week 1'}
 			</Text>
 			<Text style={styles.space}>
 			{'         '}
-			</Text>
+			</Text></>
 			<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
 			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%201%2Fintroweek1.mp4?alt=media&token=c79c359c-bb98-4111-8f8e-68b4b7e44646'}}
@@ -153,7 +153,7 @@ export default class introweek1 extends Component{
 			<Text style={styles.para}>
 			{`That is all for this video, thanks for watching.`}
 			</Text>*/
-		</ScrollView>
+		}</ScrollView>
 		);
 }
 }
