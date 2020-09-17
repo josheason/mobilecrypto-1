@@ -72,16 +72,17 @@ export default class introweek1 extends Component{
 			{'At the start of each week, I will provide an introductory video, allowing an overview of what the weeks lessons will entail.'}
 			</Text>
 			<Text style={styles.para}>
-			<Text style = {{'This is the most important video in the whole entire course. The information given in this video will guarantee your success; I recommend following my advice strictly.'}
+			<Text style = {styles.ital}>
+			{'This is the most important video in the whole entire course.'}</Text> {'The information given in this video will guarantee your success; I recommend following my advice strictly.'}
 			</Text>
 		</ScrollView>
 		);
 }
 }
 
-			<Text style={styles.para}>
+			/*<Text style={styles.para}>
 			{''}
-			</Text>
+			</Text>*/
 	
 const styles = StyleSheet.create({
 	video: {
