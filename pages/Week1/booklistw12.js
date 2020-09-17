@@ -172,10 +172,10 @@ const styles = StyleSheet.create({
 		color: '#fff',
 		fontSize: 20,
 		//margin: 20,
-		paddingRight: 5,
+		//paddingRight: 5,
 		marginTop: 25,
 		marginBottom: 25,
-		paddingLeft: 5,
+		//paddingLeft: 5,
 		fontWeight: 'bold',
 	},
 	ital: {
