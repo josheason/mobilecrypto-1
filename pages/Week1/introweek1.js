@@ -95,6 +95,7 @@ const styles = StyleSheet.create({
 		backgroundColor: '#121212',
 		color: '#03dac5',
 		alignItems: 'center',
+		margin: 40,
 	},
 	text: {
 		flex :1,
@@ -113,7 +114,7 @@ const styles = StyleSheet.create({
 		//justifyContent: 'center',
 		color: '#fff',
 		fontSize: 15,
-		margin: 15,
+		margin: 20,
 	},
 });
 
