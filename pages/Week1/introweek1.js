@@ -38,6 +38,9 @@ export default class introweek1 extends Component{
 			<Text style={styles.text}>
 			{'Intro Week 1'}
 			</Text>
+			<Text style={styles.space}>
+			{'         '}
+			</Text>
 			<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
 			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%201%2Fintroweek1.mp4?alt=media&token=c79c359c-bb98-4111-8f8e-68b4b7e44646'}}
@@ -81,7 +84,7 @@ const styles = StyleSheet.create({
 	},
 	space: {
 		width: width,
-		height: height/ 7,
+		height: height/ 10,
 		alignItems: 'center'
 	},
 	poster: {
@@ -111,7 +114,6 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		position: 'absolute',
 		top: 15,
-		paddingBottom: 50,
 	},
 	resour: {
 		//flex :1,
