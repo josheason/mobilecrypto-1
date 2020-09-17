@@ -35,7 +35,9 @@ export default class introweek1 extends Component{
 	render(){
 	return(
 		<ScrollView 
-		style = {{styles.container}}>{
+		//style = {{styles.container}}
+		style = {{ backgroundColor: '#121212' }}
+		>{
 			/*<Text style={styles.text}>
 			{'Intro Week 1'}
 			</Text>
