@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
 		//justifyContent: 'center',
 		color: '#fff',
 		fontSize: 30,
-		fontweight: 'bold',
+		fontWeight: 'bold',
 		position: 'absolute',
 		top: 15,
 		paddingLeft: 5,
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
 		//justifyContent: 'center',
 		color: '#fff',
 		fontSize: 25,
-		fontweight: 'bold',
+		fontWeight: 'bold',
 		//margin: 20,
 		paddingTop: 20,
 		paddingBottom: 15,
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
 		//margin: 20,
 		paddingTop: 30,
 		paddingLeft: 5,
-		fontweight: 'bold',
+		fontWeight: 'bold',
 	},
 	para: {
 		//flex :1,
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
 		//margin: 20,
 		paddingTop: 20,
 		paddingLeft: 5,
-		fontweight: 'bold',
+		fontWeight: 'bold',
 	},
 });
 
