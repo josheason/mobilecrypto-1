@@ -51,7 +51,7 @@ import lend27 from './pages/DeFi/lend27.js'
 import dashboard from './pages/dashboard.js'
 
 import introweek1 from './pages/Week1/introweek1.js'
-
+import booklistw12 from './pages/Week1/booklistw12.js'
 import win3 from './pages/Week1/win3.js'
 import body4 from './pages/Week1/body4.js'
 
@@ -308,6 +308,11 @@ const Routes = ()=> {
                     key="body4"
                     title="body4"
                     component={body4}>
+                   </Scene>
+                    <Scene
+                    key="booklistw12"
+                    title="booklistw12"
+                    component={booklistw12}>
                    </Scene>
            </Scene>
         </Router>
