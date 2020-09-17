@@ -33,7 +33,8 @@ export default class booklistw12{
         		})
     		})
 	}
-
+	
+	render(){
 	return(
 		<View style = {styles.container}>
 			<Text style = {styles.resour1}>{`Book List`}</Text>
@@ -71,6 +72,7 @@ export default class booklistw12{
 			</View>
 		</View>
 		);
+}
 }
 
 	
