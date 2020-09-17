@@ -73,6 +73,8 @@ class List extends Component {
          Actions.introweek1();
       if(itemid == 2)
           Actions.win3();
+      if(itemid == 3)
+          Actions.body4();
    }
 }
 export default List
