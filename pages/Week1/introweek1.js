@@ -38,7 +38,7 @@ export default class introweek1 extends Component{
 			<Text style={styles.text}>
 			{'Intro Week 1'}
 			</Text>
-			<Text style={styles.containerURL}>
+			<Text style={styles.space}>
 			{'              '}
 			</Text>
 			<Video
@@ -72,6 +72,10 @@ const styles = StyleSheet.create({
 		width: width,
 		height: height/ 3,
 	},
+	space: {
+		width: width,
+		height: height/ 6,
+	},
 	poster: {
 		width: width,
 		height: height/ 3,
@@ -88,16 +92,16 @@ const styles = StyleSheet.create({
 		backgroundColor: '#121212',
 		color: '#03dac5',
 		alignItems: 'center',
-		justifyContent: 'space-around',
 	},
 	text: {
 		flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
-		//justifyContent: 'center',
-		justifyContent: 'space-around',
+		justifyContent: 'center',
 		color: '#fff',
 		fontSize: 20,
+		position: 'absolute',
+		top: 15,
 	},
 });
 
