@@ -36,8 +36,10 @@ export default class introweek1 extends Component{
 	return(
 		<View style = {styles.container}>
 			<Text style={styles.text}>
-			{'Intro Week 1
-			'}
+			{'Intro Week 1'}
+			</Text>
+			<Text style={styles.containerURL}>
+			{'              '}
 			</Text>
 			<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
