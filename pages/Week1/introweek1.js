@@ -66,14 +66,89 @@ export default class introweek1 extends Component{
 			{'Science_and_Human_Behavior.pdf'}
 			</Text>
 			<Text style={styles.para}>
-			{'Congratulations; youre finally in the course! You took the next step to change your life for the better by learning internet 3.0, blockchain technology, cryptocurrencies and how to seriously make money in this industry.'}
+			{'Congratulations; you&spos;sre finally in the course! You took the next step to change your life for the better by learning internet 3.0, blockchain technology, cryptocurrencies and how to seriously make money in this industry.'}
 			</Text>
 			 <Text style={styles.para}>
-			{'At the start of each week, I will provide an introductory video, allowing an overview of what the weeks lessons will entail.'}
+			{'At the start of each week, I will provide an introductory video, allowing an overview of what the week&spos;ss lessons will entail.'}
 			</Text>
 			<Text style={styles.para}>
 			<Text style = {styles.ital}>
 			{'This is the most important video in the whole entire course.'}</Text> {'The information given in this video will guarantee your success; I recommend following my advice strictly.'}
+			</Text>
+			<Text style={styles.para}>
+			{'The most important way to get results is not doing “dumb things”. I constructed a list of “dumb things” to avoid throughout this course, that I will be providing you with shortly.'}
+			</Text>
+			<Text style={styles.para}>
+			{`B.F Skinner’s operant conditioning experiment on the behavior of mice conveys a strong message that can be related to our daily habits. `}
+			</Text>
+			<Text style={styles.para}>
+			{`The mice were conditioned to press a lever that would provide a reward, triggering an endorphin release. In turn, they became addicted to the “good feeling” received after pressing the lever. The scientists proceeded to put a painful obstacle between the mice and the lever. In spite of the pain it caused them, the mice still pursued the lever. Over time, they developed a habit of hurting themselves to release endorphins. `}
+			</Text>
+			<Text style={styles.para}>
+			{`I believe this is what is happening in many individuals' lives. They unknowingly harm themselves in pursuit of feeling good. `}
+			</Text>
+			<Text style={styles.para}>
+			{`However, I am going to tell you how to avoid this pain.`}
+			</Text>
+			<Text style={styles.para}>
+			<Text style ={styles.bold}>{`Mistake #1:`}</Text>{` Not taking full advantage of Facebook. `}
+			</Text>
+			<Text style={styles.para}>
+			{`Facebook is 95% of this course. Joining the Facebook group is beneficial because it is full of experienced and insightful individuals that you will have the opportunity to connect with and learn from. In addition, I will be holding live Q and A sessions, which will be a great window to ask me questions.`}
+			</Text>
+			<Text style={styles.italPara}>
+			{`Engage and be involved in the community, if you are not a member: join now.`}
+			</Text>
+			<Text style={styles.para}>
+			<Text style ={styles.bold}>{`Mistake #2:`}</Text>{`Skipping segments of the course. `}
+			</Text>
+			<Text style={styles.para}>
+			{`I intentionally formatted this course in such a way that each section prepares for the next. Skipping will not allow you to see the big picture. It is important to actively listen, watch with intent, and take notes during each video. `}
+			</Text>
+			<Text style={styles.italPara}>
+			{`Complete the course in its entirety.`}
+			</Text>
+			<Text style={styles.para}>
+			<Text style ={styles.bold}>{`Mistake #3:`}</Text>{`Holding on to your ego `}
+			</Text>
+			<Text style={styles.para}>
+			{`Leave your ego behind. Regardless of any prior knowledge you may have, this course will still provide new, valuable information to you. Holding on to ego and pride will block you from learning anything new. `}
+			</Text>
+			<Text style={styles.italPara}>
+			{`Be open to new information; it is okay if you do not know everything yet. `}
+			</Text>
+			<Text style={styles.para}>
+			<Text style ={styles.bold}>{`Mistake #4:`}</Text>{`Procrastination `}
+			</Text>
+			<Text style={styles.para}>
+			{`Be realistic with your time management during this course. You should not speed through it; however, you must not take too long to complete it. Apply the concepts you learn immediately, do not wait. Pace yourself through the course wisely, it should take a maximum of 10 weeks. `}
+			</Text>
+			<Text style={styles.italPara}>
+			{`Procrastination never yields successful results. `}
+			</Text>
+			<Text style={styles.para}>
+			<Text style ={styles.bold}>{`Mistake #5:`}</Text>{`Declining constructive criticism `}
+			</Text>
+			<Text style={styles.para}>
+			{`You are in this course for a reason: to learn new information or to solve a problem. In order for me to help you, I have to be 100% honest with you, even if it may seem brutal.`}
+			</Text>
+			<Text style={styles.para}>
+			{`If my honesty offends or angers you, this could mean your pride is getting involved. It is important to understand that I am not trying to insult or dismiss you; I am trying to help you achieve successful results.`}
+			</Text>
+			<Text style={styles.italPara}>
+			{`Criticism does not always have to be negative, we are here to grow, learn to accept it. `}
+			</Text>
+			<Text style={styles.para}>
+			{`Now that we have learned what not to do, I am going to ask you to do something to prove you are taking this course seriously. `}
+			</Text>
+			<Text style={styles.para}>
+			{`Join the Facebook group and send the following hashtag: `}
+			</Text>
+			<Text style={styles.para}>
+			{`#MOUSEMAN`}
+			</Text>
+			<Text style={styles.para}>
+			{`That is all for this video, thanks for watching.`}
 			</Text>
 		</ScrollView>
 		);
@@ -81,7 +156,7 @@ export default class introweek1 extends Component{
 }
 
 			/*<Text style={styles.para}>
-			{''}
+			{``}
 			</Text>*/
 	
 const styles = StyleSheet.create({
@@ -161,7 +236,7 @@ const styles = StyleSheet.create({
 		//margin: 20,
 		paddingTop: 20,
 		paddingLeft: 5,
-		fontWeight: 'bold',
+		//fontWeight: 'bold',
 	},
 	ital: {
 		//flex :1,
@@ -170,8 +245,30 @@ const styles = StyleSheet.create({
 		//justifyContent: 'center',
 		color: '#fff',
 		fontSize: 15,
-		fontWeight: 'bold',
+		//fontWeight: 'bold',
 		fontStyle: 'italic',
+	},
+	bold: {
+		//flex :1,
+		backgroundColor: '#121212',
+		alignItems: 'center',
+		//justifyContent: 'center',
+		color: '#fff',
+		fontSize: 15,
+		fontWeight: 'bold',
+		//fontStyle: 'italic',
+	},
+	italPara: {
+		//flex :1,
+		backgroundColor: '#121212',
+		alignItems: 'center',
+		//justifyContent: 'center',
+		color: '#fff',
+		fontSize: 15,
+		//margin: 20,
+		paddingTop: 20,
+		paddingLeft: 5,
+		fontWeight: 'italic',
 	},
 });
 
