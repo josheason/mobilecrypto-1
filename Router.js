@@ -60,6 +60,7 @@ import sixrules7 from './pages/Week1/sixrules7.js'
 import rewire8 from './pages/Week1/rewire8.js'
 
 import week2intro1 from './pages/Week2/week2intro1.js'
+import booklistw2 from './pages/Week2/booklistw2.js'
 
 
 
@@ -344,6 +345,11 @@ const Routes = ()=> {
                     key="week2intro1"
                     title="week2intro1"
                     component={week2intro1}>
+                   </Scene>
+                    <Scene
+                    key="booklistw2"
+                    title="booklistw2"
+                    component={booklistw2}>
                    </Scene>
            </Scene>
         </Router>
