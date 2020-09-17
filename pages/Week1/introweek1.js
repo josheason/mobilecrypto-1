@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
 		paddingLeft: 5,
 		//fontWeight: 'bold',
 	},
-	/*ital: {
+	ital: {
 		//flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
@@ -251,7 +251,7 @@ const styles = StyleSheet.create({
 		//fontWeight: 'bold',
 		fontStyle: 'italic',
 	},
-	bol: {
+	/*bol: {
 		//flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
