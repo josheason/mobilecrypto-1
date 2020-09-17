@@ -36,7 +36,8 @@ export default class introweek1 extends Component{
 	return(
 		<View style = {styles.container}>
 			<Text style={styles.text}>
-			{'Intro Week 1'}
+			{'Intro Week 1
+			'}
 			</Text>
 			<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
@@ -68,7 +69,6 @@ const styles = StyleSheet.create({
 	video: {
 		width: width,
 		height: height/ 3,
-		justifyContent: 'space-around',
 	},
 	poster: {
 		width: width,
@@ -96,8 +96,6 @@ const styles = StyleSheet.create({
 		justifyContent: 'space-around',
 		color: '#fff',
 		fontSize: 20,
-		position: 'absolute',
-		top: 15,
 	},
 });
 
