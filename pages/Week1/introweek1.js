@@ -113,6 +113,7 @@ const styles = StyleSheet.create({
 		//justifyContent: 'center',
 		color: '#fff',
 		fontSize: 15,
+		margin: 15,
 	},
 });
 
