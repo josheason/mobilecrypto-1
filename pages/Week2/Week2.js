@@ -86,7 +86,7 @@ class List extends Component {
    }
    navigate(itemid) {
       if(itemid == 0)
-         Actions.StartHere();
+         Actions.week2intro1();
       if(itemid == 1)
          this.navigate2();
    }
