@@ -16,7 +16,7 @@ export default function booklistw12(){
 	return(
 		<View style = {styles.container}>
 			<Text style = {styles.text}>{`Book List`}</Text>
-      <Text style = {styles.resour>{`Resources`}</Text>
+      <Text style = {styles.resour}>{`Resources`}</Text>
       <Text style={styles.paraURL}
 			onPress={() => Linking.openURL('https://kajabi-storefronts-production.s3.amazonaws.com/posts/8700599/downloads/6aaUvbORWiiXiibKCdxO_Week_1_Weekly_Tracker.pdf?response-content-disposition=attachment%3B%20filename%3DWeek_1_Weekly_Tracker.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200917%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200917T154007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e607570dc34237bfb5e588672fad0990ab5bd550e3c8028d83bb7816c7eefe85')}>
 			{'Week_1_Weekly_Tracker.pdf'}
