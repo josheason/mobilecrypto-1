@@ -68,6 +68,8 @@ const styles = StyleSheet.create({
 	video: {
 		width: width,
 		height: height/ 3,
+		position: 'absolute',
+		top: 35,
 	},
 	poster: {
 		width: width,
@@ -79,8 +81,6 @@ const styles = StyleSheet.create({
 		backgroundColor: '#121212',
 		alignItems: 'center',
 		justifyContent: 'center',
-		position: 'absolute',
-		top: 35,
 	},
 	containerURL: {
 		flex :1,
