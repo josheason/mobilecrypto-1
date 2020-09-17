@@ -68,8 +68,7 @@ const styles = StyleSheet.create({
 	video: {
 		width: width,
 		height: height/ 3,
-		position: 'absolute',
-		top: 100,
+		justifyContent: 'space-around',
 	},
 	poster: {
 		width: width,
@@ -87,15 +86,14 @@ const styles = StyleSheet.create({
 		backgroundColor: '#121212',
 		color: '#03dac5',
 		alignItems: 'center',
-		justifyContent: 'center',
-		position: 'absolute',
-		top: 150,
+		justifyContent: 'space-around',
 	},
 	text: {
 		flex :1,
 		backgroundColor: '#121212',
 		alignItems: 'center',
-		justifyContent: 'center',
+		//justifyContent: 'center',
+		justifyContent: 'space-around',
 		color: '#fff',
 		fontSize: 20,
 		position: 'absolute',
