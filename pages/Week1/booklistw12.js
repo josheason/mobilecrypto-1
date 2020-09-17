@@ -12,7 +12,7 @@ const { width, height } = Dimensions.get('window');
 
 
  
-export default class booklistw12{
+export default class booklistw12 extends Component{
 	
 	componentDidMount(){
    		const db = firebase.firestore();
