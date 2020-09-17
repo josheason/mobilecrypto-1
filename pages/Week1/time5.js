@@ -40,7 +40,7 @@ export default class time5 extends Component{
 				<><View
 				style = {{ backgroundColor: '#121212' }}>
 				<><Text style={styles.text}>
-				{'Body'}
+				{'Time'}
 				</Text>
 				<Text style={styles.space}>
 				{'         '}
