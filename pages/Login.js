@@ -153,8 +153,9 @@ LogIn = (email, password) => {
             placeholderTextColor="#ffffff"
             onChangeText={text => this.setState({password:text})}/>
         </View>
-        <TouchableOpacity style={styles.loginBtn} 
-	onPress={() => this.LogIn(this.state.email, this.state.password)}>
+        <TouchableOpacity style={styles.loginBtn}
+	onPress={() => this.navigate2()}>
+	//onPress={() => this.LogIn(this.state.email, this.state.password)}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
 
