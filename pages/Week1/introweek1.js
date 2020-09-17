@@ -312,6 +312,7 @@ const styles = StyleSheet.create({
 	buttonText:{
 		fontSize: 21,
 		color: '#fff'
+		alignItems: 'center',
 	},
 	previcon: {
 		color:"#fff",
