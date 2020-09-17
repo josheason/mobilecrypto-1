@@ -86,7 +86,14 @@ LogIn = (email, password) => {
          		dash: false,
          		id: user.uid,
          		watched: 0,
-			introweek1: false,
+			w1_1: false,
+			w1_2: false,
+			w1_3: false,
+			w1_4: false,
+			w1_5: false,
+			w1_6: false,
+			w1_7: false,
+			w1_8: false,
          		})
          		.then(() => {
             		console.log('User added!');
