@@ -79,6 +79,8 @@ class List extends Component {
           Actions.body4();
       if(itemid == 4)
           Actions.time5();
+      if(itemid == 5)
+          Actions.focus6();
    }
 }
 export default List
