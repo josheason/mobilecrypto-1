@@ -62,6 +62,7 @@ import rewire8 from './pages/Week1/rewire8.js'
 import week2intro1 from './pages/Week2/week2intro1.js'
 import booklistw2 from './pages/Week2/booklistw2.js'
 import internetwork3 from './pages/Week2/internetwork3.js'
+import bitcoin1014 from './pages/Week2/bitcoin1014.js'
 
 
 
@@ -356,6 +357,11 @@ const Routes = ()=> {
                     key="internetwork3"
                     title="internetwork3"
                     component={internetwork3}>
+                   </Scene>
+                   <Scene
+                    key="bitcoin1014"
+                    title="bitcoin1014"
+                    component={bitcoin1014}>
                    </Scene>
            </Scene>
         </Router>
