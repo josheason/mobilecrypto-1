@@ -54,6 +54,7 @@ import introweek1 from './pages/Week1/introweek1.js'
 import booklistw12 from './pages/Week1/booklistw12.js'
 import win3 from './pages/Week1/win3.js'
 import body4 from './pages/Week1/body4.js'
+import time5 from './pages/Week1/time5.js'
 
 
 
@@ -313,6 +314,11 @@ const Routes = ()=> {
                     key="booklistw12"
                     title="booklistw12"
                     component={booklistw12}>
+                   </Scene>
+                    <Scene
+                    key="time5"
+                    title="time5"
+                    component={time5}>
                    </Scene>
            </Scene>
         </Router>
