@@ -18,13 +18,10 @@ export default class w5booklist2 extends Component{
 	render(){
 	return(
 		<View style = {styles.container}>
-		<Text style = {styles.para}>{` `}</Text>
 			<Text style = {styles.resour1}>{`Book List`}</Text>
-      <Text style = {styles.para}>{` `}</Text>
     <Text style={styles.resour}>
 			{'Resources'}
 			</Text>
-		<Text style = {styles.para}>{` `}</Text>
 			<Text style={styles.containerURL}
 			onPress={() => Linking.openURL(`https://kajabi-storefronts-production.s3.amazonaws.com/posts/9037468/downloads/mcxSLTaXSByz43j4d4BB_Week_5_Weekly_Tracker.pdf?response-content-disposition=attachment%3B%20filename%3DWeek_5_Weekly_Tracker.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200918%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200918T153421Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=266241941d690d4894971de5ed87bd67df648e66d45686dbde1df595c84fae62`)}>
 			{'Week_5_Weekly_Tracker.pdf'}
