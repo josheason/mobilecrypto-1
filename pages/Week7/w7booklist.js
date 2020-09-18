@@ -32,17 +32,14 @@ export default class w7booklist extends Component{
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
   			    <Text style={styles.regURL} >{`The Singularity Is Near: When Humans Transcend Biology`}</Text>
  			   </Text>
-				<Text style= {styles.lastPara}>{`   `}</Text>
         <Text style = {styles.para} onPress={() => Linking.openURL("https://www.amazon.com/Dictators-Handbook-Behavior-Almost-Politics/dp/1610391845")}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
   			    <Text style={styles.regURL} >{`The Dictator's Handbook: Why Bad Behavior is Almost Always Good Politics`}</Text>
  			   </Text>
-				<Text style= {styles.lastPara}>{`   `}</Text>
           <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/3bXFQ2y')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
   			    <Text style={styles.regURL} >{`The Starfish and the Spider: The Unstoppable Power of Leaderless Organizations`}</Text>
  			   </Text>
-				<Text style= {styles.lastPara}>{`   `}</Text>
 					<View style={styles.buttonRow}>
 				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.moreprodquest8()}>
 					<View style={styles.previcon}>
