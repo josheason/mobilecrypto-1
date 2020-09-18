@@ -86,6 +86,7 @@ import vpn11 from './pages/Week3SS/vpn11.js'
 import googleauth12 from './pages/Week3SS/googleauth12.js'
 import keepass13 from './pages/Week3SS/keepass13.js'
 import whatexuse14 from './pages/Week3SS/whatexuse14.js'
+import ultimsec15 from './pages/Week3SS/ultimsec15.js'
 
 const styles = StyleSheet.create({
     titlestyle: {
@@ -493,6 +494,11 @@ const Routes = ()=> {
                     key="whatexuse14"
                     title="whatexuse14"
                     component={whatexuse14}>
+                   </Scene>
+                    <Scene
+                    key="ultimsec15"
+                    title="ultimsec15"
+                    component={ultimsec15}>
                    </Scene>
            </Scene>
         </Router>
