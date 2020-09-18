@@ -122,6 +122,14 @@ import conmech6 from './pages/Week6/conmech6.js'
 import valueprop7 from './pages/Week6/valueprop7.js'
 import moreprodquest8 from './pages/Week6/moreprodquest8.js'
 
+import w7booklist from './pages/Week7/w7booklist.js'
+import topdownfun2 from './pages/Week7/topdownfun2.js'
+import keyecohealth3 from './pages/Week7/keyecohealth3.js'
+import indfun4 from './pages/Week7/indfun4.js'
+import ecopre5 from './pages/Week7/ecopre5.js'
+import utility6 from './pages/Week7/utility6.js'
+import metcalfe7 from './pages/Week7/metcalfe7.js'
+
 
 const styles = StyleSheet.create({
     titlestyle: {
@@ -679,6 +687,41 @@ const Routes = ()=> {
                     key="moreprodquest8"
                     title="moreprodquest8"
                     component={moreprodquest8}>
+                   </Scene>
+                    <Scene
+                    key="w7booklist"
+                    title="w7booklist"
+                    component={w7booklist}>
+                   </Scene>
+                    <Scene
+                    key="topdownfun2"
+                    title="topdownfun2"
+                    component={topdownfun2}>
+                   </Scene>
+                <Scene
+                    key="keyecohealth3"
+                    title="keyecohealth3"
+                    component={keyecohealth3}>
+                   </Scene>
+                    <Scene
+                    key="indfun4"
+                    title="indfun4"
+                    component={indfun4}>
+                   </Scene>
+                    <Scene
+                    key="ecopre5"
+                    title="ecopre5"
+                    component={ecopre5}>
+                   </Scene>
+                    <Scene
+                    key="utility6"
+                    title="utility6"
+                    component={utility6}>
+                   </Scene>
+                    <Scene
+                    key="metcalfe7"
+                    title="metcalfe7"
+                    component={metcalfe7}>
                    </Scene>
            </Scene>
         </Router>
