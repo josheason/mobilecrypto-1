@@ -101,13 +101,13 @@ class List extends Component {
          Actions.eth1027();
       if(itemid == 7)
          Actions.mcyclesimp8();
-      if(itemid == 7)
+      if(itemid == 8)
          Actions.bitbestform9();
-      if(itemid == 7)
+      if(itemid == 9)
          Actions.investcrypto10();
-      if(itemid == 7)
+      if(itemid == 10)
          Actions.dapps11();
-      if(itemid == 7)
+      if(itemid == 11)
          Actions.defi12();
    }
 }
