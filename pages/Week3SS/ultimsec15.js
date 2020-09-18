@@ -70,7 +70,7 @@ export default class ultimsec15 extends Component{
 					</View><></>
 				</TouchableOpacity><></>
 
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.chromeextwall9()}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.w3booklist1()}>
 					<View style={styles.nexticon}>
 						<Text style={styles.buttonText}>Next</Text><></>
 						<Icon name="arrow-right" size={20} style={styles.icon}/><></>
