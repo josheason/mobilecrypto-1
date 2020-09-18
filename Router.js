@@ -119,7 +119,7 @@ import roadmapresearch3 from './pages/Week6/roadmapresearch3.js'
 import productresearch4 from './pages/Week6/productresearch4.js'
 import decent5 from './pages/Week6/decent5.js'
 import conmech6 from './pages/Week6/conmech6.js'
-import alueprop7 from './pages/Week6/valueprop7.js'
+import valueprop7 from './pages/Week6/valueprop7.js'
 import moreprodquest8 from './pages/Week6/moreprodquest8.js'
 
 
