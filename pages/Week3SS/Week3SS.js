@@ -98,7 +98,7 @@ class List extends Component {
       if(itemid == 1)
          Actions.sendcrypto2();
       if(itemid == 2)
-         Actions.coinbase();
+         Actions.coinbase3();
       if(itemid == 3)
          Actions.details4();
       if(itemid == 4)
