@@ -390,6 +390,26 @@ const Routes = ()=> {
                     title="mcyclesimp8"
                     component={mcyclesimp8}>
                    </Scene>
+                   <Scene
+                    key="bitbestform9"
+                    title="bitbestform9"
+                    component={bitbestform9}>
+                   </Scene>
+                   <Scene
+                    key="investcrypto10"
+                    title="investcrypto10"
+                    component={investcrypto10}>
+                   </Scene>
+                   <Scene
+                    key="dapps11"
+                    title="dapps11"
+                    component={dapps11}>
+                   </Scene>
+                   <Scene
+                    key="defi12"
+                    title="defi12"
+                    component={defi12}>
+                   </Scene>
            </Scene>
         </Router>
     )
