@@ -88,6 +88,8 @@ import keepass13 from './pages/Week3SS/keepass13.js'
 import whatexuse14 from './pages/Week3SS/whatexuse14.js'
 import ultimsec15 from './pages/Week3SS/ultimsec15.js'
 
+import w3booklist1 from './pages/Week3RF/w3booklist1.js'
+
 const styles = StyleSheet.create({
     titlestyle: {
         color: '#ffffff',
@@ -499,6 +501,11 @@ const Routes = ()=> {
                     key="ultimsec15"
                     title="ultimsec15"
                     component={ultimsec15}>
+                   </Scene>
+                    <Scene
+                    key="w3booklist1"
+                    title="w3booklist1"
+                    component={w3booklist1}>
                    </Scene>
            </Scene>
         </Router>
