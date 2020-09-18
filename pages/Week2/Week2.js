@@ -101,6 +101,14 @@ class List extends Component {
          Actions.eth1027();
       if(itemid == 7)
          Actions.mcyclesimp8();
+      if(itemid == 7)
+         Actions.bitbestform9();
+      if(itemid == 7)
+         Actions.investcrypto10();
+      if(itemid == 7)
+         Actions.dapps11();
+      if(itemid == 7)
+         Actions.defi12();
    }
 }
 export default List
