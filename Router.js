@@ -516,6 +516,7 @@ const Routes = ()=> {
                     key="w3booklist1"
                     title="w3booklist1"
                     component={w3booklist1}>
+                    </Scene>
                     <Scene
                     key="researchlist2"
                     title="researchlist2"
@@ -536,7 +537,6 @@ const Routes = ()=> {
                     title="whitepaper1015"
                     component={whitepaper1015}>
                    </Scene>
-                       </Scene>
                     <Scene
                     key="blackbox6"
                     title="blackbox6"
