@@ -47,7 +47,7 @@ export default class deskwall8 extends Component{
 				</Text><></>
 				<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
-			source={{ uri: `https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%203%20SS%2FHitBTCExchangeTutorial.mp4?alt=media&token=d320a6ac-e4ed-4a30-addd-1c5d8d54dc50`}}
+			source={{ uri: `https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%203%20SS%2FDesktopWallets.mp4?alt=media&token=d5d68359-7afb-4f18-82c5-f1ebe8a5b640`}}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
