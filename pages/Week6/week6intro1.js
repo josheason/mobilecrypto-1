@@ -125,7 +125,7 @@ export default class week6intro1 extends Component{
 			<Text style={styles.para}>
 			{`Make sure you are applying good habits and doing research. `}
 			</Text><></>
-			Text style={styles.para}>
+			<Text style={styles.para}>
 			{` `}
 			</Text><></>
 			<Text style={styles.para}>
