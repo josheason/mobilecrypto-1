@@ -64,7 +64,15 @@ class List extends Component {
       if(itemid == 0)
          Actions.w3booklist1();
       if(itemid == 1)
-         this.w3booklist1();
+         Actions.researchlist2();
+      if(itemid == 2)
+         Actions.deskorg3();
+      if(itemid == 3)
+         Actions.avoidcred4();
+      if(itemid == 4)
+         Actions.whitepaper1015();
+      if(itemid == 5)
+         Actions.blackbox6();
    }
 }
 export default List
