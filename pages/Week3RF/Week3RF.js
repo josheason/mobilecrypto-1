@@ -49,7 +49,7 @@ class List extends Component {
                   <TouchableOpacity
                      key = {item.id}
                      style = {s.listcontainer}
-                     onPress = {() => this.alertItemName(item)}>
+                     onPress = {() => this.navigate(item.id)}>
                      <Text style = {s.listtext}>
                         {item.name}
                      </Text>
@@ -64,7 +64,7 @@ class List extends Component {
       if(itemid == 0)
          Actions.w3booklist1();
       if(itemid == 1)
-         this.navigate2();
+         this.w3booklist1();
    }
 }
 export default List
