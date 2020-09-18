@@ -64,6 +64,9 @@ import booklistw2 from './pages/Week2/booklistw2.js'
 import internetwork3 from './pages/Week2/internetwork3.js'
 import bitcoin1014 from './pages/Week2/bitcoin1014.js'
 import bitcoin1025 from './pages/Week2/bitcoin1025.js'
+import eth1016 from './pages/Week2/eth1016.js'
+import eth1027 from './pages/Week2/eth1027.js'
+import mcyclesimp8 from './pages/Week2/mcyclesimp8.js'
 
 
 const styles = StyleSheet.create({
@@ -367,6 +370,21 @@ const Routes = ()=> {
                     key="bitcoin1025"
                     title="bitcoin1025"
                     component={bitcoin1025}>
+                   </Scene>
+                   <Scene
+                    key="eth1016"
+                    title="eth1016"
+                    component={eth1016}>
+                   </Scene>
+                   <Scene
+                    key="eth1027"
+                    title="eth1027"
+                    component={eth1027}>
+                   </Scene>
+                   <Scene
+                    key="mcyclesimp8"
+                    title="mcyclesimp8"
+                    component={mcyclesimp8}>
                    </Scene>
            </Scene>
         </Router>
