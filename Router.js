@@ -131,6 +131,20 @@ import utility6 from './pages/Week7/utility6.js'
 import metcalfe7 from './pages/Week7/metcalfe7.js'
 
 
+import tradeviewtut1 from './pages/Week8/tradeviewtut1.js'
+import masspsych2 from './pages/Week8/masspsych2.js'
+import bullsnbears3 from './pages/Week8/bullsnbears3.js'
+import shortvlonganal4 from './pages/Week8/shortvlonganal4.js'
+import critnmistechanalind5 from './pages/Week8/critnmistechanalind5.js'
+import orderbookmore6 from './pages/Week8/orderbookmore6.js'
+import candle7 from './pages/Week8/candle7.js'
+import support8 from './pages/Week8/support8.js'
+import trend9 from './pages/Week8/trend9.js'
+import moving10 from './pages/Week8/moving10.js'
+import macdrsi11 from './pages/Week8/macdrsi11.js'
+import bollinger12 from './pages/Week8/bollinger12.js'
+
+
 const styles = StyleSheet.create({
     titlestyle: {
         color: '#ffffff',
@@ -722,6 +736,66 @@ const Routes = ()=> {
                     key="metcalfe7"
                     title="metcalfe7"
                     component={metcalfe7}>
+                   </Scene>
+        <Scene
+                    key="tradeviewtut1"
+                    title="tradeviewtut1"
+                    component={tradeviewtut1}>
+                   </Scene>
+        <Scene
+                    key="masspsych2"
+                    title="masspsych2"
+                    component={masspsych2}>
+                   </Scene>
+        <Scene
+                    key="bullsnbears3"
+                    title="bullsnbears3"
+                    component={bullsnbears3}>
+                   </Scene>
+        <Scene
+                    key="shortvlonganal4"
+                    title="shortvlonganal4"
+                    component={shortvlonganal4}>
+                   </Scene>
+        <Scene
+                    key="critnmistechanalind5"
+                    title="critnmistechanalind5"
+                    component={critnmistechanalind5}>
+                   </Scene>
+        <Scene
+                    key="orderbookmore6"
+                    title="orderbookmore6"
+                    component={orderbookmore6}>
+                   </Scene>
+        <Scene
+                    key="candle7"
+                    title="candle7"
+                    component={candle7}>
+                   </Scene>
+        <Scene
+                    key="support8"
+                    title="support8"
+                    component={support8}>
+                   </Scene>
+        <Scene
+                    key="trend9"
+                    title="trend9"
+                    component={trend9}>
+                   </Scene>
+        <Scene
+                    key="moving10"
+                    title="moving10"
+                    component={moving10}>
+                   </Scene>
+        <Scene
+                    key="macdrsi11"
+                    title="macdrsi11"
+                    component={macdrsi11}>
+                   </Scene>
+        <Scene
+                    key="bollinger12"
+                    title="bollinger12"
+                    component={bollinger12}>
                    </Scene>
            </Scene>
         </Router>
