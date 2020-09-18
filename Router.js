@@ -72,6 +72,20 @@ import investcrypto10 from './pages/Week2/investcrypto10.js'
 import dapps11 from './pages/Week2/dapps11.js'
 import defi12 from './pages/Week2/defi12.js'
 
+import week3intro1 from './pages/Week3SS/week3intro1.js'
+import sendcrypto2 from './pages/Week3SS/sendcrypto2.js'
+import coinbase from './pages/Week3SS/coinbase3.js'
+import details4 from './pages/Week3SS/details4.js'
+import coinbasepro5 from './pages/Week3SS/coinbasepro5.js'
+import bintut6 from './pages/Week3SS/bintut6.js'
+import hitbextut7 from './pages/Week3SS/hitbextut7.js'
+import deskwall8 from './pages/Week3SS/deskwall8.js'
+import chromeextwall9 from './pages/Week3SS/chromeextwall9.js'
+import dexdappsdefitut10 from './pages/Week3SS/dexdappsdefitut10.js'
+import vpn11 from './pages/Week3SS/vpn11.js'
+import googleauth12 from './pages/Week3SS/googleauth12.js'
+import keepass13 from './pages/Week3SS/keepass13.js'
+import whatexuse14 from './pages/Week3SS/whatexuse14.js'
 
 const styles = StyleSheet.create({
     titlestyle: {
@@ -409,6 +423,76 @@ const Routes = ()=> {
                     key="defi12"
                     title="defi12"
                     component={defi12}>
+                   </Scene>
+                   <Scene
+                    key="week3intro1"
+                    title="week3intro1"
+                    component={week3intro1}>
+                   </Scene>
+                    <Scene
+                    key="sendcrypto2"
+                    title="sendcrypto2"
+                    component={sendcrypto2}>
+                   </Scene>
+                    <Scene
+                    key="coinbase3"
+                    title="coinbase3"
+                    component={coinbase3}>
+                   </Scene>
+                    <Scene
+                    key="details4"
+                    title="details4"
+                    component={details4}>
+                   </Scene>
+                    <Scene
+                    key="coinbasepro5"
+                    title="coinbasepro5"
+                    component={coinbasepro5}>
+                   </Scene>
+                    <Scene
+                    key="bintut6"
+                    title="bintut6"
+                    component={bintut6}>
+                   </Scene>
+                    <Scene
+                    key="hitbextut7"
+                    title="hitbextut7"
+                    component={hitbextut7}>
+                   </Scene>
+                    <Scene
+                    key="deskwall8"
+                    title="deskwall8"
+                    component={deskwall8}>
+                   </Scene>
+                    <Scene
+                    key="chromeextwall9"
+                    title="chromeextwall9"
+                    component={chromeextwall9}>
+                   </Scene>
+                    <Scene
+                    key="dexdappsdefitut10"
+                    title="dexdappsdefitut10"
+                    component={dexdappsdefitut10}>
+                   </Scene>
+                    <Scene
+                    key="vpn11"
+                    title="vpn11"
+                    component={vpn11}>
+                   </Scene>
+                    <Scene
+                    key="googleauth12"
+                    title="googleauth12"
+                    component={googleauth12}>
+                   </Scene>
+                    <Scene
+                    key="keepass13"
+                    title="keepass13"
+                    component={keepass13}>
+                   </Scene>
+                    <Scene
+                    key="whatexuse14"
+                    title="whatexuse14"
+                    component={whatexuse14}>
                    </Scene>
            </Scene>
         </Router>
