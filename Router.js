@@ -113,6 +113,14 @@ import litigations5 from './pages/Week5/litigations5.js'
 import partnerships6 from './pages/Week5/partnerships6.js'
 import corpgov7 from './pages/Week5/corpgov7.js'
 
+import week6intro1 from './pages/Week6/week6intro1.js'
+import w6booklist2 from './pages/Week6/w6booklist2.js'
+import roadmapresearch3 from './pages/Week6/roadmapresearch3.js'
+import productresearch4 from './pages/Week6/productresearch4.js'
+import decent5 from './pages/Week6/decent5.js'
+import conmech6 from './pages/Week6/conmech6.js'
+import alueprop7 from './pages/Week6/valueprop7.js'
+import moreprodquest8 from './pages/Week6/moreprodquest8.js'
 
 
 const styles = StyleSheet.create({
@@ -631,6 +639,46 @@ const Routes = ()=> {
                     key="corpgov7"
                     title="corpgov7"
                     component={corpgov7}>
+                   </Scene>
+                    <Scene
+                    key="week6intro1"
+                    title="week6intro1"
+                    component={week6intro1}>
+                   </Scene>
+                    <Scene
+                    key="w6booklist2"
+                    title="w6booklist2"
+                    component={w6booklist2}>
+                   </Scene>
+                    <Scene
+                    key="roadmapresearch3"
+                    title="roadmapresearch3"
+                    component={roadmapresearch3}>
+                   </Scene>
+                    <Scene
+                    key="productresearch4"
+                    title="productresearch4"
+                    component={productresearch4}>
+                   </Scene>
+                    <Scene
+                    key="decent5"
+                    title="decent5"
+                    component={decent5}>
+                   </Scene>
+                    <Scene
+                    key="conmech6"
+                    title="conmech6"
+                    component={conmech6}>
+                   </Scene>
+                    <Scene
+                    key="valueprop7"
+                    title="valueprop7"
+                    component={valueprop7}>
+                   </Scene>
+                    <Scene
+                    key="moreprodquest8"
+                    title="moreprodquest8"
+                    component={moreprodquest8}>
                    </Scene>
            </Scene>
         </Router>
