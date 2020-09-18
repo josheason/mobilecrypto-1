@@ -44,7 +44,7 @@ export default class booklistw2 extends Component{
 						<Text style={styles.buttonText}>Previous</Text>
 					</View>
 				</TouchableOpacity>
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.internetworks3()}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.internetwork3()}>
 					<View style={styles.nexticon}>
 						<Text style={styles.buttonText}>Next</Text>
 						<Icon name="arrow-right" size={20} style={styles.icon}/>
