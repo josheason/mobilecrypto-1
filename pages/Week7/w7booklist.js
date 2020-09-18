@@ -18,18 +18,15 @@ export default class w7booklist extends Component{
 	render(){
 	return(
 		<View style = {styles.container}>
-		<Text style = {styles.para}>{` `}</Text>
 			<Text style = {styles.resour1}>{`Book List`}</Text>
       <Text style = {styles.para}>{` `}</Text>
     <Text style={styles.resour}>
 			{'Resources'}
 			</Text>
-		<Text style = {styles.para}>{` `}</Text>
 			<Text style={styles.containerURL}
 			onPress={() => Linking.openURL(`https://kajabi-storefronts-production.s3.amazonaws.com/posts/9571131/downloads/PLQM0acvSmeEq5yhrsAz_Week_7_Weekly_Report.pdf?response-content-disposition=attachment%3B%20filename%3DWeek_7_Weekly_Report.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200918%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200918T170852Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=633fe2864cb03bd144cbed2b8385c2db579d07f936df95e24fc47b6b71d356a7`)}>
 			{'Week_7_Workbook_Report.pdf'}
 			</Text>
-    <Text style = {styles.para}>{` `}</Text>
 			    <Text style = {styles.para}>{`Week 7 Book List`}</Text>
  			   <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/2Xl5Q2H')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
