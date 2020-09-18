@@ -67,6 +67,10 @@ import bitcoin1025 from './pages/Week2/bitcoin1025.js'
 import eth1016 from './pages/Week2/eth1016.js'
 import eth1027 from './pages/Week2/eth1027.js'
 import mcyclesimp8 from './pages/Week2/mcyclesimp8.js'
+import bitbestform9 from './pages/Week2/bitbestform9.js'
+import investcrypto10 from './pages/Week2/investcrypto10.js'
+import dapps11 from './pages/Week2/dapps11.js'
+import defi12 from './pages/Week2/defi12.js'
 
 
 const styles = StyleSheet.create({
