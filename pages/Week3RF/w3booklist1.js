@@ -18,11 +18,13 @@ export default class w3booklist1 extends Component{
 	render(){
 	return(
 		<View style = {styles.container}>
+		<Text style = {styles.para}>{` `}</Text>
 			<Text style = {styles.resour1}>{`Book List`}</Text>
-      <Text style = {styles.para}>{` t`}</Text>
+      <Text style = {styles.para}>{` `}</Text>
     <Text style={styles.resour}>
 			{'Resources'}
 			</Text>
+		<Text style = {styles.para}>{` `}</Text>
 			<Text style={styles.containerURL}
 			onPress={() => Linking.openURL(`https://kajabi-storefronts-production.s3.amazonaws.com/posts/8744850/downloads/kGecHGj1T5KihcBDV2IM_Week_3_Workbook_final_.pdf?response-content-disposition=attachment%3B%20filename%3DWeek_3_Workbook_final_.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200918%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200918T113858Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1569d137a5133360902c964bb574f618fec4f2254ccd76a19deebe4744ec59fd`)}>
 			{'Week_3_Workbook_final_.pdf'}
@@ -32,8 +34,8 @@ export default class w3booklist1 extends Component{
 	onPress={() => Linking.openURL(`https://kajabi-storefronts-production.s3.amazonaws.com/posts/8707077/downloads/6Ny19rbCQqpy64Lfuv1w_Week_3_Weekly_Tracker.pdf?response-content-disposition=attachment%3B%20filename%3DWeek_3_Weekly_Tracker.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200918%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200918T133857Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f48ecccf8351d9de1c121113ee7f8a5a440ca9f952cffd73f483e8f937011900`)}>
         {`Week_3_Weekly_Tracker.pdf`}
 			</Text>
-    <Text style = {styles.para}>{`Week 3 Book List`}</Text>
-			    <Text style = {styles.para}>{`Trust Me I'm Lying`}</Text>
+    <Text style = {styles.para}>{` `}</Text>
+			    <Text style = {styles.para}>{`Week 3 Boom List`}</Text>
  			   <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/3a8e0Qq')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
   			    <Text style={styles.regURL} >{`Trust Me I'm Lying`}</Text>
