@@ -151,12 +151,12 @@ import willywoo4 from './pages/Week9/willywoo4.js'
 import bitlogreg5 from './pages/Week9/bitlogreg5.js'
 
 import frontend1 from './pages/Week10/frontend1.js'
-import zoom2 from './pages/Week9/zoom2.js'
-import canva3 from './pages/Week9/canva3.js'
-import eventbrite4 from './pages/Week9/eventbrite4.js'
-import craigslist5 from './pages/Week9/craigslist5.js'
-import bigprom6 from './pages/Week9/bigprom6.js'
-import caltutsales7 from './pages/Week9/caltutsales7.js'
+import zoom2 from './pages/Week10/zoom2.js'
+import canva3 from './pages/Week10/canva3.js'
+import eventbrite4 from './pages/Week10/eventbrite4.js'
+import craigslist5 from './pages/Week10/craigslist5.js'
+import bigprom6 from './pages/Week10/bigprom6.js'
+import caltutsales7 from './pages/Week10/caltutsales7.js'
 
 
 const styles = StyleSheet.create({
