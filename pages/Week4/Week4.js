@@ -57,7 +57,7 @@ class List extends Component {
                   <TouchableOpacity
                      key = {item.id}
                      style = {s.listcontainer}
-                     onPress = {() => this.alertItemName(item)}>
+                     onPress = {() => this.navigate(item.id)}>
                      <Text style = {s.listtext}>
                         {item.name}
                      </Text>
@@ -70,9 +70,21 @@ class List extends Component {
    }
    navigate(itemid) {
       if(itemid == 0)
-         Actions.StartHere();
+         Actions.week4intro1();
       if(itemid == 1)
-         this.navigate2();
+         Actions.w4booklist2();
+      if(itemid == 0)
+         Actions.socialmediabas3();
+      if(itemid == 1)
+         Actions.googadwordcrypto4();
+      if(itemid == 0)
+         Actions.scrapytdata5();
+      if(itemid == 1)
+         Actions.webconvdes6();
+      if(itemid == 0)
+         Actions.webtraff7();
+      if(itemid == 1)
+         Actions.webedu8();
    }
 }
 export default List
