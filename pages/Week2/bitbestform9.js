@@ -47,7 +47,7 @@ export default class bitbestform9 extends Component{
 				</Text><></>
 				<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
-			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%202%2Fbitcoin101.mp4?alt=media&token=160579af-3a66-437a-a5a1-e5eaefff0dae'}}
+			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%202%2Fwhybitcoinbestform.mp4?alt=media&token=b01f38c7-4d4c-4fec-9073-ebf313ed0db8'}}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
