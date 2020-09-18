@@ -158,6 +158,8 @@ import craigslist5 from './pages/Week10/craigslist5.js'
 import bigprom6 from './pages/Week10/bigprom6.js'
 import caltutsales7 from './pages/Week10/caltutsales7.js'
 
+import HowToUse1 from './pages/StartHere/HowToUse1.js'
+
 
 const styles = StyleSheet.create({
     titlestyle: {
