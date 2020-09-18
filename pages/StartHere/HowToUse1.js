@@ -13,7 +13,7 @@ const { width, height } = Dimensions.get('window');
 
  
 //export default function WhatIsDeFi1(){
-export default HowToUse1  extends Component{
+export default class HowToUse1  extends Component{
 	
 	/*componentDidMount(){
    		const db = firebase.firestore();
