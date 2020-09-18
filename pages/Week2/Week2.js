@@ -95,6 +95,12 @@ class List extends Component {
          Actions.bitcoin1014();
       if(itemid == 4)
          Actions.bitcoin1025();
+      if(itemid == 5)
+         Actions.eth1016();
+      if(itemid == 6)
+         Actions.eth1027();
+      if(itemid == 7)
+         Actions.mcyclesimp8();
    }
 }
 export default List
