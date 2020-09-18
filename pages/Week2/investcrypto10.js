@@ -45,6 +45,9 @@ export default class investcrypto10 extends Component{
 				<Text style={styles.space}>
 				{'         '}
 				</Text><></>
+				<Text style={styles.space}>
+				{'         '}
+				</Text><></>
 				<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
 			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%202%2Fhowmuchmoneyshouldinvest.mp4?alt=media&token=1f455a16-0c69-4720-857c-a7ff7043b557'}}
