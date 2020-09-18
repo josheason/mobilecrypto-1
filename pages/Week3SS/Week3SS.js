@@ -94,9 +94,33 @@ class List extends Component {
    }
    navigate(itemid) {
       if(itemid == 0)
-         Actions.StartHere();
+         Actions.week3intro1();
       if(itemid == 1)
-         this.navigate2();
+         Actions.sendcrypto2();
+      if(itemid == 2)
+         Actions.coinbase();
+      if(itemid == 3)
+         Actions.details4();
+      if(itemid == 4)
+         Actions.coinbasepro5();
+      if(itemid == 5)
+         Actions.bintut6();
+      if(itemid == 6)
+         Actions.hitbextut7();
+      if(itemid == 7)
+         Actions.deskwall8();
+      if(itemid == 8)
+         Actions.chromeextwall9();
+      if(itemid == 9)
+         Actions.dexdappsdefitut10();
+      if(itemid == 10)
+         Actions.vpn11();
+      if(itemid == 11)
+         Actions.googleauth12();
+      if(itemid == 12)
+         Actions.keepass13();
+      if(itemid == 13)
+         Actions.whatexuse14();
    }
 }
 export default List
