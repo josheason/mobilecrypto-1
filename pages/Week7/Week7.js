@@ -16,7 +16,7 @@ class List extends Component {
          },
          {
             id: 2,
-            name: 'Key Measures Of Economy&apos;s Health',
+            name: `Key Measures Of Economy's Health`,
          },
          {
             id: 3,
@@ -28,11 +28,11 @@ class List extends Component {
          },
          {
             id: 5,
-            name: 'CUtility',
+            name: 'Utility',
          },
          {
             id: 6,
-            name: 'Metcalfe s Law Network Effects',
+            name: `Metcalfe's Law Network Effects`,
          },
          {
             id: 7,
