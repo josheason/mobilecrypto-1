@@ -35,7 +35,7 @@ export default class w3booklist1 extends Component{
         {`Week_3_Weekly_Tracker.pdf`}
 			</Text>
     <Text style = {styles.para}>{` `}</Text>
-			    <Text style = {styles.para}>{`Week 3 Boom List`}</Text>
+			    <Text style = {styles.para}>{`Week 3 Book List`}</Text>
  			   <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/3a8e0Qq')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
   			    <Text style={styles.regURL} >{`Trust Me I'm Lying`}</Text>
