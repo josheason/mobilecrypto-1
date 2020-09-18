@@ -38,13 +38,13 @@ export default class booklistw2 extends Component{
   			  </Text>
 				<Text style= {styles.lastPara}>{`   `}</Text>
 					<View style={styles.buttonRow}>
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.introweek1()}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.week2intro1()}>
 					<View style={styles.previcon}>
 						<Icon name="arrow-left" size={20} style={styles.icon}/>
 						<Text style={styles.buttonText}>Previous</Text>
 					</View>
 				</TouchableOpacity>
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.win3()}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.internetworks3()}>
 					<View style={styles.nexticon}>
 						<Text style={styles.buttonText}>Next</Text>
 						<Icon name="arrow-right" size={20} style={styles.icon}/>
