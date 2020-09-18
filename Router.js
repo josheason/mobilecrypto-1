@@ -88,7 +88,17 @@ import keepass13 from './pages/Week3SS/keepass13.js'
 import whatexuse14 from './pages/Week3SS/whatexuse14.js'
 import ultimsec15 from './pages/Week3SS/ultimsec15.js'
 
-import w3booklist1 from './pages/Week3RF/w3booklist1.js'
+import w3booklist1 from './pages/Week3RF/researchlist2.js'
+import researchlist2 from './pages/Week3RF/w3booklist1.js'
+import deskorg3 from './pages/Week3RF/deskorg3.js'
+import avoidcred4 from './pages/Week3RF/avoidcred4.js'
+import whitepaper1015 from './pages/Week3RF/whitepaper1015.js'
+import blackbox6 from './pages/Week3RF/blackbox6.js'
+
+
+
+
+
 
 const styles = StyleSheet.create({
     titlestyle: {
@@ -506,6 +516,31 @@ const Routes = ()=> {
                     key="w3booklist1"
                     title="w3booklist1"
                     component={w3booklist1}>
+                    <Scene
+                    key="researchlist2"
+                    title="researchlist2"
+                    component={researchlist2}>
+                   </Scene>
+                    <Scene
+                    key="deskorg3"
+                    title="deskorg3"
+                    component={deskorg3}>
+                   </Scene>
+                    <Scene
+                    key="avoidcred4"
+                    title="avoidcred4"
+                    component={avoidcred4}>
+                   </Scene>
+                    <Scene
+                    key="whitepaper1015"
+                    title="whitepaper1015"
+                    component={whitepaper1015}>
+                   </Scene>
+                       </Scene>
+                    <Scene
+                    key="blackbox6"
+                    title="blackbox6"
+                    component={blackbox6}>
                    </Scene>
            </Scene>
         </Router>
