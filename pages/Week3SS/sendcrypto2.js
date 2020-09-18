@@ -47,7 +47,7 @@ export default class sendcrypto2 extends Component{
 				</Text><></>
 				<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
-			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%203%20SS%2Fweek3intro.mp4?alt=media&token=383d8455-a56b-49c3-8dd8-a32cc2fdcb3a'}}
+			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%203%20SS%2Fhowtosendandreceivecrypto.mp4?alt=media&token=b6413519-3bc6-4276-8b15-755051f23bb7'}}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
