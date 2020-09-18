@@ -70,7 +70,7 @@ export default class defi12 extends Component{
 					</View><></>
 				</TouchableOpacity><></>
 
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.sixrules7()}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.week3intro1()}>
 					<View style={styles.nexticon}>
 						<Text style={styles.buttonText}>Next</Text><></>
 						<Icon name="arrow-right" size={20} style={styles.icon}/><></>
