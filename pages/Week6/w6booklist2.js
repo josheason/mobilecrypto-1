@@ -37,13 +37,13 @@ export default class w6booklist2 extends Component{
  			   </Text>
 				<Text style= {styles.lastPara}>{`   `}</Text>
 					<View style={styles.buttonRow}>
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.week2intro1()}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.week6intro1()}>
 					<View style={styles.previcon}>
 						<Icon name="arrow-left" size={20} style={styles.icon}/>
 						<Text style={styles.buttonText}>Previous</Text>
 					</View>
 				</TouchableOpacity>
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.internetwork3()}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.roadmapresearch3()}>
 					<View style={styles.nexticon}>
 						<Text style={styles.buttonText}>Next</Text>
 						<Icon name="arrow-right" size={20} style={styles.icon}/>
