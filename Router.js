@@ -150,6 +150,14 @@ import stockflowx3 from './pages/Week9/stockflowx3.js'
 import willywoo4 from './pages/Week9/willywoo4.js'
 import bitlogreg5 from './pages/Week9/bitlogreg5.js'
 
+import frontend1 from './pages/Week10/frontend1.js'
+import zoom2 from './pages/Week9/zoom2.js'
+import canva3 from './pages/Week9/canva3.js'
+import eventbrite4 from './pages/Week9/eventbrite4.js'
+import craigslist5 from './pages/Week9/craigslist5.js'
+import bigprom6 from './pages/Week9/bigprom6.js'
+import caltutsales7 from './pages/Week9/caltutsales7.js'
+
 
 const styles = StyleSheet.create({
     titlestyle: {
@@ -827,6 +835,41 @@ const Routes = ()=> {
                     key="bitlogreg5"
                     title="bitlogreg5"
                     component={bitlogreg5}>
+                   </Scene>
+         <Scene
+                    key="frontend1"
+                    title="frontend1"
+                    component={frontend1}>
+                   </Scene>
+         <Scene
+                    key="zoom2"
+                    title="zoom2"
+                    component={zoom2}>
+                   </Scene>
+         <Scene
+                    key="canva3"
+                    title="canva3"
+                    component={canva3}>
+                   </Scene>
+         <Scene
+                    key="eventbrite4"
+                    title="eventbrite4"
+                    component={eventbrite4}>
+                   </Scene>
+         <Scene
+                    key="craigslist5"
+                    title="craigslist5"
+                    component={craigslist5}>
+                   </Scene>
+         <Scene
+                    key="bigprom6"
+                    title="bigprom6"
+                    component={bigprom6}>
+                   </Scene>
+         <Scene
+                    key="caltutsales7"
+                    title="caltutsales7"
+                    component={caltutsales7}>
                    </Scene>
            </Scene>
         </Router>
