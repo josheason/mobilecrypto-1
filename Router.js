@@ -873,6 +873,11 @@ const Routes = ()=> {
                     title="caltutsales7"
                     component={caltutsales7}>
                    </Scene>
+         <Scene
+                    key="HowToUse1"
+                    title="HowToUse1"
+                    component={HowToUse1}>
+                   </Scene>
            </Scene>
         </Router>
     )
