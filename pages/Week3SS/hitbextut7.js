@@ -47,7 +47,7 @@ export default class hitbextut7 extends Component{
 				</Text><></>
 				<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
-			source={{ uri: `https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%203%20SS%2Fbinancetutorial.mp4?alt=media&token=5818e1a4-d1eb-4100-b21d-e41f8740b813`}}
+			source={{ uri: `https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%203%20SS%2FHitBTCExchangeTutorial.mp4?alt=media&token=d320a6ac-e4ed-4a30-addd-1c5d8d54dc50`}}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
