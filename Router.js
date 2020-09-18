@@ -144,6 +144,12 @@ import moving10 from './pages/Week8/moving10.js'
 import macdrsi11 from './pages/Week8/macdrsi11.js'
 import bollinger12 from './pages/Week8/bollinger12.js'
 
+import logregmarketcap1 from './pages/Week9/logregmarketcap1.js'
+import stock2flow2 from './pages/Week9/stock2flow2.js'
+import stockflowx3 from './pages/Week9/stockflowx3.js'
+import willywoo4 from './pages/Week9/willywoo4.js'
+import bitlogreg5 from './pages/Week9/bitlogreg5.js'
+
 
 const styles = StyleSheet.create({
     titlestyle: {
@@ -796,6 +802,31 @@ const Routes = ()=> {
                     key="bollinger12"
                     title="bollinger12"
                     component={bollinger12}>
+                   </Scene>
+        <Scene
+                    key="logregmarketcap1"
+                    title="logregmarketcap1"
+                    component={logregmarketcap1}>
+                   </Scene>
+        <Scene
+                    key="stock2flow2"
+                    title="stock2flow2"
+                    component={stock2flow2}>
+                   </Scene>
+        <Scene
+                    key="stockflowx3"
+                    title="stockflowx3"
+                    component={stockflowx3}>
+                   </Scene>
+        <Scene
+                    key="willywoo4"
+                    title="willywoo4"
+                    component={willywoo4}>
+                   </Scene>
+        <Scene
+                    key="bitlogreg5"
+                    title="bitlogreg5"
+                    component={bitlogreg5}>
                    </Scene>
            </Scene>
         </Router>
