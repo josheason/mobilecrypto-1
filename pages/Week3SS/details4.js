@@ -47,7 +47,7 @@ export default class details4 extends Component{
 				</Text><></>
 				<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
-			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%203%20SS%2Fcoinbase.mp4?alt=media&token=901c22b1-c7c7-4293-8025-10cf77ba321a'}}
+			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%203%20SS%2Fdetailsyoumustknow.mp4?alt=media&token=7848f37a-f322-4b38-b6e0-ba56dbaaeb89'}}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
