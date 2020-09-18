@@ -29,7 +29,7 @@ export default class w3booklist1 extends Component{
 			</Text>
       <Text style = {styles.para}>{` `}</Text>
       <Text style={styles.containerURL}
-			onPress={() => Linking.openURL(`https://kajabi-storefronts-production.s3.amazonaws.com/posts/8707077/downloads/6Ny19rbCQqpy64Lfuv1w_Week_3_Weekly_Tracker.pdf?response-content-disposition=attachment%3B%20filename%3DWeek_3_Weekly_Tracker.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200918%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200918T133857Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f48ecccf8351d9de1c121113ee7f8a5a440ca9f952cffd73f483e8f937011900`}>
+	onPress={() => Linking.openURL(`https://kajabi-storefronts-production.s3.amazonaws.com/posts/8707077/downloads/6Ny19rbCQqpy64Lfuv1w_Week_3_Weekly_Tracker.pdf?response-content-disposition=attachment%3B%20filename%3DWeek_3_Weekly_Tracker.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20200918%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200918T133857Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f48ecccf8351d9de1c121113ee7f8a5a440ca9f952cffd73f483e8f937011900`)}>
         {`Week_3_Weekly_Tracker.pdf`}
 			</Text>
     <Text style = {styles.para}>{`Week 3 Book List`}</Text>
