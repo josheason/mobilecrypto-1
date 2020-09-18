@@ -73,17 +73,17 @@ class List extends Component {
          Actions.week4intro1();
       if(itemid == 1)
          Actions.w4booklist2();
-      if(itemid == 0)
+      if(itemid == 2)
          Actions.socialmediabas3();
-      if(itemid == 1)
+      if(itemid == 3)
          Actions.googadwordcrypto4();
-      if(itemid == 0)
+      if(itemid == 4)
          Actions.scrapytdata5();
-      if(itemid == 1)
+      if(itemid == 5)
          Actions.webconvdes6();
-      if(itemid == 0)
+      if(itemid == 6)
          Actions.webtraff7();
-      if(itemid == 1)
+      if(itemid == 7)
          Actions.webedu8();
    }
 }
