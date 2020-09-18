@@ -96,67 +96,37 @@ export default class chromeextwall9 extends Component{
 			{`Welcome back!`}
 			</Text><></>	
 			<Text style={styles.para}>
-			{` `}
-			</Text><></>
-			<Text style={styles.para}>
-			{`Today we will be discussing how to get a desktop wallet.`}
-			</Text><></>
-			<Text style={styles.para}>
-			{`Let me explain the different levels of security:`}
+			{`Today we will be talking about chrome extension wallets.`}
 			</Text><></>
 			<Text style={styles.para}>
 			{` `}
-			</Text><></>
-			<Text style={styles.para}>
-			{`1. Centralized exchange (worst)`}
-			</Text><></>
-			<Text style={styles.para}>
-			{`2. Desktop wallet (moderate)`}
-			</Text><></>
-			<Text style={styles.para}>
-			{`3. Cold storage (best)`}
-			</Text><></>
-			<Text style={styles.para}>
-			{` `}
-			</Text><></>
-			<Text style={styles.para}>
-			{`If you are keeping crypto on a centralized exchange platform, such as: Binance or Coinbase, your coins are unsafe. `}
 			</Text><></>	
 			<Text style={styles.para}>
-			{`Centralized exchange is the worst level of security because it is susceptible to hacks and you don’t actually own your private keys. `}
+			{`There are a handful you need to know about; however, for the purpose of this video, I will go over the two most popular.`}
 			</Text><></>	
 			<Text style={styles.para}>
-			{`Typically, after having my coins on a centralized exchange for a few days, I would move it to my desktop wallet.`}
-			</Text><></>	
-			<Text style={styles.para}>
-			{`The desktop wallet is not the most secure because it is connected to the internet, if someone gains access to your desktop they can see your private keys, etc.`}
-			</Text><></>	
-			<Text style={styles.para}>
-			{`If I believe the coins are good and I want to hold them long term, I move them into my cold storage wallet.`}
-			</Text><></>	
-			<Text style={styles.para}>
-			{`Cold storage wallet is the best level of security because it is not connected to the internet. `}
-			</Text><></>	
-			<Text style={styles.para}>
-			{`In this video, we will be focusing on desktop wallets.`}
-			</Text><></>	
-			<Text style={styles.para}>
-			{`I usually use the Exodus wallet (link below), but for video purposes I will be demonstrating by using the Atomic wallet (link below).`}
-			</Text><></>	
-			<Text style={styles.para}>
-			{`Go on the Atomic wallet website and download it to your computer. `}
-			</Text><></>	
-			<Text style={styles.para}>
-			{`Create an account. `}
-			</Text><></>	
-			<Text style={styles.para}>
-			{`Now, it will be giving you a 12-word backup phrase, this is basically your private key. Do not write this down on your phone or computer, write it down on a piece of paper and keep it safe. `}
-			</Text><></>	
-			<Text style={styles.para}>
-			{`You will need to familiarize yourself with how to navigate whatever wallet you've chosen to use.`}
+			{`These wallets give access to decentralized applications and smart contracts.`}
 			</Text><></>	
 			<Text style={styles.para}>
 			{` `}
+			</Text><></>	
+			<Text style={styles.para}>
+			{`The first wallet is  Metamask (link below), which is a wallet in the chrome browser. Essentially, you sign a smart contract signature through chrome browser and it automatically allocates EOS.`}
+			</Text><></>	
+			<Text style={styles.para}>
+			{`During the setup process, you will create a password and receive a private key ( again, keep this key safe).`}
+			</Text><></>	
+			<Text style={styles.para}>
+			{` `}
+			</Text><></>	
+			<Text style={styles.para}>
+			{`The second wallet is Tronlink (link below); the process is essentially the same and Metamask. `}
+			</Text><></>	
+			<Text style={styles.para}>
+			{` `}
+			</Text><></>	
+			<Text style={styles.para}>
+			{`I am not going into the specifics; the goal is to teach you all how to fish, new wallets will pop up and you will need to know how to maneuver them. `}
 			</Text><></>	
 			<Text style={styles.para}>
 			{`That is all for this video, thanks for watching.`}
@@ -168,19 +138,14 @@ export default class chromeextwall9 extends Component{
 			{`Link Below:`}
 			</Text><></>	
 			<Text style={styles.para}>
-			<Text style = {styles.reg}>{`Exodus Wallet: `}</Text><></>
+			<Text style = {styles.reg}>{`Metamask: `}</Text><></>
 			<Text style = {styles.regURL}
-			onPress={() => Linking.openURL(`https://www.exodus.io/`)}>{`https://www.exodus.io/`}</Text><></>
+			onPress={() => Linking.openURL(`https://metamask.io/`)}>{`https://metamask.io/`}</Text><></>
 			</Text><></>
 			<Text style={styles.para}>
-			<Text style = {styles.reg}>{`Atomic Wallet: `}</Text><></>
+			<Text style = {styles.reg}>{`Tronlink: `}</Text><></>
 			<Text style = {styles.regURL}
-			onPress={() => Linking.openURL(`https://atomicwallet.io/`)}>{`https://atomicwallet.io/`}</Text><></>
-			</Text><></>
-			<Text style={styles.para}>
-			<Text style = {styles.reg}>{`(Expert) Electrum: `}</Text><></>
-			<Text style = {styles.regURL}
-			onPress={() => Linking.openURL(`https://electrum.org/#home`)}>{`https://electrum.org/#home`}</Text><></>
+			onPress={() => Linking.openURL(`https://chrome.google.com/webstore/detail/tronlink%EF%BC%88%E6%B3%A2%E5%AE%9D%E9%92%B1%E5%8C%85%EF%BC%89/ibnejdfjmmkpcnlpebklmnkoeoihofec?hl=en-US`)}>{`https://chrome.google.com/webstore/detail/tronlink%EF%BC%88%E6%B3%A2%E5%AE%9D%E9%92%B1%E5%8C%85%EF%BC%89/ibnejdfjmmkpcnlpebklmnkoeoihofec?hl=en-US`}</Text><></>
 			</Text><></>
 			<Text style={styles.lastPara}>
 			{``}
