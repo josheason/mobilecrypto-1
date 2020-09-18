@@ -49,7 +49,7 @@ class List extends Component {
                   <TouchableOpacity
                      key = {item.id}
                      style = {s.listcontainer}
-                     onPress = {() => this.alertItemName(item)}>
+                     onPress = {() => this.navigate(item.id)}>
                      <Text style = {s.listtext}>
                         {item.name}
                      </Text>
@@ -62,9 +62,19 @@ class List extends Component {
    }
    navigate(itemid) {
       if(itemid == 0)
-         Actions.StartHere();
+         Actions.frontend1();
       if(itemid == 1)
-         this.navigate2();
+         Actions.zoom2();
+      if(itemid == 2)
+         Actions.canva3();
+      if(itemid == 3)
+         Actions.eventbrite4();
+      if(itemid == 4)
+         Actions.craigslist5();
+      if(itemid == 5)
+         Actions.bigprom6();
+      if(itemid == 6)
+         Actions.caltutsales7();
    }
 }
 export default List
