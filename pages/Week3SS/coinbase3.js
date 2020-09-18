@@ -47,7 +47,7 @@ export default class coinbase3 extends Component{
 				</Text><></>
 				<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
-			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%203%20SS%2Fweek3intro.mp4?alt=media&token=383d8455-a56b-49c3-8dd8-a32cc2fdcb3a'}}
+			source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%203%20SS%2Fcoinbase.mp4?alt=media&token=901c22b1-c7c7-4293-8025-10cf77ba321a'}}
 			rate={1.0}
 			volume={1.0}
 			isMuted={false}
