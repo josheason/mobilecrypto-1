@@ -62,7 +62,7 @@ class List extends Component {
    }
    navigate(itemid) {
       if(itemid == 0)
-         Actions.StartHere();
+         Actions.w3booklist1();
       if(itemid == 1)
          this.navigate2();
    }
