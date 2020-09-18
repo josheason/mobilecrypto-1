@@ -74,7 +74,7 @@ import defi12 from './pages/Week2/defi12.js'
 
 import week3intro1 from './pages/Week3SS/week3intro1.js'
 import sendcrypto2 from './pages/Week3SS/sendcrypto2.js'
-import coinbase from './pages/Week3SS/coinbase3.js'
+import coinbase3 from './pages/Week3SS/coinbase3.js'
 import details4 from './pages/Week3SS/details4.js'
 import coinbasepro5 from './pages/Week3SS/coinbasepro5.js'
 import bintut6 from './pages/Week3SS/bintut6.js'
