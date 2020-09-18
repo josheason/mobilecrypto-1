@@ -105,6 +105,14 @@ import webconvdes6 from './pages/Week4/webconvdes6.js'
 import webtraff7 from './pages/Week4/webtraff7.js'
 import webedu8 from './pages/Week4/webedu8.js'
 
+import week5intro1 from './pages/Week5/week5intro1.js'
+import w5booklist2 from './pages/Week5/w5booklist2.js'
+import mainleads3 from './pages/Week5/mainleads3.js'
+import repu4 from './pages/Week5/repu4.js'
+import litigations5 from './pages/Week5/litigations5.js'
+import partnerships6 from './pages/Week5/partnerships6.js'
+import corpgov7 from './pages/Week5/corpgov7.js'
+
 
 
 const styles = StyleSheet.create({
@@ -588,6 +596,41 @@ const Routes = ()=> {
                     key="webedu8"
                     title="webedu8"
                     component={webedu8}>
+                   </Scene>
+                    <Scene
+                    key="week5intro1"
+                    title="week5intro1"
+                    component={week5intro1}>
+                   </Scene>
+                    <Scene
+                    key="w5booklist2"
+                    title="w5booklist2"
+                    component={w5booklist2}>
+                   </Scene>
+                    <Scene
+                    key="mainleads3"
+                    title="mainleads3"
+                    component={mainleads3}>
+                   </Scene>
+                    <Scene
+                    key="repu4"
+                    title="repu4"
+                    component={repu4}>
+                   </Scene>
+                    <Scene
+                    key="litigations5"
+                    title="litigations5"
+                    component={litigations5}>
+                   </Scene>
+                    <Scene
+                    key="partnerships6"
+                    title="partnerships6"
+                    component={partnerships6}>
+                   </Scene>
+                    <Scene
+                    key="corpgov7"
+                    title="corpgov7"
+                    component={corpgov7}>
                    </Scene>
            </Scene>
         </Router>
