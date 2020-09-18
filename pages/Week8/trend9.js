@@ -63,14 +63,14 @@ export default class trend9 extends Component{
 			style={styles.video}
 			/><></>
 				<View style={styles.buttonRow}>
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.candle7()}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.support8()}>
 					<View style={styles.previcon}>
 						<Icon name="arrow-left" size={20} style={styles.icon}/><></>
 						<Text style={styles.buttonText}>Previous</Text><></>
 					</View><></>
 				</TouchableOpacity><></>
 
-				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.trend9()}>
+				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.moving10()}>
 					<View style={styles.nexticon}>
 						<Text style={styles.buttonText}>Next</Text><></>
 						<Icon name="arrow-right" size={20} style={styles.icon}/><></>
