@@ -96,7 +96,14 @@ import whitepaper1015 from './pages/Week3RF/whitepaper1015.js'
 import blackbox6 from './pages/Week3RF/blackbox6.js'
 
 
-
+import week4intro1 from './pages/Week4/week4intro1.js'
+import w4booklist2 from './pages/Week4/w4booklist2.js'
+import socialmediabas3 from './pages/Week4/socialmediabas3.js'
+import googadwordcrypto4 from './pages/Week4/googadwordcrypto4.js'
+import scrapytdata5 from './pages/Week4/scrapytdata5.js'
+import webconvdes6 from './pages/Week4/webconvdes6.js'
+import webtraff7 from './pages/Week4/webtraff7.js'
+import webedu8 from './pages/Week4/webedu8.js'
 
 
 
@@ -541,6 +548,46 @@ const Routes = ()=> {
                     key="blackbox6"
                     title="blackbox6"
                     component={blackbox6}>
+                   </Scene>
+                    <Scene
+                    key="week4intro1"
+                    title="week4intro1"
+                    component={week4intro1}>
+                   </Scene>
+                    <Scene
+                    key="w4booklist2"
+                    title="w4booklist2"
+                    component={w4booklist2}>
+                   </Scene>
+                    <Scene
+                    key="socialmediabas3"
+                    title="socialmediabas3"
+                    component={socialmediabas3}>
+                   </Scene>
+                    <Scene
+                    key="googadwordcrypto4"
+                    title="googadwordcrypto4"
+                    component={googadwordcrypto4}>
+                   </Scene>
+                    <Scene
+                    key="scrapytdata5"
+                    title="scrapytdata5"
+                    component={scrapytdata5}>
+                   </Scene>
+                    <Scene
+                    key="webconvdes6"
+                    title="webconvdes6"
+                    component={webconvdes6}>
+                   </Scene>
+                    <Scene
+                    key="webtraff7"
+                    title="webtraff7"
+                    component={webtraff7}>
+                   </Scene>
+                    <Scene
+                    key="webedu8"
+                    title="webedu8"
+                    component={webedu8}>
                    </Scene>
            </Scene>
         </Router>
