@@ -93,6 +93,8 @@ class List extends Component {
          Actions.internetwork3();
       if(itemid == 3)
          Actions.bitcoin1014();
+      if(itemid == 4)
+         Actions.bitcoin1025();
    }
 }
 export default List
