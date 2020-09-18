@@ -45,6 +45,9 @@ export default class critnmistechanalind5 extends Component{
 				<Text style={styles.space}>
 				{'         '}
 				</Text><></>
+				<Text style={styles.space}>
+				{'         '}
+				</Text><></>
 				<Video
 			//source={{ uri: 'https://tfsc-avfc.s3.amazonaws.com/whatis.mp4'}}
 			source={{ uri: `https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Week%208%2FCriteriaandMisconceptionsofTechnicalAnalysisandIndicators.mp4?alt=media&token=dde32592-9689-4f08-a77d-28d3c3ee58d7`}}
