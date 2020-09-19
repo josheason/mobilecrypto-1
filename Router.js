@@ -222,8 +222,8 @@ const Routes = ()=> {
                         drawerWidth={width*.75}
                     >
                 <Scene
-                    key="customNavBar1"
-                   title="customNavBar1"
+                    key="dashboard"
+                   //title="customNavBar1"
                     
                     component={dashboard}/>
         </Drawer>
