@@ -189,7 +189,7 @@ const Routes = ()=> {
                 <Scene
                     key="login"
                     // title="Login"
-                    component={Login}/>
+                    component={Login} initial/>
                 <Scene
                     key="dashboard"
                     title="dashboard"
@@ -198,10 +198,11 @@ const Routes = ()=> {
                     key="list"
                     title="Fundamental Secrets"
                     component={List}/>
+                <Scene key="Start">
                 <Scene
                     key="StartHere"
                     title="How To Use & Resources"
-                    component={StartHere}>
+                    component={StartHere} initial />
                 <Scene
                     key="HowToUse1"
                     title="HowToUse1"
