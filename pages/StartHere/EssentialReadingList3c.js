@@ -19,7 +19,7 @@ export default class EssentialReadingList3c extends Component{
 	return(
 		<View style = {styles.container}>
 			<Text style = {styles.resour1}>{`Essential Reading List`}</Text>
-			    <Text style = {styles.para}>{`Business`}</Text>
+			    <Text style = {styles.para}>{`Crypto`}</Text>
  			   <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/2K34Aeh')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
   			    <Text style={styles.regURL} >{'The Bitcoin Standard'}</Text>
