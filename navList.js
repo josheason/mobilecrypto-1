@@ -69,7 +69,6 @@ class navList extends Component {
           style = {{ backgroundColor: '#000000' }}
          >
             {
-               <Text style={{height: 120,width: 120,borderRadius: 60}}>{` `}</Text>
                this.state.names.map((item, index) => (
                   <TouchableOpacity
                      key = {item.id}
@@ -135,6 +134,9 @@ listcontainer: {
 listtext:{
   color: '#ffffff',
   textAlign: 'center',
+  height: 120,
+  width: 120,
+  borderRadius: 60,
 },
 
 });
