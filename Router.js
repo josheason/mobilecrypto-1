@@ -225,7 +225,6 @@ const Routes = ()=> {
                 <Scene
                     key='dashboard'
                    title='dashboard'
-                    hideNavBar = {true}
                     //navBar = {CustomNavBar1}
                     component={dashboard}/>
         </Drawer>
