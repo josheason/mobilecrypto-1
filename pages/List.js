@@ -82,6 +82,10 @@ class List extends Component {
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
+                     <Image 
+                        source = {require('./images/playbut.png')}
+                        style = {styles.imgR}
+                        />
                   </TouchableOpacity>
                ))
             }    
@@ -133,6 +137,14 @@ const styles = StyleSheet.create ({
       height: 50,
       position: 'absolute',
       left: 10,
+      top: 10,
+      padding: 20,
+   },
+   imgR: {
+      width: 50,
+      height: 50,
+      position: 'absolute',
+      right: 10,
       top: 10,
       padding: 20,
    },
