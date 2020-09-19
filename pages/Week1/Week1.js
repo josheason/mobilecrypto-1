@@ -59,7 +59,7 @@ class List extends Component {
                      style = {s.listcontainer}
                      onPress = {() => this.navigate(item.id)}>
                      <Image 
-                        source = {require('./../images/fundsec.png')}
+                        source = {require('./../../images/fundsec.png')}
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
