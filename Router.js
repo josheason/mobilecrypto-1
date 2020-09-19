@@ -205,8 +205,7 @@ const Routes = ()=> {
                 <Scene
                     key="HowToUse1"
                     title="HowToUse1"
-                    component={HowToUse1}>
-                </Scene>
+                    component={HowToUse1}/>
                 <Scene
                     key="EssentialReadingList3b"
                     title="EssentialReadingList3b"
