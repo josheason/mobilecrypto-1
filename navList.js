@@ -148,7 +148,7 @@ img: {
 listtext:{
   color: '#ffffff',
   textAlign: 'center',
-  height: 35,
+  height: 45,
   width: 120,
   borderRadius: 60,
 },
