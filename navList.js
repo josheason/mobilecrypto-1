@@ -139,14 +139,14 @@ img: {
       height: 10,
       position: 'absolute',
       left: 10,
-      top: 10,
+      top: 2,
       padding: 20,
    },
 listtext:{
   color: '#ffffff',
   textAlign: 'center',
   height: 35,
-  width: 100,
+  width: 120,
   borderRadius: 60,
 },
 
