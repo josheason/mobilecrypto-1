@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, StatusBar, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, SafeAreaView, Dimensions } from 'react-native';
 import { Router, Scene, Drawer } from 'react-native-router-flux'
 
 import CustomNavBar from './CustomNavBar.js'
@@ -164,7 +164,7 @@ import HowToUse1 from './pages/StartHere/HowToUse1.js'
 import EssentialReadingList3b from './pages/StartHere/EssentialReadingList3b.js'
 import Bookmarks4c from './pages/StartHere/Bookmarks4c.js'
 
-
+const {width} = Dimensions.get('window')
 
 const styles = StyleSheet.create({
     titlestyle: {
@@ -197,7 +197,7 @@ const Routes = ()=> {
                         key="main"
                         //drawerImage={}
                         contentComponent={List}
-                        drawerWidth={100}
+                        drawerWidth={width/3}
                     >
                 <Scene
                     key="dashboard"
