@@ -234,7 +234,7 @@ const Routes = ()=> {
                     key="StartHere"
                    // title="How To Use & Resources"
                     hideNavBar = {false}
-         renderBackButton={() => renderBackButton()}
+         navBar="CustomNavBar"
                     component={StartHere} initial />
                 <Scene
                     key="HowToUse1"
