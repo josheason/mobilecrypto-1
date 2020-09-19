@@ -194,6 +194,7 @@ const Routes = ()=> {
                 <Scene
                     key="login"
                     //// title="Login"
+                    type = 'replace'
                     component={Login} initial/>
             <Drawer
                         hideNavBar
