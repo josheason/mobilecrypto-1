@@ -198,10 +198,11 @@ const Routes = ()=> {
                     key="list"
                     title="Fundamental Secrets"
                     component={List}/>
-                <Scene key="Start" hideNavBar>
+                <Scene key="Start" title = "TEST">
                 <Scene
                     key="StartHere"
                     title="How To Use & Resources"
+                    hideNavBar
                     component={StartHere} initial />
                 <Scene
                     key="HowToUse1"
