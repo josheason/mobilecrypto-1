@@ -172,7 +172,7 @@ const {width} = Dimensions.get('window')
 
 const renderBackButton = () => (
     <TouchableOpacity
-        onPress={() => Actions.pop()}
+        onPress={() => Actions.pop}
     >
         <View style={{ alignItems: 'center' }}>
             <Image
