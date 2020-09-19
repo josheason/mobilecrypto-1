@@ -159,6 +159,17 @@ import bigprom6 from './pages/Week10/bigprom6.js'
 import caltutsales7 from './pages/Week10/caltutsales7.js'
 
 import HowToUse1 from './pages/StartHere/HowToUse1.js'
+import EssentialReadlingList3b from './pages/StartHere/EssentialReadlingList3b.js'
+import EssentialReadlingList3p from './pages/StartHere/EssentialReadlingList3p.js'
+import EssentialReadlingList3i from './pages/StartHere/EssentialReadlingList3i.js'
+import EssentialReadlingList3br from './pages/StartHere/EssentialReadlingList3br.js'
+import EssentialReadlingList3c from './pages/StartHere/EssentialReadlingList3c.js'
+import EssentialReadlingList3m from './pages/StartHere/EssentialReadlingList3m.js'
+import Bookmarks4c from './pages/StartHere/Bookmarks4c.js'
+import Bookmarks4d from './pages/StartHere/Bookmarks4d.js'
+import Bookmarks4m from './pages/StartHere/Bookmarks4m.js'
+import Bookmarks4mac from './pages/StartHere/Bookmarks4mac.js'
+import Bookmarks4mar from './pages/StartHere/Bookmarks4mar.js'
 
 
 const styles = StyleSheet.create({
@@ -877,6 +888,61 @@ const Routes = ()=> {
                     key="HowToUse1"
                     title="HowToUse1"
                     component={HowToUse1}>
+                   </Scene>
+        <Scene
+                    key="EssentialReadlingList3b"
+                    title="EssentialReadlingList3b"
+                    component={EssentialReadlingList3b}>
+                   </Scene>
+        <Scene
+                    key="EssentialReadlingList3p"
+                    title="EssentialReadlingList3p"
+                    component={EssentialReadlingList3p}>
+                   </Scene>
+        <Scene
+                    key="EssentialReadlingList3i"
+                    title="EssentialReadlingList3i"
+                    component={EssentialReadlingList3i}>
+                   </Scene>
+        <Scene
+                    key="EssentialReadlingList3br"
+                    title="EssentialReadlingList3br"
+                    component={EssentialReadlingList3br}>
+                   </Scene>
+        <Scene
+                    key="EssentialReadlingList3c"
+                    title="EssentialReadlingList3c"
+                    component={EssentialReadlingList3c}>
+                   </Scene>
+        <Scene
+                    key="EssentialReadlingList3m"
+                    title="EssentialReadlingList3m"
+                    component={EssentialReadlingList3m}>
+                   </Scene>
+        <Scene
+                    key="Bookmarks4c"
+                    title="Bookmarks4c"
+                    component={Bookmarks4c}>
+                   </Scene>
+        <Scene
+                    key="Bookmarks4d"
+                    title="Bookmarks4d"
+                    component={Bookmarks4d}>
+                   </Scene>
+        <Scene
+                    key="Bookmarks4m"
+                    title="Bookmarks4m"
+                    component={Bookmarks4m}>
+                   </Scene>
+        <Scene
+                    key="Bookmarks4mac"
+                    title="Bookmarks4mac"
+                    component={Bookmarks4mac}>
+                   </Scene>
+        <Scene
+                    key="Bookmarks4mar"
+                    title="Bookmarks4mar"
+                    component={Bookmarks4mar}>
                    </Scene>
            </Scene>
         </Router>
