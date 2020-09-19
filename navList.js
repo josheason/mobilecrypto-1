@@ -95,29 +95,29 @@ class navList extends Component {
       if(itemid == 0)
          Actions.Start();
       if(itemid == 1)
-         Actions.Week1();
+         Actions.W1();
       if(itemid == 2)
-         Actions.Week2();
+         Actions.W2();
       if(itemid == 3)
-         Actions.Week3SS();
+         Actions.W3SS();
       if(itemid == 4)
-         Actions.Week3RF();
+         Actions.W3RF();
       if(itemid == 5)
-         Actions.Week4();
+         Actions.W4();
       if(itemid == 6)
-         Actions.Week5();
+         Actions.W5();
       if(itemid == 7)
-         Actions.Week6();
+         Actions.W6();
       if(itemid == 8)
-         Actions.Week7();
+         Actions.W7();
       if(itemid == 9)
-         Actions.Week8();
+         Actions.W8();
       if(itemid == 10)
-         Actions.Week9();
+         Actions.W9();
       if(itemid == 11)
-         Actions.Week10();
+         Actions.W10();
       if(itemid == 12)
-         Actions.DeFi();
+         Actions.DEFI();
    }
 }
 export default navList
