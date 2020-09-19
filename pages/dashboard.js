@@ -4,6 +4,7 @@ import { Actions } from 'react-native-router-flux';
 import * as firebase from 'firebase';
 import 'firebase/firestore';
 
+var test = require('./images/arrow.png');
 
 class dashboard extends Component {
    state = {
@@ -124,7 +125,7 @@ counter(){
                      style = {styles.container}
                      onPress={()=>this.navigate(0)}>
                        <Image 
-                        source = {require(this.state.names.id.src)}
+                        source = {test}
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
