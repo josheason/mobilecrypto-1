@@ -5,6 +5,7 @@ import * as firebase from 'firebase';
 import 'firebase/firestore';
 
 var test = require('./images/arrow.png');
+var icon = this.props.active ? require('./images/arrow.png') : require('./images/continue.png');
 
 class dashboard extends Component {
    state = {
@@ -13,21 +14,25 @@ class dashboard extends Component {
             id: 0,
             name: 'Continue To Course',
             src: './images/continue.png',
+            active:1,
          },
          {
             id: 1,
             name: 'FaceBook Group',
             src: './images/facebook.png',
+            active: 0,
          },
          {
             id: 2,
             name: 'Live Q&A',
             src: './images/live.png',
+            active: 0,
          },
          {
             id: 3,
             name: 'Alex&spos;s Youtube',
             src: './images/youtube.png',
+            active: 0,
          },
       ],
    }
@@ -101,7 +106,6 @@ counter(){
    
    render() {
       
-      var test1 = require(this.state.names.src);
       
       return (
          <ScrollView
@@ -126,8 +130,8 @@ counter(){
                      style = {styles.container}
                      onPress={()=>this.navigate(0)}>
                        <Image 
-                        source = {test}
-                        style = {test1}
+                        source = {icon}
+                        style = {styles.img}
                         />
                      <Text style = {styles.text}>
                         {'Continue To Course'}
