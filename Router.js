@@ -230,72 +230,91 @@ const Routes = ()=> {
                 <Scene
                     key="EssentialReadingList3b"
                     title="EssentialReadingList3b"
+                     hideNavBar = {false}
                     component={EssentialReadingList3b}/>
                     </Scene>
+         <Scene key="W1" hideNavBar = {true}>
                 <Scene
                     key="Week1"
                     title="Week 1: Mind"
-                    component={Week1}>
+         hideNavBar = {false}
+                    component={Week1} initial />
                  <Scene
                     key="introweek1"
                     title="introweek1"
+         hideNavBar = {false}
                     component={introweek1}/>
                     <Scene
                     key="win3"
                     title="win3"
+         hideNavBar = {false}
                     component={win3}/>
                    <Scene
                     key="body4"
                     title="body4"
+         hideNavBar = {false}
                     component={body4}/>
                     <Scene
                     key="booklistw12"
                     title="booklistw12"
+         hideNavBar = {false}
                     component={booklistw12}/>
                     <Scene
                     key="time5"
                     title="time5"
+         hideNavBar = {false}
                     component={time5}/>
                     <Scene
                     key="focus6"
                     title="focus6"
+         hideNavBar = {false}
                     component={focus6}/>
                     <Scene
                     key="sixrules7"
                     title="sixrules7"
+         hideNavBar = {false}
                     component={sixrules7}/>
                     <Scene
                     key="rewire8"
                     title="rewire8"
+         hideNavBar = {false}
                     component={rewire8}/>
                    </Scene>
+        <Scene key="W2" hideNavBar = {true}>
                 <Scene
                     key="Week2"
                     title="Week 2: Blockchain"
-                    component={Week2}>
+        hideNavBar = {false}
+                    component={Week2} initial />
                     <Scene
                     key="week2intro1"
                     title="week2intro1"
+        hideNavBar = {false}
                     component={week2intro1}/>
                     <Scene
                     key="booklistw2"
                     title="booklistw2"
+        hideNavBar = {false}
                     component={booklistw2}/>
                     <Scene
                     key="internetwork3"
                     title="internetwork3"
+        hideNavBar = {false}
                     component={internetwork3}/>
                    <Scene
                     key="bitcoin1014"
                     title="bitcoin1014"
+        hideNavBar = {false}
                     component={bitcoin1014}/>
                    <Scene
                     key="bitcoin1025"
                     title="bitcoin1025"
+        hideNavBar = {false}
                     component={bitcoin1025}/>
                    <Scene
                     key="eth1016"
                     title="eth1016"
+        hideNavBar = {false}
                     component={eth1016}/>
                    <Scene
                     key="eth1027"
@@ -304,480 +323,607 @@ const Routes = ()=> {
                    <Scene
                     key="mcyclesimp8"
                     title="mcyclesimp8"
+        hideNavBar = {false}
                     component={mcyclesimp8}/>
                    <Scene
                     key="bitbestform9"
                     title="bitbestform9"
+        hideNavBar = {false}
                     component={bitbestform9}/>
                    <Scene
                     key="investcrypto10"
                     title="investcrypto10"
+        hideNavBar = {false}
                     component={investcrypto10}/>
                    <Scene
                     key="dapps11"
                     title="dapps11"
+        hideNavBar = {false}
                     component={dapps11}/>
                    <Scene
                     key="defi12"
                     title="defi12"
+        hideNavBar = {false}
                     component={defi12}/>
                    </Scene>
+         <Scene key="W3SS" hideNavBar = {true}>
                 <Scene
                     key="Week3SS"
                     title="Week 3: Security + Storage"
-                    component={Week3SS}>
+        hideNavBar = {false}
+                    component={Week3SS}initial />
                    <Scene
                     key="week3intro1"
                     title="week3intro1"
+        hideNavBar = {false}
                     component={week3intro1}/>
                     <Scene
                     key="sendcrypto2"
                     title="sendcrypto2"
+        hideNavBar = {false}
                     component={sendcrypto2}/>
                     <Scene
                     key="coinbase3"
                     title="coinbase3"
+        hideNavBar = {false}
                     component={coinbase3}/>
                     <Scene
                     key="details4"
                     title="details4"
+        hideNavBar = {false}
                     component={details4}/>
                     <Scene
                     key="coinbasepro5"
                     title="coinbasepro5"
+        hideNavBar = {false}
                     component={coinbasepro5}/>
                     <Scene
                     key="bintut6"
                     title="bintut6"
+        hideNavBar = {false}
                     component={bintut6}/>
                     <Scene
                     key="hitbextut7"
                     title="hitbextut7"
+        hideNavBar = {false}
                     component={hitbextut7}/>
                     <Scene
                     key="deskwall8"
                     title="deskwall8"
+        hideNavBar = {false}
                     component={deskwall8}/>
                     <Scene
                     key="chromeextwall9"
                     title="chromeextwall9"
+        hideNavBar = {false}
                     component={chromeextwall9}/>
                     <Scene
                     key="dexdappsdefitut10"
                     title="dexdappsdefitut10"
+        hideNavBar = {false}
                     component={dexdappsdefitut10}/>
                     <Scene
                     key="vpn11"
                     title="vpn11"
+        hideNavBar = {false}
                     component={vpn11}/>
                     <Scene
                     key="googleauth12"
                     title="googleauth12"
+        hideNavBar = {false}
                     component={googleauth12}/>
                     <Scene
                     key="keepass13"
                     title="keepass13"
+        hideNavBar = {false}
                     component={keepass13}/>
                     <Scene
                     key="whatexuse14"
                     title="whatexuse14"
+        hideNavBar = {false}
                     component={whatexuse14}/>
                     <Scene
                     key="ultimsec15"
                     title="ultimsec15"
+        hideNavBar = {false}
                     component={ultimsec15}/>
                    </Scene>
+        <Scene key="W3RF" hideNavBar = {true}>
                 <Scene
                     key="Week3RF"
                     title="Week 3: Research Fundamentals"
-                    component={Week3RF}>
+        hideNavBar = {false}
+                    component={Week3RF}initial />
                   <Scene
                     key="w3booklist1"
                     title="w3booklist1"
+        hideNavBar = {false}
                     component={w3booklist1}/>
                     <Scene
                     key="researchlist2"
                     title="researchlist2"
+        hideNavBar = {false}
                     component={researchlist2}/>
                     <Scene
                     key="deskorg3"
                     title="deskorg3"
+        hideNavBar = {false}
                     component={deskorg3}/>
                     <Scene
                     key="avoidcred4"
                     title="avoidcred4"
+        hideNavBar = {false}
                     component={avoidcred4}/>
                     <Scene
                     key="whitepaper1015"
                     title="whitepaper1015"
+        hideNavBar = {false}
                     component={whitepaper1015}/>
                     <Scene
                     key="blackbox6"
                     title="blackbox6"
+        hideNavBar = {false}
                     component={blackbox6}/>
                    </Scene>
                 <Scene
                     key="Week4"
                     title="Week 4: Marketing"
+        hideNavBar = {false}
                     component={Week4}>
+         <Scene key="W4" hideNavBar = {true}>
                  <Scene
                     key="week4intro1"
                     title="week4intro1"
-                    component={week4intro1}/>
+        hideNavBar = {false}
+                    component={week4intro1} initial />
                     <Scene
                     key="w4booklist2"
                     title="w4booklist2"
+        hideNavBar = {false}
                     component={w4booklist2}/>
                     <Scene
                     key="socialmediabas3"
                     title="socialmediabas3"
+        hideNavBar = {false}
                     component={socialmediabas3}/>
                     <Scene
                     key="googadwordcrypto4"
                     title="googadwordcrypto4"
+        hideNavBar = {false}
                     component={googadwordcrypto4}/>
                     <Scene
                     key="scrapytdata5"
                     title="scrapytdata5"
+        hideNavBar = {false}
                     component={scrapytdata5}/>
                     <Scene
                     key="webconvdes6"
                     title="webconvdes6"
+        hideNavBar = {false}
                     component={webconvdes6}/>
                     <Scene
                     key="webtraff7"
                     title="webtraff7"
+        hideNavBar = {false}
                     component={webtraff7}/>
                     <Scene
                     key="webedu8"
                     title="webedu8"
+        hideNavBar = {false}
                     component={webedu8}/>
                    </Scene>
+         <Scene key="W5" hideNavBar = {true}>
                 <Scene
                     key="Week5"
                     title="Week 5: Leadership"
-                    component={Week5}>
+        hideNavBar = {false}
+                    component={Week5} initial />
                     <Scene
                     key="week5intro1"
                     title="week5intro1"
+        hideNavBar = {false}
                     component={week5intro1}/>
                     <Scene
                     key="w5booklist2"
                     title="w5booklist2"
+        hideNavBar = {false}
                     component={w5booklist2}/>
                     <Scene
                     key="mainleads3"
                     title="mainleads3"
+        hideNavBar = {false}
                     component={mainleads3}/>
                     <Scene
                     key="repu4"
                     title="repu4"
+        hideNavBar = {false}
                     component={repu4}/>
                     <Scene
                     key="litigations5"
                     title="litigations5"
+        hideNavBar = {false}
                     component={litigations5}/>
                     <Scene
                     key="partnerships6"
                     title="partnerships6"
+        hideNavBar = {false}
                     component={partnerships6}/>
                     <Scene
                     key="corpgov7"
                     title="corpgov7"
+        hideNavBar = {false}
                     component={corpgov7}/>
                  </Scene>
+        <Scene key="W6" hideNavBar = {true}>
                 <Scene
                     key="Week6"
                     title="Week 6: Product"
-                    component={Week6}>
+        hideNavBar = {false}
+                    component={Week6} initial />
                  <Scene
                     key="week6intro1"
                     title="week6intro1"
+        hideNavBar = {false}
                     component={week6intro1}/>
                     <Scene
                     key="w6booklist2"
                     title="w6booklist2"
+        hideNavBar = {false}
                     component={w6booklist2}/>
                     <Scene
                     key="roadmapresearch3"
                     title="roadmapresearch3"
+        hideNavBar = {false}
                     component={roadmapresearch3}/>
                     <Scene
                     key="productresearch4"
                     title="productresearch4"
+        hideNavBar = {false}
                     component={productresearch4}/>
                     <Scene
                     key="decent5"
                     title="decent5"
+        hideNavBar = {false}
                     component={decent5}/>
                     <Scene
                     key="conmech6"
                     title="conmech6"
+        hideNavBar = {false}
                     component={conmech6}/>
                     <Scene
                     key="valueprop7"
                     title="valueprop7"
+        hideNavBar = {false}
                     component={valueprop7}/>
                     <Scene
                     key="moreprodquest8"
                     title="moreprodquest8"
+        hideNavBar = {false}
                     component={moreprodquest8}/>
                 </Scene>
+        <Scene key="W7" hideNavBar = {true}>
                 <Scene
                     key="Week7"
                     title="Week 7: Industry"
-                    component={Week7}>
+         hideNavBar = {false}
+                    component={Week7} initial />
                  <Scene
                     key="w7booklist"
                     title="w7booklist"
+         hideNavBar = {false}
                     component={w7booklist}/>
                     <Scene
                     key="topdownfun2"
                     title="topdownfun2"
+         hideNavBar = {false}
                     component={topdownfun2}/>
                 <Scene
                     key="keyecohealth3"
                     title="keyecohealth3"
+         hideNavBar = {false}
                     component={keyecohealth3}/>
                     <Scene
                     key="indfun4"
                     title="indfun4"
+         hideNavBar = {false}
                     component={indfun4}/>
                     <Scene
                     key="ecopre5"
                     title="ecopre5"
+         hideNavBar = {false}
                     component={ecopre5}/>
                     <Scene
                     key="utility6"
                     title="utility6"
+         hideNavBar = {false}
                     component={utility6}/>
                     <Scene
                     key="metcalfe7"
                     title="metcalfe7"
+         hideNavBar = {false}
                     component={metcalfe7}/>
                 </Scene>
+         <Scene key="W8" hideNavBar = {true}>
                 <Scene
                     key="Week8"
                     title="Week 8: Technical Analysis"
-                    component={Week8}>
+        hideNavBar = {false}
+                    component={Week8}initial />
                 <Scene
                     key="tradeviewtut1"
                     title="tradeviewtut1"
+        hideNavBar = {false}
                     component={tradeviewtut1}/>
         <Scene
                     key="masspsych2"
                     title="masspsych2"
+        hideNavBar = {false}
                     component={masspsych2}/>
         <Scene
                     key="bullsnbears3"
                     title="bullsnbears3"
+        hideNavBar = {false}
                     component={bullsnbears3}/>
         <Scene
                     key="shortvlonganal4"
                     title="shortvlonganal4"
+        hideNavBar = {false}
                     component={shortvlonganal4}/>
         <Scene
                     key="critnmistechanalind5"
                     title="critnmistechanalind5"
+        hideNavBar = {false}
                     component={critnmistechanalind5}/>
         <Scene
                     key="orderbookmore6"
                     title="orderbookmore6"
+        hideNavBar = {false}
                     component={orderbookmore6}/>
         <Scene
                     key="candle7"
                     title="candle7"
+        hideNavBar = {false}
                     component={candle7}/>
         <Scene
                     key="support8"
                     title="support8"
+        hideNavBar = {false}
                     component={support8}/>
         <Scene
                     key="trend9"
                     title="trend9"
+        hideNavBar = {false}
                     component={trend9}/>
         <Scene
                     key="moving10"
                     title="moving10"
+        hideNavBar = {false}
                     component={moving10}/>
         <Scene
                     key="macdrsi11"
                     title="macdrsi11"
+        hideNavBar = {false}
                     component={macdrsi11}/>
         <Scene
                     key="bollinger12"
                     title="bollinger12"
+        hideNavBar = {false}
                     component={bollinger12}/>
                 </Scene>
+         <Scene key="W9" hideNavBar = {true}>
                 <Scene
                     key="Week9"
                     title="Week 9: Ratios"
-                    component={Week9}>
+         hideNavBar = {false}
+                    component={Week9} initial />
                  <Scene
                     key="logregmarketcap1"
                     title="logregmarketcap1"
+         hideNavBar = {false}
                     component={logregmarketcap1}/>
         <Scene
                     key="stock2flow2"
                     title="stock2flow2"
+         hideNavBar = {false}
                     component={stock2flow2}/>
         <Scene
                     key="stockflowx3"
                     title="stockflowx3"
+         hideNavBar = {false}
                     component={stockflowx3}/>
         <Scene
                     key="willywoo4"
                     title="willywoo4"
+         hideNavBar = {false}
                     component={willywoo4}/>
         <Scene
                     key="bitlogreg5"
                     title="bitlogreg5"
+         hideNavBar = {false}
                     component={bitlogreg5}/>
                 </Scene>
+          <Scene key="W10" hideNavBar = {true}>
                 <Scene
                     key="Week10"
                     title="Week 10: Proven Ways to Make Money In Crypto"
-                    component={Week10}>
+        hideNavBar = {false}
+                    component={Week10} initial />
                  <Scene
                     key="frontend1"
                     title="frontend1"
+        hideNavBar = {false}
                     component={frontend1}/>
          <Scene
                     key="zoom2"
                     title="zoom2"
+        hideNavBar = {false}
                     component={zoom2}/>
          <Scene
                     key="canva3"
                     title="canva3"
+        hideNavBar = {false}
                     component={canva3}/>
          <Scene
                     key="eventbrite4"
                     title="eventbrite4"
+        hideNavBar = {false}
                     component={eventbrite4}/>
          <Scene
                     key="craigslist5"
                     title="craigslist5"
+        hideNavBar = {false}
                     component={craigslist5}/>
          <Scene
                     key="bigprom6"
                     title="bigprom6"
+        hideNavBar = {false}
                     component={bigprom6}/>
          <Scene
                     key="caltutsales7"
                     title="caltutsales7"
+        hideNavBar = {false}
                     component={caltutsales7}/>
                     </Scene>  
+        <Scene key="DEFI" hideNavBar = {true}>
                 <Scene
                     key="DeFi"
                     title="DeFi Trading"
-                    component={DeFi}>
+        hideNavBar = {false}
+                    component={DeFi} initial />
                 <Scene
                     key="WhatIsDeFi1"
                     title="WhatIsDeFi1"
+        hideNavBar = {false}
                     component={WhatIsDeFi1}/>
                  <Scene
                     key="WalletDifferences2"
                     title="WalletDifferences2"
+        hideNavBar = {false}
                     component={WalletDifferences2}/>
                 <Scene
                     key="DesktopMetaWalletInst3"
                     title="DesktopMetaWalletInst3"
+        hideNavBar = {false}
                     component={DesktopMetaWalletInst3}/>
                 <Scene
                     key="DeFiEco4"
                     title="DeFiEco4"
+        hideNavBar = {false}
                     component={DeFiEco4}/>
                  <Scene
                     key="DeskMetConnDapp5"
                     title="DeskMetConnDapp5"
+        hideNavBar = {false}
                     component={DeskMetConnDapp5}/>
                     <Scene
                     key="NavDeskExt6"
                     title="NavDeskExt6"
+        hideNavBar = {false}
                     component={NavDeskExt6}/>
                     <Scene
                     key="GWEIExp7"
                     title="GWEIExp7"
+        hideNavBar = {false}
                     component={GWEIExp7}/>
                     <Scene
                     key="TradeUniswap8"
                     title="TradeUniswap8"
+        hideNavBar = {false}
                     component={TradeUniswap8}/>
                    <Scene
                     key="etherscan9"
                     title="etherscan9"
+        hideNavBar = {false}
                     component={etherscan9}/>
                     <Scene
                     key="speedmeta10"
                     title="speedmeta10"
+        hideNavBar = {false}
                     component={speedmeta10}/>
                    <Scene
                     key="cancelmeta11"
                     title="cancelmeta11"
+        hideNavBar = {false}
                     component={cancelmeta11}/>
                    <Scene
                     key="trademoon12"
                     title="trademoon12"
+        hideNavBar = {false}
                     component={trademoon12}/>
                    <Scene
                     key="removeliquid13"
                     title="removeliquid13"
+        hideNavBar = {false}
                     component={removeliquid13}/>
                    <Scene
                     key="oneinch14"
                     title="oneinch14"
+        hideNavBar = {false}
                     component={oneinch14}/>
                    <Scene
                     key="matcha15"
                     title="matcha15"
+        hideNavBar = {false}
                     component={matcha15}/>
                    <Scene
                     key="addliquid16"
                     title="addliquid16"
+        hideNavBar = {false}
                     component={addliquid16}/>
                    <Scene
                     key="loopring17"
                     title="loopring17"
+        hideNavBar = {false}
                     component={loopring17}/>
                    <Scene
                     key="zapper18"
                     title="zapper18"
+        hideNavBar = {false}
                     component={zapper18}/>
                    <Scene
                     key="dao19"
                     title="dao19"
+        hideNavBar = {false}
                     component={dao19}/>
                    <Scene
                     key="cream20"
                     title="cream20"
+        hideNavBar = {false}
                     component={cream20}/>
                    <Scene
                     key="aave21"
                     title="aave21"
+        hideNavBar = {false}
                     component={aave21}/>
                    <Scene
                     key="BalDex22"
                     title="BalDex22"
+        hideNavBar = {false}
                     component={BalDex22}/>
                    <Scene
                     key="BalPool23"
                     title="BalPool23"
+        hideNavBar = {false}
                     component={BalPool23}/>
                    <Scene
                     key="debank24"
                     title="debank24"
+        hideNavBar = {false}
                     component={debank24}/>
                    <Scene
                     key="zerion25"
                     title="zerion25"
+        hideNavBar = {false}
                     component={zerion25}/>
                    <Scene
                     key="compound26"
                     title="compound26"
+        hideNavBar = {false}
                     component={compound26}/>
                    <Scene
                     key="lend27"
                     title="lend27"
+        hideNavBar = {false}
                     component={lend27}/>
                     </Scene>           
            </Scene>
