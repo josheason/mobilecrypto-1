@@ -195,9 +195,9 @@ const Routes = ()=> {
             <Drawer
                         hideNavBar
                         key="main"
-                        drawerImage={Images.menuIcon}
-                        contentComponent={Navigation}
-                        drawerWidth={styles.drawerWidth}
+                        //drawerImage={}
+                        contentComponent={List}
+                        drawerWidth={100}
                     >
                 <Scene
                     key="dashboard"
