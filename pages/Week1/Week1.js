@@ -49,6 +49,14 @@ class List extends Component {
    }
    render() {
       return (
+         <><View style={{backgroundColor: '#121212' }}
+         >
+         <Image 
+                        source = {{uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2Fthumbnail.png?alt=media&token=ae67603e-14b8-4ac2-8ca2-0209ea08e0a2'}}
+                        style = {styles.img}
+                        />
+         <Text style ={{color: '#fff', fontSize: 15, justifyContent: 'center', alignItems: 'center'}}>{`START HERE: How To Use & Resources`}</Text>
+         </View>
          <ScrollView
          style = {{ backgroundColor: '#121212' }}
          >
@@ -59,7 +67,7 @@ class List extends Component {
                      style = {s.listcontainer}
                      onPress = {() => this.navigate(item.id)}>
                      <Image 
-                        source = {{uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2Fthumbnail.png?alt=media&token=ae67603e-14b8-4ac2-8ca2-0209ea08e0a2'}}
+                        source = {{uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2FStart.png?alt=media&token=df514ec7-c4cf-49e8-a1ad-1b8ecbda764b'}}
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
@@ -72,7 +80,7 @@ class List extends Component {
                   </TouchableOpacity>
                ))
             }    
-         </ScrollView>
+         </ScrollView></>
          
       )
    }
@@ -118,5 +126,13 @@ const styles = StyleSheet.create ({
       right: 10,
       top: 10,
       padding: 20,
+   },
+   imgS: {
+      width: 200,
+      height: 95,
+      position: 'absolute',
+      left: 10,
+      top: 10,
+      margin: 20,
    },
 })
