@@ -12,22 +12,22 @@ class dashboard extends Component {
          {
             id: 0,
             name: 'Continue To Course',
-            src: './images/continue.png',
+            src: require('./images/continue.png'),
          },
          {
             id: 1,
             name: 'FaceBook Group',
-            src: './images/facebook.png'
+            src: require('./images/facebook.png'),
          },
          {
             id: 2,
             name: 'Live Q&A',
-            src: './images/live.png'
+            src: require('./images/live.png'),
          },
          {
             id: 3,
             name: 'Alex&spos;s Youtube',
-            src: './images/youtube.png'
+            src: require('./images/youtube.png'),
          },
       ],
    }
@@ -124,7 +124,7 @@ counter(){
                      onPress={()=>this.navigate(0)}>
                        <Image 
                         source = {test}
-                        style = {styles.img}
+                        style = {this.items.src}
                         />
                      <Text style = {styles.text}>
                         {'Continue To Course'}
