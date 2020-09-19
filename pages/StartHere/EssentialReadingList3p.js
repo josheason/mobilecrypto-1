@@ -19,39 +19,19 @@ export default class EssentialReadlingList3p extends Component{
 	return(
 		<View style = {styles.container}>
 			<Text style = {styles.resour1}>{`Essential Reading List`}</Text>
-			    <Text style = {styles.para}>{`Business`}</Text>
- 			   <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/2xjTP4K')}>
+			    <Text style = {styles.para}>{`Productivity`}</Text>
+ 			   <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/2Vxy9dj')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
-  			    <Text style={styles.regURL} >{'Blue Ocean Strategy'}</Text>
+  			    <Text style={styles.regURL} >{'The One Thing'}</Text>
  			   </Text>
-          <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/3ad27st')}>
+          <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/2XMeKIx')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
-  			    <Text style={styles.regURL} >{'Grinding It Out : The Making Of McDonalds'}</Text>
+  			    <Text style={styles.regURL} >{'The High-Performance Planner'}</Text>
  			   </Text>
-			    <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/3eqtxOP')}>
+			    <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/2z8OFsV')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
- 			     <Text style={styles.regURL} >{`Sam Walton: Made In America`}</Text>
+ 			     <Text style={styles.regURL} >{`The 80/20 Individual`}</Text>
 			    </Text>
-			    <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/34GCb7c')}>
-			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'Good To Great'}</Text>
-  			  </Text>
-          <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/3ewUIaX')}>
-			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'Zero To One'}</Text>
-  			  </Text>
-           <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/2xyHzNK')}>
-			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'The Autobiography Of Henry Ford'}</Text>
-  			  </Text>
-          <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/34I1fLq')}>
-			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'The Everything Store (Amazon Story)'}</Text>
-  			  </Text>
-           <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/3cqRT9t')}>
-			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'Shoe Dog'}</Text>
-  			  </Text>  
 				<Text style= {styles.lastPara}>{`   `}</Text>
 					<View style={styles.buttonRow}>
 				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.week2intro1()}>
