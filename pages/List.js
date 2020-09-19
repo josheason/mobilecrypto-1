@@ -75,17 +75,9 @@ class List extends Component {
                      key = {item.id}
                      style = {s.listcontainer}
                      onPress={()=>this.navigate(item.id)}>
-                      <Image 
-                        source = {require('./images/fundsec.png')}
-                        style = {styles.img}
-                        />
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
-                     <Image 
-                        source = {require('./images/playbut.png')}
-                        style = {styles.imgR}
-                        />
                   </TouchableOpacity>
                ))
             }    
