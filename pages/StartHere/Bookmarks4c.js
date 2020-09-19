@@ -18,8 +18,8 @@ export default class Bookmarks4c extends Component{
 	render(){
 	return(
 		<View style = {styles.container}>
-			<Text style = {styles.resour1}>{`Essential Reading List`}</Text>
-			    <Text style = {styles.para}>{`Business`}</Text>
+			<Text style = {styles.resour1}>{`Bookmarks`}</Text>
+			    <Text style = {styles.para}>{`Crypto News`}</Text>
  			   <Text style = {styles.para} onPress={() => Linking.openURL('http://bitcoinist.com/')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
   			    <Text style={styles.regURL} >{'Bitcoin News and Reviews - Cryptocurrency News and Reviews - Bitcoinist.com'}</Text>
