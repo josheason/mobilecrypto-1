@@ -175,7 +175,7 @@ LogIn = (email, password) => {
         Actions.list();
     }
 	navigate2(){
-        Actions.dashboard()
+        Actions.customNavBar1()
     }
 }
 
