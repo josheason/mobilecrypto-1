@@ -120,11 +120,11 @@ export default navList
 styles = StyleSheet.create({
 
 listcontainer: {
-    padding: 25,
+    //padding: 25,
     marginTop: 5,
     marginBottom: 5,
-    marginLeft: 5,
-    marginRight: 5,
+    //marginLeft: 5,
+    //marginRight: 5,
     backgroundColor: '#000000',
     alignItems: 'center',
     borderColor: "#121212",
