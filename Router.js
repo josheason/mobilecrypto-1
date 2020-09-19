@@ -169,6 +169,23 @@ import navList from './navList.js'
 
 const {width} = Dimensions.get('window')
 
+
+const renderBackButton = () => (
+    <TouchableOpacity
+        onPress={() => Actions.pop()}
+    >
+        <View style={{ alignItems: 'center' }}>
+            <Image
+                source={uri: `https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2Fback.png?alt=media&token=d983f242-83dd-48f6-965a-66e04c75ce95`}
+                style={{ width: 30, height: 20 }}
+            />
+            {/*
+                <Icon name='ios-arrow-round-back' style={{ color: '#fff' }} />
+            */}
+        </View>
+    </TouchableOpacity>
+);
+
 const styles = StyleSheet.create({
     titlestyle: {
         color: '#ffffff',
@@ -217,15 +234,12 @@ const Routes = ()=> {
                     key="StartHere"
                    // title="How To Use & Resources"
                     hideNavBar = {false}
+         renderBackButton={() => renderBackButton()
                     component={StartHere} initial />
                 <Scene
                     key="HowToUse1"
                    // title="HowToUse1"
                     hideNavBar = {false}
-        renderBackButton={() => Actions.pop()}
-        back={true}
-                    backTitle = '< Start Here'
-                    backTitleEnabled
                     component={HowToUse1}/>
                 <Scene
                     key="Bookmarks4c"
