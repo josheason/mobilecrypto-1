@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
 const Routes = ()=> {    
     return (
          <Router navigationBarStyle={styles.titlebackground} titleStyle={styles.titlestyle} tintColor='#ffffff' headerTitleContainerStyle={styles.centertitle}>
-           <Scene key="root" navBar={CustomNavBar}>
+           <Scene key="root" >
                 <Scene
                     key="login"
                     //// title="Login"
@@ -229,8 +229,8 @@ const Routes = ()=> {
                 <Scene
                     key="list"
                    // title="Fundamental Secrets"
-                    component={List}/>
-                <Scene key="Start" hideNavBar = {true}>
+                    component={List} navBar={CustomNavBar}/>
+                <Scene key="Start" hideNavBar = {true}  navBar={CustomNavBar}>
                 <Scene
                     key="StartHere"
                    // title="How To Use & Resources"
