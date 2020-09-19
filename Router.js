@@ -218,14 +218,15 @@ const Routes = ()=> {
             <Drawer
                         hideNavBar
                         key="main"
-                        //drawerImage={}
+                        drawerImage={{uri: `https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2Fmenu.png?alt=media&token=af931195-37aa-4ca4-8961-023b39d9d595`}}
                         contentComponent={navList}
                         drawerWidth={width*.75}
                     >
                 <Scene
                     key='dashboard'
                    title='dashboard'
-                    navBar = {CustomNavBar1}
+                    hideNavBar = {true}
+                    //navBar = {CustomNavBar1}
                     component={dashboard}/>
         </Drawer>
                 <Scene
