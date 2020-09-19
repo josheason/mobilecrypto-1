@@ -12,54 +12,50 @@ class List extends Component {
          },
          {
             id: 1,
-            name: 'Essential Reading List',
+            name: 'Essential Reading List - Business',
          },
           {
             id: 2,
-            name: 'Essential Reading List',
+            name: 'Essential Reading List - Productivity',
          },
           {
             id: 3,
-            name: 'Essential Reading List',
+            name: 'Essential Reading List - Investing',
          },
           {
             id: 4,
-            name: 'Essential Reading List',
+            name: 'Essential Reading List - Brain',
          },
           {
             id: 5,
-            name: 'Essential Reading List',
+            name: 'Essential Reading List - Crypto',
          },
           {
             id: 6,
-            name: 'Essential Reading List',
+            name: 'Essential Reading List - Marketing Research',
          },
-          {
+         {
             id: 7,
-            name: 'Essential Reading List',
+            name: 'Bookmarks - Crypto News',
          },
          {
             id: 8,
-            name: 'Bookmarks',
+            name: 'Bookmarks - Data',
          },
          {
             id: 9,
-            name: 'Bookmarks',
+            name: 'Bookmarks - Must-Read Articles',
          },
          {
             id: 10,
-            name: 'Bookmarks',
+            name: 'Bookmarks - Macro',
          },
          {
             id: 11,
-            name: 'Bookmarks',
+            name: 'Bookmarks - Marketing Research',
          },
          {
             id: 12,
-            name: 'Bookmarks',
-         },
-         {
-            id: 13,
             name: 'Assessment',
          },
       ]
@@ -96,17 +92,17 @@ class List extends Component {
       if(itemid == 0)
          Actions.HowToUse1 ();
       if(itemid == 1)
-         Actions.EssentialReadlingList3b();
+         Actions.EssentialReadingList3b();
       if(itemid == 2)
-         Actions.EssentialReadlingList3p();
+         Actions.EssentialReadingList3p();
       if(itemid == 3)
-         Actions.EssentialReadlingList3i();
+         Actions.EssentialReadingList3i();
       if(itemid == 4)
-         Actions.EssentialReadlingList3br();
+         Actions.EssentialReadingList3br();
       if(itemid == 5)
-         Actions.EssentialReadlingList3c();
+         Actions.EssentialReadingList3c();
       if(itemid == 6)
-         Actions.EssentialReadlingList3m();
+         Actions.EssentialReadingList3m();
       if(itemid == 7)
          Actions.Bookmarks4c();
       if(itemid == 8)
