@@ -74,7 +74,7 @@ class navList extends Component {
                      key = {item.id}
                      style = {styles.listcontainer}
                      onPress={()=>this.navigate(item.id)}>
-                     <Text style = {styles.text}>
+                     <Text style = {styles.listtext}>
                         {item.name}
                      </Text>
                   </TouchableOpacity>
