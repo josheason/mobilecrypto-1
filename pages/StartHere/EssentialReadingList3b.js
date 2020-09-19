@@ -12,7 +12,7 @@ const { width, height } = Dimensions.get('window');
 
 
  
-export default class EssentialReadlingList3b extends Component{
+export default class EssentialReadingList3b extends Component{
 	
 	
 	render(){
