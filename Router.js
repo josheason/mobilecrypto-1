@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
 const Routes = ()=> {    
     return (
          <Router navigationBarStyle={styles.titlebackground} titleStyle={styles.titlestyle} tintColor='#ffffff' headerTitleContainerStyle={styles.centertitle}>
-           <Scene key="root" navBar={CustomNavBar} >
+           <Scene key="root">
                 <Scene
                     key="login"
                     // title="Login"
