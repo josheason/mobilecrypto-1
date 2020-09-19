@@ -670,7 +670,7 @@ const Routes = ()=> {
                     <Scene
                     key="repu4"
                     title="repu4"
-                    component={repu4/}>
+                    component={repu4}/>
                     <Scene
                     key="litigations5"
                     title="litigations5"
