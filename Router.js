@@ -171,24 +171,10 @@ import Bookmarks4m from './pages/StartHere/Bookmarks4m.js'
 import Bookmarks4mac from './pages/StartHere/Bookmarks4mac.js'
 import Bookmarks4mar from './pages/StartHere/Bookmarks4mar.js'
 
+import CustomNavBar from './CustomNavBar.js'
 
 
 
-const renderBackButton = () => (
-    <TouchableOpacity
-        onPress={() => Actions.pop()}
-    >
-        <View style={{ alignItems: 'center' }}>
-            <Image
-                source={require('./images/live.png')}
-                style={{ width: 30, height: 20 }}
-            />
-            {/*
-                <Icon name='ios-arrow-round-back' style={{ color: '#fff' }} />
-            */}
-        </View>
-    </TouchableOpacity>
-);
 
 
 
@@ -214,7 +200,7 @@ const styles = StyleSheet.create({
 
 const Routes = ()=> {    
     return (
-        <Router navigationBarStyle={styles.titlebackground} titleStyle={styles.titlestyle} tintColor='#ffffff' headerTitleContainerStyle={styles.centertitle}>
+        <Router navBar={CustomNavBar}>
            <Scene key="root" >
                 <Scene
                     key="login"
@@ -240,8 +226,7 @@ const Routes = ()=> {
                 <Scene
                     key="Week2"
                     title="Week 2: Blockchain"
-                    component={Week2}
-                renderBackButton={() => renderBackButton()}>
+                    component={Week2}>
                 </Scene>
                 <Scene
                     key="Week3SS"
