@@ -197,7 +197,7 @@ const Routes = ()=> {
                 <Scene
                     key="list"
                     title="Fundamental Secrets"
-                    component={List}>
+                    component={List}/>
                 <Scene
                     key="StartHere"
                     title="How To Use & Resources"
@@ -759,7 +759,6 @@ const Routes = ()=> {
                     title="lend27"
                     component={lend27}/>
                     </Scene>           
-                </Scene>
            </Scene>
         </Router>
     )
