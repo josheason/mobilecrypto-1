@@ -117,9 +117,7 @@ counter(){
                         {'DASHBOARD'}
                      </Text>
                   </TouchableOpacity>
-         
-         /*source = {require('./images/arrow.png')}*/
-                 
+
                   <TouchableOpacity
                      key = {1}
                      style = {styles.container}
