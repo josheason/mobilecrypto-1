@@ -153,8 +153,8 @@ listtext:{
   borderRadius: 60,
 },
  spacing:{
-    width: 10,
-      height: 20,
+    width: 35,
+      height: 100,
       paddingBottom: 20,
  },
 
