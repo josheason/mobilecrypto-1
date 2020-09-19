@@ -117,14 +117,14 @@ counter(){
                      </Text>
                   </TouchableOpacity>
          
-         
+         /*source = {require('./images/arrow.png')}*/
                  
                   <TouchableOpacity
                      key = {1}
                      style = {styles.container}
                      onPress={()=>this.navigate(0)}>
                        <Image 
-                        source = {require('./images/arrow.png')}
+                        source = {require(this.state.names.id.src)}
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
