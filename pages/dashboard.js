@@ -5,7 +5,6 @@ import * as firebase from 'firebase';
 import 'firebase/firestore';
 
 var test = require('./images/arrow.png');
-var icon = this.props.active ? require('./images/arrow.png') : require('./images/continue.png');
 
 class dashboard extends Component {
    state = {
@@ -130,7 +129,7 @@ counter(){
                      style = {styles.container}
                      onPress={()=>this.navigate(0)}>
                        <Image 
-                        source = {icon}
+                        source = {test}
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
