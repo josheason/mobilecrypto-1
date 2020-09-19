@@ -187,6 +187,7 @@ const styles = StyleSheet.create({
     },
     centertitle:{
         left: 0,
+        textAlign: 'center',
     }
 });
 
