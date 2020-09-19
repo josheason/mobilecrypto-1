@@ -75,6 +75,10 @@ class List extends Component {
                      key = {item.id}
                      style = {s.listcontainer}
                      onPress={()=>this.navigate(item.id)}>
+                      <Image 
+                        source = {require('./images/fundsec.png')}
+                        style = {styles.img}
+                        />
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
@@ -85,6 +89,10 @@ class List extends Component {
          
       )
    }
+   
+
+   
+   
    navigate(itemid) {
       if(itemid == 0)
          Actions.Start();
@@ -119,5 +127,13 @@ export default List
 const styles = StyleSheet.create ({
    text: {
       color: '#ffffff'
-   }
+   },
+   img: {
+      width: 50,
+      height: 50,
+      position: 'absolute',
+      left: 10,
+      top: 10,
+      padding: 20,
+   },
 })
