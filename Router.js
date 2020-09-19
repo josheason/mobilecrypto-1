@@ -159,12 +159,12 @@ import bigprom6 from './pages/Week10/bigprom6.js'
 import caltutsales7 from './pages/Week10/caltutsales7.js'
 
 import HowToUse1 from './pages/StartHere/HowToUse1.js'
-import EssentialReadlingList3b from './pages/StartHere/EssentialReadlingList3b.js'
-import EssentialReadlingList3p from './pages/StartHere/EssentialReadlingList3p.js'
-import EssentialReadlingList3i from './pages/StartHere/EssentialReadlingList3i.js'
-import EssentialReadlingList3br from './pages/StartHere/EssentialReadlingList3br.js'
-import EssentialReadlingList3c from './pages/StartHere/EssentialReadlingList3c.js'
-import EssentialReadlingList3m from './pages/StartHere/EssentialReadlingList3m.js'
+import EssentialReadingList3b from './pages/StartHere/EssentialReadingList3b.js'
+import EssentialReadingList3p from './pages/StartHere/EssentialReadingList3p.js'
+import EssentialReadingList3i from './pages/StartHere/EssentialReadingList3i.js'
+import EssentialReadingList3br from './pages/StartHere/EssentialReadingList3br.js'
+import EssentialReadingList3c from './pages/StartHere/EssentialReadingList3c.js'
+import EssentialReadingList3m from './pages/StartHere/EssentialReadingList3m.js'
 import Bookmarks4c from './pages/StartHere/Bookmarks4c.js'
 import Bookmarks4d from './pages/StartHere/Bookmarks4d.js'
 import Bookmarks4m from './pages/StartHere/Bookmarks4m.js'
@@ -890,34 +890,34 @@ const Routes = ()=> {
                     component={HowToUse1}>
                    </Scene>
         <Scene
-                    key="EssentialReadlingList3b"
-                    title="EssentialReadlingList3b"
-                    component={EssentialReadlingList3b}>
+                    key="EssentialReadingList3b"
+                    title="EssentialReadingList3b"
+                    component={EssentialReadingList3b}>
                    </Scene>
         <Scene
-                    key="EssentialReadlingList3p"
-                    title="EssentialReadlingList3p"
-                    component={EssentialReadlingList3p}>
+                    key="EssentialReadingList3p"
+                    title="EssentialReadingList3p"
+                    component={EssentialReadingList3p}>
                    </Scene>
         <Scene
-                    key="EssentialReadlingList3i"
-                    title="EssentialReadlingList3i"
-                    component={EssentialReadlingList3i}>
+                    key="EssentialReadingList3i"
+                    title="EssentialReadingList3i"
+                    component={EssentialReadingList3i}>
                    </Scene>
         <Scene
-                    key="EssentialReadlingList3br"
-                    title="EssentialReadlingList3br"
-                    component={EssentialReadlingList3br}>
+                    key="EssentialReadingList3br"
+                    title="EssentialReadingList3br"
+                    component={EssentialReadingList3br}>
                    </Scene>
         <Scene
-                    key="EssentialReadlingList3c"
-                    title="EssentialReadlingList3c"
-                    component={EssentialReadlingList3c}>
+                    key="EssentialReadingList3c"
+                    title="EssentialReadingList3c"
+                    component={EssentialReadingList3c}>
                    </Scene>
         <Scene
-                    key="EssentialReadlingList3m"
-                    title="EssentialReadlingList3m"
-                    component={EssentialReadlingList3m}>
+                    key="EssentialReadingList3m"
+                    title="EssentialReadingList3m"
+                    component={EssentialReadingList3m}>
                    </Scene>
         <Scene
                     key="Bookmarks4c"
