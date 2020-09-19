@@ -40,7 +40,7 @@ export default class HowToUse1  extends Component{
 				<><View
 				style = {{ backgroundColor: '#121212' }}>
 				<><Text style={styles.text}>
-				{'Desktop Wallets'}
+				{'How To Use'}
 				</Text>
 				<Text style={styles.space}>
 				{'         '}
