@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     navBarItem: {
         flex: 1,
         justifyContent: 'center',
+        flexDirection: 'row',
     },
 });
 
