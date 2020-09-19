@@ -18,8 +18,8 @@ export default class Bookmarks4d extends Component{
 	render(){
 	return(
 		<View style = {styles.container}>
-			<Text style = {styles.resour1}>{`Essential Reading List`}</Text>
-			    <Text style = {styles.para}>{`Business`}</Text>
+			<Text style = {styles.resour1}>{`Bookmarks`}</Text>
+			    <Text style = {styles.para}>{`Data`}</Text>
  			   <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/2xjTP4K')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
   			    <Text style={styles.regURL} >{'Glassnode Insights - On-Chain Market Intelligence'}</Text>
