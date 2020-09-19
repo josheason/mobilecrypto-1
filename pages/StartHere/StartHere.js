@@ -3,7 +3,7 @@ import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-nati
 import { Actions } from 'react-native-router-flux';
 var s = require('../styles');
    
-class List extends Component {
+class StartHere extends Component {
    state = {
       names: [
          {
@@ -63,4 +63,4 @@ class List extends Component {
          Actions.EssentialReadingList3i()
    }
 }
-export default List
+export default StartHere
