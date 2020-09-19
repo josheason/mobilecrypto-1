@@ -200,7 +200,7 @@ const Routes = ()=> {
                         key="main"
                         //drawerImage={}
                         contentComponent={navList}
-                        drawerWidth={width/2}
+                        drawerWidth={width*.75}
                     >
                 <Scene
                     key="dashboard"
