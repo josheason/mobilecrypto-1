@@ -182,7 +182,7 @@ counter(){
                      <Text
                      style = {styles.header}
                        >
-                        {'DASHBOARD'}
+                        {'Sign Out'}
                      </Text>
                   </TouchableOpacity></>
 
