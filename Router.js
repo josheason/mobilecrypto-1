@@ -919,11 +919,6 @@ const Routes = ()=> {
                     title="EssentialReadingList3m"
                     component={EssentialReadingList3m}>
                    </Scene>
-        //<Scene
-          //          key="Bookmarks4c"
-            //        title="Bookmarks4c"
-              //      component={Bookmarks4c}>
-                //   </Scene>
         <Scene
                     key="Bookmarks4d"
                     title="Bookmarks4d"
