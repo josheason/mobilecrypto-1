@@ -222,7 +222,7 @@ const Routes = ()=> {
                     key="HowToUse1"
                    // title="HowToUse1"
                     hideNavBar = {false}
-        back
+        back={true}
                     backTitle = '< Start Here'
                     backTitleEnabled
                     component={HowToUse1}/>
