@@ -65,7 +65,7 @@ class navList extends Component {
    
    render() {
       return (
-         <View style={{backgroundColor: '#000000'}}>
+         <><View style={{backgroundColor: '#000000'}}>
          <Text style={styles.spacing}>{` `}</Text>
          </View>
          <ScrollView
@@ -87,7 +87,7 @@ class navList extends Component {
                   </TouchableOpacity>
                ))
             }    
-         </ScrollView >
+         </ScrollView ></>
          
       )
    }
