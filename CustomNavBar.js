@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        alignSelf: 'center'
     },
 });
 
@@ -46,7 +47,6 @@ export default class CustomNavBar extends React.Component {
     _renderMiddle() {
         return (
             <View style={styles.navBarItem}>
-                <Text style = {styles.NavText}>{` `}</Text>
                 <Text style = {styles.NavText}>{this.props.title}</Text>
             </View>
         );
