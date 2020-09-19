@@ -193,7 +193,7 @@ const Routes = ()=> {
                 <Scene
                     key="dashboard"
                     title="dashboard"
-                    component={dashboard}>
+                    component={dashboard}/>
                 <Scene
                     key="list"
                     title="Fundamental Secrets"
@@ -759,7 +759,6 @@ const Routes = ()=> {
                     title="lend27"
                     component={lend27}/>
                     </Scene>           
-                     </Scene>
                 </Scene>
            </Scene>
         </Router>
