@@ -77,10 +77,9 @@ export default class CustomNavBar extends React.Component {
             <View style={[styles.container, dinamicStyle]}>
                 {this._renderLeft()}
                 {this._renderMiddle()}
-                {this._renderRight()}
           </View>
         );
     }
 }
 
-/*                <Text style = {styles.NavText}>{this.props.title}</Text>*/
+/*                <Text style = {styles.NavText}>{this.props.title}</Text>.        this._renderRight()}*/
