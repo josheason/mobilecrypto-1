@@ -189,12 +189,11 @@ const Routes = ()=> {
                 <Scene
                     key="login"
                     // title="Login"
-                    component={Login}>
+                    component={Login}/>
                 <Scene
                     key="dashboard"
                     title="dashboard"
                     component={dashboard}>
-            </Scene>
                 <Scene
                     key="list"
                     title="Fundamental Secrets"
