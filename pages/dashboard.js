@@ -113,17 +113,7 @@ counter(){
          >
          {  
                  <>
-                  <TouchableOpacity
-                  key = {0}
-                  style = {styles.container}
-                  onPress={()=>Actions.login()}>
-                     <Text
-                     style = {styles.header}
-                       >
-                        {'DASHBOARD'}
-                     </Text>
-                  </TouchableOpacity>
-
+                 
                   <TouchableOpacity
                      key = {1}
                      style = {styles.container}
@@ -136,9 +126,7 @@ counter(){
                         {'Continue To Course'}
                      </Text>
                   </TouchableOpacity>
-                  <>
-                  </>
-
+        
                  
                   <TouchableOpacity
                      key = {2}
@@ -184,7 +172,20 @@ counter(){
                         {"Alex's Youtube"}
                      </Text>
                   </TouchableOpacity>
+                  <>
                   </>
+
+ <TouchableOpacity
+                  key = {0}
+                  style = {styles.container}
+                  onPress={()=>Actions.login()}>
+                     <Text
+                     style = {styles.header}
+                       >
+                        {'DASHBOARD'}
+                     </Text>
+                  </TouchableOpacity></>
+
 
             }
          </ScrollView >
