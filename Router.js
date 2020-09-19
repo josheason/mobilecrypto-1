@@ -207,11 +207,12 @@ const styles = StyleSheet.create({
 const Routes = ()=> {    
     return (
          <Router navigationBarStyle={styles.titlebackground} titleStyle={styles.titlestyle} tintColor='#ffffff' headerTitleContainerStyle={styles.centertitle}>
-           <Scene key="root">
+           <Scene key="root" navBar={CustomNavBar}>
                 <Scene
                     key="login"
                     //// title="Login"
                     type = 'replace'
+                    hideNavBar = {true}
                     component={Login} initial/>
             <Drawer
                         hideNavBar
@@ -239,7 +240,6 @@ const Routes = ()=> {
                     key="HowToUse1"
                    // title="HowToUse1"
                     hideNavBar = {false}
-        navBar={CustomNavBar}
                     component={HowToUse1}/>
                 <Scene
                     key="Bookmarks4c"
