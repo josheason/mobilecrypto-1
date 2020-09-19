@@ -194,6 +194,7 @@ const Routes = ()=> {
                     key="dashboard"
                     title="dashboard"
                     component={dashboard}>
+            </Scene>
                 <Scene
                     key="list"
                     title="Fundamental Secrets"
@@ -758,8 +759,7 @@ const Routes = ()=> {
                     key="lend27"
                     title="lend27"
                     component={lend27}/>
-                    </Scene>
-                        </Scene>           
+                    </Scene>           
                      </Scene>
                 </Scene>
            </Scene>
