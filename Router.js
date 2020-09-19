@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, StatusBar, SafeAreaView, Dimensions } from 'react-native';
-import { Router, Scene, Drawer } from 'react-native-router-flux'
+import { Router, Scene, Drawer, Actions } from 'react-native-router-flux'
 
 import CustomNavBar from './CustomNavBar.js'
 
