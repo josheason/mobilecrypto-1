@@ -116,7 +116,7 @@ counter(){
                   <TouchableOpacity
                   key = {0}
                   style = {styles.container}
-                  onPress={()=>this.counter()}>
+                  onPress={()=>Actions.reset()}>
                      <Text
                      style = {styles.header}
                        >
