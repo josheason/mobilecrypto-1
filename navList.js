@@ -65,6 +65,9 @@ class navList extends Component {
    
    render() {
       return (
+         <View style={{backgroundColor: '#000000'}}>
+         <Text style={styles.spacing}>{` `}</Text>
+         </View>
          <ScrollView
           style = {{ backgroundColor: '#000000' }}
          >
@@ -149,6 +152,11 @@ listtext:{
   width: 120,
   borderRadius: 60,
 },
+ spacing:{
+    width: 10,
+      height: 20,
+      paddingBottom: 20,
+ },
 
 });
 
