@@ -210,6 +210,11 @@ const Routes = ()=> {
                     hideNavBar = {false}
                     component={HowToUse1}/>
                 <Scene
+                    key="Bookmarks4c"
+                    title="Bookmarks4c"
+                    hideNavBar = {false}
+                    component={Bookmarks4c}/>
+                <Scene
                     key="EssentialReadingList3b"
                     title="EssentialReadingList3b"
                     component={EssentialReadingList3b}/>
