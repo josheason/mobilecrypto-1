@@ -222,6 +222,7 @@ const Routes = ()=> {
                     key="HowToUse1"
                    // title="HowToUse1"
                     hideNavBar = {false}
+        renderBackButton={() => Actions.pop()}
         back={true}
                     backTitle = '< Start Here'
                     backTitleEnabled
