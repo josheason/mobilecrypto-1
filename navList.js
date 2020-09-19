@@ -74,6 +74,10 @@ class navList extends Component {
                      key = {item.id}
                      style = {styles.listcontainer}
                      onPress={()=>this.navigate(item.id)}>
+                      <Image 
+                        source = {{uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2FthisFile.png?alt=media&token=e057451a-38bf-4034-b751-867554f9396d'}}
+                        style = {styles.img}
+                        />
                      <Text style = {styles.listtext}>
                         {item.name}
                      </Text>
@@ -130,7 +134,14 @@ listcontainer: {
     borderColor: "#121212",
     borderWidth: 1,
 },
-
+img: {
+      width: 50,
+      height: 50,
+      position: 'absolute',
+      left: 10,
+      top: 10,
+      padding: 20,
+   },
 listtext:{
   color: '#ffffff',
   textAlign: 'center',
