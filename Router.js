@@ -234,12 +234,12 @@ const Routes = ()=> {
                     key="StartHere"
                    // title="How To Use & Resources"
                     hideNavBar = {false}
-         navBar=CustomNavBar
                     component={StartHere} initial />
                 <Scene
                     key="HowToUse1"
                    // title="HowToUse1"
                     hideNavBar = {false}
+        navBar={CustomNavBar}
                     component={HowToUse1}/>
                 <Scene
                     key="Bookmarks4c"
