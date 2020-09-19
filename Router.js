@@ -197,7 +197,7 @@ const Routes = ()=> {
                         key="main"
                         //drawerImage={}
                         contentComponent={List}
-                        drawerWidth={width/3}
+                        drawerWidth={width/2}
                     >
                 <Scene
                     key="dashboard"
