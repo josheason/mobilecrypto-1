@@ -59,14 +59,14 @@ class List extends Component {
                      style = {s.listcontainer}
                      onPress = {() => this.navigate(item.id)}>
                      <Image 
-                        source = {require('./../../images/fundsec.png')}
+                        source = {{uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2Fplaybut.png?alt=media&token=e99b2580-0f6e-465c-b0dc-10edcd4e9f70'}}
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
                         {item.name}
                      </Text>
                      <Image 
-                        source = {require('./../../images/playbut.png')}
+                        source = {{uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2Fplaybut.png?alt=media&token=e99b2580-0f6e-465c-b0dc-10edcd4e9f70'}}
                         style = {styles.imgR}
                         />
                   </TouchableOpacity>
