@@ -221,7 +221,7 @@ const Routes = ()=> {
                     key="HowToUse1"
                    // title="HowToUse1"
                     hideNavBar = {false}
-                    backTitle =: '< Start Here'
+                    backTitle = '< Start Here'
                     backTitleEnabled
                     component={HowToUse1}/>
                 <Scene
