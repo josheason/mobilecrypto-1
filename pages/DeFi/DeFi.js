@@ -131,7 +131,7 @@ class DeFi extends Component {
                      style = {s.listcontainer}
                      onPress={()=>this.navigate(item.id)}>
                      <Image 
-                        source = {{uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2Fthumbnail.png?alt=media&token=ae67603e-14b8-4ac2-8ca2-0209ea08e0a2'}}
+                        source = {{uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2FDefiThumb.jpeg?alt=media&token=9d137f0e-f31f-4f71-a25b-a35e6174b27d'}}
                         style = {styles.img}
                         />
                      <Text style = {styles.text}>
