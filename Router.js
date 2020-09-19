@@ -920,6 +920,11 @@ const Routes = ()=> {
                     component={EssentialReadingList3m}>
                    </Scene>
         <Scene
+                    key="Bookmarks4c"
+                    title="Bookmarks4c"
+                    component={Bookmarks4c}>
+                   </Scene>
+        <Scene
                     key="Bookmarks4d"
                     title="Bookmarks4d"
                     component={Bookmarks4d}>
@@ -940,13 +945,6 @@ const Routes = ()=> {
                     component={Bookmarks4mar}>
                    </Scene>
            </Scene>
-        <Scene key="root1" >
-        <Scene
-                    key="Bookmarks4c"
-                    title="Bookmarks4c"
-                    component={Bookmarks4c}>
-                   </Scene>
-        </Scene>
         </Router>
     )
 }
