@@ -132,6 +132,18 @@ const styles = StyleSheet.create({
 		height: height/ 3,
 		opacity: 0.5,
 	},
+	regURL: {
+		//flex :1,
+		backgroundColor: '#121212',
+		alignItems: 'center',
+		//justifyContent: 'center',
+		color: '#03dac5',
+		fontSize: 18,
+	  	marginTop: 15,
+		//padding:20,
+		//fontWeight: 'bold',
+		//fontStyle: 'italic',
+	},
 	container: {
 		//flex :1,
 		backgroundColor: '#121212',
