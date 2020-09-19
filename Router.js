@@ -212,7 +212,8 @@ const Routes = ()=> {
                 <Scene
                     key="Week1"
                     title="Week 1: Mind"
-                    component={Week1}>
+                    component={Week1}
+                    back={true}>
                 </Scene>
                 <Scene
                     key="Week2"
