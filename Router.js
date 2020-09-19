@@ -176,7 +176,7 @@ const renderBackButton = () => (
     >
         <View style={{ alignItems: 'center' }}>
             <Image
-                source={uri: `https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2Fback.png?alt=media&token=d983f242-83dd-48f6-965a-66e04c75ce95`}
+                source={{uri: `https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2Fback.png?alt=media&token=d983f242-83dd-48f6-965a-66e04c75ce95`}}
                 style={{ width: 30, height: 20 }}
             />
             {/*
