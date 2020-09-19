@@ -22,11 +22,11 @@ export default class EssentialReadingList3m extends Component{
 			    <Text style = {styles.para}>{`Business`}</Text>
  			   <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/3a8e0Qq')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
-  			    <Text style={styles.regURL} >{`Trust Me I'm Lying '}</Text>
+  			    <Text style={styles.regURL} >{`Trust Me I'm Lying `}</Text>
  			   </Text>
           <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/2Vzvq2V')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
-  			    <Text style={styles.regURL} >{'Tribes'}</Text>
+  			    <Text style={styles.regURL} >{`Tribes`}</Text>
  			   </Text>
 				<Text style= {styles.lastPara}>{`   `}</Text>
 					<View style={styles.buttonRow}>
