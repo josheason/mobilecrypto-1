@@ -66,7 +66,7 @@ class List extends Component {
                         {item.name}
                      </Text>
                      <Image 
-                        source = {require('./../images/playbut.png')}
+                        source = {require('./../../images/playbut.png')}
                         style = {styles.imgR}
                         />
                   </TouchableOpacity>
