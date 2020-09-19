@@ -49,14 +49,7 @@ class List extends Component {
    }
    render() {
       return (
-         <><View style={{backgroundColor: '#121212' }}
-         >
-         <Image 
-                        source = {{uri: 'https://firebasestorage.googleapis.com/v0/b/mobilecrypto-b1543.appspot.com/o/Images%2FStart.png?alt=media&token=df514ec7-c4cf-49e8-a1ad-1b8ecbda764b'}}
-                        style = {styles.img}
-                        />
-         <Text style ={{color: '#fff', fontSize: 15, justifyContent: 'center', alignItems: 'center'}}>{`START HERE: How To Use & Resources`}</Text>
-         </View>
+         
          <ScrollView
          style = {{ backgroundColor: '#121212' }}
          >
@@ -80,7 +73,7 @@ class List extends Component {
                   </TouchableOpacity>
                ))
             }    
-         </ScrollView></>
+         </ScrollView>
          
       )
    }
