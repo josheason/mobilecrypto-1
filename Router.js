@@ -351,7 +351,7 @@ const Routes = ()=> {
                     key="Week3SS"
                     title="Week 3: Security + Storage"
         hideNavBar = {false}
-                    component={Week3SS}initial />
+                    component={Week3SS} initial />
                    <Scene
                     key="week3intro1"
                     title="week3intro1"
@@ -465,17 +465,17 @@ const Routes = ()=> {
         hideNavBar = {false}
                     component={blackbox6}/>
                    </Scene>
+        <Scene key="W4" hideNavBar = {true}>
                 <Scene
                     key="Week4"
                     title="Week 4: Marketing"
         hideNavBar = {false}
-                    component={Week4}>
-         <Scene key="W4" hideNavBar = {true}>
+                    component={Week4} initial />
                  <Scene
                     key="week4intro1"
                     title="week4intro1"
         hideNavBar = {false}
-                    component={week4intro1} initial />
+                    component={week4intro1} />
                     <Scene
                     key="w4booklist2"
                     title="w4booklist2"
