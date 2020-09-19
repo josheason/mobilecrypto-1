@@ -214,7 +214,7 @@ const Routes = ()=> {
                     key="Week1"
                     title="Week 1: Mind"
                     component={Week1}
-                    type={ActionConst.RESET}>
+                    type= "replace">
                 </Scene>
                 <Scene
                     key="Week2"
