@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, StatusBar, SafeAreaView, Dimensions } from 'rea
 import { Router, Scene, Drawer, Actions } from 'react-native-router-flux'
 
 import CustomNavBar from './CustomNavBar.js'
+import CustomNavBar1 from './CustomNavBar1.js'
 
 import Login from './pages/Login.js'
 
@@ -224,7 +225,7 @@ const Routes = ()=> {
                 <Scene
                     key='dashboard'
                    title='dashboard'
-        name='dashboard'
+                    navBar = {CustomNavBar1}
                     component={dashboard}/>
         </Drawer>
                 <Scene
