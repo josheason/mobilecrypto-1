@@ -134,7 +134,7 @@ listcontainer: {
 listtext:{
   color: '#ffffff',
   textAlign: 'center',
-  height: 50,
+  height: 35,
   width: 80,
   borderRadius: 60,
 },
