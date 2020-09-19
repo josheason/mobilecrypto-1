@@ -18,40 +18,36 @@ export default class Bookmarks4mac extends Component{
 	render(){
 	return(
 		<View style = {styles.container}>
-			<Text style = {styles.resour1}>{`Essential Reading List`}</Text>
-			    <Text style = {styles.para}>{`Business`}</Text>
- 			   <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/2xjTP4K')}>
+			<Text style = {styles.resour1}>{`Bookmarks`}</Text>
+			    <Text style = {styles.para}>{`Macro`}</Text>
+ 			   <Text style = {styles.para} onPress={() => Linking.openURL('https://www.lmtr.com/category/chart-of-the-week/')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
-  			    <Text style={styles.regURL} >{'Blue Ocean Strategy'}</Text>
+  			    <Text style={styles.regURL} >{'Chart of the Week Archives - LMTR.com'}</Text>
  			   </Text>
-          <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/3ad27st')}>
+          <Text style = {styles.para} onPress={() => Linking.openURL('https://www.barrons.com/')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
-  			    <Text style={styles.regURL} >{'Grinding It Out : The Making Of McDonalds'}</Text>
+  			    <Text style={styles.regURL} >{`Barron's | Financial and Investment News`}</Text>
  			   </Text>
-			    <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/3eqtxOP')}>
+			    <Text style = {styles.para} onPress={() => Linking.openURL('https://www.nytimes.com/')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
- 			     <Text style={styles.regURL} >{`Sam Walton: Made In America`}</Text>
+ 			     <Text style={styles.regURL} >{`The New York Times - Breaking News, World News & Multimedia`}</Text>
 			    </Text>
-			    <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/34GCb7c')}>
+			    <Text style = {styles.para}  onPress={() => Linking.openURL('https://www.businessinsider.com/')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'Good To Great'}</Text>
+			      <Text style={styles.regURL}>{'Business Insider'}</Text>
   			  </Text>
-          <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/3ewUIaX')}>
+          <Text style = {styles.para}  onPress={() => Linking.openURL('https://www.wsj.com/')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'Zero To One'}</Text>
+			      <Text style={styles.regURL}>{'The Wall Street Journal - Breaking News, Business, Financial & Economic News, World News and Video'}</Text>
   			  </Text>
-           <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/2xyHzNK')}>
+           <Text style = {styles.para}  onPress={() => Linking.openURL('https://blog.pimco.com/en/')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'The Autobiography Of Henry Ford'}</Text>
+			      <Text style={styles.regURL}>{'PIMCO Blog | PIMCO Blog'}</Text>
   			  </Text>
-          <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/34I1fLq')}>
+          <Text style = {styles.para}  onPress={() => Linking.openURL('https://www.cia.gov/library/publications/the-world-factbook/fields/235.html')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'The Everything Store (Amazon Story)'}</Text>
+			      <Text style={styles.regURL}>{'Field Listing :: Stock of broad money — The World Factbook - Central Intelligence Agency'}</Text>
   			  </Text>
-           <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/3cqRT9t')}>
-			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'Shoe Dog'}</Text>
-  			  </Text>  
 				<Text style= {styles.lastPara}>{`   `}</Text>
 					<View style={styles.buttonRow}>
 				<TouchableOpacity activeOpacity={0.3} underlayColor="#6200ee" onPress={() => Actions.week2intro1()}>
