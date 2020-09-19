@@ -2,6 +2,8 @@ import React from 'react'
 import { StyleSheet, Text, View, StatusBar, SafeAreaView } from 'react-native';
 import { Router, Scene } from 'react-native-router-flux'
 
+import CustomNavBar from './CustomNavBar.js'
+
 import Login from './pages/Login.js'
 
 import List from './pages/List.js'
