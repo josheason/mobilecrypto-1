@@ -180,7 +180,7 @@ const renderBackButton = () => (
     >
         <View style={{ alignItems: 'center' }}>
             <Image
-                source={require('./components/images/icon_back.png')}
+                source={require('./images/live.png')}
                 style={{ width: 30, height: 20 }}
             />
             {/*
