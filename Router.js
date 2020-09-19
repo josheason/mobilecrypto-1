@@ -369,7 +369,7 @@ const Routes = ()=> {
                 <Scene
                     key="Week3RF"
                     title="Week 3: Research Fundamentals"
-                    component={Week3RF}/>
+                    component={Week3RF}>
                   <Scene
                     key="w3booklist1"
                     title="w3booklist1"
