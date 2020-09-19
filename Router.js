@@ -224,6 +224,7 @@ const Routes = ()=> {
                 <Scene
                     key='dashboard'
                    title='dashboard'
+        name='dashboard'
                     component={dashboard}/>
         </Drawer>
                 <Scene
