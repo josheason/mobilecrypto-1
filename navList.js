@@ -135,8 +135,8 @@ listcontainer: {
     borderWidth: 1,
 },
 img: {
-      width: 50,
-      height: 50,
+      width: 25,
+      height: 25,
       position: 'absolute',
       left: 10,
       top: 10,
@@ -146,7 +146,7 @@ listtext:{
   color: '#ffffff',
   textAlign: 'center',
   height: 35,
-  width: 80,
+  width: 100,
   borderRadius: 60,
 },
 
