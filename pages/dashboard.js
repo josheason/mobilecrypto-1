@@ -116,7 +116,7 @@ counter(){
                   <TouchableOpacity
                   key = {0}
                   style = {styles.container}
-                  onPress={()=>Actions.Login()}>
+                  onPress={()=>Actions.login()}>
                      <Text
                      style = {styles.header}
                        >
