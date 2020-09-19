@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, StatusBar, SafeAreaView, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, SafeAreaView, TouchableOpacity, Image } from 'react-native';
 import { Router, Scene } from 'react-native-router-flux'
 
 import Login from './pages/Login.js'
