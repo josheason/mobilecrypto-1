@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
+import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image } from 'react-native'
 import { Actions } from 'react-native-router-flux';
 var s = require('../styles');
    
