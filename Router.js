@@ -192,10 +192,18 @@ const Routes = ()=> {
                     key="login"
                     // title="Login"
                     component={Login} initial/>
+             <Drawer
+                        hideNavBar
+                        key="main"
+                        drawerImage={Images.menuIcon}
+                        contentComponent={Navigation}
+                        drawerWidth={styles.drawerWidth}
+                    >
                 <Scene
                     key="dashboard"
                     title="dashboard"
                     component={dashboard}/>
+            </Drawer>
                 <Scene
                     key="list"
                     title="Fundamental Secrets"
