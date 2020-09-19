@@ -67,7 +67,7 @@ export default class CustomNavBar extends React.Component {
 
     render() {
         let dinamicStyle = {};
-        if (Actions.currentScene === 'customNavBar1') {
+        if (Actions.currentScene === 'dashboard') {
             dinamicStyle = { backgroundColor: '#000' };
         } else {
             dinamicStyle = { backgroundColor: '#000' };
