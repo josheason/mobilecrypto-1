@@ -22,43 +22,51 @@ export default class Bookmarks4d extends Component{
 			    <Text style = {styles.para}>{`Business`}</Text>
  			   <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/2xjTP4K')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
-  			    <Text style={styles.regURL} >{'Blue Ocean Strategy'}</Text>
+  			    <Text style={styles.regURL} >{'Glassnode Insights - On-Chain Market Intelligence'}</Text>
  			   </Text>
-          <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/3ad27st')}>
+          <Text style = {styles.para} onPress={() => Linking.openURL('https://blocktivity.info/')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
-  			    <Text style={styles.regURL} >{'Grinding It Out : The Making Of McDonalds'}</Text>
+  			    <Text style={styles.regURL} >{`Block'tivity`}</Text>
  			   </Text>
-			    <Text style = {styles.para} onPress={() => Linking.openURL('https://amzn.to/3eqtxOP')}>
+			    <Text style = {styles.para} onPress={() => Linking.openURL('https://www.electriccapital.com/')}>
  			     <Text style = {styles.reg}>{`\u2022  `}</Text>
- 			     <Text style={styles.regURL} >{`Sam Walton: Made In America`}</Text>
+ 			     <Text style={styles.regURL} >{`Electric Capital`}</Text>
 			    </Text>
-			    <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/34GCb7c')}>
+			    <Text style = {styles.para}  onPress={() => Linking.openURL('https://bitinfocharts.com/')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'Good To Great'}</Text>
+			      <Text style={styles.regURL}>{'Bitcoin, Litecoin, Namecoin, Dogecoin, Peercoin, Ethereum stats'}</Text>
   			  </Text>
-          <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/3ewUIaX')}>
+          <Text style = {styles.para}  onPress={() => Linking.openURL('https://coinmetrics.io/')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'Zero To One'}</Text>
+			      <Text style={styles.regURL}>{'Home - Coin Metrics'}</Text>
   			  </Text>
-           <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/2xyHzNK')}>
+           <Text style = {styles.para}  onPress={() => Linking.openURL('https://www.coingecko.com/en')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'The Autobiography Of Henry Ford'}</Text>
+			      <Text style={styles.regURL}>{'CoinGecko: 360° Market Overview of Coins & Cryptocurrencies'}</Text>
   			  </Text>
-          <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/34I1fLq')}>
+          <Text style = {styles.para}  onPress={() => Linking.openURL('https://coinmarketcap.com/')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'The Everything Store (Amazon Story)'}</Text>
+			      <Text style={styles.regURL}>{'https://coinmarketcap.com/'}</Text>
   			  </Text>
-           <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/3cqRT9t')}>
+           <Text style = {styles.para}  onPress={() => Linking.openURL('https://www.cryptomiso.com/')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'Shoe Dog'}</Text>
+			      <Text style={styles.regURL}>{'CryptoMiso - Ranking cryptocurrencies based on Github commits of past 12 months'}</Text>
+  			  </Text>  
+         <Text style = {styles.para}  onPress={() => Linking.openURL('https://loanscan.io/')}>
+			      <Text style = {styles.reg}>{`\u2022  `}</Text>
+			      <Text style={styles.regURL}>{'LookIntoBitcoin | Home'}</Text>
   			  </Text>  
          <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/3cqRT9t')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'Shoe Dog'}</Text>
+			      <Text style={styles.regURL}>{'LoanScan: Compare High Interest Accounts'}</Text>
   			  </Text>  
-         <Text style = {styles.para}  onPress={() => Linking.openURL('https://amzn.to/3cqRT9t')}>
+			<Text style = {styles.para}  onPress={() => Linking.openURL('https://defipulse.com/')}>
 			      <Text style = {styles.reg}>{`\u2022  `}</Text>
-			      <Text style={styles.regURL}>{'Shoe Dog'}</Text>
+			      <Text style={styles.regURL}>{'DeFi - The Decentralized Finance Leaderboard at DeFi Pulse'}</Text>
+  			  </Text>  
+			 <Text style = {styles.para}  onPress={() => Linking.openURL('https://ethstats.io/')}>
+			      <Text style = {styles.reg}>{`\u2022  `}</Text>
+			      <Text style={styles.regURL}>{'Network Statistics - Instant Ethereum Blockchain Monitoring'}</Text>
   			  </Text>  
 				<Text style= {styles.lastPara}>{`   `}</Text>
 					<View style={styles.buttonRow}>
