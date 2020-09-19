@@ -172,6 +172,27 @@ import Bookmarks4mac from './pages/StartHere/Bookmarks4mac.js'
 import Bookmarks4mar from './pages/StartHere/Bookmarks4mar.js'
 
 
+
+
+const renderBackButton = () => (
+    <TouchableOpacity
+        onPress={() => Actions.pop()}
+    >
+        <View style={{ alignItems: 'center' }}>
+            <Image
+                source={require('./components/images/icon_back.png')}
+                style={{ width: 30, height: 20 }}
+            />
+            {/*
+                <Icon name='ios-arrow-round-back' style={{ color: '#fff' }} />
+            */}
+        </View>
+    </TouchableOpacity>
+);
+
+
+
+
 const styles = StyleSheet.create({
     titlestyle: {
         color: '#ffffff',
@@ -219,7 +240,8 @@ const Routes = ()=> {
                 <Scene
                     key="Week2"
                     title="Week 2: Blockchain"
-                    component={Week2}>
+                    component={Week2}
+                renderBackButton={() => renderBackButton()}>
                 </Scene>
                 <Scene
                     key="Week3SS"
