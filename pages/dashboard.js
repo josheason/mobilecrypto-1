@@ -12,22 +12,22 @@ class dashboard extends Component {
          {
             id: 0,
             name: 'Continue To Course',
-            src: require('./images/continue.png'),
+            src: './images/continue.png',
          },
          {
             id: 1,
             name: 'FaceBook Group',
-            src: require('./images/facebook.png'),
+            src: './images/facebook.png',
          },
          {
             id: 2,
             name: 'Live Q&A',
-            src: require('./images/live.png'),
+            src: './images/live.png',
          },
          {
             id: 3,
             name: 'Alex&spos;s Youtube',
-            src: require('./images/youtube.png'),
+            src: './images/youtube.png',
          },
       ],
    }
@@ -100,6 +100,9 @@ counter(){
 }
    
    render() {
+      
+      var test1 = require(this.state.names.src);
+      
       return (
          <ScrollView
           //style = {{ backgroundColor: '#595959' }}#121212
@@ -124,7 +127,7 @@ counter(){
                      onPress={()=>this.navigate(0)}>
                        <Image 
                         source = {test}
-                        style = {this.items.src}
+                        style = {test1}
                         />
                      <Text style = {styles.text}>
                         {'Continue To Course'}
