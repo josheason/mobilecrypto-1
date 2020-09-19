@@ -164,6 +164,9 @@ import HowToUse1 from './pages/StartHere/HowToUse1.js'
 import EssentialReadingList3b from './pages/StartHere/EssentialReadingList3b.js'
 import Bookmarks4c from './pages/StartHere/Bookmarks4c.js'
 
+
+import navList from './navList.js'
+
 const {width} = Dimensions.get('window')
 
 const styles = StyleSheet.create({
@@ -196,7 +199,7 @@ const Routes = ()=> {
                         hideNavBar
                         key="main"
                         //drawerImage={}
-                        contentComponent={List}
+                        contentComponent={navList}
                         drawerWidth={width/2}
                     >
                 <Scene
