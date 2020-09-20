@@ -30,9 +30,9 @@ async function getData(){
 	  var user = firebase.auth().currentUser;
 	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
-	const querySnapshot = await watchedRef.get();
-	const num1 = querySnapshot.data().watched;
-	var num = num1;
+	//const querySnapshot = await watchedRef.get();
+	//const num1 = querySnapshot.data().watched;
+	//var num = num1;
 	  const querySnapshot = await watchedRef.get()
 	 	.then((res) => {
      		return JSON.parse(res);
