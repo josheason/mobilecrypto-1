@@ -86,7 +86,7 @@ counter(){
                      key = {2}
                      style = {styles.container}
                       /*onPress={ ()=>{ Linking.openURL('https://www.facebook.com/groups/fundamentalsecrets')}}>*/
-                       onPress={ ()=>{ counter()}}>
+                       onPress={ ()=>{ this.counter()}}>
                        <Image 
                         source = {require('./images/facebook.png')}
                         style = {styles.img}
