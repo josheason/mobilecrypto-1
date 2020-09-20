@@ -99,8 +99,8 @@ const Progress = () => {
   })
   return (
     <View style={styles.container1}>
-      <Text>
-        Loading…..
+      <Text style = {styles.text}>
+	  {`Course Progress`}
       </Text>
       <View style={styles.progressBar}>
         <Animated.View style={[StyleSheet.absoluteFill], {backgroundColor: "#8BED4F", width }}/>
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#ecf0f1',
+    backgroundColor: '#121212',
     padding: 8,
   },
   progressBar: {
@@ -133,5 +133,8 @@ const styles = StyleSheet.create({
     borderColor: '#000',
     borderWidth: 2,
     borderRadius: 5
-  }
+  },
+text:{
+color: 'white',
+}
 });
