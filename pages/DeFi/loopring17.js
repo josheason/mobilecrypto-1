@@ -15,25 +15,25 @@ const { width, height } = Dimensions.get('window');
 //export default function WhatIsDeFi1(){
 export default class loopring17  extends Component{
 	
-	/*componentDidMount(){
+	componentDidMount(){
    		const db = firebase.firestore();
    		const ud = firebase.auth().currentUser;
    		var user = firebase.auth().currentUser;
    		const increment = firebase.firestore.FieldValue.increment(1);
    		const watchedRef = db.collection('users');
    		watchedRef.where('id', '==', user.uid)
-     		 .where('w1_6', '==', false)
+     		 .where('DEFI_17', '==', false)
      		 .get().then(response => {
         		let batch = db.batch()
         		response.docs.forEach((doc) => {
             		const docRef = watchedRef.doc(doc.id)
-            		batch.update(docRef, {watched: increment , w1_6: true})
+            		batch.update(docRef, {watched: increment , DEFI_17: true})
         		})
         		batch.commit().then(() => {
             		console.log(`updated all documents inside this vid`)
         		})
     		})
-	}*/
+	}
 	
 	render(){
 	return(
