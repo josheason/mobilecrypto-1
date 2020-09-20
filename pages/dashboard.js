@@ -71,6 +71,7 @@ counter(){
     }).catch(error => {
     console.log(error);
    });
+}
    
    
    
@@ -149,7 +150,6 @@ const App1 = () => {
    /*storyRef.update({ watched: increment}).then(() => {
     console.log('User updated!');
   });*/
-}
    
    render() {
       
