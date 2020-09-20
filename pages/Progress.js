@@ -50,7 +50,6 @@ function useInterval(callback, delay) {
 const Progress = async () => {
 	
 	
-	const num = 0;
 	  var user = firebase.auth().currentUser;
 	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
