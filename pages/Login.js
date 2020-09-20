@@ -133,7 +133,10 @@ LogIn = (email, password) => {
                   
               });
          	 } finally {
-                	console.log('Test');
+			 if(test == 1)
+                	console.log('Success');
+			 else
+				 console.log('Error');
 		      }
 
   		};
