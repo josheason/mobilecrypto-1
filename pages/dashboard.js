@@ -3,6 +3,7 @@ import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions
 import { Actions } from 'react-native-router-flux';
 import * as firebase from 'firebase';
 import 'firebase/firestore';
+import Progress from './Progress.js'
 
 var test = require('./images/arrow.png');
 
@@ -35,73 +36,12 @@ class dashboard extends Component {
          },
       ],
    }
-counter(){
-   const db = firebase.firestore();
-   const ud = firebase.auth().currentUser;
-   var user = firebase.auth().currentUser;
-   const increment = firebase.firestore.FieldValue.increment(1);
-   const watchedRef = db.collection('users');
-   watchedRef.where('id', '==', '1')
-      .where('dash', '==', false)
-      .get().then(response => {
-        let batch = db.batch()
-        response.docs.forEach((doc) => {
-            const docRef = watchedRef.doc(doc.id)
-            batch.update(docRef, {watched: increment , dash: true})
-        })
-        batch.commit().then(() => {
-            console.log(`updated all documents inside Users`)
-        })
-    })
-   
-   watchedRef.where('id', '==', user.uid)
-      .get()
-      .then(snapshots => {
-      if (snapshots.size == 0) {
-         watchedRef.doc(user.uid).set({
-         dash: false,
-         id: user.uid,
-         watched: 0,
-         })
-         .then(() => {
-            console.log('User added!');
-          });
-      }
-    }).catch(error => {
-    console.log(error);
-   });
-   
-   /*snapshot.forEach(doc => {
-      const docRef = watchedRef.doc(doc.id)
-      batch.update(docRef, {watched: increment, dash: true})
-      console.log(doc.id, '=>', doc.data());
-    })
-    batch.commit().then(() => {
-            console.log('updated all documents inside Users')
-    })*/
 
-   /*const db = firebase.firestore();
-   const ud = firebase.auth().currentUser;
-   const increment = firebase.firestore.FieldValue.increment(1);
-   //const storyRef = db.collection('users').doc('user1');
-   const storyRef = db.collection('users');
-   storyRef
-   .where('id', '==', '1')
-   .where('dash', '==', false)
-   .get()
-   .update({watched: increment,
-           dash : true})
-   .then(() => {
-    console.log('User updated!');
-   });*/
-   
-   
-   //storyRef.update({ watched: increment}).catch(error => {
-    //console.log(error);
-   /*storyRef.update({ watched: increment}).then(() => {
-    console.log('User updated!');
-  });*/
-}
+
+
+
+
+
    
    render() {
       
@@ -184,9 +124,9 @@ counter(){
                        >
                         {'Sign Out'}
                      </Text>
-                  </TouchableOpacity></>
-
-
+                  </TouchableOpacity><></>
+            
+                  <Progress/></>
             }
          </ScrollView >
           /*this.state.names.map((item, index) => (
