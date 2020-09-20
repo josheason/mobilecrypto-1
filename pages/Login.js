@@ -112,7 +112,7 @@ LogIn = (email, password) => {
    		var user = firebase.auth().currentUser;
    		const increment = firebase.firestore.FieldValue.increment(1);
    		const watchedRef = db.collection('users');
-	      	const doc = await watchedRef.doc(user.uid).get();
+	      	const doc = async await watchedRef.doc(user.uid).get();
 			if (!doc.exists) {
   				console.log('No such document!');
 			} else {
