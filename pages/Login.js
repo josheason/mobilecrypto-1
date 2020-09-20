@@ -132,7 +132,7 @@ LogIn = (email, password) => {
 			w4_5: false,
 			w4_6: false,
 			w4_7: false,
-			w4_8: false
+			w4_8: false,
 				/*week5*/
 			w5_1: false,
 			w5_3: false,
@@ -175,7 +175,7 @@ LogIn = (email, password) => {
 			w9_5: false,
 			w9_6: false,
 			w9_7: false,
-			w9_8: false
+			w9_8: false,
 			w9_9: false,
 				/*week10*/
 			w10_1: false,
