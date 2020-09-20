@@ -15,7 +15,7 @@ const { width, height } = Dimensions.get('window');
 //export default function WhatIsDeFi1(){
 export default class rewire8 extends Component{
 	
-	/*componentDidMount(){
+	componentDidMount(){
    		const db = firebase.firestore();
    		const ud = firebase.auth().currentUser;
    		var user = firebase.auth().currentUser;
@@ -33,7 +33,7 @@ export default class rewire8 extends Component{
             		console.log(`updated all documents inside this vid`)
         		})
     		})
-	}*/
+	}
 	
 	render(){
 	return(
