@@ -111,6 +111,7 @@ LogIn = (email, password) => {
    		var user = firebase.auth().currentUser;
    		const increment = firebase.firestore.FieldValue.increment(1);
    		const watchedRef = db.collection('users');
+	      var test = 1;
 	      this.navigate2()
    		watchedRef.where('id', '==', user.uid)
       		.get()
@@ -131,8 +132,15 @@ LogIn = (email, password) => {
    		});
                   
               });
-         	 } finally (e) {
+         	 } catch (e) {
                 	console.log('Test', e);
+		      }
+		finally () {
+			if(test ==1){
+				console.log('Tester');
+			}
+			else
+				console.log('Test');
 		      }
   		};
 
