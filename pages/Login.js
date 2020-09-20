@@ -271,7 +271,7 @@ LogIn = (email, password) => {
       }).catch(function (e) {
          alert('Email not found in system')
       })
-  }
+  };
 
   render(){
     return (
