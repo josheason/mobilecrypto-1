@@ -219,14 +219,15 @@ LogIn = (email, password) => {
           		});
       		}
    		 }).catch(error => {
-    			alert(error);
+			this.navigate3();
+    			alert(error.message);
 			
    		});
                   this.navigate2()
               });
          	 } catch (error) {
-			 this.navigate3()
-                	alert(error.toString(error));
+			 this.navigate3();
+                	alert(error.toString(error.message));
 		      }
   		};
 
