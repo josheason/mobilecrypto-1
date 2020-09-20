@@ -42,7 +42,7 @@ function retData(v){
 }
 
 
-  const grabUserData = async (userId) => {
+ grabUserData = async (userId) => {
 	  const db = firebase.firestore();
 	  var userId = firebase.auth().currentUser.uid;
 	  var docRef = db.collection("users").doc(userId);
