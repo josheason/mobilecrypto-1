@@ -34,7 +34,7 @@ const Progress = () => {
     Animated.timing(animation.current, {
       toValue: progress,
       duration: 100,
-      useNativeDriver: true,
+      useNativeDriver: false,
     }).start();
   },[progress])
 
