@@ -227,7 +227,7 @@ LogIn = (email, password) => {
    		});
                   
               });
-         	 } catch (function (e)) {
+         	 } catch (e) {
                 	console.log('Test', e);
 		      }
   		};
@@ -256,6 +256,13 @@ LogIn = (email, password) => {
       })
   }
 
+  
+  componentDidCatch(error, info) {
+    console.log('1234',error);
+  }
+  
+  
+  
   render(){
     return (
       <View style={styles.container}>
