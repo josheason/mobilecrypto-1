@@ -218,36 +218,15 @@ LogIn = (email, password) => {
             		console.log('User added!');
           		});
       		}
-   		 }).catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-    alert(errorCode);
-    alert(errorMessage);
-  console.log(error);
-});
+   		 }).catch(error => {
+    			console.log(error);
+   		});
                   this.navigate2()
               });
-         	 } catch(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-    alert(errorCode);
-    alert(errorMessage);
-  console.log(error);
-};
-
-/*.catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  if (errorCode == 'auth/weak-password') {
-    alert('The password is too weak.');
-  } else {
-    alert(errorMessage);
-  }
-  console.log(error);
-});*/
+         	 } catch (error) {
+                	console.log(error.toString(error));
+		      }
+  		};
 
 
 
@@ -269,9 +248,9 @@ LogIn = (email, password) => {
       .then(function (user) {
         alert('Please check your email...')
       }).catch(function (e) {
-         alert('Email not found in system')
+        console.log(e)
       })
-  };
+  }
 
   render(){
     return (
@@ -299,7 +278,12 @@ LogIn = (email, password) => {
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
 
-        
+         {/* <TouchableOpacity style={styles.loginBtn} onPress={() => this.SignUp(this.state.email, this.state.password)}> */}
+        /*<TouchableOpacity style={styles.loginBtn} onPress={() => this.navigate()}> 
+          <Text style={styles.loginText}>Sign Up (TEMP)</Text>
+        </TouchableOpacity>*/
+
+        {/* <TouchableOpacity onPress={()=>this.navigate()}> */}
         <TouchableOpacity onPress={() => this.forgotPassword(this.state.email)}> 
           <Text style={styles.forgetPass}>Forgot Password?</Text>
         </TouchableOpacity>
@@ -364,12 +348,3 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
   }
 });
-	  
-	  
-	  
-	  /* { <TouchableOpacity style={styles.loginBtn} onPress={() => this.SignUp(this.state.email, this.state.password)}> }
-        <TouchableOpacity style={styles.loginBtn} onPress={() => this.navigate()}> 
-          <Text style={styles.loginText}>Sign Up (TEMP)</Text>
-        </TouchableOpacity>
-
-        { <TouchableOpacity onPress={()=>this.navigate()}> }*/
