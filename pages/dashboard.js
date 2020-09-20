@@ -186,6 +186,21 @@ const styles = StyleSheet.create ({
       borderColor: "#121212",
       borderRadius: 15,
    },
+   containerB: {
+      padding: 25,
+      marginTop: 5,
+      marginBottom: 5,
+      marginLeft: 5,
+      marginRight: 5,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      borderBottomWidth: 0.5,
+      borderTopWidth: 0.5,
+      borderColor: "#121212",
+      borderRadius: 15,
+      position: 'absolute',
+      bottom: 25,
+   },
    text: {
       color: '#000000'
    },
