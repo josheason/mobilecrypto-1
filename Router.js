@@ -225,10 +225,10 @@ const Routes = ()=> {
                         drawerWidth={width*.75}
                     >
                 <Scene
-                   key='progress'
+                   key='dashboard'
                    title='dashboard'
                     //navBar = {CustomNavBar1}
-                    component={progress}/>
+                    component={dashboard}/>
         </Drawer>
                 <Scene
                     key="list"
