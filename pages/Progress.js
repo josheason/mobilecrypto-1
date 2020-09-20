@@ -31,8 +31,8 @@ async function getData(){
 	var user = firebase.auth().currentUser.uid;
 	try {
     const doc = await firebase.firestore().collection('users').doc(user).get()
-   promise.then(documentSnapshot => {
-    watch = snapshot.data().watched;
+   promise.then(querySnapshot => {
+    watch = querySnapshot.data().watched;
     console.log("Watched = "+ watch);
 	   return (watch);
 })
