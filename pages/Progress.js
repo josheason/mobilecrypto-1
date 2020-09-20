@@ -45,8 +45,11 @@ async function getData(){
    	//console.log(numWatched);
   }
 
-
-
+getData()
+    .then(code => {
+        setProgress(code);
+    });
+ //setProgress(getData());
 
 const Progress = () => {
   let animation = useRef(new Animated.Value(0));
@@ -54,7 +57,10 @@ const Progress = () => {
   useInterval(() => {
       setProgress(getData());
   }, 1000);
-
+getData()
+    .then(code => {
+        setProgress(code);
+    });
   useEffect(() => {
     Animated.timing(animation.current, {
       toValue: progress,
