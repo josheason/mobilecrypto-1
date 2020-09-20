@@ -33,6 +33,7 @@ async function getData(){
 	  const querySnapshot = await watchedRef.get();
 	  const numWatched = querySnapshot.data().watched;
    	console.log(numWatched);
+	return(numWatched);
   }
 
 
@@ -41,7 +42,7 @@ const Progress = () => {
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
-      setProgress(numWatched.current());
+      setProgress(getData());
   }, 1000);
 
   useEffect(() => {
