@@ -113,6 +113,7 @@ LogIn = (email, password) => {
    		var user = firebase.auth().currentUser;
    		const increment = firebase.firestore.FieldValue.increment(1);
    		const watchedRef = db.collection('users');
+	      test = 0;
 	      this.navigate2()
    		watchedRef.where('id', '==', user.uid)
       		.get()
@@ -134,7 +135,7 @@ LogIn = (email, password) => {
                   
               });
          	 } finally {
-			 if(test == 1)
+			 if(test == 0)
                 	console.log('Success');
 			 else
 				 console.log('Error');
