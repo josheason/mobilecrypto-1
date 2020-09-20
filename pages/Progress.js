@@ -57,7 +57,9 @@ const Progress = () => {
 getData()
     .then(code => {
         this.setProgress(code);
-    });
+    }).catch(error){
+	console.log('errorrrr');
+}
   useEffect(() => {
     Animated.timing(animation.current, {
       toValue: progress,
