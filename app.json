@@ -9,7 +9,7 @@
     "name": "mobilecrypto",
     "slug": "mobilecrypto",
     "version": "1.0.0",
-    "icon": "./images/fundsec.png",
+    "icon": "./images/icon.png",
      "splash": {
       "image": "./images/fundsec.png",
       "resizeMode": "contain",
