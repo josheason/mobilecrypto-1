@@ -218,15 +218,36 @@ LogIn = (email, password) => {
             		console.log('User added!');
           		});
       		}
-   		 }).catch(error => {
-    			 alert('Retry your password or username.')
-   		});
+   		 }).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+    alert(errorCode);
+    alert(errorMessage);
+  console.log(error);
+});
                   this.navigate2()
               });
-         	 } catch (error) {
-                	alert('Retry your password or username.')
-		      }
-  		};
+         	 } catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+    alert(errorCode);
+    alert(errorMessage);
+  console.log(error);
+};
+
+/*.catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  if (errorCode == 'auth/weak-password') {
+    alert('The password is too weak.');
+  } else {
+    alert(errorMessage);
+  }
+  console.log(error);
+});*/
 
 
 
