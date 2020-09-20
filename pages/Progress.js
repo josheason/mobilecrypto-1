@@ -43,8 +43,9 @@ async function getData(){
 	const querySnapshot = await watchedRef.get();
 	var data = querySnapshot.data().watched.toString();
 	var ret = parseInt(data);
-	console.log(ret);
-	return (ret);
+	var ret1 = ret/6;
+	console.log(ret1);
+	return (ret1);
 	//var num = num1;
 	  /*const querySnapshot = await watchedRef.get()
 	 	.then((res) => {
