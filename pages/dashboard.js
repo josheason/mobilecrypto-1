@@ -185,9 +185,9 @@ counter(){
                        >
                         {'Sign Out'}
                      </Text>
-                  </TouchableOpacity></>
+                  </TouchableOpacity><></>
                         
-                  <progress/>
+                  <progress/></>
 
 
             }
