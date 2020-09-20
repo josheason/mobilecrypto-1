@@ -199,7 +199,7 @@ const styles = StyleSheet.create ({
       borderColor: "#121212",
       borderRadius: 15,
       position: 'absolute',
-      bottom: 25,
+      bottom: 100,
    },
    text: {
       color: '#000000'
