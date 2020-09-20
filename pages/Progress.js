@@ -50,7 +50,7 @@ function useInterval(callback, delay) {
 const Progress = () => {
 	
 	
-	var num = 0;
+	const num = 10;
 	async function getData(){
 	  var user = firebase.auth().currentUser;
 	  const db = firebase.firestore();
