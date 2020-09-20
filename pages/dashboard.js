@@ -38,7 +38,21 @@ class dashboard extends Component {
    }
 
 
-
+counter(){
+   const db = firebase.firestore();
+   const ud = firebase.auth().currentUser;
+   var user = firebase.auth().currentUser;
+   const increment = firebase.firestore.FieldValue.increment(1);
+   const watchedRef = db.collection('users');
+   const docRef = watchedRef.doc(user.uid).get()
+   const doc = await watchedRef.doc(user.uid).get();
+   if (!doc.exists) {
+  console.log('No such document!');
+} else {
+  console.log('Document data:', doc.data().watched);
+}
+   
+  }
 
 
 
@@ -71,7 +85,8 @@ class dashboard extends Component {
                   <TouchableOpacity
                      key = {2}
                      style = {styles.container}
-                      onPress={ ()=>{ Linking.openURL('https://www.facebook.com/groups/fundamentalsecrets')}}>
+                      /*onPress={ ()=>{ Linking.openURL('https://www.facebook.com/groups/fundamentalsecrets')}}>*/
+                       onPress={ ()=>{ counter()}}>
                        <Image 
                         source = {require('./images/facebook.png')}
                         style = {styles.img}
