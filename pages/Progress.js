@@ -49,7 +49,7 @@ async function getData(){
 
 
 
-const Progress = () => {
+const Progress = async () => {
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
