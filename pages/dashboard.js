@@ -79,7 +79,7 @@ counter(){
    
    
    
-   function useInterval(callback, delay) {
+  useInterval(callback, delay) {
   const savedCallback = useRef();
 
   // Remember the latest callback.
