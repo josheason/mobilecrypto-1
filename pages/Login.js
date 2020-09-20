@@ -133,7 +133,7 @@ LogIn = (email, password) => {
                   
               });
          	 } finally {
-                	console.log('Test', e);
+                	console.log('Test');
 		      }
 
   		};
