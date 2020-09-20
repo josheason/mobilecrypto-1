@@ -34,10 +34,12 @@ async function getData(){
 	catch(e){
 		v= await firebase.firestore().collection('users').doc(user.uid).get().data().watched;
 	}
-	return v;
+	return retData(v);
   }
 
-
+function retData(v){
+	return (v);
+}
 
 
 
