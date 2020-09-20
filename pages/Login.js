@@ -124,21 +124,16 @@ LogIn = (email, password) => {
          		})
          		.then(() => {
             		console.log('User added!');
-          		}).catch(function (e) {
-                console.log('Test2', e);
-              });
+          		})
+			);
       		}
-   		 }).catch(function (e) {
-    			console.log('Test1', e);
-			
-   		});
+   		 })
+	      
+	      );
                   
               });
-         	 } finally {
-			 if(test == 0)
-                	console.log('Success');
-			 else
-				 console.log('Error');
+         	 } catch(function(e)) {
+                	alert('Success');
 		      }
 
   		};
