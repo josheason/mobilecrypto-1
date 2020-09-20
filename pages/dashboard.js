@@ -38,7 +38,7 @@ class dashboard extends Component {
    }
 
 
-counter(){
+/*counter(){
    const db = firebase.firestore();
    const ud = firebase.auth().currentUser;
    var user = firebase.auth().currentUser;
@@ -53,7 +53,7 @@ counter(){
 }
    
   }
-
+*/
 
 
    
@@ -85,8 +85,7 @@ counter(){
                   <TouchableOpacity
                      key = {2}
                      style = {styles.container}
-                      /*onPress={ ()=>{ Linking.openURL('https://www.facebook.com/groups/fundamentalsecrets')}}>*/
-                       onPress={ ()=>{ this.counter()}}>
+                      onPress={ ()=>{ Linking.openURL('https://www.facebook.com/groups/fundamentalsecrets')}}>
                        <Image 
                         source = {require('./images/facebook.png')}
                         style = {styles.img}
