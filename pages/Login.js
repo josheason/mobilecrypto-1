@@ -104,7 +104,7 @@ export default class ScreenOne extends React.Component {
 
 
 LogIn = (email, password) => {
-	try{
+	 try {
       firebase
           .auth()
           .signInWithEmailAndPassword(email, password)
@@ -113,7 +113,6 @@ LogIn = (email, password) => {
    		var user = firebase.auth().currentUser;
    		const increment = firebase.firestore.FieldValue.increment(1);
    		const watchedRef = db.collection('users');
-	      this.navigate2()
    		watchedRef.where('id', '==', user.uid)
       		.get()
       		.then(snapshots => {
