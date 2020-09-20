@@ -56,7 +56,7 @@ const Progress = () => {
   }, 1000);
 getData()
     .then(code => {
-        setProgress(code);
+        this.setProgress(code);
     });
   useEffect(() => {
     Animated.timing(animation.current, {
