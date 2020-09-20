@@ -1,6 +1,9 @@
 import React, {useRef, useState, useEffect} from 'react';
 import { Text, View, StyleSheet, Animated } from 'react-native';
 import Constants from 'expo-constants';
+import * as firebase from 'firebase';
+import 'firebase/firestore';
+
 
 function useInterval(callback, delay) {
   const savedCallback = useRef();
@@ -21,6 +24,17 @@ function useInterval(callback, delay) {
     }
   }, [delay]);
 }
+
+
+async function getData(){
+	  var user = firebase.auth().currentUser;
+	  const db = firebase.firestore();
+	  const watchedRef = db.collection('users').doc(user.uid);
+	  const querySnapshot = await watchedRef.get();
+	  const numWatched = querySnapshot.data().watched;
+   	console.log(numWatched);
+  }
+
 
 
 const Progress = () => {
