@@ -47,7 +47,7 @@ counter(){
    const docRef = watchedRef.doc(user.uid).get()
    const doc = watchedRef.doc(user.uid).get();
    if (!doc.exists) {
-  console.log('No such document!', ud);
+  console.log('No such document!', docRef.data());
 } else {
   console.log('Document data:', doc.data().watched);
 }
