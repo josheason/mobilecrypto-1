@@ -27,16 +27,20 @@ function useInterval(callback, delay) {
 
 
 async function getData(){
+	var watch = 0;
 	var user = firebase.auth().currentUser.uid;
-	  let v;
-	try{
-		 await firebase.firestore().collection('users').doc(user.uid).get().data().watched;
+	try {
+    const doc = await firebase.firestore().collection('users').doc(user).get()
+   promise.then(documentSnapshot => {
+    watch = snapshot.data().watched;
+    console.log("Watched = "+ watch);
+	   return (watch);
+})
+catch(e) {
+     console.log("Error Watched = "+ watch);
+}
 	}
-	catch(e){
-		return await firebase.firestore().collection('users').doc(user.uid).get().data().watched;
-	}
-  }
-
+	
 
 
 /*async function grabUserData(){
