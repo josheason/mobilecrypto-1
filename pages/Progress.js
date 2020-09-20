@@ -41,14 +41,18 @@ function retData(v){
 	return (v);
 }
 
-const grabUserData = async (userId) => {
+
+  const grabUserData = async (userId) => {
 	  const db = firebase.firestore();
 	  var userId = firebase.auth().currentUser.uid;
 	  var docRef = db.collection("users").doc(userId);
 	   return docRef.get().then(function(doc) {
 	   console.log(doc.data().watched); //see below for doc object
+          if (doc.exists) {
+          console.log(doc.data.watched()); //see below for doc object
           return doc.data().watched;
-         } else {
+      }
+		else {
           console.log("No such document!");
       }
     }).catch(function(error) {
