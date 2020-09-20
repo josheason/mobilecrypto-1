@@ -32,8 +32,9 @@ async function getData(){
 	  const watchedRef = db.collection('users').doc(user.uid);
 	  const querySnapshot = await watchedRef.get();
 	  const numWatched = querySnapshot.data().watched;
+	var num = numWatched;
    	console.log(numWatched);
-	return(numWatched);
+	return(num);
   }
 
 
