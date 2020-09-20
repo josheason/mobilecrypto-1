@@ -30,11 +30,18 @@ async function getData(){
 	  var user = firebase.auth().currentUser;
 	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
-	  const querySnapshot = await watchedRef.get();
-	const numWatched = await querySnapshot.data().watched;
-	var num = numWatched;
-   	console.log(numWatched);
-	return(num*1.0);
+	var num = 0;
+	  const querySnapshot = await watchedRef.get()
+	 	.then((res) => {
+     		num = querySnapshot.data().watched;
+  		})
+  		.catch((errorMessage, statusCode) => {
+    		 num = 0;
+  		})
+	//const numWatched = querySnapshot.data().watched;
+	//var num = numWatched;
+   	//console.log(numWatched);
+	return(num);
   }
 
 
