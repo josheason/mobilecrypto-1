@@ -101,7 +101,7 @@ LogIn = (email, password) => {
 			w2_5: false,
 			w2_6: false,
 			w2_7: false,
-			w2_8: false
+			w2_8: false,
 			w2_9: false,
 			w2_10: false,
 			w2_11: false,
@@ -113,7 +113,7 @@ LogIn = (email, password) => {
 			w3SS_5: false,
 			w3SS_6: false,
 			w3SS_7: false,
-			w3SS_8: false
+			w3SS_8: false,
 			w3SS_9: false,
 			w3SS_10: false,
 			w3SS_11: false,
@@ -147,7 +147,7 @@ LogIn = (email, password) => {
 			w6_5: false,
 			w6_6: false,
 			w6_7: false,
-			w6_8: false
+			w6_8: false,
 				/*week7*/
 			w7_2: false,
 			w7_3: false,
@@ -162,7 +162,7 @@ LogIn = (email, password) => {
 			w8_5: false,
 			w8_6: false,
 			w8_7: false,
-			w8_8: false
+			w8_8: false,
 			w8_9: false,
 			w8_10: false,
 			w8_11: false,
@@ -193,7 +193,7 @@ LogIn = (email, password) => {
             DEFI_5: false,
             DEFI_6: false,
             DEFI_7: false,
-            DEFI_8: false
+            DEFI_8: false,
             DEFI_9: false,
             DEFI_10: false,
             DEFI_11: false,
@@ -203,7 +203,7 @@ LogIn = (email, password) => {
             DEFI_15: false,
             DEFI_16: false,
             DEFI_17: false,
-            DEFI_18: false
+            DEFI_18: false,
             DEFI_19: false,
             DEFI_20: false,
             DEFI_21: false,
