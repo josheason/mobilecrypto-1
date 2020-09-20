@@ -100,7 +100,7 @@ counter(){
 }
 
 
-const App1 = () => {
+const dash = () => {
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
@@ -135,7 +135,7 @@ const App1 = () => {
   );
 }
 
-export default App1;
+export default dash;
    
    /*snapshot.forEach(doc => {
       const docRef = watchedRef.doc(doc.id)
