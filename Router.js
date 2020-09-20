@@ -7,6 +7,8 @@ import CustomNavBar1 from './CustomNavBar1.js'
 
 import Login from './pages/Login.js'
 
+import progress from './pages/progress.js'
+
 import List from './pages/List.js'
 
 import StartHere from './pages/StartHere/StartHere.js'
@@ -223,10 +225,10 @@ const Routes = ()=> {
                         drawerWidth={width*.75}
                     >
                 <Scene
-                    key='dashboard'
+                   key='progress'
                    title='dashboard'
                     //navBar = {CustomNavBar1}
-                    component={dashboard}/>
+                    component={progress}/>
         </Drawer>
                 <Scene
                     key="list"
