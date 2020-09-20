@@ -31,7 +31,8 @@ async function getData(){
 	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
 	const querySnapshot = await watchedRef.get();
-	const num = querySnapshot.data().watched;
+	const num1 = querySnapshot.data().watched;
+	var num = num1;
 	  /*const querySnapshot = await watchedRef.get()
 	 	.then((res) => {
      		num = querySnapshot.data().watched;
@@ -48,7 +49,7 @@ async function getData(){
 
 
 
-const Progress = async () => {
+const Progress = () => {
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
