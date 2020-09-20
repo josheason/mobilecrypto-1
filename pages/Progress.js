@@ -78,10 +78,10 @@ catch(e) {
 
  //setProgress(getData());
 
-const Progress = async () => {	
+const Progress = () => {	
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
-  useInterval(() => {
+  useInterval( async ()  => {
       setProgress(await getData());
   }, 1000);
   useEffect(() => {
