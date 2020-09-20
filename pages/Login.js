@@ -219,12 +219,12 @@ LogIn = (email, password) => {
           		});
       		}
    		 }).catch(error => {
-    			console.log(error);
+    			 alert('Retry your password or username.')
    		});
                   this.navigate2()
               });
          	 } catch (error) {
-                	console.log(error.toString(error));
+                	alert('Retry your password or username.')
 		      }
   		};
 
@@ -248,7 +248,7 @@ LogIn = (email, password) => {
       .then(function (user) {
         alert('Please check your email...')
       }).catch(function (e) {
-        console.log(e)
+         alert('Email not found in system')
       })
   }
 
