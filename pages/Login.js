@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar, Alert } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar, Alert, Button } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 //import firebase from 'firebase';
@@ -191,10 +191,10 @@ LogIn = (email, password) => {
             placeholderTextColor="#ffffff"
             onChangeText={text => this.setState({password:text})}/>
         </View>
-        <TouchableOpacity style={styles.loginBtn}
+        <Button style={styles.loginBtn}
 	onPress={() => this.LogIn(this.state.email, this.state.password)}>
           <Text style={styles.loginText}>LOGIN</Text>
-        </TouchableOpacity>
+        </Button>
         <TouchableOpacity onPress={() => this.forgotPassword(this.state.email)}> 
           <Text style={styles.forgetPass}>Forgot Password?</Text>
         </TouchableOpacity>
