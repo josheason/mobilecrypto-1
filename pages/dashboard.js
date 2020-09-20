@@ -131,7 +131,7 @@ class dashboard extends Component {
 
  <TouchableOpacity
                   key = {0}
-                  style = {styles.container}
+                  style = {styles.containerB}
                   onPress={()=>Actions.login()}>
                      <Text
                      style = {styles.header}
