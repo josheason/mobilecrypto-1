@@ -45,7 +45,7 @@ counter(){
    const increment = firebase.firestore.FieldValue.increment(1);
    const watchedRef = db.collection('users');
    const docRef = watchedRef.doc(user.uid).get()
-   const doc = await watchedRef.doc(user.uid).get();
+   const doc = watchedRef.doc(user.uid).get();
    if (!doc.exists) {
   console.log('No such document!');
 } else {
