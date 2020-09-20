@@ -187,7 +187,6 @@ counter(){
                      </Text>
                   </TouchableOpacity><></>
                         
-                  <progress/></>
             }
          </ScrollView >
           /*this.state.names.map((item, index) => (
