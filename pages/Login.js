@@ -163,7 +163,7 @@ LogIn = (email, password) => {
       .then(function (user) {
         alert('Please check your email...')
       }).catch(function (e) {
-        console.log('abc',e)
+        alert('abc',e)
       })
   }
 
