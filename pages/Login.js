@@ -117,6 +117,7 @@ LogIn = (email, password) => {
    		watchedRef.where('id', '==', user.uid)
       		.get()
       		.then(snapshots => {
+			console.log(snapshots.data());
       		if (snapshots.size == 0) {
          		watchedRef.doc(user.uid).set({
      			dash: false,
@@ -252,7 +253,6 @@ LogIn = (email, password) => {
          		})
          		.then(() => {
             		console.log('User added!');
-				console.log(snapshots.data());
           		})
       		}
    		 })
