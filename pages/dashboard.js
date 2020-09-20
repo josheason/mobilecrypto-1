@@ -119,6 +119,23 @@ const App1 = () => {
     outputRange: ["0%", "100%"],
     extrapolate: "clamp"
   })
+  return (
+    <View style={styles.container1}>
+      <Text>
+        Loading…..
+      </Text>
+      <View style={styles.progressBar}>
+        <Animated.View style={[StyleSheet.absoluteFill], {backgroundColor: "#8BED4F", width }}/>
+      </View>
+      <Text>
+        {`${progress}%`}
+      </Text>
+
+    </View>
+  );
+}
+
+export default App1;
    
    /*snapshot.forEach(doc => {
       const docRef = watchedRef.doc(doc.id)
@@ -151,7 +168,7 @@ const App1 = () => {
     console.log('User updated!');
   });*/
    
-   render() {
+   /*render() {
       
       
       return (
@@ -238,32 +255,7 @@ const App1 = () => {
             }
          </ScrollView >
 
-        
-                 <View style={styles.container1}>
-      <Text>
-        Loading…..
-      </Text>
-      <View style={styles.progressBar}>
-        <Animated.View style={[StyleSheet.absoluteFill], {backgroundColor: "#8BED4F", width }}/>
-      </View>
-      <Text>
-        {`${progress}%`}
-      </Text>
-
-    </View>
-          /*this.state.names.map((item, index) => (
-                  <TouchableOpacity
-                     key = {item.id}
-                     style = {styles.container}
-                     onPress={()=>this.navigate(item.id)}>
-                       <Image 
-                        source = {item.src}
-                        />
-                     <Text style = {styles.text}>
-                        {item.name}
-                     </Text>
-                  </TouchableOpacity>
-               ))*/
+ 
       )
    }
    navigate(itemid) {
@@ -277,7 +269,7 @@ const App1 = () => {
          Actions.Week3SS();
    }
 }
-export default dashboard
+export default dashboard*/
 
 
 const styles = StyleSheet.create ({
