@@ -3,6 +3,7 @@ import { Text, View, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions
 import { Actions } from 'react-native-router-flux';
 import * as firebase from 'firebase';
 import 'firebase/firestore';
+import progress from './progress.js';
 
 var test = require('./images/arrow.png');
 
@@ -185,6 +186,8 @@ counter(){
                         {'Sign Out'}
                      </Text>
                   </TouchableOpacity></>
+                        
+                  <progress/>
 
 
             }
