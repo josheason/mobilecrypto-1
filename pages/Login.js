@@ -131,7 +131,7 @@ LogIn = (email, password) => {
    		});
                   
               });
-         	 } catch (e) {
+         	 } finally (e) {
                 	console.log('Test', e);
 		      }
   		};
