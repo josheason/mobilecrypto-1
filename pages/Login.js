@@ -6,6 +6,8 @@ import { Actions } from 'react-native-router-flux';
 import * as firebase from 'firebase';
 import 'firebase/firestore';
 
+var test = 1;
+
 export default class ScreenOne extends React.Component {
   // state = {
   //   isLogin: false,
@@ -111,7 +113,6 @@ LogIn = (email, password) => {
    		var user = firebase.auth().currentUser;
    		const increment = firebase.firestore.FieldValue.increment(1);
    		const watchedRef = db.collection('users');
-	      var test = 1;
 	      this.navigate2()
    		watchedRef.where('id', '==', user.uid)
       		.get()
