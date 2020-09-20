@@ -26,26 +26,38 @@ function useInterval(callback, delay) {
 }
 
 
-async function getData(){
+/*async function getData(){
 	  var user = firebase.auth().currentUser;
 	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
 	  const querySnapshot = await watchedRef.get();
-	const numWatched = useRef();
-	numWatched.current = querySnapshot.data().watched;
-	  //const numWatched = querySnapshot.data().watched;
+	const numWatched = querySnapshot.data().watched;
 	var num = numWatched;
    	console.log(numWatched);
-  }
+  }*/
 
 
 
 
 const Progress = () => {
+	const num = useRef();
+	async function getData(){
+	  var user = firebase.auth().currentUser;
+	  const db = firebase.firestore();
+	  const watchedRef = db.collection('users').doc(user.uid);
+	  const querySnapshot = await watchedRef.get();
+	const numWatched = querySnapshot.data().watched;
+		num.current = querySnapshot.data().watched;
+	//var num = numWatched;
+   	console.log(numWatched);
+  }
+	
+	
+	
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
-      setProgress(numWatched.current());
+      setProgress(num.current());
   }, 1000);
 
   useEffect(() => {
