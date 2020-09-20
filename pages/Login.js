@@ -220,14 +220,14 @@ LogIn = (email, password) => {
       		}
    		 }).catch(error => {
 			this.navigate3();
-    			Alert.alert(error.message);
+    			Alert.alert('Test1', error.message);
 			
    		});
                   this.navigate2()
               });
          	 } catch (error) {
 			 this.navigate3();
-                	alert(error.toString(error.message));
+                	alert('Test', error.toString(error.message));
 		      }
   		};
 
