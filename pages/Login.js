@@ -61,7 +61,7 @@ export default class ScreenOne extends React.Component {
                  this.navigate()
                 });
         } catch (error) {
-                console.log(error.toString(error));
+                console.log('Testing',error.toString(error));
         }
   };
 
@@ -217,7 +217,9 @@ LogIn = (email, password) => {
          		})
          		.then(() => {
             		console.log('User added!');
-          		});
+          		}).catch( error => {
+                alert('Test2', error.toString(error.message));
+              });
       		}
    		 }).catch(error => {
 			this.navigate3();
@@ -252,7 +254,7 @@ LogIn = (email, password) => {
       .then(function (user) {
         alert('Please check your email...')
       }).catch(function (e) {
-        console.log(e)
+        console.log('abc',e)
       })
   }
 
