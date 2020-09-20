@@ -228,7 +228,7 @@ LogIn = (email, password) => {
 });
                   this.navigate2()
               });
-         	 } catch(function(error) {
+         	 } catch(error) {
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
