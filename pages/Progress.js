@@ -42,7 +42,7 @@ function retData(v){
 }
 
 
-/* grabUserData = async (userId) => {
+async function grabUserData(){
 	  const db = firebase.firestore();
 	  var userId = firebase.auth().currentUser.uid;
 	  var docRef = db.collection("users").doc(userId);
@@ -57,7 +57,7 @@ function retData(v){
       }
     }).catch(function(error) {
         console.log("Error getting document:", error);
-    });*/
+    });
 
 
  //setProgress(getData());
@@ -66,7 +66,7 @@ const Progress = () => {
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
-      setProgress(grabUserData);
+      setProgress(grabUserData());
   }, 1000);
   useEffect(() => {
     Animated.timing(animation.current, {
