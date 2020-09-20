@@ -26,7 +26,21 @@ function useInterval(callback, delay) {
 }
 
 
+
 async function getData(){
+	  var user = firebase.auth().currentUser;
+	  const db = firebase.firestore();
+	  const watchedRef = db.collection('users').doc(user.uid);
+	  const querySnapshot = await watchedRef.get();
+	  const numWatched = querySnapshot.data().watched;
+	return numWatched;
+   	console.log(numWatched);
+  }
+
+
+
+
+/*async function getData(){
 	var watch = 0;
 	var user = firebase.auth().currentUser.uid;
 	try {
@@ -40,7 +54,7 @@ async function getData(){
 catch(e) {
      console.log("Error Watched = "+ watch);
 }
-	}
+	}*/
 	
 
 
@@ -64,11 +78,11 @@ catch(e) {
 
  //setProgress(getData());
 
-const Progress = () => {	
+const Progress = async () => {	
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
-      setProgress(getData());
+      setProgress(await getData());
   }, 1000);
   useEffect(() => {
     Animated.timing(animation.current, {
