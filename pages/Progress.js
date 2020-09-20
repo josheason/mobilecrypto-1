@@ -54,13 +54,8 @@ const Progress = async () => {
 	  var user = firebase.auth().currentUser;
 	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
-	  const querySnapshot = await watchedRef.get()
-	 	.then((res) => {
-     		const ret = querySnapshot.data().watched;
-  		})
-  		.catch((errorMessage, statusCode) => {
-    		 num = 0;
-  		})
+	  const querySnapshot = await watchedRef.get();
+	 const num = querySnapshot.data().watched;
 	  num = querySnapshot.data().watched;
 	//const numWatched = querySnapshot.data().watched;
 	//var num = numWatched;
@@ -73,7 +68,7 @@ const Progress = async () => {
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
-      setProgress(ret);
+      setProgress(num);
   }, 1000);
 
   useEffect(() => {
