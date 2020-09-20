@@ -7,7 +7,6 @@ import CustomNavBar1 from './CustomNavBar1.js'
 
 import Login from './pages/Login.js'
 
-import progress from './pages/progress.js'
 
 import List from './pages/List.js'
 
