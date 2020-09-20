@@ -104,7 +104,6 @@ export default class ScreenOne extends React.Component {
 
 
 LogIn = (email, password) => {
-    try {
       firebase
           .auth()
           .signInWithEmailAndPassword(email, password)
@@ -125,18 +124,14 @@ LogIn = (email, password) => {
          		.then(() => {
             		console.log('User added!');
           		})
-			);
       		}
    		 })
-	      
-	      );
                   
-              });
-         	 } catch(function(e)) {
-                	alert('Success');
-		      }
+              }).catch (function(e) {
+                	console.log('Test', e);
+  		})
+      }
 
-  		};
 
 
 
