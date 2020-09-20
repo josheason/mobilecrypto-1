@@ -117,7 +117,9 @@ LogIn = (email, password) => {
    		watchedRef.where('id', '==', user.uid)
       		.get()
       		.then(snapshots => {
-			console.log(snapshots.data());
+			snapshot.forEach(doc => {
+      console.log(doc.id, '=>', doc.data());
+    });
       		if (snapshots.size == 0) {
          		watchedRef.doc(user.uid).set({
      			dash: false,
