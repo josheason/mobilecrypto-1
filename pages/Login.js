@@ -136,9 +136,9 @@ LogIn = (email, password) => {
               });
          	 } finally {
 			 if(test == 0)
-                	alert('Success');
+                	console.log('Success');
 			 else
-				 alert('Error');
+				 console.log('Error');
 		      }
 
   		};
