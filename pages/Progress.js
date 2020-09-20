@@ -33,7 +33,7 @@ async function getData(){
 	  const watchedRef = db.collection('users').doc(user.uid);
 	  const querySnapshot = await watchedRef.get();
 	  const numWatched = querySnapshot.data().watched;
-	return numWatched;
+	return (numWatched/115)*100;
    	console.log(numWatched);
   }
 
