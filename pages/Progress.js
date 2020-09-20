@@ -42,7 +42,29 @@ function retData(v){
 }
 
 
-async function grabUserData(){
+/*async function grabUserData(){
+	  const db = firebase.firestore();
+	  var userId = firebase.auth().currentUser.uid;
+	  var docRef = db.collection("users").doc(userId);
+	   return docRef.get().then(function(doc) {
+	   console.log(doc.data().watched); //see below for doc object
+          if (doc.exists) {
+          console.log(doc.data.watched()); //see below for doc object
+          return doc.data().watched;
+      }
+		else {
+          console.log("No such document!");
+      }
+    }).catch(function(error) {
+        console.log("Error getting document:", error);
+    });*/
+
+
+ //setProgress(getData());
+
+const Progress = () => {
+	
+	async function grabUserData(){
 	  const db = firebase.firestore();
 	  var userId = firebase.auth().currentUser.uid;
 	  var docRef = db.collection("users").doc(userId);
@@ -58,11 +80,9 @@ async function grabUserData(){
     }).catch(function(error) {
         console.log("Error getting document:", error);
     });
-
-
- //setProgress(getData());
-
-const Progress = () => {
+	
+	
+	
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
