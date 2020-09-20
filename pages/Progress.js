@@ -62,6 +62,7 @@ const Progress = () => {
   		.catch((errorMessage, statusCode) => {
     		 num = 0;
   		})
+	  num = querySnapshot.data().watched;
 	//const numWatched = querySnapshot.data().watched;
 	//var num = numWatched;
    	//console.log(numWatched);
