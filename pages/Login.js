@@ -217,20 +217,18 @@ LogIn = (email, password) => {
          		})
          		.then(() => {
             		console.log('User added!');
-          		}).catch( error => {
-                alert('Test2', error.toString(error.message));
+          		}).catch(function (e) {
+                console.log('Test2', e);
               });
       		}
-   		 }).catch(error => {
-			this.navigate3();
-    			Alert.alert('Test1', error.message);
+   		 }).catch(function (e) {
+    			console.log('Test1', e);
 			
    		});
                   
               });
-         	 } catch (error) {
-			 this.navigate3();
-                	alert('Test', error.toString(error.message));
+         	 } catch (function (e)) {
+                	console.log('Test', e);
 		      }
   		};
 
