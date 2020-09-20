@@ -1,6 +1,8 @@
 import React, {useRef, useState, useEffect} from 'react';
 import { Text, View, StyleSheet, Animated } from 'react-native';
 import Constants from 'expo-constants';
+import * as firebase from 'firebase';
+import 'firebase/firestore';
 
 function useInterval(callback, delay) {
   const savedCallback = useRef();
@@ -23,13 +25,31 @@ function useInterval(callback, delay) {
 }
 
 
+
+
+
+function getUserZipCode(documentSnapshot) {
+  return documentSnapshot.get('info.address.watched');
+}
+
+
+
+
+
 const progress = () => {
+   
+  var user = firebase.auth().currentUser;
+  var numWatched = 0;
+  firebase.firestore().collection('users').doc(user.uid).get()
+  .then(documentSnapshot => getUserZipCode(documentSnapshot))
+  .then(watched => {
+    console.log('Users watched is: ', watched);
+    numWatched = watched;
+  });
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
-    if(progress < 100) {
-      setProgress(progress + 5);
-    }
+      setProgress(numWatched);
   }, 1000);
 
   useEffect(() => {
