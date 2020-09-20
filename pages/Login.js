@@ -191,7 +191,7 @@ LogIn = (email, password) => {
             placeholderTextColor="#ffffff"
             onChangeText={text => this.setState({password:text})}/>
         </View>
-        <Button style={styles.loginBtn}
+        <Button title='Test' style={styles.loginBtn}
 	onPress={() => this.LogIn(this.state.email, this.state.password)}>
           <Text style={styles.loginText}>LOGIN</Text>
         </Button>
