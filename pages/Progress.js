@@ -33,23 +33,22 @@ async function getData(){
 	const querySnapshot = await watchedRef.get();
 	const num1 = querySnapshot.data().watched;
 	var num = num1;
-	  /*const querySnapshot = await watchedRef.get()
+	  const querySnapshot = await watchedRef.get()
 	 	.then((res) => {
-     		num = querySnapshot.data().watched;
+     		return JSON.parse(res);
   		})
   		.catch((errorMessage, statusCode) => {
-    		 num = 0;
-  		})*/
+    		 const no = 0;
+  		})
 	//const numWatched = querySnapshot.data().watched;
 	//var num = numWatched;
    	//console.log(numWatched);
-	return(num);
   }
 
 
 
 
-const Progress = async () => {
+const Progress = () => {
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
