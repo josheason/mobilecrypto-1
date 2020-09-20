@@ -34,7 +34,7 @@ async function getData(){
 	const numWatched = await querySnapshot.data().watched;
 	var num = numWatched;
    	console.log(numWatched);
-	return(numWatched*1.0);
+	return(num*1.0);
   }
 
 
