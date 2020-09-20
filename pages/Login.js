@@ -112,13 +112,7 @@ LogIn = (email, password) => {
    		var user = firebase.auth().currentUser;
    		const increment = firebase.firestore.FieldValue.increment(1);
    		const watchedRef = db.collection('users');
-	      	const doc = async await watchedRef.doc(user.uid).get();
-			if (!doc.exists) {
-  				console.log('No such document!');
-			} else {
-  			console.log('Document data:', doc.data());
-			}
-
+	      this.func()
 	      test = 0;
 	      this.navigate2()
    		watchedRef.where('id', '==', user.uid)
@@ -294,6 +288,20 @@ LogIn = (email, password) => {
       })
   }
 
+  
+  async func(){
+	  
+	  const db = firebase.firestore();
+   		var user = firebase.auth().currentUser;
+   		const increment = firebase.firestore.FieldValue.increment(1);
+   		const watchedRef = db.collection('users');
+	      	const doc = await watchedRef.doc(user.uid).get();
+			if (!doc.exists) {
+  				console.log('No such document!');
+			} else {
+  			console.log('Document data:', doc.data());
+			}
+  }
 
   
   
