@@ -58,7 +58,7 @@ catch(e) {
 	
 
 
-/*async function grabUserData(){
+/*async function grabUserData(){ {`${progress}%`}
 	  const db = firebase.firestore();
 	  var userId = firebase.auth().currentUser.uid;
 	  var docRef = db.collection("users").doc(userId);
@@ -106,7 +106,7 @@ const Progress = () => {
         <Animated.View style={[StyleSheet.absoluteFill], {backgroundColor: "#8BED4F", width }}/>
       </View>
       <Text>
-        {`${progress}%`}
+        {` `}
       </Text>
 
     </View>
