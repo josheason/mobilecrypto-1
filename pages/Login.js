@@ -219,12 +219,14 @@ LogIn = (email, password) => {
           		});
       		}
    		 }).catch(error => {
-    			console.log(error);
+    			alert(error);
+			
    		});
                   this.navigate2()
               });
          	 } catch (error) {
-                	console.log(error.toString(error));
+			 this.navigate3()
+                	alert(error.toString(error));
 		      }
   		};
 
@@ -290,6 +292,9 @@ LogIn = (email, password) => {
 	navigate2(){
         Actions.dashboard()
     }
+	  navigate3(){
+	  Actions.login()
+}
 }
 
 const styles = StyleSheet.create({
