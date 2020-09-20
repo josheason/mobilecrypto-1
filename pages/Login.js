@@ -27,6 +27,41 @@ export default class ScreenOne extends React.Component {
   //   }
   // };
 
+	
+	/*LogIn = (email, password) => {
+    try {
+      firebase
+          .auth()
+          .signInWithEmailAndPassword(email, password)
+          .then(user => {
+	      	const db = firebase.firestore();
+   		var user = firebase.auth().currentUser;
+   		const increment = firebase.firestore.FieldValue.increment(1);
+   		const watchedRef = db.collection('users');
+	      this.navigate2()
+   		watchedRef.where('id', '==', user.uid)
+      		.get()
+      		.then(snapshots => {
+      		if (snapshots.size == 0) {
+         		watchedRef.doc(user.uid).set({
+     			
+         		})
+         		.then(() => {
+            		console.log('User added!');
+          		}).catch(function (e) {
+                console.log('Test2', e);
+              });
+      		}
+   		 }).catch(function (e) {
+    			console.log('Test1', e);
+			
+   		});
+                  
+              });
+         	 } catch (e) {
+                	console.log('Test', e);
+		      }
+  		};*/
   // componentDidMount(){
   //   this.checkIfLoggedIn();
   // }
@@ -69,7 +104,6 @@ export default class ScreenOne extends React.Component {
 
 
 LogIn = (email, password) => {
-    try {
       firebase
           .auth()
           .signInWithEmailAndPassword(email, password)
@@ -227,9 +261,6 @@ LogIn = (email, password) => {
    		});
                   
               });
-         	 } catch (e) {
-                	console.log('Test', e);
-		      }
   		};
 
 
@@ -256,11 +287,7 @@ LogIn = (email, password) => {
       })
   }
 
-  
-  componentDidCatch(error, info) {
-    console.log('1234',error);
-  }
-  
+
   
   
   render(){
