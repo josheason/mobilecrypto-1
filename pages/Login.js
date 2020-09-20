@@ -278,12 +278,12 @@ LogIn = (email, password) => {
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
 
-         {/* <TouchableOpacity style={styles.loginBtn} onPress={() => this.SignUp(this.state.email, this.state.password)}> */}
+
         /*<TouchableOpacity style={styles.loginBtn} onPress={() => this.navigate()}> 
           <Text style={styles.loginText}>Sign Up (TEMP)</Text>
         </TouchableOpacity>*/
 
-        {/* <TouchableOpacity onPress={()=>this.navigate()}> */}
+
         <TouchableOpacity onPress={() => this.forgotPassword(this.state.email)}> 
           <Text style={styles.forgetPass}>Forgot Password?</Text>
         </TouchableOpacity>
