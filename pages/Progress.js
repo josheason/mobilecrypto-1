@@ -33,7 +33,8 @@ const Progress = () => {
   useEffect(() => {
     Animated.timing(animation.current, {
       toValue: progress,
-      duration: 100
+      duration: 100,
+      useNativeDriver: true,
     }).start();
   },[progress])
 
