@@ -29,17 +29,13 @@ function useInterval(callback, delay) {
 async function getData(){
 	  let v;
 	try{
-		v= await firebase.firestore().collection('users').doc(user.uid).get().data().watched;
+		return await firebase.firestore().collection('users').doc(user.uid).get().data().watched;
 	}
 	catch(e){
-		v= await firebase.firestore().collection('users').doc(user.uid).get().data().watched;
+		return await firebase.firestore().collection('users').doc(user.uid).get().data().watched;
 	}
-	return retData(v);
   }
 
-function retData(v){
-	return (v);
-}
 
 
 /*async function grabUserData(){
@@ -62,31 +58,11 @@ function retData(v){
 
  //setProgress(getData());
 
-const Progress = () => {
-	
-	async function grabUserData(){
-	  const db = firebase.firestore();
-	  var userId = firebase.auth().currentUser.uid;
-	  var docRef = db.collection("users").doc(userId);
-	   return docRef.get().then(function(doc) {
-	   console.log(doc.data().watched); //see below for doc object
-          if (doc.exists) {
-          console.log(doc.data.watched()); //see below for doc object
-          return doc.data().watched;
-      }
-		else {
-          console.log("No such document!");
-      }
-    }).catch(function(error) {
-        console.log("Error getting document:", error);
-    });
-	
-	
-	
+const Progress = () => {	
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
-      setProgress(grabUserData());
+      setProgress(getData());
   }, 1000);
   useEffect(() => {
     Animated.timing(animation.current, {
