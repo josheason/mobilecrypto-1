@@ -41,9 +41,9 @@ async function getData(){
       }
    })*/
 	const querySnapshot = await watchedRef.get();
-	const data = querySnapshot.data().watched;
-	return new Int(data);
-	//const num1 = querySnapshot.data().watched;
+	var data = new intquerySnapshot.data().watched.toString();
+	var ret = parseInt(data);
+	return (ret);
 	//var num = num1;
 	  /*const querySnapshot = await watchedRef.get()
 	 	.then((res) => {
