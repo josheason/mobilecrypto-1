@@ -5,8 +5,18 @@
     "name": "mobilecrypto",
     "slug": "mobilecrypto",
     "version": "1.0.0",
+    "icon": "./images/fundsec.png",
+     "splash": {
+      "image": "./images/fundsec.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
     "assetBundlePatterns": [
       "**/*"
     ]
+    "ios": {
+      "bundleIdentifier": "org.name.mobilecrypto",
+      "supportsTablet": true
+    },
   }
 }
