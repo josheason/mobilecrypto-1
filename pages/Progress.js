@@ -26,20 +26,30 @@ function useInterval(callback, delay) {
 }
 
 
+
+
+
 async function getData(){
 	  var user = firebase.auth().currentUser;
 	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
+	const querySnapshot = await watchedRef.get().then(function(snapshot) {
+      if (!snapshot) {
+         console.log('An error occured');
+      } else {
+        return(querySnapshot.data().watched);
+      }
+   })
 	//const querySnapshot = await watchedRef.get();
 	//const num1 = querySnapshot.data().watched;
 	//var num = num1;
-	  const querySnapshot = await watchedRef.get()
+	  /*const querySnapshot = await watchedRef.get()
 	 	.then((res) => {
      		return JSON.parse(res);
   		})
   		.catch((errorMessage, statusCode) => {
     		 const no = 0;
-  		})
+  		})*/
 	//const numWatched = querySnapshot.data().watched;
 	//var num = numWatched;
    	//console.log(numWatched);
