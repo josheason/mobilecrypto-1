@@ -26,38 +26,20 @@ function useInterval(callback, delay) {
 }
 
 
-
-
-
 async function getData(){
-	  var user = firebase.auth().currentUser;
-	  const db = firebase.firestore();
-	  const watchedRef = db.collection('users').doc(user.uid);
-	/*const querySnapshot = await watchedRef.get().then(function(snapshot) {
-      if (!snapshot) {
-         console.log('An error occured');
-      } else {
-        return(querySnapshot.data().watched);
-      }
-   })*/
-	const querySnapshot = await watchedRef.get();
-	var data = querySnapshot.data().watched.toString();
-	var ret = parseInt(data);
-	var ret1 = ret/6;
-	console.log(ret1);
-	return (ret1);
-	//var num = num1;
-	  /*const querySnapshot = await watchedRef.get()
-	 	.then((res) => {
-     		return JSON.parse(res);
-  		})
-  		.catch((errorMessage, statusCode) => {
-    		 const no = 0;
-  		})*/
-	//const numWatched = querySnapshot.data().watched;
-	//var num = numWatched;
-   	//console.log(numWatched);
+	  let v;
+	try{
+		v= await firebase.firestore().collection('users').doc(user.uid).get().data().watched;
+	}
+	catch(e){
+		v= await firebase.firestore().collection('users').doc(user.uid).get().data().watched;
+	}
+	return v;
   }
+
+
+
+
 
 
  //setProgress(getData());
