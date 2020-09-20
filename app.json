@@ -1,6 +1,10 @@
 {
   "name": "mobilecrypto",
   "displayName": "mobilecrypto",
+   "ios": {
+      "bundleIdentifier": "org.name.mobilecrypto",
+      "supportsTablet": true,
+    },
   "expo": {
     "name": "mobilecrypto",
     "slug": "mobilecrypto",
@@ -14,9 +18,5 @@
     "assetBundlePatterns": [
       "**/*"
     ]
-    "ios": {
-      "bundleIdentifier": "org.name.mobilecrypto",
-      "supportsTablet": true
-    },
   }
 }
