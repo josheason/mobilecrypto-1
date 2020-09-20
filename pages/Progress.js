@@ -40,24 +40,20 @@ function useInterval(callback, delay) {
 
 
 const Progress = () => {
-	const num = useRef();
-	async function getData(){
 	  var user = firebase.auth().currentUser;
 	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
 	  const querySnapshot = await watchedRef.get();
 	const numWatched = querySnapshot.data().watched;
-		num.current = querySnapshot.data().watched;
 	//var num = numWatched;
    	console.log(numWatched);
-  }
 	
 	
 	
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
-      setProgress(num.current());
+      setProgress(numWatched);
   }, 1000);
 
   useEffect(() => {
