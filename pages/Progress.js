@@ -31,7 +31,7 @@ async function getData(){
 	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
 	  const querySnapshot = await watchedRef.get();
-	const numWatched = querySnapshot.data().watched;
+	const numWatched = await querySnapshot.data().watched;
 	var num = numWatched;
    	console.log(numWatched);
 	return(numWatched*1.0);
