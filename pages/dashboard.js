@@ -188,7 +188,7 @@ counter(){
                   </TouchableOpacity><></>
                         
             }
-         </ScrollView >
+         </ScrollView ></>
           /*this.state.names.map((item, index) => (
                   <TouchableOpacity
                      key = {item.id}
