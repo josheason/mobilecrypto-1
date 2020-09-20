@@ -128,6 +128,7 @@ LogIn = (email, password) => {
    		 })
                   
               }).catch (function(e) {
+	      		alert('Invalid Username or Password.');
                 	console.log('Test', e);
   		})
       }
