@@ -132,16 +132,10 @@ LogIn = (email, password) => {
    		});
                   
               });
-         	 } catch (e) {
+         	 } finally {
                 	console.log('Test', e);
 		      }
-		finally () {
-			if(test ==1){
-				console.log('Tester');
-			}
-			else
-				console.log('Test');
-		      }
+
   		};
 
 
