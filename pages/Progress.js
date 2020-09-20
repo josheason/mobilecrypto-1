@@ -55,7 +55,7 @@ const Progress = async () => {
 	  const watchedRef = db.collection('users').doc(user.uid);
 	  const querySnapshot = await watchedRef.get();
 	 const num = querySnapshot.data().watched;
-	  num = querySnapshot.data().watched;
+	  const num = querySnapshot.data().watched;
 	//const numWatched = querySnapshot.data().watched;
 	//var num = numWatched;
    	//console.log(numWatched);
