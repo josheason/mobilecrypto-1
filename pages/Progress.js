@@ -42,7 +42,7 @@ function retData(v){
 }
 
 
- grabUserData = async (userId) => {
+/* grabUserData = async (userId) => {
 	  const db = firebase.firestore();
 	  var userId = firebase.auth().currentUser.uid;
 	  var docRef = db.collection("users").doc(userId);
@@ -57,7 +57,7 @@ function retData(v){
       }
     }).catch(function(error) {
         console.log("Error getting document:", error);
-    });
+    });*/
 
 
  //setProgress(getData());
