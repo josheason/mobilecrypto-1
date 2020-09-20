@@ -45,10 +45,7 @@ async function getData(){
    	//console.log(numWatched);
   }
 
-getData()
-    .then(code => {
-        setProgress(code);
-    });
+
  //setProgress(getData());
 
 const Progress = () => {
