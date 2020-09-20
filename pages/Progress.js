@@ -36,6 +36,7 @@ async function getData(){
     console.log("Watched = "+ watch);
 	   return (watch);
 })
+	}
 catch(e) {
      console.log("Error Watched = "+ watch);
 }
