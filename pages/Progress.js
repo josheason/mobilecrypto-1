@@ -33,14 +33,16 @@ async function getData(){
 	  var user = firebase.auth().currentUser;
 	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
-	const querySnapshot = await watchedRef.get().then(function(snapshot) {
+	/*const querySnapshot = await watchedRef.get().then(function(snapshot) {
       if (!snapshot) {
          console.log('An error occured');
       } else {
         return(querySnapshot.data().watched);
       }
-   })
-	//const querySnapshot = await watchedRef.get();
+   })*/
+	const querySnapshot = await watchedRef.get();
+	const data = querySnapshot.data().watched;
+	return new Int(data);
 	//const num1 = querySnapshot.data().watched;
 	//var num = num1;
 	  /*const querySnapshot = await watchedRef.get()
