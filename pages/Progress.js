@@ -47,11 +47,10 @@ function useInterval(callback, delay) {
 
 
 
-const Progress = () => {
+const Progress = async () => {
 	
 	
 	const num = 10;
-	async function getData(){
 	  var user = firebase.auth().currentUser;
 	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
@@ -66,8 +65,7 @@ const Progress = () => {
 	//const numWatched = querySnapshot.data().watched;
 	//var num = numWatched;
    	//console.log(numWatched);
-	return(num);
-  }
+ 
 	
 	
 	
