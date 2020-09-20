@@ -45,7 +45,7 @@ const Progress = () => {
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
-      setProgress(this.getData());
+      setProgress(getData());
   }, 1000);
 
   useEffect(() => {
