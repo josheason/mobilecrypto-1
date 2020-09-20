@@ -1,22 +1,42 @@
 {
-  "name": "mobilecrypto",
-  "displayName": "mobilecrypto",
-   "ios": {
-      "bundleIdentifier": "org.name.mobilecrypto",
-      "supportsTablet": true,
-    },
   "expo": {
     "name": "mobilecrypto",
     "slug": "mobilecrypto",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
+    "orientation": "portrait",
     "icon": "./images/icon.png",
-     "splash": {
+    "splash": {
       "image": "./images/fundsec.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "bundleIdentifier": "org.name.mobilecrypto",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "org.name.mobilecrypto"
+    },
+    "extra": {
+        "test": {
+          "message": "I am a message"
+        },
+        "FIRE_BASE": {}
+    },
+    "description": ""
   }
 }
+
