@@ -52,7 +52,7 @@ const Progress = async () => {
   let animation = useRef(new Animated.Value(0));
   const [progress, setProgress] = useState(0);
   useInterval(() => {
-      setProgress(num);
+      setProgress(getData());
   }, 1000);
 
   useEffect(() => {
