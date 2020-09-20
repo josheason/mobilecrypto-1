@@ -291,6 +291,7 @@ LogIn = (email, password) => {
   
   async func(){
 	  var user = firebase.auth().currentUser;
+	  const db = firebase.firestore();
 	  const watchedRef = db.collection('users').doc(user.uid);
 	  const querySnapshot = await watchedRef.get();
 	  const numWatched = querySnapshot.data().watched;
